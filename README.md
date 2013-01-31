@@ -1,2 +1,0 @@
-yshrsmz.github.com
-==================
