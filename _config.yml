@@ -1,5 +1,5 @@
 title: yshrsmz.github.io
-description: my blogs
+description: Thoughts, stories and ideas
 #google_analytics: 
 show_downloads: true
 remote_theme: fongandrew/hydeout
@@ -12,3 +12,8 @@ author:
   
 paginate: 10
 paginate_path: "page:num"
+
+sidebar_home_link:  true
+
+disqus:
+  shortname: yshrsmz
