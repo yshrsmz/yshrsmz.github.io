@@ -1,8 +1,9 @@
-title: yshrsmz.github.com
+title: yshrsmz.github.io
 description: 
 google_analytics: 
 show_downloads: true
 theme: jekyll-theme-hacker
+permalink: /:year/:month/:day/:title.html
 
 gems:
   - jekyll-mentions
