@@ -10,7 +10,5 @@ author:
   author: Yasuhiro Shimizu
   url: https://twitter.com/_yshrsmz
   
-sidebar_link: true
-
-gems:
-  - jekyll-mentions
+paginate: 10
+paginate_path: "page:num"
