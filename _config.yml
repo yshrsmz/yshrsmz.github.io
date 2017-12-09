@@ -2,7 +2,7 @@ title: yshrsmz.github.io
 description: 
 google_analytics: 
 show_downloads: true
-theme: jekyll-theme-hacker
+theme: samanyougarg/hanuman
 permalink: /:year/:month/:day/:title.html
 
 gems:
