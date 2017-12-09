@@ -2,7 +2,7 @@ title: yshrsmz.github.io
 description: 
 google_analytics: 
 show_downloads: true
-remote_theme: samanyougarg/hanuman
+remote_theme: fongandrew/hydeout
 permalink: /:year/:month/:day/:title.html
 
 gems:
