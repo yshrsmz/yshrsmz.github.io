@@ -9,6 +9,8 @@ url: https://yshrsmz.github.io
 author:
   author: Yasuhiro Shimizu
   url: https://twitter.com/_yshrsmz
+  
+sidebar_link: true
 
 gems:
   - jekyll-mentions
