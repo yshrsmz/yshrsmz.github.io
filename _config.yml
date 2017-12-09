@@ -16,4 +16,4 @@ paginate_path: "page:num"
 sidebar_home_link:  true
 
 disqus:
-  shortname: yshrsmz
+  shortname: yshrsmz-github-io
