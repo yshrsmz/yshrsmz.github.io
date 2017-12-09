@@ -3,7 +3,7 @@ description:
 google_analytics: 
 show_downloads: true
 remote_theme: fongandrew/hydeout
-permalink: /:year/:month/:day/:title.html
+#permalink: /:year/:month/:day/:title.html
 
 gems:
   - jekyll-mentions
