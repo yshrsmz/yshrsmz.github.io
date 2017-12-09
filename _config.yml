@@ -1,9 +1,14 @@
 title: yshrsmz.github.io
-description: 
-google_analytics: 
+description: my blogs
+#google_analytics: 
 show_downloads: true
 remote_theme: fongandrew/hydeout
+url: https://yshrsmz.github.io
 #permalink: /:year/:month/:day/:title.html
+
+author:
+  author: Yasuhiro Shimizu
+  url: https://twitter.com/_yshrsmz
 
 gems:
   - jekyll-mentions
