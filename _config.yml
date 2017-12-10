@@ -1,7 +1,5 @@
 title: yshrsmz.github.io
 description: Thoughts, stories and ideas
-#google_analytics:
-show_downloads: true
 remote_theme: Sylhare/Type-on-Strap
 url: https://yshrsmz.github.io
 permalink: /:year/:month/:day/:title/
@@ -19,18 +17,27 @@ disqus:
   shortname: yshrsmz-github-io
 
 theme_settings:
+  # meta
   title: Theoretical Cat
   description: Thoughts, stories and ideas
+  gravatar: 9e8f6ad3eaaca7e727dd2b9ae84cd894
+
+  # header/footer
   header_text: Thoughts, stories and ideas
   header_text_feature_image: assets/img/dactyl.jpg
   footer_text: Copyright 2017
+
+  # icons
   rss: true
-  search: true
-  gravatar: 9e8f6ad3eaaca7e727dd2b9ae84cd894
-  disqus_shortname: yshrsmz-github-io
   email_address: the.phantom.bane+blog@gmail.com
   linkedin: https://www.linkedin.com/in/yshrsmz/
   stack_exchange: https://stackexchange.com/users/456702/yshrsmz
+  github: yshrsmz
+  twitter: _yshrsmz
+
+  # scripts/features
+  disqus_shortname: yshrsmz-github-io
+  tags: true
 
 plugins:
   - jekyll-feed
