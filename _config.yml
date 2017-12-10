@@ -30,3 +30,6 @@ theme_settings:
   email_address: the.phantom.bane+blog@gmail.com
   linkedin: https://www.linkedin.com/in/yshrsmz/
   stack_exchange: https://stackexchange.com/users/456702/yshrsmz
+
+plugins:
+  - jekyll-feed
