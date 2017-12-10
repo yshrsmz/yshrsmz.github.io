@@ -1,15 +1,15 @@
 title: yshrsmz.github.io
 description: Thoughts, stories and ideas
-#google_analytics: 
+#google_analytics:
 show_downloads: true
-remote_theme: fongandrew/hydeout
+remote_theme: Sylhare/Type-on-Strap
 url: https://yshrsmz.github.io
 permalink: /:year/:month/:day/:title/
 
 author:
   author: Yasuhiro Shimizu
   url: https://twitter.com/_yshrsmz
-  
+
 paginate: 10
 paginate_path: "page:num"
 
