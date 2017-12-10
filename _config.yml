@@ -25,6 +25,7 @@ theme_settings:
   header_text_feature_image: assets/img/dactyl.jpg
   footer_text: Copyright 2017
   rss: true
+  search: true
   gravatar: 9e8f6ad3eaaca7e727dd2b9ae84cd894
   disqus_shortname: yshrsmz-github-io
   email_address: the.phantom.bane+blog@gmail.com
