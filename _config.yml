@@ -23,7 +23,8 @@ theme_settings:
   gravatar: 9e8f6ad3eaaca7e727dd2b9ae84cd894
 
   # header/footer
-  header_text: Thoughts, stories and ideas
+  header_text: >
+    <p>Thoughts, stories and ideas</p>
   header_text_feature_image: assets/img/dactyl.jpg
   footer_text: Copyright 2017
 
