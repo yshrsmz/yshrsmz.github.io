@@ -4,13 +4,14 @@ title: "Products"
 permalink: /products/
 ---
 
-## Apps
+## Android Apps
 
-- Omnitweety
-- Monotweety
+- [Omnitweety](https://play.google.com/store/apps/details?id=net.yslibrary.omnitweety)
+- [Monotweety](https://play.google.com/store/apps/details?id=net.yslibrary.monotweety)
 
-## Libraries
+## Android Libraries
 
-- LicenseAdapter
-- SimplePreferences
+- [KeyboardVisibilityEvent](https://github.com/yshrsmz/KeyboardVisibilityEvent)
+- [LicenseAdapter](https://github.com/yshrsmz/LicenseAdapter)
+- [SimplePreferences](https://github.com/yshrsmz/simple-preferences)
 
