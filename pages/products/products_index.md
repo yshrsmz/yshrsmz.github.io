@@ -2,7 +2,6 @@
 layout: page
 title: "Products"
 permalink: /products/
-hide: true
 ---
 
 ## Apps
