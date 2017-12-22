@@ -5,3 +5,7 @@ tags:
   - android
   - kotlin
 ---
+
+[Android Advent Calendar 2017](https://qiita.com/advent-calendar/2017/android)24日目の記事です。
+
+2年ほど前(2015年)に個人で作ったAndroidアプリを、ふと思い立って完全リファクタリングすることにした。
