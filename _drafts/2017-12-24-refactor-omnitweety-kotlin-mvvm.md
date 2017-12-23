@@ -33,6 +33,8 @@ tags:
 
 　これは完全に好みの問題な気もするけど、最近はDataBindingもあるしMVVMっぽいView/Presentation層の作り方が好きだ。
 
-　MVPのどこが肌に合わなかったかというと、「interfaceとはいえPresenterがViewのことを知っているので、Viewのライフサイクルに合わせなければならない箇所がある」という点だ。Androidは画面回転が発生するとActivityやFragmentが再生成されるし、`onStop`以降で画面をいじるとアレなことになる。なのでどうしても`Presenter#takeView(View)`とか`Presenter#dropView()`みたいなメソッドを作ることになるし、`Presenter`内では`View`がnullかどうかチェックして回る必要がある。
+　MVPのどこが肌に合わなかったかというと、「interfaceとはいえPresenterがViewのことを知っているので、Viewのライフサイクルに合わせなければならない箇所がある」という点だ。Androidは画面回転が発生するとActivityやFragmentが再生成されるし、`onStop`以降で画面をいじるとアレなことになる。なので、画面回転をこえて状態を保持するPresenterを作ろうと思ったらどうしても`Presenter#takeView(View)`とか`Presenter#dropView()`みたいなメソッドを作ることになるし、`Presenter`内では`View`がnullかどうかチェックして回る必要がある。
  
  Presenterのライフサイクル自体はViewのライフサイクルに合わせてしまって、状態を別の場所(例えばArchitecture ComponentsのViewModelとか)に移してしまえばこの問題も解決できるかなー、という気もするけど、まだそこまでは試していない。
+
+その点MVVM的な作りにするとViewModelはViewへの依存を持たないので、単純にViewModelの公開するイベントをViewが購読するだけだ。
