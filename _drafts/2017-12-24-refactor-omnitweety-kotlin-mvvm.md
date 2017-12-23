@@ -9,17 +9,10 @@ tags:
 [Android Advent Calendar 2017](https://qiita.com/advent-calendar/2017/android)の24日目です。
 
 　2年ほど前(2015年)に個人で作ったAndroidアプリを、ふと思い立って完全リファクタリングすることにしました。
-Kotlin化とアーキテクチャの改善で大体こんな感じ
-
-![resule_diff](/assets/img/posts/201712/refactor_diff.png)
-
-Javaで16,000行ちょいあったのが6,000行ほど削減されました。
-
 理由はいくつかあるけれど、主なところでは下記の四点でした。
 
 - Kotlinの流れがきている
 - Android CleanArchitectureを踏襲してみたけど…
-- CQRSを取り入れ、実装をシンプルにしたい
 - 最近はMVPよりMVVMが好き
 
 
@@ -36,45 +29,6 @@ Javaで16,000行ちょいあったのが6,000行ほど削減されました。
 
 あと、本家の実装では画面回転時のViewの状態保持、各画面Fragmentを`retainInstance = true`にすることで実現していました。これ実装当時も気持ち悪いなーって思いながら踏襲してたけど、ちょうどGoogle I/O 2017でArchitecture Componentsが発表されたので、これの`ViewModel`を使ってよりスマートに解決することに。
 
-### CQRSはいいぞ
-
-CQRS(Command Query Responsibility Segregation: コマンドクエリ責務分離)は、更新系の処理(Command)と参照系の処理(Query)を分ける実装パターン。
-
-下に示すのは、SNSアプリのユーザ詳細画面の擬似コードです。画面の初回表示と、いいねボタンをおした時あたりのコードが書かれている。
-
-普通に書いた時
-```
-override fun onCreate(savedInstanceState: Bundle?) {
-  super.onCreate(savedInstanceState)
-  // 色々初期化処理する
-
-  userRepository.getUser(userId)  // Single
-    .subscribe { newUser -> updateUI(newUser) }
-}
-
-fun onLikeClick(){
-  userRepository.doLike(userId)   // Completable
-    .andThen { userRepository.getUser(userId) } // Single
-    .subscribe { newUser -> updateUI(newUser) }
-}
-```
-
-
-CQRS適用後
-```
-override fun onCreate(savedInstanceState: Bundle?) {
-  super.onCreate(savedInstanceState)
-  // 色々初期化処理する
-
-  userRepository.observeUser(userId)  // Flowable
-    .subscribe { newUser -> updateUI(newUser) }
-}
-
-fun onLikeClick() {
-  userRepository.doLike(userId).subscribe() // Completable
-}
-```
-
 ### 最近はMVPよりMVVMが好み
 
 　これは完全に好みの問題な気もするけど、最近はDataBindingもあるしMVVMっぽいView/Presentation層の作り方が好きだ。
@@ -87,7 +41,118 @@ fun onLikeClick() {
 
 ---
 
-そんなわけでいろいろ考えた結果だいたい下記のような構成で書き直すことになった。
+そんな感じで色々考えた結果、Kotlin化とアーキテクチャの改善で大体こんな感じ
 
+![resule_diff](/assets/img/posts/201712/refactor_diff.png)
+
+Javaで16,000行ちょいあったのが6,000行ほど削減されました。
+
+改善後のアーキテクチャは大体こんな感じ
+
+![diagram](/assets/img/posts/201712/reactive_mvvm.png)
+
+実際に実施した内容は下記のような感じ
+
+- Kotlinに完全書き換え
+- パッケージ構成をアプリの機能毎に変更
 - data層は`Repository`が`DataStore`に直接依存する
-- UseCaseは
+- CQRSを取り入れる
+- MVPからMVVMへ
+- 使っていたライブラリを幾つかKotlinの機能で置き換え
+
+### パッケージ構成
+
+Before
+
+```
+├── data
+│     ├── cache
+│     ├── entity
+│     ├── net
+│     └── repository
+├── domain
+│     ├── interactor
+│     └── repository
+├── presentation
+│     ├── navigation
+│     ├── presenter
+│     ├── view
+│     │    ├── activity
+│     │    ├── fragment
+```
+
+After
+```
+├── data
+│     ├── user
+│          ├── disk
+│          │     └── UserDiskDataStore
+│          ├── cloud
+│          │     └── UserCloudDataStore
+│          ├── User
+│          └── UserRepository
+├── user
+│     ├── domain
+│     │    ├── ObserveUser
+│     │    └── DoFavoriteUser
+│     ├── UserActivity
+│     ├── UserViewModel
+```
+
+Beforeが若干雑で申し訳ないけども、つまりアプリの機能に沿ってパッケージ分割するように変更した、ということです。
+
+一つの機能(画面)で使うクラスが大体同じパッケージにまとまるので、個人的にはだいぶ見通しがよくなりました。
+
+
+### CQRS
+CQRS(Command Query Responsibility Segregation: コマンドクエリ責務分離)は、更新系の処理(Command)と参照系の処理(Query)を分ける実装パターン。
+
+イベントバスを使って更新完了を通知し受信側がPullするパターンと、更新が完了すると予め変更通知を購読している場所にdata層から新しいデータが降ってくるパターンがあります。
+
+今回のアプリではRxJavaとRealmを使っているので、後者の勝手に新しいデータが通知されるパターンで実装してみている。  
+最近のAndroid界隈はRealmとかRoomとかOrmaとか、DBをリアクティブに扱えるライブラリが増えてきているので、データをリアクティブに扱うのはだいぶ楽になってるなー、と感じる。
+
+下に示すのは、SNSアプリのユーザ詳細画面の擬似コードです。画面の初回表示と、いいねボタンをおした時あたりのコードが書かれている。
+
+普通に書いた時
+```kotlin
+override fun onCreate(savedInstanceState: Bundle?) {
+  super.onCreate(savedInstanceState)
+  // 色々初期化処理する
+
+  userRepository.getUser(userId)  // Single
+    .subscribe { newUser -> updateUI(newUser) }
+}
+
+fun onFavoriteClick(){
+  userRepository.doFavorite(userId)   // Completable
+    .andThen { userRepository.getUser(userId) } // Single
+    .subscribe { newUser -> updateUI(newUser) }
+}
+
+fun updateUI(user:User) {
+  // UIの更新処理
+}
+```
+このように変更通知のない世界では、状態を変更した後には自ら新しい状態を取得しにいかなければなりません。  
+そうすると、いろいろな場所で状態の取得をすることになり、コードが膨れ上がりがちです。
+
+CQRS適用後
+```kotlin
+override fun onCreate(savedInstanceState: Bundle?) {
+  super.onCreate(savedInstanceState)
+  // 色々初期化処理する
+
+  userRepository.observeUser(userId)  // Flowable
+    .subscribe { newUser -> updateUI(newUser) }
+}
+
+fun onLikeClick() {
+  userRepository.doLike(userId).subscribe() // Completable
+}
+
+fun updateUI(user:User) {
+  // UIの更新処理
+}
+```
+さて、CQRSを適用すると
