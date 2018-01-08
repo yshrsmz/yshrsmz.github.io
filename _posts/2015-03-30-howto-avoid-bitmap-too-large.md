@@ -26,13 +26,13 @@ W/OpenGLRenderer: Bitmap too large to be uploaded into a texture(4000x4000, max=
 
 OS 4.0以降だと各Viewで個別にハードウェアアクセラレーションをOFFにしましょう。
 
-```
+```java
 mImageView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
 ```
 
 ただこれだとメモリ足りなくなる端末もありそうだから、`AndroidManifest.xml`でヒープサイズも設定しておいたほうがいいかも？
 
-```
+```xml
 <Application
     android:name="net.yslibrary.android.foo.MainApplication"
     android:label="foo"

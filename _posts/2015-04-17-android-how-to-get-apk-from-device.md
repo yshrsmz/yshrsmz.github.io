@@ -11,7 +11,7 @@ tags:
 ADBさえ入っていれば、わりと簡単にゲットすることができます。
 端末をPCにつないで、下記のコマンドを実行するだけです
 
-```
+```shell
 $ adb shell pm list packages
 $ adb shell pm path com.example.someapp
 $ adb pull /path/to/target/app
@@ -46,7 +46,7 @@ $ adb pull /path/to/target/app
 上記の方法だとAndroid 7以降で、 `adb pull` するときに `adb: error: remote object '/path/to/target/app' does not exist` とか怒られてしまいます。  
 権限周りの変更があったんだと思いますが、下記のように一度Downloadディレクトリ等アクセス権のある場所にコピーしてからだと `adb pull` できます。
 
-```
+```shell
 adb shell cp /path/to/target/app/base.apk /storage/emulated/0/Download
 adb pull /storage/emulated/0/Download/base.apk
 ```
