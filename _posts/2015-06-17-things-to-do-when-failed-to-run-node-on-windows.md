@@ -9,7 +9,7 @@ tags:
 ---
 
 
-Electroの案件でWindows使う必要が出てきて、Node.jsのインストール周りで躓いたのでメモなど。
+Electronの案件でWindows使う必要が出てきて、Node.jsのインストール周りで躓いたのでメモなど。
 (正確にはnode-gypでmoduleビルドするときに躓いた)
 
 ## 1. [Chocolatey](https://chocolatey.org/)のインストール
