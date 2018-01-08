@@ -1,6 +1,8 @@
 ---
-layout: page
-title: [Android] 端末にインストールされているアプリのAPKファイルを取得する
+layout: post
+title: (Android) 端末にインストールされているアプリのAPKファイルを取得する
+categories:
+  - android
 tags:
   - android
 ---

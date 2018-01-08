@@ -1,6 +1,8 @@
 ---
-layout: page
-title: [Android] Bitmap too large to 〜が出た時の対処法
+layout: post
+title: (Android) Bitmap too large to 〜が出た時の対処法
+categories:
+  - android
 tags:
   - android
 ---
