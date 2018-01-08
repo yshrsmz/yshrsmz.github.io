@@ -38,6 +38,7 @@ theme_settings:
 
   # scripts/features
   disqus_shortname: yshrsmz-github-io
+  search: false
   tags: true
 
 plugins:
