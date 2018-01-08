@@ -1,7 +1,7 @@
 ---
 layout: post
 title: (VirtualBox) ゲストOSからホスト機のローカルホストにアクセスする
-categories:
+category:
   - programming
 tags:
   - virtualbox

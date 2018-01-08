@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android Supoprt Library 22.1がリリースされたので変更点など
-categories:
+category:
   - programming
 tags:
   - android

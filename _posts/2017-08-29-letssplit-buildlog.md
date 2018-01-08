@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Let's Splitを作った話
-categories:
+category:
   - keyboard
 tags:
   - keyboard

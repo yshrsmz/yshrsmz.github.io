@@ -1,7 +1,7 @@
 ---
 layout: post
 title: (Android) 端末にインストールされているアプリのAPKファイルを取得する
-categories:
+category:
   - programming
 tags:
   - android

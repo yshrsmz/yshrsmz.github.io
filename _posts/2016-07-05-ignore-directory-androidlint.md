@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android Lintで特定のディレクトリ内ファイルをすべて無視するには
-categories:
+category:
   - programming
 tags:
   - til

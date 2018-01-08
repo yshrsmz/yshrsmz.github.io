@@ -1,7 +1,7 @@
 ---
 layout: post
 title: go getでprivate repositoryを取得するには
-categories:
+category:
   - programming;
 tags:
   - golang

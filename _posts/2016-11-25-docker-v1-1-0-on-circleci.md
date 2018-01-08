@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CircleCIでDocker v1.10.0を使う
-categories:
+category:
   - programming;
 tags:
   - docker

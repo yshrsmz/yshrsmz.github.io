@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 通知エリアからツイートするAndroidアプリ、Monotweetyを公開した(コードもあるよ)
-categories:
+category:
   - programming;
 tags:
   - android

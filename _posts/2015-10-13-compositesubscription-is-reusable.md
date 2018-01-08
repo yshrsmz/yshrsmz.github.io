@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CompositeSubscriptionは再利用できる
-categories:
+category:
   - programming
 tags:
   - java

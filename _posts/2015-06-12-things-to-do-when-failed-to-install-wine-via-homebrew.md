@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HomebrewからWineをインストールできないときにすべきこと
-categories:
+category:
   - programming
 tags:
   - wine

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: (Ghost) セルフホスティングなGhostをアップデートする
-categories:
+category:
   - programming
 tags:
   - ghost

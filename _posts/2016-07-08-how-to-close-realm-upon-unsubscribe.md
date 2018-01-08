@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RealmインスタンスをObservableのunsubscribe時にcloseする
-categories:
+category:
   - programming;
 tags:
   - android

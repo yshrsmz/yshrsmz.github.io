@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TwitterにURLを共有するAndroidアプリ、Omnitweetyを公開した
-categories:
+category:
   - programming
 tags:
   - android

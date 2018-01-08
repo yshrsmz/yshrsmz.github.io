@@ -1,7 +1,7 @@
 ---
 layout: post
 title: repeatWhenでfilterを使ってもonCompletedは呼ばれない
-categories:
+category:
   - programming;
 tags:
   - rxjava

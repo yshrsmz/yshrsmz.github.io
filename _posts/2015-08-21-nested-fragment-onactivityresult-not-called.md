@@ -1,7 +1,7 @@
 ---
 layout: post
 title: (Android) ネストしたFragmentのonActivityResultが呼ばれない件
-categories:
+category:
   - programming
 tags:
   - android

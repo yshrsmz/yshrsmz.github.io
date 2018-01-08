@@ -1,7 +1,7 @@
 ---
 layout: post
 title: (Android) キーボードの表示切り替えを検知する
-categories:
+category:
   - programming
 tags:
   - android

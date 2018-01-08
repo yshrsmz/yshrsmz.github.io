@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kinesis Advantageの左右分離版みたいなキーボード、Dactylを作った話
-categories:
+category:
   - keyboard
 tags:
   - keyboard

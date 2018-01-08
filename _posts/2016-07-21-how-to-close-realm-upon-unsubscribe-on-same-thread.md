@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 続:Realmインスタンスを、Observableのunsubscribe時に同じスレッドでunsubscribeする
-categories:
+category:
   - programming;
 tags:
   - android

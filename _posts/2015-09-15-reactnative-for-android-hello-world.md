@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ReactNative for AndroidでHello World(セットアップ方法とか)
-categories:
+category:
   - programming
 tags:
   - android
