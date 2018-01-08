@@ -26,7 +26,7 @@ theme_settings:
   header_text: >
     <p>Thoughts, stories and ideas</p>
   header_text_feature_image: assets/img/dactyl.jpeg
-  footer_text: Copyright 2017
+  footer_text: Copyright 2018
 
   # icons
   rss: true
