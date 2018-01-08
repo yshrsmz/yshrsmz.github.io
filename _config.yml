@@ -37,7 +37,8 @@ theme_settings:
   twitter: _yshrsmz
 
   # scripts/features
-  disqus_shortname: yshrsmz-github-io
+  google_analytics: UA-61198465-1
+  disqus_shortname: yslibrary
   search: false
   tags: true
 
