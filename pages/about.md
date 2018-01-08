@@ -4,4 +4,5 @@ title: ABOUT
 permalink: /about/
 ---
 
-About yshrsmz
+Yasuhiro Shimizu  
+Android and JavaScript lover.
