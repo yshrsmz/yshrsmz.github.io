@@ -2,9 +2,10 @@
 layout: post
 title: (Android) Bitmap too large to 〜が出た時の対処法
 categories:
-  - android
+  - programming
 tags:
   - android
+  - java
 ---
 
 Bitmapを扱っているとたまに下記のようなエラーにぶち当たることがあります。
