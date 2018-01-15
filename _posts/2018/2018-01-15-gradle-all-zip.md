@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gradleのall.zipを一発で取得する
+title: Gradleの更新時にall.zipを一発で取得する
 category: programming
 tags:
   - til
