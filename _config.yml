@@ -13,9 +13,6 @@ paginate_path: "page:num"
 
 sidebar_home_link:  true
 
-disqus:
-  shortname: yshrsmz-github-io
-
 theme_settings:
   # meta
   title: Theoretical Cat
