@@ -7,7 +7,7 @@ tags:
   - gradle
 ---
 
-普通に`gradlew wrapper --gradle-version=x.y.z`とコマンドを叩くと、取得されるGradleのzipファイルは`gradle-x.y.z-bin.zip`。`all.zip`を取得するにはAndroidStudionおサジェストに従うか、あるいは`gradle-wrapper.properties`を修正する必要がある。
+普通に`gradlew wrapper --gradle-version=x.y.z`とコマンドを叩くと、取得されるGradleのzipファイルは`gradle-x.y.z-bin.zip`。`all.zip`を取得するにはAndroidStudioのサジェストに従うか、あるいは`gradle-wrapper.properties`を修正する必要がある。
 
 最初からコマンドラインで`gradle-x.y.z-all.zip`を取得するには`build.gradle`ファイルに一手間必要
 
