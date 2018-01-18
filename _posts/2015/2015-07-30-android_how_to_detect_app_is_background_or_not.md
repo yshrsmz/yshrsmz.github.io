@@ -15,7 +15,7 @@ Architecture Componentsにはいろいろな機能が含まれますが、その
 
 これはいろいろなクラスにAndroidのActivityやFragmentといったコンポーネントのライフサイクルを監視する機能を追加するためのコンポーネントです。  
 この中に、[`ProcessLifecycleOwner`](https://developer.android.com/reference/android/arch/lifecycle/ProcessLifecycleOwner.html)というコンポーネントが用意されています。  
-これを使うと、下に記載している`MyActivityLifecycleCallbacks`の実装が必要なくなります。
+下に記載している`MyActivityLifecycleCallbacks`の代わりに似たような`LifecycleObserver`を実装して、`Application#onCreate`とかで`ProcessLifecycleOwner#addObserver`すると、実装がよりシンプルになるかもしれません。
 
 `ProcessLifecycleOwner`を使った際のざっくりしたイベントの対照表は下記のとおりです。
 
