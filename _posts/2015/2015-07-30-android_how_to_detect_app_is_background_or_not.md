@@ -7,7 +7,32 @@ tags:
   - android
 ---
 
-単純に`onResume/onStart`でバックグラウンド復帰時の処理を書くと`Activity`の生成時やバックキーで戻ってきた時等、処理しなくていいタイミングでもコードが走ってしまいます。  
+### Update 2018.01.18
+
+2017年のGoogle I/Oで[Architecture Components](https://developer.android.com/topic/libraries/architecture/index.html)が発表されました。
+
+Architecture Componentsにはいろいろな機能が含まれますが、その中に[Lifecycle](https://developer.android.com/topic/libraries/architecture/lifecycle.html)という一連のコンポーネントがあります。
+
+これはいろいろなクラスにAndroidのActivityやFragmentといったコンポーネントのライフサイクルを監視する機能を追加するためのコンポーネントです。  
+この中に、[`ProcessLifecycleOwner`](https://developer.android.com/reference/android/arch/lifecycle/ProcessLifecycleOwner.html)というコンポーネントが用意されています。  
+これを使うと、下に記載している`MyActivityLifecycleCallbacks`の実装が必要なくなります。
+
+`ProcessLifecycleOwner`を使った際のざっくりしたイベントの対照表は下記のとおりです。
+
+Lifecycle.Event|対応するイベント
+---|---
+ON_CREATE|アプリ起動時に一度だけ
+ON_RESUME|アプリ起動時/バックグラウンドからの復帰時
+ON_START|アプリ起動時/バックグラウンドからの復帰時
+ON_PAUSE|アプリ終了時/バックグラウンドへの移行時
+ON_STOP|アプリ終了時/バックグラウンドへの移行時
+ON_DESTROY|一度も呼ばれない
+
+---更新終わり。↓下から本文---
+
+---
+
+単純に`onResume/onStart`でバックグラウンド復帰時の処理を書くと`Activity`の生成時やバックキーで戻ってきた時等、処理しなくていいタイミングでもコードが走ってしまいます。
 
 `ActivityManager#getRunningAppProcesses`で実行中のプロセスを取得し、アプリのforeground/backgroundステータスを見ることもできますが、一部端末でうまく動作しないことがあるようです(そもそもbackground/foregroundを判定するためだけに実行中のプロセスを全部調べるのもアホくさい気がします)。
 
@@ -103,8 +128,8 @@ backgroundからforegroundに復帰した時かどうか知りたい！ってと
 軽く仕組みを説明すると、`Activity`の`onStart/onStop`に相当する`onActivityStarted/onActivityStopped`で現在アクティブな`Activity`をカウントしているだけです。
 
 `Activity`間を遷移していると、最低でも今いる`Activity`と、一つ前の`Activity`がアクティブな状態になります(`running > 1`な状態)。
-アプリが`background`になると、すべての`Activity`が`onStop`を通るので、非アクティブな状態になります(`running == 0`な状態)。  
-また、アプリがforegroundに復帰すると直前まで表示されていた`Activity`の`onStart`のみが実行されるので、`running == 1`になります。  
+アプリが`background`になると、すべての`Activity`が`onStop`を通るので、非アクティブな状態になります(`running == 0`な状態)。
+また、アプリがforegroundに復帰すると直前まで表示されていた`Activity`の`onStart`のみが実行されるので、`running == 1`になります。
 
 この状態の変化を利用して、アプリのbackground/foregroundステータスを検知するのが上記のコードです。
 
