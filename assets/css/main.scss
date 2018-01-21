@@ -1,0 +1,15 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+code.highlight-rouge {
+    position: relative;
+    margin-bottom: 1em;
+    background: $base00;
+    color: $base05;
+    font-family: $monospace;
+    font-size: $font-size-code;
+    line-height: 1.8;
+    border-radius: $border-radius;
+}
