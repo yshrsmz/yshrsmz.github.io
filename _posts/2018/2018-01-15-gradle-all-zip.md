@@ -19,7 +19,7 @@ task wrapper(type: Wrapper) {
 }
 ```
 
-これで`gradlew wrapper`を実行すると、`gradle-wrapper.properties`も`gradle-wrapper.jar`も`gradlew`も、一通り一度で更新される。
+まあこれを設定しても今まで通り`wrapper`タスクを二度実行する必要があるのは変わらないけど、コマンドは短くなるし`all.zip`を取得し直す手間もなくなる。
 
 Gradleの該当コードは[このあたり](https://github.com/gradle/gradle/blob/2a858684ee64e589d35d8a48da5b9c17a238385d/subprojects/build-init/src/main/java/org/gradle/api/tasks/wrapper/Wrapper.java#L311-L314)
 
