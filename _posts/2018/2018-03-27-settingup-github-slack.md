@@ -6,7 +6,7 @@ tags:
   - til
   - slack
   - github
---
+---
 
 ちょっと前にGitHubのSlack integrationがリニューアルした。これは新しいSlack Appのリリースとして実施されたので、[古いもの](https://slack.com/apps/A0F7YS2SX-github-notifications-legacy)から[新しいもの](https://slack.com/apps/A8GBNUWU8-github)への乗り換えが必要。
 
