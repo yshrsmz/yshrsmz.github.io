@@ -16,3 +16,6 @@ permalink: /products/
 - [LicenseAdapter](https://github.com/yshrsmz/LicenseAdapter)
 - [SimplePreferences](https://github.com/yshrsmz/simple-preferences)
 
+## Others
+
+- [Android Dagashi](https://androiddagashi.github.io)
