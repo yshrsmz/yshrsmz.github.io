@@ -36,8 +36,13 @@ theme_settings:
   # scripts/features
   google_analytics: UA-61198465-1
   disqus_shortname: yslibrary
-  search: false
-  tags: true
+  special_page:
+    search:
+      icon: "search"
+      enabled: false
+    tags:
+      icon: "tags"
+      enabled: true
 
 plugins:
   - jekyll-feed
