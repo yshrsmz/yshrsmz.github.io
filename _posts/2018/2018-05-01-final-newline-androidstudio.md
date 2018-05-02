@@ -7,6 +7,6 @@ tags:
   - android
 ---
 
-事あるごとに探してる気がするのでメモ。
+ことあるごとに探してる気がするのでメモ。
 
 `Preferences > Editor > General > Ensure line feed at file end on Save`
