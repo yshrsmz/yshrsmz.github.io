@@ -37,9 +37,6 @@ theme_settings:
   google_analytics: UA-61198465-1
   disqus_shortname: yslibrary
   special_page:
-    search:
-      icon: "search"
-      enabled: false
     tags:
       icon: "tags"
       enabled: true
