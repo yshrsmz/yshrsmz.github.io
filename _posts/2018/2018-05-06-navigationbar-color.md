@@ -7,7 +7,6 @@ tags:
   - android
 ---
 
-
 `styles.xml`の該当のスタイルに下記を追加するだけ。
 
 ```
