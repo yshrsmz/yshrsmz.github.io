@@ -10,7 +10,7 @@ _Omnitweety for Android_ Privacy Policy
 
 ## Owner and Data controller
 
-Yasuhiro Shimizu
+Yasuhiro Shimizu  
 Owner contact address: yshrsmz.ys+pp@gmail.com
 
 ## Types of Data collected
