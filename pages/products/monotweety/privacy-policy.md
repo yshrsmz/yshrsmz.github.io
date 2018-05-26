@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: plain
 title: Monotweety Privacy Policy
 hide: true
 permalink: /products/monotweety/privacy-policy/
