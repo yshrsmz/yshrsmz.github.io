@@ -12,7 +12,7 @@ Owner contact address: yshrsmz.ys+pp@gmail.com
 
 ## Types of Data collected
 
-Among the types of Personal Data that this Application collects, by itself or through third parties, there are: unique device identifiers for advertising (Google Advertiser ID or IDFA, for example).
+Among the types of Personal Data that this Application collects, by itself or through third parties, there are: unique device identifiers for advertising (Google Advertiser ID or IDFA, for example) and geographic position.
 
 Complete details on each type of Personal Data collected are provided in the dedicated sections of this privacy policy or by specific explanation texts displayed prior to the Data collection.
 Personal Data may be freely provided by the User, or, in case of Usage Data, collected automatically when using this Application.
@@ -60,4 +60,38 @@ Therefore:
 The Owner may be allowed to retain Personal Data for a longer period whenever the User has given consent to such processing, as long as such consent is not withdrawn. Furthermore, the Owner may be obliged to retain Personal Data for a longer period whenever required to do so for the performance of a legal obligation or upon order of an authority.
 
 Once the retention period expires, Personal Data shall be deleted. Therefore, the right to access, the right to erasure, the right to rectification and the right to data portability cannot be enforced after expiration of the retention period.
+
+## The purposes of processing
+
+The Data concerning the User is collected to allow the Owner to provide its Services, as well as for the following purposes: Access to third party accounts and Infrastructure monitoring.
+
+Users can find further detailed information about such purposes of processing and about the specific Personal Data used for each purpose in the respective sections of this document.
+
+## Information on the processing of Personal Data
+
+Personal Data is collected for the following purposes and using the following services:
+
+### Access to the third party accounts
+
+This type of service allows this Application to access Data from your account on a third party service and perform actions with it.
+These services are not activated automatically, but require explicit authorization by the User.
+
+#### Twitter ccount access(Twitter, Inc.)
+
+This service allows this Application to connect with the User's account on the Twitter social network, provided by Twitter, Inc.
+Personal Data collected: various types of Data as specified in the privacy policy of the service.
+
+Place of processing: US – [Privacy Poclicy](https://twitter.com/privacy)
+
+### Infrastructure monitoring
+
+This type of service allows this Application to monitor the use and behavior of its components so its performance, operation, maintenance and troubleshooting can be improved.
+Which Personal Data are processed depends on the characteristics and mode of implementation of these services, whose function is to filter the activities of this Application.
+
+#### Crashlytics (Google Inc.)
+
+Crashlytics is a monitoring service provided by Google Inc.
+Personal Data collected: geographic position, unique device identifiers for advertising (Google Advertiser ID or IDFA, for example) and various types of Data as specified in the privacy policy of the service.
+
+Place of processing: US – [Privacy Policy](https://try.crashlytics.com/terms/privacy-policy.pdf).
 
