@@ -220,3 +220,5 @@ Small piece of data stored in the User's device.
 This privacy statement has been prepared based on provisions of multiple legislations, including Art. 13/14 of Regulation (EU) 2016/679 (General Data Protection Regulation).
 
 This privacy policy relates solely to this Application, if not stated otherwise within this document.
+
+last updated: May 25, 2018
