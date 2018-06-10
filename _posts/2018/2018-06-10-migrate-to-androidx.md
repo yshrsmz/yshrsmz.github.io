@@ -25,7 +25,6 @@ tags:
 
 他にもいくつかあって、
 
-- 読み込むライブラリを変更する(サポートライブラリからandroidxなライブラリへ)
 - `ConstraintLayout`のパッケージ名が`androidx.constraintlayout.widget.XXXX`(実際は`androidx.constraintlayout.XXXX`)
 - androidx系のクラスがfully qualified nameでコード内に書かれてしまうので、importに変更する
 - 一部クラスがそもそもimport文消された上にfully qualified nameに更新されず、参照エラーになってしまうのでimport文追加する
