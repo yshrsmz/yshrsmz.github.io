@@ -22,3 +22,5 @@ TwitterKit for iOSとTwitterKit for AndroidではコールバックURLの仕様�
 -|-|-
 TwitterKit for Android | `twittersdk://` | [OAuth1aService.java#L59](https://github.com/twitter/twitter-kit-android/blob/c148862c612c66d0f2b50cac40adf4e3d287cb8b/twitter-core/src/main/java/com/twitter/sdk/android/core/internal/oauth/OAuth1aService.java#L59)
 TwitterKit for iOS | `twitterkit-YOUR_CONSUMER_KEY://` | [TWTRLoginURLParser.m#L39](https://github.com/twitter/twitter-kit-ios/blob/2cd78d3d5783d998f6b5fde242d1dd69d32e385d/TwitterKit/TwitterKit/Social/Identity/TWTRLoginURLParser.m#L39)
+
+TwitterKitも近いうちにサポートなくなってしまうのでなんとかしないとなあ…
