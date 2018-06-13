@@ -27,7 +27,7 @@ Also, with Monotweety you can chain tweets as a thread with one single tap(from 
 
 <a href='https://play.google.com/store/apps/details?id=net.yslibrary.monotweety&pcampaignid=blog-product-page'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="200" style="padding: 0;"/></a>
 
-Github: https://github.com/yshrsmz/monotweety
+Github: [https://github.com/yshrsmz/monotweety](https://github.com/yshrsmz/monotweety)
 
 
 ## Android Libraries
@@ -39,3 +39,4 @@ Github: https://github.com/yshrsmz/monotweety
 ## Others
 
 - [Android Dagashi](https://androiddagashi.github.io)
+  - weekly Android news digest for Japanese Android developers.
