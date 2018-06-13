@@ -35,3 +35,8 @@ tags:
 dagger-androidとかサポートライブラリに依存してるやつは勝手に修正してくれるらしく、そのまま使うことができた。
 
 参考: [Convert the project to androidx. by thagikura · Pull Request #436 · google/flexbox-layout](https://github.com/google/flexbox-layout/pull/436)
+
+
+### ※2018/06/13追記
+
+[ConstraintLayout 1.1.2がリリースされ](https://androidstudio.googleblog.com/2018/06/constraintlayout-112.html)、上記のパッケージが違う問題は修正されました。
