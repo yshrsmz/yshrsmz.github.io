@@ -15,6 +15,8 @@ You don't even need to leave your browser.
 
 ![feature](/assets/img/products/omnitweety-android/feature.png)
 
+<a href='https://play.google.com/store/apps/details?id=net.yslibrary.omnitweety&pcampaignid=blog-product-page'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="200"/></a>
+
 ### [Monotweety](https://play.google.com/store/apps/details?id=net.yslibrary.monotweety)
 
 Monotweety is an open-source Twitter client just for tweeting from device's notification area.  
@@ -22,6 +24,8 @@ If you are using Android 7.0 or later, you can literally tweet from notification
 Also, with Monotweety you can chain tweets as a thread with one single tap(from editor dialog).
 
 ![feature](/assets/img/products/monotweety/feature.png)
+
+<a href='https://play.google.com/store/apps/details?id=net.yslibrary.monotweety&pcampaignid=blog-product-page'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="200"/></a>
 
 Github: https://github.com/yshrsmz/monotweety
 
