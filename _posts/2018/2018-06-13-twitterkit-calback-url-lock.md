@@ -28,6 +28,6 @@ TwitterKitも近いうちにサポートなくなってしまうのでなんと�
 
 #### 2018/06/14 追記
 
-twitter-kit-iosのコードを眺めてたら、 コンソールから`twittersdk://`を設定しておけばそれで[動いてくれそうな記述があった](https://github.com/twitter/twitter-kit-ios/blob/b6eb49d149b056d826cbc4b53eaeb39a3ebd591e/TwitterKit/TwitterKit/Social/Identity/TWTRLoginURLParser.h#L34-L45)。
+twitter-kit-iosのコードを眺めてたら、 コンソールから`twittersdk://`を設定しておけばそれで[動いてくれそうな記述があった](https://github.com/twitter/twitter-kit-ios/blob/b6eb49d149b056d826cbc4b53eaeb39a3ebd591e/TwitterKit/TwitterKit/Social/Identity/TWTRLoginURLParser.h#L34-L45)。  
 フォールバック的な挙動にも見えるけど、結論`twittersdk://`だけ設定しておけばよさそう。
 
