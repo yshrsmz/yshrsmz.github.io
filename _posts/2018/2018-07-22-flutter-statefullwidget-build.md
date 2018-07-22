@@ -1,11 +1,12 @@
 ---
 layout: post
-title: [Flutter]なぜStatefullWidgetではなくStateがbuildメソッドを持っているのか
+title: \[Flutter\]なぜStatefullWidgetではなくStateがbuildメソッドを持っているのか
 category: programming
 tags:
   - til
   - flutter
 ---
+
 
 最近趣味と実益を兼ねてFlutterを触っている。
 
