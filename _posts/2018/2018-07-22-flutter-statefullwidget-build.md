@@ -1,6 +1,6 @@
 ---
 layout: post
-title: \[Flutter\]なぜStatefullWidgetではなくStateがbuildメソッドを持っているのか
+title: (Flutter) なぜStatefullWidgetではなくStateがbuildメソッドを持っているのか
 category: programming
 tags:
   - til
