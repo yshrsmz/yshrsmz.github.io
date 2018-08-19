@@ -172,6 +172,6 @@ Dartのパッケージ公開、本当に楽でした。ほぼCLIで終わって�
 
 
 ### 参考
-- [Publishing a Package | Dart](https://www.dartlang.org/tools/pub/publishing)
-- [Pubspec Format | Dart](https://www.dartlang.org/tools/pub/pubspec)
-- [Pub Package Layout Conventions | Dart](https://www.dartlang.org/tools/pub/package-layout)
+- [Publishing a Package|Dart](https://www.dartlang.org/tools/pub/publishing)
+- [Pubspec Format|Dart](https://www.dartlang.org/tools/pub/pubspec)
+- [Pub Package Layout Conventions|Dart](https://www.dartlang.org/tools/pub/package-layout)
