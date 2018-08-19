@@ -7,7 +7,7 @@ tags:
   - Dart
 ---
 
-[unorm_dart]](https://pub.dartlang.org/packages/unorm_dart)というDartのPackageを公開したので公開周りのフローをまとめます。
+[unorm_dart](https://pub.dartlang.org/packages/unorm_dart)というDartのPackageを公開したので公開周りのフローをまとめます。
 
 `pub publish --dry-run` を実行するといい感じにいろいろ教えてくれます。たとえばこんな感じ。
 
