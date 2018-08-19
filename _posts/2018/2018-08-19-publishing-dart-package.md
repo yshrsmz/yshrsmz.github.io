@@ -153,15 +153,14 @@ WebブラウザでアクセスするためのURLが表示されるので、ブ�
 
 無事アカウントの認証ができると、こんな画面が表示されます。ターミナルに戻ると公開処理が完了しているはずです。
 
-30分くらい？待つと [https://pub.dartlang.org](https://pub.dartlang.org) で検索に表示されるようになります。
-
-
 ```
 Authorization received, processing...
 Successfully authorized.
 Uploading... (3.4s)
 Successfully uploaded package.
 ```
+
+30分くらい？待つと [https://pub.dartlang.org](https://pub.dartlang.org) で検索に表示されるようになります。
 
 ---
 
