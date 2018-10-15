@@ -5,7 +5,6 @@ title: 最後にあれしたのいつだっけ？をトラッキングするAnd
   - programming;
 tags:
   - android
-  - twitter
   - sincetimer
 ---
 
