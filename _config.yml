@@ -1,4 +1,4 @@
-title: Theoretical Cat
+title: CodingFeline
 description: Thoughts, stories and ideas
 remote_theme: Sylhare/Type-on-Strap
 url: https://www.yslibrary.net
@@ -40,7 +40,7 @@ theme_settings:
     tags:
       icon: "tags"
       enabled: true
-      
+
   share_buttons:
     facebook: true
     twitter: true
