@@ -9,7 +9,7 @@ tags:
 
 ![feature](/assets/img/products/sincetimer/feature.png)
 
-掲題のとおり、今年の7月末にアプリを[Google Play Storeに公開していました](https://play.google.com/store/apps/details?id=com.codingfeline.sincetimer)。  
+掲題のとおり、今年の7月末にアプリを[Google Play Storeに公開していました](https://play.google.com/store/apps/details?id=com.codingfeline.sincetimer)。気がついたら4ヶ月も下書きのまま放置してしまっていた…  
 
 名前は"SinceTimer(シンスタイマー)"です。
 
