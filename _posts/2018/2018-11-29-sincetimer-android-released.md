@@ -2,7 +2,7 @@
 layout: post
 title: 最後にあれしたのいつだっけ？をトラッキングするAndroidアプリ、SinceTimerをリリースしてた
 category:
-  - programming;
+  - programming
 tags:
   - android
   - sincetimer
