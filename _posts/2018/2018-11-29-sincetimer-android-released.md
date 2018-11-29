@@ -51,7 +51,6 @@ tags:
 - 課金で広告非表示
 - 検索
 
-
 # ※ここから下は技術者向け ----------
 
 ## 使った技術とか
@@ -62,9 +61,10 @@ Android Architecture Components(以後AAC)をガッツリ使ってます。
 最初はSingle Activityな構成にしようかと思ったんですが、「Toolbarの形が大きく異なる場合にどうするの？」という問題をうまく解決できそうになかったので、Activityは各画面で別になっています。  
 この問題、[googlesamples/android-sunflower](https://github.com/googlesamples/android-sunflower)でも[issueがあがっていて](https://github.com/googlesamples/android-sunflower/issues/75)、まだ公式でも意見がまとまっていないようです。うまいこと解決できるといいのですが。
 
-データベースはAACのRoomを使っています。RxJavaやLiveDataによるリアクティブな使い方サポートしていて、ホントに使いやすいです。  
+データベースはAACのRoomを使っています。RxJavaやLiveDataによるリアクティブな使い方をサポートしていて、ホントに使いやすいです。  
 なにより、自分で書いたSQLの結果をクラスに楽にマッピングでき最高です。もうテーブル構成まんまなデータをプレゼンテーション層で使う時代は終わったのです。  
 2.1.0からはFTSやViewもサポートするようなので、今後 `LIKE` を使わない検索の実装にも役立ちそうです。自力でN-gram的なことをしなきゃなんで、また別の困難はありそうですが。
+
 
 ### Architecture?
 
@@ -72,4 +72,9 @@ Clean Architecture x MVIな感じです。
 AACのViewModelがUsecaseとReducerを持ち、画面のState(Kotlinのdata class)をLiveDataでFragmentに公開しています。  
 
 AndroidだとWebの仮想DOM的な差分更新の仕組みがないので、新しいStateとViewの状態を比べて更新の可否を決めるようなコードを書くことになり、若干手間はかかります。  
+
 Stateの更新場所がまとまるのは大変良いので、[AirbnbのMvRx](https://github.com/airbnb/MvRx)とかいろいろ先達を参考にしつつよい方法を模索していきたいです。
+
+
+参考
+- PlayStoreリンク: https://play.google.com/store/apps/details?id=com.codingfeline.sincetimer
