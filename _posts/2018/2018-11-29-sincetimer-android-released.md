@@ -76,4 +76,4 @@ Stateの更新場所がまとまるのは大変良いので、[AirbnbのMvRx](ht
 
 
 参考
-- PlayStoreリンク: https://play.google.com/store/apps/details?id=com.codingfeline.sincetimer
+- PlayStoreリンク: [https://play.google.com/store/apps/details?id=com.codingfeline.sincetimer](https://play.google.com/store/apps/details?id=com.codingfeline.sincetimer)
