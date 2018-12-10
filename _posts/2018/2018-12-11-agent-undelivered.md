@@ -5,7 +5,7 @@ category: diary
 tags:
   - crowdfunding
 ---
-[届かないクラウドファンディング Advent Calendar 2018](https://adventar.org/calendars/3459) 六日目は、AGENTです。
+[届かないクラウドファンディング Advent Calendar 2018](https://adventar.org/calendars/3459) 11日目は、AGENTです。
 
 ## どんなの？
 
