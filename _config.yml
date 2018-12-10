@@ -16,6 +16,7 @@ sidebar_home_link:  true
 theme_settings:
   # meta
   title: CodingFeline
+  avatar: assets/img/logo.png
   description: Thoughts, stories and ideas
   gravatar: 9e8f6ad3eaaca7e727dd2b9ae84cd894
 
