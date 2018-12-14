@@ -19,7 +19,7 @@ tags:
 私の支援したプランは99米ドル、お届け予定時期は2016年2月でした(予想市販価格は149米ドル）。
 
 2015年1月にKickstarterでローンチしました。その後2015年3月に11,649名の支援を受けてプロジェクトは成立します。  
-が、今現在[Kickstarterのページ](https://www.kickstarter.com/projects/265641170/kraftwerk-highly-innovative-portable-power-plant)にいっても「は知的財産権の問題の対象であり、現在利用できません」と表示されるばかりで内容を確認することができません。
+が、今現在[Kickstarterのページ](https://www.kickstarter.com/projects/265641170/kraftwerk-highly-innovative-portable-power-plant)にいっても「知的財産権の問題の対象であり、現在利用できません」と表示されるばかりで内容を確認することができません。
 
 そのため今となっては細かいスペックやアップデートを追うことはできませんが、メールの履歴をさかのぼりつつざっくり何があったのか追ってみましょう。
 
