@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 届かないKraftwerk
+title: 届かないkraftwerk
 category: diary
 tags:
   - crowdfunding
@@ -133,6 +133,8 @@ Innovatin Prize of Saxony 2015にノミネート
 
 
 ## まとめ
+
+訴訟って大変だし、コミュニティへの接し方を間違うと大変なんだなあ、という感じでした。
 
 実はこのプロジェクト、まだ会社の[公式サイト](http://kraftwerkgroup.com/)は生きているし、[公式Twitter](https://twitter.com/hellokraftwerk)もたまに更新があります。
 
