@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kotlin Multiplatform ProjectでKotlin 1.3.20に移行したら出力ファイル名が変わった件
+title: Kotlin Multiplatform ProjectでKotlin 1.3.20に移行したら出力framework名が変わった件
 category: programming
 tags:
   - kotlin
