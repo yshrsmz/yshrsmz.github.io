@@ -1,6 +1,6 @@
 ---
 layout: post
-title: BuildKonfigという、Kotlin Multiplatform Project向けのBuildConfigを作った
+title: Kotlin Multiplatform Project向けのBuildConfig、BuildKonfigを作った
 category: programming
 tags:
   - kotlin
