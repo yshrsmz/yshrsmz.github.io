@@ -9,8 +9,7 @@ tags:
 [BuildKonfig](https://github.com/yshrsmz/BuildKonfig)という、Kotlin Multiplatform Projectでも`build.gradle`からコードに値を埋め込めるGradle Pluginを作った。
 
 これは名前からもわかるように、Androidの`BuildConfig`から着想を得ている。  
-Androidでは、`build.gradle`から`BuildConfig`に任意のフィールドを追加することができる。  
-これがすごく便利で、だいたいレポジトリに含みたくないAPIトークンとか、あるいはフレーバーごとに切り替えたい定数をコードに埋め込むために使われているんじゃないかと思う。
+Androidでは`build.gradle`から`BuildConfig`に任意のフィールドを追加することができる。これがすごく便利で、だいたいレポジトリに含みたくないAPIトークンとか、あるいはフレーバーごとに切り替えたい定数をコードに埋め込むために使われているんじゃないかと思う。
 
 ただ、Kotlin Multiplatform Projectでは今の所、これに相当する機能は提供されていない。
 
