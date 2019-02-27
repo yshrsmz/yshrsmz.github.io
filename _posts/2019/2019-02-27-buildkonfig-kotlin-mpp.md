@@ -179,4 +179,4 @@ Kotlin Multiplatform Project周りはまだ色々整備されてないので今�
 
 ## リンク
 
-- https://github.com/yshrsmz/BuildKonfig
+- [https://github.com/yshrsmz/BuildKonfig](https://github.com/yshrsmz/BuildKonfig)
