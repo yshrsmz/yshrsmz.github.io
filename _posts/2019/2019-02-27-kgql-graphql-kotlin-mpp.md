@@ -109,8 +109,8 @@ internal object UserDocument {
 
 ```
 
-Kotlin Multiplatform Project対応のHttpClient、Ktorと一緒に利用するとこんな感じになります。  
-ちなみにGitHubのAPIです。
+Kotlin Multiplatform Project対応のHttpClient、Ktorと一緒に利用するとこんな感じになる。  
+ちなみにこの例ではGitHubのAPIを使っている。
 
 ```kotlin
 package com.sample
