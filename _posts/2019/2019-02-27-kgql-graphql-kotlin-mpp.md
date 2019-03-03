@@ -195,7 +195,7 @@ buildScript {
 ```gradle
 // ./common/build.gradle
 apply plugin: 'org.jetbrains.kotlin.multiplatform'
-apply plugin: 'com.codingfeline.buildkonfig'
+apply plugin: 'com.codingfeline.kgql'
 
 repositories {
      maven { url "https://dl.bintray.com/yshrsmz/kgql" }
