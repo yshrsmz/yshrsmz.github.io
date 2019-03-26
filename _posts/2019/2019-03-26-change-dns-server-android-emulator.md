@@ -37,13 +37,17 @@ log-facility=/usr/local/var/log/dnsmasq/dnsmasq.log
 
 ## dnsmasqの起動
 
-`$ sudo brew services start dnsmasq`
+```
+$ sudo brew services start dnsmasq
+```
 
 ## Androidエミュレータの起動
 
 DNSサーバを設定するためコマンドラインから起動する
 
-`$ emulator -avd AVD_NAME -dns-server 127.0.0.1`
+```
+$ emulator -avd AVD_NAME -dns-server 127.0.0.1
+```
 
 エミュレータの名前は `$ emulator -list-avds` で取得できる。
 
