@@ -4,7 +4,7 @@ title: MacでAndroidエミュレータのDNSサーバを変える
 category: programming
 tags:
   - android
-  - Mac
+  - mac
 ---
 
 Androidエミュレータのhostsを変えるのはちょっと手間なので、ローカルでDNSサーバをたててなんとかしてみる。
