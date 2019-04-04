@@ -31,7 +31,7 @@ MVI的なアーキテクチャになっていて、 `FooViewModel.states` がSta
 問題は、この `FooViewModel.states` をどうやってActivity/Fragmentのライフサイクルにあわせて使うか、ということだ。  
 Channelは現状pause/resumeができないので、なんとかする必要がある。
 
-パッと思いついたのはLiveDataを実装する方法とLifecycleObserverを実装する方法だ。
+パッと思いついたのは `LiveData` を実装する方法と `LifecycleObserver` を実装する方法だ。
 
 ```kotlin
 class ChannelLifecycleObserver(
@@ -138,7 +138,7 @@ class FooActivity: AppCompatActivity() {
 かと言って `BroadcastChannel`  のまま公開するわけにもいかないので、まあ仕方ない。  
 ViewModel側で最新の値はキャッシュしている前提で、 `ReceiveChannel` を毎回作り直すことにした。
 
-LiveDataのパターンもだいたい同じ感じでできるはず。
+LiveDataのパターンもだいたい同じ感じでできるはずだけど、LiveData内でのキャッシュとか考え始めたらめんどくさくなって深く考えてない。
 
 ```kotlin
 class ChannelLiveData<T>(
@@ -168,3 +168,5 @@ fun <T> (() -> ReceiveChannel<T>).toLiveData(): LiveData<T> = ChannelLiveData(th
 ```
 
 どっちの実装もそうだけど、`onResume` とか画面のライフサイクル内で複数回呼ばれる場所に書いてしまうと実行されるたびにChannelの購読数が増え、処理が重複してしまうので注意が必要。
+
+単純に `LiveData` の `onActive/onInactive` でフラグをトグルして `setValue` 呼ぶかどうか判定する感じにしたらもしかしたら一番楽かもしれない。でもなんか購読しっぱなしが気持ち悪くてなかったことにした。
