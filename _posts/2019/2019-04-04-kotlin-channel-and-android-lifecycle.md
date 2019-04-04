@@ -7,6 +7,8 @@ tags:
   - android
 ---
 
+Kotlin CoroutinesのChannelをAndroidでいい感じに使うにはどうしたらいいかなー、という話。
+
 ```kotlin
 class FooViewModel {
     private var _state: State
