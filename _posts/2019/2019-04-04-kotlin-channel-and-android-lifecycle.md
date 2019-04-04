@@ -25,7 +25,7 @@ class FooViewModel {
 
 ちょーざっくりこんな感じのViewModelがあるとする。  
 MVI的なアーキテクチャになっていて、 `FooViewModel.states` がStateの更新を通知してくれる。  
-このViewModelはKotlin Multiplatformなモジュールに存在し、Android/iOSで使い回すためにLiveDataを使うことはできない。  
+このViewModelはKotlin Multiplatformなモジュールに存在し、Android/iOSで使い回すために `LiveData` を使うことはできない。  
 適当なObservableを実装することもできるけど、まあせっかくなのでKotlin CoroutinesのChannelを使ってみようと思いこんな感じになっている。
 
 問題は、この `FooViewModel.states` をどうやってActivity/Fragmentのライフサイクルにあわせて使うか、ということだ。  
@@ -111,7 +111,7 @@ fun <E> (() -> ReceiveChannel<E>).consumeEach(lifecycleObserver: ChannelLifecycl
 }
 ```
 
-実装はシンプルで、LiveDataの処理を参考にしつつViewを更新できる状態になったらChannelを購読開始、Viewに触れない状態になったらキャッシュしておいたJobをキャンセル、としている。
+実装はシンプルで、`LiveData` の処理を参考にしつつViewを更新できる状態になったらChannelを購読開始、Viewに触れない状態になったらキャッシュしておいたJobをキャンセル、としている。
 Activity/Fragmentでこんな感じに使う。
 
 ```kotlin
@@ -138,7 +138,7 @@ class FooActivity: AppCompatActivity() {
 かと言って `BroadcastChannel`  のまま公開するわけにもいかないので、まあ仕方ない。  
 ViewModel側で最新の値はキャッシュしている前提で、 `ReceiveChannel` を毎回作り直すことにした。
 
-LiveDataのパターンもだいたい同じ感じでできるはずだけど、LiveData内でのキャッシュとか考え始めたらめんどくさくなって深く考えてない。
+`LiveData` のパターンもだいたい同じ感じでできるはずだけど、 `LiveData` 内でのキャッシュとか考え始めたらめんどくさくなって深く考えてない。
 
 ```kotlin
 class ChannelLiveData<T>(
