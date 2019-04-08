@@ -10,6 +10,8 @@ tags:
 
 How should we handle Kotlin Coroutines' channel in Android's components, especially in Activity/Fragment?
 
+This is the English translation of the [previous post](https://www.yslibrary.net/2019/04/04/kotlin-channel-and-android-lifecycle/).
+
 
 ```kotlin
 class FooViewModel {
