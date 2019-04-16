@@ -80,12 +80,12 @@ Personal Data is collected for the following purposes and using the following se
 This type of service allows this Application to access Data from your account on a third party service and perform actions with it.
 These services are not activated automatically, but require explicit authorization by the User.
 
-#### Twitter ccount access(Twitter, Inc.)
+### Google Drive account access(Google)
 
-This service allows this Application to connect with the User's account on the Twitter social network, provided by Twitter, Inc.
+This service allows this Application to connect with the User's account on Google Drive, provided by Google.
 Personal Data collected: various types of Data as specified in the privacy policy of the service.
 
-Place of processing: US – [Privacy Poclicy](https://twitter.com/privacy)
+Place of processing: US – [Privacy Policy](https://support.google.com/drive/answer/2450387?hl=en). Privacy Shield participant.
 
 ### Advertising
 
@@ -120,6 +120,16 @@ Personal Data collected: Cookies, unique device identifiers for advertising (Goo
 
 Place of processing: USA – [Privacy Policy](https://www.google.com/policies/privacy/).
 
+### Backup saving and management
+
+This type of services allows the Owner to save and manage backups of this Application on external servers managed by the service provider itself. The backups may include the source code and content as well as the data that the User provides to this Application.
+
+#### Backup on Google Drive (Google)
+
+Google Drive is a service to save and manage backups provided by Google Inc.
+Personal Data collected: various types of Data as specified in the privacy policy of the service.
+
+Place of processing: US – [Privacy Policy](https://support.google.com/drive/answer/2450387?hl=en).
 
 ### Infrastructure monitoring
 
@@ -221,4 +231,4 @@ This privacy statement has been prepared based on provisions of multiple legisla
 
 This privacy policy relates solely to this Application, if not stated otherwise within this document.
 
-last updated: May 25, 2018
+last updated: April 16, 2019
