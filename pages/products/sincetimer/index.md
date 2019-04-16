@@ -1,10 +1,8 @@
 ---
 layout: page
-title: PRODUCTS
+title: SinceTimer
 permalink: /products/sincetimer/
 ---
-
-### [SinceTimer](https://play.google.com/store/apps/details?id=com.codingfeline.sincetimer)
 
 Have you ever wondered that "when was the last time I did this?"  
 SinceTimer makes it easy and enjoyable to track any events in your life.  
