@@ -37,10 +37,6 @@ theme_settings:
   # scripts/features
   google_analytics: UA-61198465-1
   disqus_shortname: yslibrary
-  special_page:
-    tags:
-      icon: "tags"
-      enabled: true
 
   share_buttons:
     facebook: true

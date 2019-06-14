@@ -2,6 +2,7 @@
 layout: page
 title: SinceTimer
 permalink: /products/sincetimer/
+hide: true
 ---
 
 Have you ever wondered that "when was the last time I did this?"  
