@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Kotlin Coroutines/Channel from Swift
+title: Using Kotlin Coroutines and Channel from Swift
 category: programming
 tags:
   - kotlin
