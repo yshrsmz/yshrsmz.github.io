@@ -13,8 +13,8 @@ A very naive way is to move those "non-common" test cases to platform-specific t
 
 So here's the thing. Kotlin Multiplatform Project has 'expect/actual mechanism', with which you can provide platform-specific declarations. With this, you can declare custom `@Ignore` annotation, which selectively ignores test cases on specific platforms.
 
-Here's how it work.
-Assume you have 2 target platforms; Android and iOS. You want to create an annotation which tells test runner to ignore the annotated cases/classes on iOS.
+Assume you have 2 target platforms; Android and iOS.   
+You want to create an annotation which tells test runner to ignore the annotated cases/classes on iOS.
 
 First, you need to need the 'expect' declaration in common code.
 
@@ -37,4 +37,4 @@ actual annotation class IgnoreIos
 actual typealias IgnoreIos = kotlin.test.Ignore
 ```
 
-The key point here is in iOS 'IgnoreIos' is a typealias for `kotlin.test.Ignore`, but in Android, it's just a useless annotation. So it works as `kotlin.test.Ignore` in iOS but does nothing in Android.
+The key point here is in iOS 'IgnoreIos' is a typealias for `kotlin.test.Ignore`, but it's just a useless annotation in Android. So it works as `kotlin.test.Ignore` in iOS but does nothing in Android.
