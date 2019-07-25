@@ -49,6 +49,13 @@ You will never forget important events.
 - [LicenseAdapter](https://github.com/yshrsmz/LicenseAdapter)
 - [SimplePreferences](https://github.com/yshrsmz/simple-preferences)
 
+## Kotlin Multiplatform Libraries
+
+- [BuildKonfig](https://github.com/yshrsmz/BuildKonfig)
+  - BuildConfig for Kotlin Multiplatform Project
+- [kgql](https://github.com/yshrsmz/kgql)
+  - GraphQL Document wrapper generator for Kotlin Multiplatform Project and Android
+
 ## Others
 
 - [Android Dagashi](https://androiddagashi.github.io)
