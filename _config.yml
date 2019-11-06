@@ -27,12 +27,13 @@ header_feature_image: assets/img/dactyl.jpeg
 footer_text: Copyright 2019
 
 # icons
-rss: true
-email_address: the.phantom.bane+blog@gmail.com
-linkedin: https://www.linkedin.com/in/yshrsmz/
-stack_exchange: https://stackexchange.com/users/456702/yshrsmz
-github: yshrsmz
-twitter: _yshrsmz
+theme_settings:
+  rss: true
+  email_address: the.phantom.bane+blog@gmail.com
+  linkedin: https://www.linkedin.com/in/yshrsmz/
+  stack_exchange: https://stackexchange.com/users/456702/yshrsmz
+  github: yshrsmz
+  twitter: _yshrsmz
 
 # scripts/features
 google_analytics: UA-61198465-1
