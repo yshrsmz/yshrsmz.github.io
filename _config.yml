@@ -13,42 +13,42 @@ paginate_path: "page:num"
 
 sidebar_home_link:  true
 
-theme_settings:
-  # meta
-  title: CodingFeline
-  avatar: assets/img/logo.png
-  description: Thoughts, stories and ideas
-  gravatar: 9e8f6ad3eaaca7e727dd2b9ae84cd894
+## THEME-SPECIFIC CONFIGURATION
+# meta
+title: CodingFeline
+avatar: assets/img/logo.png
+description: Thoughts, stories and ideas
+gravatar: 9e8f6ad3eaaca7e727dd2b9ae84cd894
 
-  # header/footer
-  header_text: >
-    <p>Thoughts, stories and ideas</p>
-  header_feature_image: assets/img/dactyl.jpeg
-  footer_text: Copyright 2019
+# header/footer
+header_text: >
+  <p>Thoughts, stories and ideas</p>
+header_feature_image: assets/img/dactyl.jpeg
+footer_text: Copyright 2019
 
-  # icons
-  rss: true
-  email_address: the.phantom.bane+blog@gmail.com
-  linkedin: https://www.linkedin.com/in/yshrsmz/
-  stack_exchange: https://stackexchange.com/users/456702/yshrsmz
-  github: yshrsmz
-  twitter: _yshrsmz
+# icons
+rss: true
+email_address: the.phantom.bane+blog@gmail.com
+linkedin: https://www.linkedin.com/in/yshrsmz/
+stack_exchange: https://stackexchange.com/users/456702/yshrsmz
+github: yshrsmz
+twitter: _yshrsmz
 
-  # scripts/features
-  google_analytics: UA-61198465-1
-  disqus_shortname: yslibrary
+# scripts/features
+google_analytics: UA-61198465-1
+disqus_shortname: yslibrary
 
-  share_buttons:
-    facebook: true
-    twitter: true
-    google_plus: true
-    tumblr:
-    pinterest:
-    pocket:
-    reddit: true
-    linkedin:
-    wordpress:
-    email: true
+share_buttons:
+  facebook: true
+  twitter: true
+  google_plus: true
+  tumblr:
+  pinterest:
+  pocket:
+  reddit: true
+  linkedin:
+  wordpress:
+  email: true
 
 plugins:
   - jekyll-feed
