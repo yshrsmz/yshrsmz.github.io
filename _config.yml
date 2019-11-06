@@ -34,22 +34,22 @@ theme_settings:
   stack_exchange: https://stackexchange.com/users/456702/yshrsmz
   github: yshrsmz
   twitter: _yshrsmz
+  share_buttons:
+    facebook: true
+    twitter: true
+    google_plus: true
+    tumblr:
+    pinterest:
+    pocket:
+    reddit: true
+    linkedin:
+    wordpress:
+    email: true
 
 # scripts/features
 google_analytics: UA-61198465-1
 disqus_shortname: yslibrary
 
-share_buttons:
-  facebook: true
-  twitter: true
-  google_plus: true
-  tumblr:
-  pinterest:
-  pocket:
-  reddit: true
-  linkedin:
-  wordpress:
-  email: true
 
 plugins:
   - jekyll-feed
