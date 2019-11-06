@@ -23,7 +23,7 @@ class SomeTest {
     fun tearDown() {}
 
     @Test
-    fun `It should do something() {}
+    fun `It should do something`() {}
 }
 ```
 
@@ -111,4 +111,4 @@ androidTestは、instrumentation testのような顔をしていますがjvm上�
 
 `./gradlew testDebugUnitTest`とかやったらRobolectricを使ってcommonTestのテストケースが実行されます。
 
-このコードは別モジュールに切り出してテスト用ライブラリとして運用するとよさそうです。
+このコードは別モジュールに切り出してテスト用ライブラリとして運用するとよさそう。
