@@ -4,10 +4,6 @@ remote_theme: Sylhare/Type-on-Strap
 url: https://www.yslibrary.net
 permalink: /:year/:month/:day/:title/
 
-author:
-  author: Yasuhiro Shimizu
-  url: https://twitter.com/_yshrsmz
-
 paginate: 10
 paginate_path: "page:num"
 
@@ -25,26 +21,6 @@ header_text: >
   <p>Thoughts, stories and ideas</p>
 header_feature_image: assets/img/dactyl.jpeg
 footer_text: Copyright 2019
-
-# icons
-theme_settings:
-  rss: true
-  email_address: the.phantom.bane+blog@gmail.com
-  linkedin: https://www.linkedin.com/in/yshrsmz/
-  stack_exchange: https://stackexchange.com/users/456702/yshrsmz
-  github: yshrsmz
-  twitter: _yshrsmz
-  share_buttons:
-    facebook: true
-    twitter: true
-    google_plus: true
-    tumblr:
-    pinterest:
-    pocket:
-    reddit: true
-    linkedin:
-    wordpress:
-    email: true
 
 # scripts/features
 google_analytics: UA-61198465-1
