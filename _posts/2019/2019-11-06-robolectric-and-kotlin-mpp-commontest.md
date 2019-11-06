@@ -105,7 +105,7 @@ iOS向けのcommonTestはiOSシミュレータ上で実行されるので(そう
 
 androidTestは、instrumentation testのような顔をしていますがjvm上で動くためRobolectricが必要になります。
 
-ここで使っている`androidx.test.ext.junit.runners.AndroidJUnit4`はクロスプラットフォーム対応のテストランナーで、実行環境に応じてテストランナーをいい感じに切り替えてくれます。jvm環境だったら勝手に`RobolectricTestRunner`を使ってくれるスグレモノです。
+ここで使っている`androidx.test.ext.junit.runners.AndroidJUnit4`はクロスプラットフォーム対応のテストランナーで、実行環境に応じてテストランナーをいい感じに切り替えてくれます。jvm環境だったら勝手に`RobolectricTestRunner`を使ってくれるスグレモノです。ちゃんと設定をすればinstrumentation testでも同じテストケースが使えちゃうはず。
 
 あとは適当にテストケースを書いて、`androidTest/resources/your/package/robolectric.properties`に諸々Robolectricの設定を書いていけば終わりです。
 
