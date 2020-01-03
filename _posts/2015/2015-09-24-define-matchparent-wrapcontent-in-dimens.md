@@ -1,8 +1,7 @@
 ---
 layout: post
 title: (Android) dimens.xmlでmatch_parent/wrap_contentを定義する
-category:
-  - programming
+category: programming
 tags:
   - android
 ---

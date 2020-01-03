@@ -1,8 +1,7 @@
 ---
 layout: post
 title: (Ubuntu) /bootの容量がなくなった時にすること
-category:
-  - programming
+category: programming
 tags:
   - til
   - ubuntu

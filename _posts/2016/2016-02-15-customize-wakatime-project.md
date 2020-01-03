@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Wakatimeでプロジェクトの名前を指定する
-category:
-  - programming
+category: programming
 tags:
   - til
 ---

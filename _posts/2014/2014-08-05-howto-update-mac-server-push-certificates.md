@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Mac OSX 10.9(Mavericks) Server でプッシュ通知サービスの証明書を更新する
-category:
-  - programming
+category: programming
 tags:
   - mac
 ---

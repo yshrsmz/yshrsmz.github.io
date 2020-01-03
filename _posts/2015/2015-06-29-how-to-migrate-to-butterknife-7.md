@@ -1,8 +1,7 @@
 ---
 layout: post
 title: (Android) ButterKnife 7.0への移行ガイド
-category:
-  - programming
+category: programming
 tags:
   - android
   - java

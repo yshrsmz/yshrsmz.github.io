@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Recovery/FastbootモードのAndroid端末をUbuntuに認識させる 
-category:
-  - programming;
+category: programming;
 tags:
   - android
   - ubuntu

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: DartのPackage(ライブラリ)を公開する
-category:
-  - programming
+category: programming
 tags:
   - Dart
 ---

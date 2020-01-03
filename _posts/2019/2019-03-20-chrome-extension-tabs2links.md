@@ -1,8 +1,7 @@
 ---
 layout: post
 title: ChromeのタブからMarkdown記法のリンクを生成する拡張機能、Tabs2Linksを作った
-category:
-  - programming
+category: programming
 tags:
   - chrome-extension
   - javascript

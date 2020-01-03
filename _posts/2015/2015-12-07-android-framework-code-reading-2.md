@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 「まったりAndroid Framework Code Reading &#35;2」に参加してきた
-category:
-  - programming
+category: programming
 tags:
   - android
 ---

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Observable&#35;intervalはunsubscribeしただけではonCompleteが呼ばれない
-category:
-  - programming
+category: programming
 tags:
   - til
   - java

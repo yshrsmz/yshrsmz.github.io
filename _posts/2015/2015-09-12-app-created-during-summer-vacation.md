@@ -1,8 +1,7 @@
 ---
 layout: post
 title: (Android) 夏休みだったので画像を検索してひたすらファボるAndroid用Twitterアプリつくった
-category:
-  - programming
+category: programming
 tags:
   - android
 ---

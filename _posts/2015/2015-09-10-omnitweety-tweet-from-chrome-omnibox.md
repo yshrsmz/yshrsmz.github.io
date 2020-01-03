@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 最強のTwitterクライアント…ではないけど、URL共有特化Chrome Extension作った
-category:
-  - programming
+category: programming
 tags:
   - chrome-extension
   - javascript

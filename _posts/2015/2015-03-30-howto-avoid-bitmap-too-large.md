@@ -1,8 +1,7 @@
 ---
 layout: post
 title: (Android) Bitmap too large to 〜が出た時の対処法
-category:
-  - programming
+category: programming
 tags:
   - android
   - java

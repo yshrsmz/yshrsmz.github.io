@@ -1,8 +1,7 @@
 ---
 layout: post
 title: ChromeExtensionをウェブストアに公開する
-category:
-  - programming
+category: programming
 tags:
   - chrome-extension
 ---

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: (Android) アプリのbackground/foregroundを検知する
-category:
-  - programming
+category: programming
 tags:
   - android
 ---

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Parse.comのパスワードリセット画面をカスタマイズする
-category:
-  - programming
+category: programming
 tags:
   - parse
 ---

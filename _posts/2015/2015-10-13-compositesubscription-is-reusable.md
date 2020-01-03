@@ -1,8 +1,7 @@
 ---
 layout: post
 title: CompositeSubscriptionは再利用できる
-category:
-  - programming
+category: programming
 tags:
   - java
   - rxjava

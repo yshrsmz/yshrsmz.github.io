@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Windowsでnode.jsを動かすには
-category:
-  - programming
+category: programming
 tags:
   - windows
   - nodejs

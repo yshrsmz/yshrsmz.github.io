@@ -1,8 +1,7 @@
 ---
 layout: post
 title: ReactNative for Androidで実機をデバッグに使うには
-category:
-  - programming
+category: programming
 tags:
   - android
   - reactnative
