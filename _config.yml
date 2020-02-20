@@ -29,3 +29,5 @@ disqus_shortname: yslibrary
 
 plugins:
   - jekyll-feed
+
+include: [.well-known]
