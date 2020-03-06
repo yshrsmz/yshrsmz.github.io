@@ -1,33 +1,38 @@
-title: CodingFeline
-description: Thoughts, stories and ideas
-remote_theme: Sylhare/Type-on-Strap
 url: https://www.yslibrary.net
 permalink: /:year/:month/:day/:title/
 
-paginate: 10
-paginate_path: "page:num"
-
-sidebar_home_link:  true
-
-## THEME-SPECIFIC CONFIGURATION
-# meta
+# THEME-SPECIFIC CONFIGURATION
 title: CodingFeline
-avatar: assets/img/logo.png
 description: Thoughts, stories and ideas
-gravatar: 9e8f6ad3eaaca7e727dd2b9ae84cd894
-
-# header/footer
-header_text: >
-  <p>Thoughts, stories and ideas</p>
+avatar: assets/img/logo.png
+favicon: assets/favicon.ico
+header_text: <p>Thoughts, stories and ideas</p>
 header_feature_image: assets/img/dactyl.jpeg
-footer_text: Copyright 2019
+footer_text: >
+  Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
-# scripts/features
+# Blog
+excerpt: true
+post_navigation: true
+color_image: /assets/img/lineart.png
+
+# Features
+katex: true
 google_analytics: UA-61198465-1
 disqus_shortname: yslibrary
 
+# PAGINATIOn
+paginate: 10
+paginate_path: "page:num"
 
-plugins:
-  - jekyll-feed
+# BUILD SETTINGS
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: :compressed
+plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
+exclude: [".jekyll-cache", "Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", ".idea", "vendor/*",
+          "LICENSE", "README.md", "screenshot.png", "assets/package.json", "assets/node_modules", "assets/gulpfile.js"]
 
 include: [.well-known]
