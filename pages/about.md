@@ -11,5 +11,5 @@ Android and JavaScript lover.
 
 ## Support me
 
-PayPal: https://paypal.me/yshrsmz  
-GitHub Sponsors: https://github.com/sponsors/yshrsmz 
+PayPal: [https://paypal.me/yshrsmz](https://paypal.me/yshrsmz)  
+GitHub Sponsors: [https://github.com/sponsors/yshrsmz](https://github.com/sponsors/yshrsmz) 
