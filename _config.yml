@@ -8,8 +8,7 @@ avatar: assets/img/logo.png
 favicon: assets/favicon.ico
 header_text: <p>Thoughts, stories and ideas</p>
 header_feature_image: assets/img/dactyl.jpeg
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+footer_text: © 2020, yshrsmz
 
 # Blog
 excerpt: true
