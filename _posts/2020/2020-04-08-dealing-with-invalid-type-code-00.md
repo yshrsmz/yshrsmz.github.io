@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "(Kotlin MPP) 'ERROR: Cause: invalid type code: 00' が出たときにすること"
+title: "(KMP) 'ERROR: Cause: invalid type code: 00' が出たときにすること"
 category: programming
 tags:
   - kotlin
-  - TIL
+  - til
+  - kmp
 ---
 
 IntelliJ IDEAでKotlin Multiplatform Projectを開くと、たまにこんなエラーでGradle Projectの同期に失敗することがある。

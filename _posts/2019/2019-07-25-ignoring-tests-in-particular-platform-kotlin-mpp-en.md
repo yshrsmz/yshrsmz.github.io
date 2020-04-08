@@ -1,9 +1,10 @@
 ---
 layout: post
-title: (Kotlin MPP) Ignore some commonTests in a specific platform
+title: (KMP) Ignore some commonTests in a specific platform
 category: programming
 tags:
   - kotlin
+  - kmp
   - english
 ---
 

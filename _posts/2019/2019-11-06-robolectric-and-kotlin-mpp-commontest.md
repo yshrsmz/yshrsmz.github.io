@@ -1,9 +1,10 @@
 ---
 layout: post
-title: (Kotlin MPP) commonTestをRobolectricで実行する
+title: (KMP) commonTestをRobolectricで実行する
 category: programming
 tags:
   - kotlin
+  - kmp
 ---
 
 AndroidXの`androidx.test.ext:junit`を利用するとサクッとできます。

@@ -4,6 +4,7 @@ title: Kotlin Multiplatform Project向けのGraphQLラッパー生成ライブ�
 category: programming
 tags:
   - kotlin
+  - kmp
 ---
 
 AndroidとKotlin Multiplatform Projectで使える、GraphQLのドキュメントからコードを生成するGradle Pluginを作った。  
@@ -175,7 +176,7 @@ GraphQL基本的にただのPOSTなので、戻り値は好きにパースして
 
 Kotlinは1.3.20以降。  
 Gradleは5.1.1以降を推奨。Jetifier使わなければ4.10でも動くかも。  
-一応Android ProjectでもKotlin MPPでも動くはず
+一応Android ProjectでもKMPでも動くはず
 
 ```gradle
 // ./build.gradle
@@ -202,7 +203,7 @@ repositories {
 }
 
 kotlin {
-    // Kotlin MPPのターゲット設定
+    // KMPのターゲット設定
     jvm()
     iosX64('ios')
 }

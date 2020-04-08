@@ -4,11 +4,12 @@ title: Kotlin Multiplatform ProjectでKotlin 1.3.20に移行したら出力frame
 category: programming
 tags:
   - kotlin
+  - kmp
 ---
 
-[Kotlin 1.3.20がリリースされた](https://blog.jetbrains.com/kotlin/2019/01/kotlin-1-3-20-released/)ので、早速Kotlin MPP(Android/iOS)なプロジェクトでバージョンアップしてみた。
+[Kotlin 1.3.20がリリースされた](https://blog.jetbrains.com/kotlin/2019/01/kotlin-1-3-20-released/)ので、早速KMP(Android/iOS)なプロジェクトでバージョンアップしてみた。
 
-ほとんど考えることはないんだけど、一箇所、Kotlin MPPで対応プラットフォームを指定する箇所だけちょっと躓いた。
+ほとんど考えることはないんだけど、一箇所、KMPで対応プラットフォームを指定する箇所だけちょっと躓いた。
 
 今まではターゲットは下記のように設定していた。
 

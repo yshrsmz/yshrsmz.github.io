@@ -4,6 +4,7 @@ title: Kotlin Multiplatform Projectで考えることいろいろ
 category: programming
 tags:
   - kotlin
+  - kmp
 ---
 
 グダグダ書くよ
@@ -96,7 +97,7 @@ actual val backgroundContext: CoroutineContext = ApplicationDispatcher
 ## freezing
 
 Kotlin/Nativeでは[Concurrencyのモデル](https://github.com/JetBrains/kotlin-native/blob/master/CONCURRENCY.md)がJVMとはかなり異なっている。  
-`Worker`というAPIを使えば並列処理はできるけど、そもそもKotlin/NativeにしかないAPIなのでKotlin MPPでcommonコードから扱いたいときは各プラットフォーム用の抽象化が難しい。
+`Worker`というAPIを使えば並列処理はできるけど、そもそもKotlin/NativeにしかないAPIなのでKMPでcommonコードから扱いたいときは各プラットフォーム用の抽象化が難しい。
 
 また、Workerとメインスレッドでオブジェクトをやり取りする際はオブジェクトを`freeze`しなければならない。`freeze`したオブジェクトは変更不可能になり、`var`で宣言した値でも再アサインしようとすると`InvalidMutabilityException`が投げられる(そう、ランタイムの特性なのだ！)。  
 また、`freeze`されたオブジェクトを参照してたり参照したりしてるオブジェクト(オブジェクトのサブグラフ)も`freeze`されるのでよくわからないことになる。  

@@ -4,6 +4,7 @@ title: Kotlin Multiplatform Project向けのBuildConfig、BuildKonfigを作っ�
 category: programming
 tags:
   - kotlin
+  - kmp
 ---
 
 [BuildKonfig](https://github.com/yshrsmz/BuildKonfig)という、Kotlin Multiplatform Projectでも`build.gradle`からコードに値を埋め込めるGradle Pluginを作った。
@@ -43,7 +44,7 @@ apply plugin: 'org.jetbrains.kotlin.multiplatform'
 apply plugin: 'com.codingfeline.buildkonfig'
 
 kotlin {
-    // Kotlin MPPのターゲット設定
+    // KMPのターゲット設定
     android()
     iosX64('ios')
 }
