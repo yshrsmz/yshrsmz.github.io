@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (Kotlin MPP) "ERROR\: Cause\: invalid type code\: 00" が出たときにすること
+title: "(Kotlin MPP) 'ERROR: Cause: invalid type code: 00' が出たときにすること"
 category: programming
 tags:
   - kotlin
