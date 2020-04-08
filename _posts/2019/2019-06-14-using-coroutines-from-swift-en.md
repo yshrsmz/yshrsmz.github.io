@@ -4,6 +4,7 @@ title: Using Kotlin Coroutines and Channel from Swift
 category: programming
 tags:
   - kotlin
+  - kmp
   - swift
   - english
 ---
