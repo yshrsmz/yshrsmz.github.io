@@ -22,7 +22,7 @@ disqus_shortname: yslibrary
 
 # PAGINATIOn
 paginate: 10
-paginate_path: "page:num"
+paginate_path: "/page:num"
 
 # BUILD SETTINGS
 markdown: kramdown
