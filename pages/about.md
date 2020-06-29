@@ -9,6 +9,8 @@ tags:
 Yasuhiro Shimizu  
 Android and JavaScript lover.
 
+Please refer to [PRODUCTS](https://www.yslibrary.net/products/) page for my personal works.
+
 ## Support me
 
 PayPal: [https://paypal.me/yshrsmz](https://paypal.me/yshrsmz)  
