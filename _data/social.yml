@@ -1,6 +1,5 @@
-
 # Icons on the footer
-rss: true         # Make sure you created a feed.xml with feed.xml layout
+rss: true
 email_address:    # Full email address, e.g. "sam@example.com"
 behance:
 bitbucket:
@@ -23,6 +22,10 @@ twitter: _yshrsmz
 vimeo:
 wordpress:
 youtube:
+
+# rss specify feed path
+feed:
+  path: http://feeds.feedburner.com/TheoreticalCat
 
 # Share button options
 share:
