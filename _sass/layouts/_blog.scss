@@ -7,7 +7,7 @@
   font-size: 1.2em;
   text-align: center;
   color: $header-text-color;
-  background: $header-background-color no-repeat;
+  background: no-repeat $header-background-color;
   background-size: $feature-image-size;
 
   /* --- Responsive --- */
@@ -42,7 +42,7 @@
 }
 
 #main {
-  background-position: 100% 0, 0 center, center top;
+  background-position: 100% -50px, 0 center, center top;
 }
 
 /* --- Post listing --- */

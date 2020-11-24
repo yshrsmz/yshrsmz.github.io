@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "type-on-strap"
-  spec.version       = "2.1.0"
+  spec.version       = "2.3.0"
   spec.authors       = ["Sylhare","Rohan Chandra"]
   spec.email         = ["sylhare@outlook.com", "hellorohan@outlook.com"]
 
@@ -20,21 +20,12 @@ Gem::Specification.new do |spec|
   end
 
   spec.post_install_message =  <<~MSG
-                                -------------------------------------------------------------------------------------
-                                Type on strap v2+ is using Jekyll 4.0:
-
-                                  * Please make sure you have updated your _config.yml.
-
-                                  * Use _data/ for social and language customization
-
-                                  * Visit https://github.com/sylhare/Type-on-Strap for more info.
-
-                                -------------------------------------------------------------------------------------
+                               Thanks for using Type on strap v2+!
                                MSG
 
   spec.required_ruby_version   = '>= 2.4.0'
     
-  spec.add_runtime_dependency "jekyll", ">= 3.5", "< 5.0"
+  spec.add_runtime_dependency "jekyll", ">= 3.8", "< 5.0"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.9"
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
   spec.add_runtime_dependency "jekyll-seo-tag", "~>2.6"

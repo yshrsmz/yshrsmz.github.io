@@ -6,6 +6,8 @@ title: CodingFeline
 description: Thoughts, stories and ideas
 avatar: assets/img/logo.png
 favicon: assets/favicon.ico
+
+# Header and footer text
 header_text: <p>Thoughts, stories and ideas</p>
 header_feature_image: assets/img/dactyl.jpeg
 footer_text: © 2020, yshrsmz
@@ -17,7 +19,9 @@ color_image: /assets/img/lineart.png
 
 # Features
 katex: true
+mermeid: false
 google_analytics: UA-61198465-1
+cookie_consent: true
 disqus_shortname: yslibrary
 
 # PAGINATIOn

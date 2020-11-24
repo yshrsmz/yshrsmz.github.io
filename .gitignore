@@ -5,8 +5,6 @@
 .DS_Store
 
 # Byte-compiled / optimized / DLL files
-_site/
-.jekyll-metadata
 *.manifest
 *.spec
 
@@ -19,7 +17,7 @@ _development_tool/*
 .bundle/*
 
 # Theme Gem files
-# Gemfile.lock
+Gemfile.lock
 *.gem
 .gems
 jekyll-theme-type-on-strap.gemspec
@@ -30,3 +28,4 @@ jekyll-theme-type-on-strap.gemspec
 *copy.md
 .jekyll-cache/*
 test/*
+assets/package-lock.json

@@ -13,10 +13,6 @@ figure {
   box-sizing: content-box;
 }
 
-pre {
-  overflow-x: scroll;
-}
-
 html {
   background: $background-color;
 }
@@ -76,6 +72,8 @@ object,
 video {
   max-width: 100%;
   padding: 0 9%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img[align=left] {
@@ -103,12 +101,6 @@ img[align=right] {
   }
   p, li, td {
     font-size: 0.8em;
-  }
-  li li {
-    font-size: 0.95em;
-  }
-  li li * {
-    font-size: 1em;
   }
 
   iframe,
@@ -163,9 +155,9 @@ footer *:last-child {
 }
 
 table {
+  word-wrap: break-word;
   table-layout: fixed;
   width: 100%;
-  word-wrap: break-word;
   display: inline-block;
 }
 
@@ -209,6 +201,7 @@ dl,
 // Lists within lists
 li {
   p {
+    font-size: inherit;
     display: inline;
   }
 
