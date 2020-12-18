@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 楽天モバイルをAndroid11なOnePlus8Proで使う
+title: 楽天モバイルをAndroid11なOnePlus 8 Proで使う
 category: diary
 tags:
   - diary
@@ -29,7 +29,7 @@ PDPタイプに関してはOnePlus8Proに入力欄はない
 1. 電話アプリを起動
 2. `*#*#4636#*#*`を入力し、「テスト中」モードに入る
 3. 「携帯電話情報」をタップ
-4. 「有線ネットワークの設定」から「LTE only」を選択
+4. 「優先ネットワークの設定」から「LTE only」を選択
 
 以上で通信が可能になる。
 
