@@ -7,6 +7,8 @@ tags:
   - kmp
 ---
 
+本記事は[Android Advent Calendar 2020](https://qiita.com/advent-calendar/2020/android)の24日目です。
+
 この記事は某勉強会で発表したもののトランスクリプト＋αです。
 
 実際に仕事のAndroidアプリでKotlin Multiplatform Project(以後KMP)を導入してみてどんな感じだったか、というのをまとめていきます。
