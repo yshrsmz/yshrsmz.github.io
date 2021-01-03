@@ -30,6 +30,8 @@ paginate_path: "/page:num"
 
 # BUILD SETTINGS
 markdown: kramdown
+kramdown:
+  toc_levels: 1..3
 highlighter: rouge
 sass:
   sass_dir: _sass
