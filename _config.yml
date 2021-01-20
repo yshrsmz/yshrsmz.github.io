@@ -21,7 +21,7 @@ color_image: /assets/img/lineart.png
 katex: true
 mermeid: false
 google_analytics: UA-61198465-1
-cookie_consent: true
+cookie_consent: false
 disqus_shortname: yslibrary
 
 # PAGINATIOn
