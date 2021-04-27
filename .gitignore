@@ -27,5 +27,6 @@ jekyll-theme-type-on-strap.gemspec
 *-test.md
 *copy.md
 .jekyll-cache/*
+.jekyll-metadata
 test/*
 assets/package-lock.json
