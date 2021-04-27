@@ -17,7 +17,7 @@ _development_tool/*
 .bundle/*
 
 # Theme Gem files
-#Gemfile.lock
+Gemfile.lock
 *.gem
 .gems
 jekyll-theme-type-on-strap.gemspec

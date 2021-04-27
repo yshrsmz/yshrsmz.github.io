@@ -24,7 +24,7 @@ google_analytics: UA-61198465-1
 cookie_consent: false
 disqus_shortname: yslibrary
 
-# PAGINATIOn
+# PAGINATION
 paginate: 10
 paginate_path: "/page:num"
 
