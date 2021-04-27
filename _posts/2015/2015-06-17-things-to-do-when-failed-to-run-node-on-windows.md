@@ -4,7 +4,7 @@ title: Windowsでnode.jsを動かすには
 category: programming
 tags:
   - windows
-  - nodejs
+  - node.js
 ---
 
 
