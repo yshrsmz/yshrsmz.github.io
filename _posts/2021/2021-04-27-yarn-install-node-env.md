@@ -24,7 +24,7 @@ ARG BUILD_ENV=production
 FROM public.ecr.aws/bitnami/node:14.16.1 AS build-stage
 
 ARG BUILD_ENV
-NODE_ENV=${BUILD_ENV}
+ENV NODE_ENV=${BUILD_ENV}
 
 RUN install_packages curl ca-certificates
 RUN curl -sfL https://install.goreleaser.com/github.com/tj/node-prune.sh | bash -s -- -b /usr/local/bin
