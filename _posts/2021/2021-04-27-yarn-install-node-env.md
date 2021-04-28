@@ -52,7 +52,7 @@ ENTRYPOINT [ "./node_modules/.bin/nuxt", "start" ]
 
 こんな Dockerfile を書いて、 `BUILD_ENV=production` で実行した時に `yarn build:production` が失敗しててめっちゃつまった。エラー的には `ts-loader` が見つからないとかそんな感じ。
 
-いろいろ書き換えながら試してたら、最初に書いてたとおり `NODE_ENV=production` と環境変数を設定しちゃってたのが原因だった。
+いろいろ書き換えながら試してたら、最初に書いてたとおり `NODE_ENV=production` と環境変数を設定しちゃってたのが原因だった。devDependencies がインストールされない状態。
 
 > Yarn will not install any package listed in devDependencies if the NODE_ENV environment variable is set to production
 
