@@ -4,7 +4,6 @@ title: yarn install と NODE_ENV
 category: programming
 tags:
   - node.js
-  - javascript
   - docker
   - til
 ---
