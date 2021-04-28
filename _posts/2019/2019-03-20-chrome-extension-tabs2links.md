@@ -5,7 +5,7 @@ category: programming
 tags:
   - chrome-extension
   - javascript
-  - vuejs
+  - vue.js
   - tabs2links
 ---
 
