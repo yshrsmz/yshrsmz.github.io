@@ -19,7 +19,7 @@ tailwindcss の tailwind.config.js をコードから参照したいとき、な
 
 場所はどこでもいいんだけど、 babel が解決できる場所に下記のような内容のファイルを作成する。今回は `./config/tailwindcss.js` とした。
 
-```
+```javascript
 // @preval
 // babel-plugin-prevalでコンパイル時に実行される
 // see https://tailwindcss.com/docs/configuration#referencing-in-java-script
