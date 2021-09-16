@@ -9,7 +9,7 @@ tags:
   - til
 ---
 
-maven の　BOM を使おうと思って Kotlin Multiplatform Project で下記のように書いてもうまく動かず、よくわからないエラーが出る。
+maven の BOM を使おうと思って Kotlin Multiplatform Project で下記のように書いてもうまく動かず、よくわからないエラーが出る。
 
 ```gradle
 apply plugin: 'org.jetbrains.kotlin.multiplatform'
