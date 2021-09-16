@@ -191,7 +191,11 @@ Possible solutions: notify(), toString(), toString(), toString(), toString(), sp
 	... 141 more
 ```
 
-エラーメッセージから何もわからなくて途方に暮れそうになるんだけど、どうやら Kotlin Multiplatform Plugin は `platform()` をサポートしていないらしい。
+エラーメッセージから何もわからなくて途方に暮れそうになるんだけど、`MissingMethodException` ということで「存在しないメソッド」を呼んでいるらしい。  
+ただ、サジェストされるメソッドが的はずれすぎて一体なにを間違えてるのかわからない。
+
+そこからいろいろリバーとしたりしながら切り分けていくと `platform()` があやしい。
+どうやら Kotlin Multiplatform Plugin は `platform()` をサポートしていないようだ。
 
 Kotlin のフォーラムや YouTrack を見たところ、
 
