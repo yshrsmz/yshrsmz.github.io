@@ -8,7 +8,7 @@ tags:
   - til
 ---
 
-https://ja.nuxtjs.org/api/configuration-generate/#fallback
+[https://ja.nuxtjs.org/api/configuration-generate/#fallback](https://ja.nuxtjs.org/api/configuration-generate/#fallback)
 
 `generate.fallback=true` にすると `404.html` が生成される。
 これ、動的にルーティングしたいページへのリクエストが来たときに、「URLはそのままで`404.html`を提供する」という使い方をするものだった。
