@@ -1,5 +1,5 @@
 <html>
-    {% include head.html %}
+    {% include default/head.html %}
     <body>
         <div class="content">
             <article {% if page.feature-img %}class="feature-image"{% endif %}>
@@ -18,7 +18,7 @@
 
                 <!-- Tag list for portfolio -->
                 {% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %}
-                {% include tags_list.html tags=tag_list %}
+                {% include default/tags_list.html tags=tag_list %}
 
             </article>
         </div>

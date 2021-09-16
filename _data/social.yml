@@ -1,40 +1,16 @@
-# Icons on the footer
-rss: true
-email_address:    # Full email address, e.g. "sam@example.com"
-behance:
-bitbucket:
-dribbble:
-facebook:
-flickr:
-gitlab:
-github: yshrsmz
-instagram:
-keybase:
-linkedin: https://www.linkedin.com/in/yshrsmz/
-pinterest:
-reddit: yshrsmz
-soundcloud:
-stack_overflow: https://stackoverflow.com/users/855599/yshrsmz
-stack_exchange: https://stackexchange.com/users/456702/yshrsmz
-steam:
-tumblr:
-twitter: _yshrsmz
-vimeo:
-wordpress:
-youtube:
-
-# rss specify feed path
+# RSS specific
+rss: true         # Icons on the footer
 feed:
-  path: http://feeds.feedburner.com/TheoreticalCat
+  path: http://feeds.feedburner.com/TheoreticalCat  # RSS feed path
 
 # Share button options
 share:
+  email: true
   facebook: true
-  twitter: true
-  tumblr:
-  pinterest:
+  linkedin: true
+  pinterest: true
   pocket:
   reddit: true
-  linkedin:
+  tumblr: true
+  twitter: true
   wordpress:
-  email: true

@@ -28,10 +28,10 @@
 }
 
 .tag-anchor {
-  margin-bottom: $padding-x-small;
+  margin-top: $padding-x-small;
 
   a {
-    color: $link-color;
+    color: var(--link);
 
     &:hover {
       text-decoration: none;
@@ -59,7 +59,7 @@
   .meta {
     display: inline;
     float: right;
-    font-size: 0.7em;
+    font-size: 0.8em;
     line-height: normal;
   }
 }

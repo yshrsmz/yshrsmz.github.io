@@ -22,7 +22,10 @@ katex: true
 mermeid: false
 google_analytics: UA-61198465-1
 cookie_consent: false
-disqus_shortname: yslibrary
+color_theme: auto
+
+comments:
+  disqus_shortname: yslibrary
 
 # PAGINATION
 paginate: 10
