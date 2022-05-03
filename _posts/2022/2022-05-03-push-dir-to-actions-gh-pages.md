@@ -36,6 +36,7 @@ tags:
 [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages) は `secrets.GITHUB_TOKEN` でのデプロイにも対応している。
 
 
-ただ、ちょっと試した感じだと `secrets.GITHUB_TOKEN` だとデプロイ完了後の `page_build` イベントがトリガーされず、後処理の別のワークフローが動かなかったので push-dir のときと同様に PAT を利用している。
+ただ、ちょっと試した感じだと `secrets.GITHUB_TOKEN` だとデプロイ完了後の `page_build` イベントがトリガーされず、後処理の別のワークフローが動かなかった。  
+そのため push-dir のときと同様に PAT を利用している。
 
 そのうちトークンは PAT から [tibdex/github-app-token](https://github.com/tibdex/github-app-token) に移行したい。
