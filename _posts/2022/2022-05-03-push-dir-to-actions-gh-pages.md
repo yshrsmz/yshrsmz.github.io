@@ -15,7 +15,7 @@ tags:
 ```yml
 - name: Deploy website
   run: |
-    git remote add upstream https://${{ secrets.PUSH_ACCESS_TOKEN} }@github.com/${{ secrets.USER_NAME }}/${{ secrets.REPO_NAME }}.git
+    git remote add upstream https://${{ secrets.PUSH_ACCESS_TOKEN }}@github.com/${{ secrets.USER_NAME }}/${{ secrets.REPO_NAME }}.git
     yarn push-dir --dir=packages/site/dist --remote=upstream --branch=master --clearnup --verbose
 ```
 
