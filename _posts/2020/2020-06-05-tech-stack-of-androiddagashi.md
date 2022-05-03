@@ -3,10 +3,10 @@ layout: post
 title: AndroidDagashiを支える技術
 category: programming
 tags:
-  - github
+  - GitHub
   - vue.js
   - nuxt.js
-  - androiddagashi
+  - AndroidDagashi
 ---
 
 
