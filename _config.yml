@@ -22,6 +22,7 @@ color_image: /assets/img/lineart.png
 katex: true
 mermeid: false
 google_analytics: UA-61198465-1
+google_analytics_ga4: G-XZRK8ZP8XC
 cookie_consent: false
 color_theme: auto
 
