@@ -1,3 +1,4 @@
+/* @preserve Cookie Consent Init */
 function createCookie(name, value, days) {
   var expires = "";
   if (days) {
@@ -5,7 +6,7 @@ function createCookie(name, value, days) {
     date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
     expires = "; expires=" + date.toUTCString();
   }
-  document.cookie = name + "=" + value + expires + "; path=/";
+  document.cookie = `${name}=${value}${expires}; path=/`;
 }
 
 function readCookie(name) {
@@ -34,6 +35,7 @@ function googleAnalytics() {
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', analyticsName);
+    gtag('config', analyticsNameGA4, { 'anonymize_ip': true });
 
     // Google analytics
     window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };

@@ -1,3 +1,4 @@
+baseurl: ""
 url: https://www.codingfeline.com
 permalink: /:year/:month/:day/:title/
 
@@ -38,9 +39,9 @@ kramdown:
 highlighter: rouge
 sass:
   sass_dir: _sass
-  style: :compressed
+  style: compressed
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
-exclude: [".jekyll-cache", "Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", ".idea", "vendor/*",
+exclude: [".jekyll-cache",".jekyll-metadata", "Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", ".idea", "vendor/*",
           "LICENSE", "README.md", "screenshot.png", "assets/package.json", "assets/node_modules", "assets/gulpfile.js"]
 
 include: [.well-known]
