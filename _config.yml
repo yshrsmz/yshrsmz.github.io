@@ -61,5 +61,6 @@ exclude:
   - "assets/package.json"
   - "assets/node_modules"
   - "assets/gulpfile.js"
+  - "assets/Dockerfile"
 
 include: [.well-known]
