@@ -3,6 +3,7 @@ layout: plain
 title: Monotweety Privacy Policy
 hide: true
 permalink: /products/monotweety/privacy-policy/
+sitemap: false
 ---
 
 ## Owner and Data controller

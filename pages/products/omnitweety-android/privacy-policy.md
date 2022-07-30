@@ -3,6 +3,7 @@ layout: plain
 title: Omnitweety for Android Privacy Policy
 hide: true
 permalink: /products/omnitweety-android/privacy-policy/
+sitemap: false
 ---
 
 ## Owner and Data controller

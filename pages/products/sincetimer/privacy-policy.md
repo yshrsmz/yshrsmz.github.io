@@ -3,6 +3,7 @@ layout: plain
 title: Since Timer Privacy Policy
 hide: true
 permalink: /products/sincetimer/privacy-policy/
+sitemap: false
 ---
 
 ## Owner and Data controller
