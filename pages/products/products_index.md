@@ -25,7 +25,9 @@ Also, with Monotweety you can chain tweets as a thread with one single tap(from 
 
 ![feature](/assets/img/products/monotweety/feature.png)
 
-<a href='https://play.google.com/store/apps/details?id=net.yslibrary.monotweety&utm_source=blog-product-page&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="200" style="padding: 0;"/></a>
+<!-- <a href='https://play.google.com/store/apps/details?id=net.yslibrary.monotweety&utm_source=blog-product-page&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="200" style="padding: 0;"/></a> -->
+
+note: Monotweety is no longer available on Google Play Store.
 
 Github: [https://github.com/yshrsmz/monotweety](https://github.com/yshrsmz/monotweety)
 
