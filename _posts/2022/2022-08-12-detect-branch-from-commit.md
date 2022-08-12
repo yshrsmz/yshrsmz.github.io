@@ -17,7 +17,7 @@ $ git name-rev 740e99b1d53c3276736ab6806027c980d1fef8c6
 ```
 
 
-などとコミットハッシュを与えてと実行すると
+などとコミットハッシュを与えて実行すると
 
 ```
 740e99b1d53c3276736ab6806027c980d1fef8c6 feature/awesome-feature
