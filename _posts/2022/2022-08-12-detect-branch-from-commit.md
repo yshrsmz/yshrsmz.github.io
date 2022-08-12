@@ -20,7 +20,7 @@ $ git name-rev 740e99b1d53c3276736ab6806027c980d1fef8c6
 などとコミットハッシュを与えてと実行すると
 
 ```
-740e99b1d53c3276736ab6806027c980d1fef8c6 tags/v20220812.1 feature/awesome-feature
+740e99b1d53c3276736ab6806027c980d1fef8c6 feature/awesome-feature
 ```
 
 という具合にブランチ名が取得できる。ブランチ名だけでよければ `--name-only` を追加して
