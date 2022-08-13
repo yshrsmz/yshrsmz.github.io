@@ -8,7 +8,7 @@ tags:
   - rxjava
 ---
 
-※2016/07/21更新: このコードだけだと必ずしも同じスレッドでcloseされないことがわかりました。"[続:Realmインスタンスを、Observableのunsubscribe時に同じスレッドでunsubscribeする](https://yslibrary.net/2016/07/21/how-to-close-realm-upon-unsubscribe-on-same-thread/)"もご確認ください。
+※2016/07/21更新: このコードだけだと必ずしも同じスレッドでcloseされないことがわかりました。"[続:Realmインスタンスを、Observableのunsubscribe時に同じスレッドでunsubscribeする](/2016/07/21/how-to-close-realm-upon-unsubscribe-on-same-thread/)"もご確認ください。
 
 RealmはRxJavaを公式でサポートしていますが、公式のRxサポートが動くのはUIスレッドなど、Looperのあるスレッドだけです。
 

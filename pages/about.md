@@ -9,7 +9,7 @@ tags:
 Yasuhiro Shimizu  
 Android and JavaScript lover.
 
-Please refer to [PRODUCTS](https://www.yslibrary.net/products/) page for my personal works.
+Please refer to [PRODUCTS](/products/) page for my personal works.
 
 ## Support me
 

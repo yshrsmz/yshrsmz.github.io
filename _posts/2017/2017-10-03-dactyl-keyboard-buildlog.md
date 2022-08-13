@@ -10,7 +10,7 @@ tags:
 Kinesis -> ErgoDox -> Let's Split -> Nyquist -> Dactyl(New!)
 
 
-[前回Let's Splitを作って](http://yslibrary.net/2017/08/29/letssplit-buildlog/)から一ヶ月も経ってないですが、Dactylキーボードを作りました(実はその間にNyquistってキーボードも作ってたりします)。
+[前回Let's Splitを作って](/2017/08/29/letssplit-buildlog/)から一ヶ月も経ってないですが、Dactylキーボードを作りました(実はその間にNyquistってキーボードも作ってたりします)。
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">というわけでNyquist組み上がりました <a href="https://t.co/l3dPOQbHz0">pic.twitter.com/l3dPOQbHz0</a></p>&mdash; せーい@一万二千年後のイカ (@_yshrsmz) <a href="https://twitter.com/_yshrsmz/status/904352414911696897?ref_src=twsrc%5Etfw">2017年9月3日</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

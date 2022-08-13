@@ -58,7 +58,7 @@ Direct Replyで用意されているのはカスタマイズができない入�
 
 "Monochrome"ではなく"Monologue"のmonoです。  
 最初は"Monologue"で作ろうとしたけど案の定すでにTwitterに登録済みのアプリがありました…  
-[Omnitweetyというアプリもリリースしてます](http://yslibrary.net/2015/11/10/omnitweety-andrid-released-share-url-twitter/)が、特に「Omni - Mono」で対になる、とか特に狙ったわけではないです。
+[Omnitweetyというアプリもリリースしてます](/2015/11/10/omnitweety-andrid-released-share-url-twitter/)が、特に「Omni - Mono」で対になる、とか特に狙ったわけではないです。
 
 # ※ここから下は技術者向け ----------
 
@@ -143,6 +143,6 @@ DataSourceの差し替えとか実際にアプリの実行中に発生するこ�
 
 参考: 
 
-PlayStoreリンク: ~~https://play.google.com/store/apps/details?id=net.yslibrary.monotweety~~  
-GitHubリンク: [https://github.com/yshrsmz/monotweety](https://github.com/yshrsmz/monotweety)  
-TwitterにURLを共有するAndroidアプリ、Omnitweetyを公開した: http://www.codingfeline.com/2015/11/10/omnitweety-andrid-released-share-url-twitter/
+- PlayStoreリンク: ~~https://play.google.com/store/apps/details?id=net.yslibrary.monotweety~~  
+- GitHubリンク: [yshrsmz/monotweety](https://github.com/yshrsmz/monotweety)  
+- [TwitterにURLを共有するAndroidアプリ、Omnitweetyを公開した](/2015/11/10/omnitweety-andrid-released-share-url-twitter/)

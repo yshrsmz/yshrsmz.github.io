@@ -10,11 +10,11 @@ tags:
 ---
 
 
-A while ago I wrote [an article about Kotlin Coroutines' Channel and Android Lifecycle](https://www.yslibrary.net/2019/04/08/kotlin-channel-and-android-lifecycle-en/).
+A while ago I wrote [an article about Kotlin Coroutines' Channel and Android Lifecycle](/2019/04/08/kotlin-channel-and-android-lifecycle-en/).
 
 And some days later someone came to ask me "How can we use Coroutines/Channel from iOS code?"
 
-I had wrote about it briefly [in Japanese](https://www.yslibrary.net/2019/04/16/thoughts-on-kotlin-mpp/), but I thought I should write it in English too, so here it is.
+I had wrote about it briefly [in Japanese](/2019/04/16/thoughts-on-kotlin-mpp/), but I thought I should write it in English too, so here it is.
 
 ---
 

@@ -38,7 +38,7 @@ ChannelをFlowに変換していろいろなオペレータで加工する、と
 `LiveData`は最近更新が途絶えてるけど[Multiplatform対応のライブラリがある](https://github.com/florent37/Multiplatform-LiveData)ので、それを更新すればいけなくもない。  
 とはいえKotlin Coroutinesがかなり充実してきているのでわざわざ使う必要もなさそう。
 
-AndroidではActivity/Fragmentで[ChannelをLiveDataに変換してあげる](https://www.yslibrary.net/2019/04/04/kotlin-channel-and-android-lifecycle/)とちょっと扱いやすくなるかもしれない。  
+AndroidではActivity/Fragmentで[ChannelをLiveDataに変換してあげる](/2019/04/04/kotlin-channel-and-android-lifecycle/)とちょっと扱いやすくなるかもしれない。  
 最近はAndroid JetpackのCoroutinesサポートが充実してきたのであんま必要ないかも。
 
 ## CoroutinesとSwift

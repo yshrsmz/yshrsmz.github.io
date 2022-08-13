@@ -96,7 +96,7 @@ RecyclerViewで複数のViewTypeを扱う時の処理を簡単に書ける。基
 
 ### [Fabric Twitter Kit](https://get.fabric.io/android)
 
-[前回作ったアプリ](http://yslibrary.net/2015/09/12/twitter-app-created-during-summer-vacation/)で非常に便利だったので、今回も継続使用。
+[前回作ったアプリ](/2015/09/12/twitter-app-created-during-summer-vacation/)で非常に便利だったので、今回も継続使用。
 
 ### [twiter-text](https://github.com/twitter/twitter-text)
 

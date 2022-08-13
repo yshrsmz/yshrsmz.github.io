@@ -8,7 +8,7 @@ tags:
   - javascript
 ---
 
-先ごろ"[ReactNative for AndroidでHello World(セットアップ方法とか)](https://yslibrary.net/2015/09/15/reactnative-for-android-hello-world/)"という記事を書きましたが。そこで、
+先ごろ"[ReactNative for AndroidでHello World(セットアップ方法とか)](/2015/09/15/reactnative-for-android-hello-world/)"という記事を書きましたが。そこで、
 
 > ※私の環境では実機(Nexus6 5.1.1)で動かすことができなかったので、エミュレータのインストールもしておくといいと思います。
 

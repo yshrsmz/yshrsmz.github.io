@@ -13,7 +13,7 @@ AtomやSublimeText, Jetbrains製の各種IDE、Eclipse, Vim等[様々なエデ�
 私の場合はAndroid Studio, IntelliJ IDEA, Atomで利用しています。
 
 一週間毎に今週はどのプロジェクトでどのくらいコーディングしましたよー、っていうレポートを送ってくれるので週次の振り返りに重宝します。あとは大体の工数把握に使ったりとか。  
-[Omnitweetyを作った時](http://yslibrary.net/2015/11/10/omnitweety-andrid-released-share-url-twitter/)も、wakatimeでコーディングした時間管理してました
+[Omnitweetyを作った時](/2015/11/10/omnitweety-andrid-released-share-url-twitter/)も、wakatimeでコーディングした時間管理してました
 
 集計時のプロジェクト名ですが、大体はフォルダ構造から自動で取得してくれるのですが、たまにうまく取得できず一つのプロジェクトが複数の名前で分けて集計されてしまったりします。
 

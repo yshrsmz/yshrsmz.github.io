@@ -44,7 +44,7 @@ Android向けの開発なのでAndroid SDKが必要です。
 未インストールの方は[こちら](http://facebook.github.io/react-native/docs/android-setup.html)の手順にしたがって設定してください。
 
 ※私の環境では実機(Nexus6 5.1.1)で動かすことができなかったので、エミュレータのインストールもしておくといいと思います。  
-※2015/09/17追記: [実機でのデバッグ方法わかりました](http://yslibrary.net/2015/09/17/reactnative-for-android-debugging-on-real-device/)
+※2015/09/17追記: [実機でのデバッグ方法わかりました](/2015/09/17/reactnative-for-android-debugging-on-real-device/)
 
 
 ## ReactNativeのインストール
