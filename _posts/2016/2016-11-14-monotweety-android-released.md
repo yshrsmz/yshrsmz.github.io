@@ -10,7 +10,7 @@ tags:
 
 ![header](https://raw.githubusercontent.com/yshrsmz/monotweety/master/assets/header.png)
 
-掲題のとおり、アプリを[Google Play Storeに公開しました](https://play.google.com/store/apps/details?id=net.yslibrary.monotweety)。   
+掲題のとおり、アプリを ~~Google Play Storeに公開しました~~。(2022/08更新: [公開終了しました](/2021/12/31/lookingback-2021/))   
 今回はコードも[GitHubで公開してます](https://github.com/yshrsmz/monotweety)。Apache v2です。 
 
 名前は"Monotweety"。「モノツイーティ」と読みます。
@@ -143,6 +143,6 @@ DataSourceの差し替えとか実際にアプリの実行中に発生するこ�
 
 参考: 
 
-PlayStoreリンク: https://play.google.com/store/apps/details?id=net.yslibrary.monotweety  
-GitHubリンク: https://github.com/yshrsmz/monotweety  
-TwitterにURLを共有するAndroidアプリ、Omnitweetyを公開した: http://yslibrary.net/2015/11/10/omnitweety-andrid-released-share-url-twitter/
+PlayStoreリンク: ~~https://play.google.com/store/apps/details?id=net.yslibrary.monotweety~~  
+GitHubリンク: [https://github.com/yshrsmz/monotweety](https://github.com/yshrsmz/monotweety)  
+TwitterにURLを共有するAndroidアプリ、Omnitweetyを公開した: http://www.codingfeline.com/2015/11/10/omnitweety-andrid-released-share-url-twitter/

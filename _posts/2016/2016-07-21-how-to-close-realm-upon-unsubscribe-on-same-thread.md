@@ -8,7 +8,7 @@ tags:
   - rxjava
 ---
 
-[前回](https://yslibrary.net/2016/07/08/how-to-close-realm-upon-unsubscribe/)の続きです。
+[前回](/2016/07/08/how-to-close-realm-upon-unsubscribe/)の続きです。
 
 `Observable#using`を使うと、Observableのunsubscribe時にRealmインスタンスを同じスレッド上で閉じることができるよ、と前回の記事で書きました。
 
