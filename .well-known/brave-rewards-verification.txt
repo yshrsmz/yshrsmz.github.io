@@ -1,4 +1,4 @@
 This is a Brave Rewards publisher verification file.
 
-Domain: yslibrary.net
-Token: 4b454cf91c6c7ba589d2a4b79e0f8074691d84fd35854913b873772282643a41
+Domain: codingfeline.com
+Token: d6062bf9c1464c745c725cddebcbe96037c4dc22629f2efa4c3118063036335f
