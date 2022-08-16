@@ -4,7 +4,7 @@ title: go getでprivate repositoryを取得するには
 category: programming;
 tags:
   - golang
-  - til
+  - TIL
 ---
 
 ```

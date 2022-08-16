@@ -6,7 +6,7 @@ tags:
   - kotlin
   - kmp
   - gradle
-  - til
+  - TIL
 ---
 
 maven の BOM を使おうと思って Kotlin Multiplatform Project で下記のように書いてもうまく動かず、よくわからないエラーが出る。

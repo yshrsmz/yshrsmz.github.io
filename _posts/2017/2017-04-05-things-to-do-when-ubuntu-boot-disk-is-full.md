@@ -3,7 +3,7 @@ layout: post
 title: (Ubuntu) /bootの容量がなくなった時にすること
 category: programming
 tags:
-  - til
+  - TIL
   - ubuntu
 ---
 

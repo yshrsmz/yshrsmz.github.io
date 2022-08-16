@@ -3,7 +3,7 @@ layout: post
 title: Wakatimeでプロジェクトの名前を指定する
 category: programming
 tags:
-  - til
+  - TIL
 ---
 
 [Wakatime](https://wakatime.com)はプログラミングしている時間を集計して、プロジェクト毎・言語毎にグラフ化してくれるツールです。

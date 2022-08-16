@@ -5,7 +5,7 @@ category: programming
 tags:
   - vue.js
   - nuxt.js
-  - til
+  - TIL
 ---
 
 大前提として、`nuxtServerInit`というAction名のとおり、これはサーバサイドでしか実行されない。  

@@ -3,7 +3,7 @@ layout: post
 title: AndroidのNavigation Barの色とアイコンの色を変える
 category: programming
 tags:
-  - til
+  - TIL
   - android
 ---
 

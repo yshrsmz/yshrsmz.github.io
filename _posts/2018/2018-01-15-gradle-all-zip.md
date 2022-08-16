@@ -3,7 +3,7 @@ layout: post
 title: Gradleの更新時にall.zipを一発で取得する
 category: programming
 tags:
-  - til
+  - TIL
   - gradle
 ---
 

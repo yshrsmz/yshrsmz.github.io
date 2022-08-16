@@ -5,7 +5,7 @@ category: programming
 tags:
   - vue.js
   - nuxt.js
-  - til
+  - TIL
 ---
 
 [https://ja.nuxtjs.org/api/configuration-generate/#fallback](https://ja.nuxtjs.org/api/configuration-generate/#fallback)

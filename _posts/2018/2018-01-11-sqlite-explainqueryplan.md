@@ -3,7 +3,7 @@ layout: post
 title: SQLiteでインデックスが使われているかどうか確認する
 category: programming
 tags:
-  - til
+  - TIL
   - sqlite
 ---
 

@@ -5,7 +5,7 @@ category: programming;
 tags:
   - rxjava
   - java
-  - til
+  - TIL
 ---
 
 掲題の通りです

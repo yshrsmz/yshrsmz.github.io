@@ -6,7 +6,7 @@ tags:
   - node.js
   - tailwindcss
   - typescript
-  - til
+  - TIL
 ---
 
 tailwindcss の tailwind.config.js をコードから参照したいとき、なにも考えなくていいなら `tailwindcss/resolveConfig` を使えば実現できる。

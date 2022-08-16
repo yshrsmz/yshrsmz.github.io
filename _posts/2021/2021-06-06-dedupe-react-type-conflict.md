@@ -7,7 +7,7 @@ tags:
   - typescript
   - yarn
   - renovate
-  - til
+  - TIL
 ---
 
 React と TypeScript で使っていると、型定義の更新時に下記のようなエラーに遭遇することがある

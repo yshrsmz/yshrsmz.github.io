@@ -4,7 +4,7 @@ title: "GitHub Actionsでworkflowからpushしたときに後続のworkflowが�
 category: programming
 tags:
   - GitHub Actions
-  - til
+  - TIL
 ---
 
 GitHub Actionsを使ってGitHub Pagesを運用している。

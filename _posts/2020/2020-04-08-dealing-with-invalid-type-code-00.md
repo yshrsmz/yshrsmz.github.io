@@ -4,7 +4,7 @@ title: "(KMP) 'ERROR: Cause: invalid type code: 00' が出たときにするこ�
 category: programming
 tags:
   - kotlin
-  - til
+  - TIL
   - kmp
 ---
 

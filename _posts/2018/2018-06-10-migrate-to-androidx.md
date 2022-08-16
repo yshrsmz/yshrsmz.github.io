@@ -3,7 +3,7 @@ layout: post
 title: Supportライブラリからandroidxに移行する
 category: programming
 tags:
-  - til
+  - TIL
   - android
   - kotlin
 ---

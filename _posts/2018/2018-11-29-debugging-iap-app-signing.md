@@ -3,7 +3,7 @@ layout: post
 title: (Android) App Signingなアプリの課金デバッグをしたい
 category: programming
 tags:
-  - til
+  - TIL
   - android
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: SlackのGitHub integrationで色々流れてこない時にすること
 category: programming
 tags:
-  - til
+  - TIL
   - slack
   - GitHub
 ---
