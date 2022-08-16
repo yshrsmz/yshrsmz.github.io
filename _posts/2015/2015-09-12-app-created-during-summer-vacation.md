@@ -3,7 +3,7 @@ layout: post
 title: (Android) 夏休みだったので画像を検索してひたすらファボるAndroid用Twitterアプリつくった
 category: programming
 tags:
-  - android
+  - Android
 ---
  
 掲題のとおり、Androidアプリを作った。

@@ -4,7 +4,7 @@ title: 楽天モバイルをAndroid11なOnePlus 8 Proで使う
 category: diary
 tags:
   - diary
-  - android
+  - Android
   - TIL
 ---
 

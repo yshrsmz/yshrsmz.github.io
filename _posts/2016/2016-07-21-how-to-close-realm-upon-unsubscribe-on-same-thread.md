@@ -3,7 +3,7 @@ layout: post
 title: 続:Realmインスタンスを、Observableのunsubscribe時に同じスレッドでunsubscribeする
 category: programming;
 tags:
-  - android
+  - Android
   - realm
   - rxjava
 ---

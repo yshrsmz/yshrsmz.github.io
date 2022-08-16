@@ -3,7 +3,7 @@ layout: post
 title: MacでAndroidエミュレータのDNSサーバを変える
 category: programming
 tags:
-  - android
+  - Android
   - mac
 ---
 

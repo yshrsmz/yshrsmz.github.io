@@ -4,7 +4,7 @@ title: Android Lintで特定のディレクトリ内ファイルをすべて無�
 category: programming
 tags:
   - TIL
-  - android
+  - Android
 ---
 
 [Suppressing Lint Warnings - Android Studio Project Site](http://tools.android.com/tips/lint/suppressing-lint-warnings)

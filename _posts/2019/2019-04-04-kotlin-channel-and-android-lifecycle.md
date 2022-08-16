@@ -4,7 +4,7 @@ title: Kotlin CoroutinesのChannelとAndroidのライフサイクル
 category: programming
 tags:
   - kotlin
-  - android
+  - Android
 ---
 
 Kotlin CoroutinesのChannelをAndroidでいい感じに使うにはどうしたらいいかなー、という話。

@@ -4,7 +4,7 @@ title: Supportライブラリからandroidxに移行する
 category: programming
 tags:
   - TIL
-  - android
+  - Android
   - kotlin
 ---
 

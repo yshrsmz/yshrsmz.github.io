@@ -3,7 +3,7 @@ layout: post
 title: (Android) dimens.xmlでmatch_parent/wrap_contentを定義する
 category: programming
 tags:
-  - android
+  - Android
 ---
 
 例えば、画面サイズや画面の向きによってレイアウトの幅や高さを変えたい時なんかに

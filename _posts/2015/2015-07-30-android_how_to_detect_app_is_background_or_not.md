@@ -3,7 +3,7 @@ layout: post
 title: (Android) アプリのbackground/foregroundを検知する
 category: programming
 tags:
-  - android
+  - Android
 ---
 
 ### Update 2018.01.18

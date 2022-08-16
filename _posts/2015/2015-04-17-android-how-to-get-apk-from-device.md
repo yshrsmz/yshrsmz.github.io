@@ -3,7 +3,7 @@ layout: post
 title: (Android) 端末にインストールされているアプリのAPKファイルを取得する
 category: programming
 tags:
-  - android
+  - Android
 ---
 
 要ADB。  

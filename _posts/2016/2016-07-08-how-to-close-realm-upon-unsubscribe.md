@@ -3,7 +3,7 @@ layout: post
 title: RealmインスタンスをObservableのunsubscribe時にcloseする
 category: programming;
 tags:
-  - android
+  - Android
   - realm
   - rxjava
 ---

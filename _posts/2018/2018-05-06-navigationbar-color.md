@@ -4,7 +4,7 @@ title: AndroidのNavigation Barの色とアイコンの色を変える
 category: programming
 tags:
   - TIL
-  - android
+  - Android
 ---
 
 `styles.xml`の該当のスタイルに下記を追加するだけ。

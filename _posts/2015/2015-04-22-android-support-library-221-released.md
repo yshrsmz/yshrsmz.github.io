@@ -3,7 +3,7 @@ layout: post
 title: Android Supoprt Library 22.1がリリースされたので変更点など
 category: programming
 tags:
-  - android
+  - Android
 ---
 
 2015/4/21、Android Support Libraryの22.1が公開されました。  

@@ -3,7 +3,7 @@ layout: post
 title: (Android) キーボードの表示切り替えを検知する
 category: programming
 tags:
-  - android
+  - Android
 ---
 
 Androidではキーボードの表示・非表示の切り替えを判定するイベントは、標準では用意されていません。  

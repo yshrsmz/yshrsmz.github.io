@@ -4,7 +4,7 @@ title: Kotlin Coroutines' Channel and lifecycle of Android's components
 category: programming
 tags:
   - kotlin
-  - android
+  - Android
   - english
 ---
 

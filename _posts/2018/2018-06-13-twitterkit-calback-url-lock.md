@@ -4,7 +4,7 @@ title: TwitterKit使ってるアプリでブラウザ経由のログインでき
 category: programming
 tags:
   - TIL
-  - android
+  - Android
   - twitter
 ---
 

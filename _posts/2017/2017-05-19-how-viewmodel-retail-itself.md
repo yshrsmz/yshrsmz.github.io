@@ -3,7 +3,7 @@ layout: post
 title: (Android) Architecture ComponentsのViewModelは如何にしてRotationを生き残るか
 category: programming
 tags:
-  - android
+  - Android
   - java
 ---
 

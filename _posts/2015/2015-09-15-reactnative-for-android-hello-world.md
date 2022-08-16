@@ -3,7 +3,7 @@ layout: post
 title: ReactNative for AndroidでHello World(セットアップ方法とか)
 category: programming
 tags:
-  - android
+  - Android
   - reactnative
   - javascript
 ---

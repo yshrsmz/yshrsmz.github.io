@@ -4,7 +4,7 @@ title: (Android) App Signingなアプリの課金デバッグをしたい
 category: programming
 tags:
   - TIL
-  - android
+  - Android
 ---
 
 ## TL;DR

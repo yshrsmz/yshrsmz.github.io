@@ -3,7 +3,7 @@ layout: post
 title: TwitterにURLを共有するAndroidアプリ、Omnitweetyを公開した
 category: programming
 tags:
-  - android
+  - Android
   - omnitweety
   - twitter
 ---

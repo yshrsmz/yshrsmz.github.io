@@ -4,7 +4,7 @@ title: Android Studioで保存時にファイルの最後に改行を入れる
 category: programming
 tags:
   - TIL
-  - android
+  - Android
 ---
 
 ## 2020/09/29更新:

@@ -3,7 +3,7 @@ layout: post
 title: ReactNative for Androidで実機をデバッグに使うには
 category: programming
 tags:
-  - android
+  - Android
   - reactnative
   - javascript
 ---
