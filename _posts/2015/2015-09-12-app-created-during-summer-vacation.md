@@ -12,7 +12,7 @@ tags:
 名前は「画像検索してファボるやつ」  
 まずはデモ動画をどうぞ。
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/vAbFlXz8vQQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vAbFlXz8vQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 見ての通り、設定したキーワードでTwitter検索して、結果をタブ形式で表示するだけのアプリです。アプリからできるアクションはお気に入りだけ。

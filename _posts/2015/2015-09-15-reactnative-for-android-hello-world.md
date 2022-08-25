@@ -71,7 +71,7 @@ cd AwesomeProject
 コードに変更を加えたら、エミュレータ上で `F2` を押すとメニューが表示されます。  
 "Reload JS" をクリックすると画面がリロードされ、コードの変更がエミュレータにも反映されます。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IWSpgx24mAU" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IWSpgx24mAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 (クリックするとyoutubeにとびます)
 
@@ -85,5 +85,5 @@ TitaniumMobileのようにならないか心配ですが、Webでもある程度
 追って簡単なアプリとかも作ってみようと思います。
 
 ## 参考リンク
-- [React Native for Android: How we built the first cross-platform React Native app | Engineering Blog | Facebook Code](https://code.facebook.com/posts/1189117404435352/)
-- [Getting Started – React Native | A framework for building native apps using React](http://facebook.github.io/react-native/docs/getting-started.html)
+- [React Native for Android: How we built the first cross-platform React Native app - Engineering Blog - Facebook Code](https://code.facebook.com/posts/1189117404435352/)
+- [Getting Started – React Native - A framework for building native apps using React](http://facebook.github.io/react-native/docs/getting-started.html)
