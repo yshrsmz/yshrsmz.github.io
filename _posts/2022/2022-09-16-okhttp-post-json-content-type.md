@@ -8,7 +8,7 @@ tags:
 ---
 
 掲題の通り。  
-なんか数年前にも調べた気がするのでまとめておく.
+なんか数年前にも調べた気がするのでまとめておく。
 
 
 ```kotlin
@@ -60,4 +60,4 @@ val client = OkHttpClient.Builder()
   .build()
 ```
 
-のようにしてあげればよい。 `RequestBody` が `charset=utf-8` 付きの Content-Type を設定したあとに上書きした RequestBody を作り直してしまおう、という作戦。
+のようにしてあげればよい。 `RequestBody` が `charset=utf-8` 付きの Content-Type を設定したあとに上書きした `RequestBody` を作り直してしまおう、という作戦。
