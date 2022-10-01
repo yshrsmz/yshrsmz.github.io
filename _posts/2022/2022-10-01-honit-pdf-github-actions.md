@@ -13,7 +13,7 @@ tags:
 
 ---
 
-[HonKit](https://github.com/honkit/honkit) はOSSでなくなった [Gitbook](https://github.com/GitbookIO/gitbook) をフォークして作られた OSS ソフトウェア。
+[HonKit](https://github.com/honkit/honkit) はOSSでなくなった [Gitbook](https://github.com/GitbookIO/gitbook) をフォークして作られた OSS。
 
 HonKit の PDF 出力は [Calibre](https://calibre-ebook.com/) という Ebook 管理ソフトを利用しているので、これのインストールが必要。[公式でインストール用の Shell スクリプトを公開している](https://calibre-ebook.com/download_linux)ので、それを使えばよい。
 
