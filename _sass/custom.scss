@@ -1,0 +1,13 @@
+ul.kindle-book {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+}
+
+ul.kindle-book > li > a > img {
+    padding: 0;
+    width: fit-content;
+    min-height: 160px;
+}
