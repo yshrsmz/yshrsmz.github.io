@@ -11,3 +11,26 @@ ul.kindle-book > li > a > img {
     width: fit-content;
     min-height: 160px;
 }
+
+ul.share-buttons {
+    li {
+        display: inline-block;
+
+        a {
+            display: inline-block;
+        }
+    }
+}
+
+nav {
+    .menu-label.menu-label-with-icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $break) {
+    .menu-label.menu-label-with-icon {
+        display: inline;
+        margin-left: 4px;
+    }
+}

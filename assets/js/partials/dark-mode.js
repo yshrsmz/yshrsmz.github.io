@@ -15,7 +15,10 @@ const currentTheme = () => sessionStorage.getItem('theme')
 function setMode(theme) {
     document.documentElement.setAttribute('data-theme', theme)
     sessionStorage.setItem('theme', theme)
-    document.getElementById('theme-toggle-icon').innerHTML = themeButton[theme]
+    const toggle = document.getElementById('theme-toggle-icon')
+    if (toggle) {
+        toggle.innerHTML = themeButton[theme]
+    }
 }
 
 function themeToggle() {
@@ -27,7 +30,7 @@ function themeToggle() {
     }
 }
 
-window.onload = function bootstrapTheme() {
+function bootstrapTheme() {
     if (isAutoTheme) {
         if (!currentTheme()) {
             // Load browser's preference
@@ -42,3 +45,7 @@ window.onload = function bootstrapTheme() {
         setMode(sessionPrefers ? sessionPrefers : 'light')
     }
 }
+
+document.addEventListener("DOMContentLoaded", function (event) {
+    bootstrapTheme()
+})

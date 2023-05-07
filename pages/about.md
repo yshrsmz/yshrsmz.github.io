@@ -4,6 +4,7 @@ title: ABOUT
 permalink: /about/
 tags:
     - about
+    - pages
 ---
 
 Yasuhiro Shimizu  

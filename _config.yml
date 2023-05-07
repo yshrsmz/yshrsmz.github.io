@@ -1,3 +1,4 @@
+# SITE CONFIGURATION
 baseurl: ""
 url: https://www.codingfeline.com
 permalink: /:year/:month/:day/:title/
@@ -11,14 +12,17 @@ favicon: assets/favicon.ico
 # Header and footer text
 header_text: <p>Thoughts, stories and ideas</p>
 header_feature_image: assets/img/dactyl.jpeg
+header_feature_image_responsive: true
 footer_text: © 2020, yshrsmz
 
 # Blog
-excerpt: true
+excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
 post_navigation: true
-color_image: /assets/img/lineart.png
+color_image: /assets/img/lineart.png                    # A bit transparent for color posts.
 
 # Features
+# More in the _data folder for share buttons, author and language
+# For layout customization, go to the "_sass > base" folder, and check "_variables.scss"
 katex: true
 mermeid: false
 google_analytics: UA-61198465-1
@@ -26,12 +30,23 @@ google_analytics_ga4: G-XZRK8ZP8XC
 cookie_consent: false
 color_theme: auto
 
+# Comments
 comments:
   disqus_shortname: yslibrary
+  # cusdis_app_id:                                        # Your cusdis data-app-id
+  # utterances:                                           # Enable by filling below information. For more info, go to https://utteranc.es
+  #   repo:                                               # your public comments repository (e.g. owner/repo)
+  #   issue-term:                                         # Issue term (e.g. "comment" consider issues with this word in the title as comments)
 
 # PAGINATION
 paginate: 10
 paginate_path: "/page:num"
+
+# PORTFOLIO
+# collections:
+#   portfolio:
+#     output: true
+#     permalink: /:collection/:name
 
 # BUILD SETTINGS
 markdown: kramdown
