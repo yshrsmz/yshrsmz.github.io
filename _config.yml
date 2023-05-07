@@ -12,7 +12,7 @@ favicon: assets/favicon.ico
 # Header and footer text
 header_text: <p>Thoughts, stories and ideas</p>
 header_feature_image: assets/img/dactyl.jpeg
-header_feature_image_responsive: true
+# header_feature_image_responsive: true
 footer_text: © 2020, yshrsmz
 
 # Blog
