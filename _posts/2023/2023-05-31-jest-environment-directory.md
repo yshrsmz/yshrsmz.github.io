@@ -74,3 +74,8 @@ module.exports = {
 こうなる。
 
 `collectCoverage` とか、カバレッジ系はルートの設定に書く必要がある。
+
+
+## 参照
+
+- [Configuring Jest · Jest](https://jestjs.io/docs/configuration)
