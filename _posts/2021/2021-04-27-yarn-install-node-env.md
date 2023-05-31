@@ -3,7 +3,7 @@ layout: post
 title: yarn install と NODE_ENV
 category: programming
 tags:
-  - node.js
+  - Node.js
   - docker
   - TIL
 ---

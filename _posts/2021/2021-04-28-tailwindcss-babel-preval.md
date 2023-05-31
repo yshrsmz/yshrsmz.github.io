@@ -3,7 +3,7 @@ layout: post
 title: tailwindcss の config ファイルを babel-plugin-preval で読み込む
 category: programming
 tags:
-  - node.js
+  - Node.js
   - tailwindcss
   - typescript
   - TIL
