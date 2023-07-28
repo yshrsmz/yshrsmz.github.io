@@ -53,6 +53,6 @@ DockerHub のイメージを使うことにしたから試してないが、前�
 
 ## 参考
 
-- [Amazon Elastic Container Registry Public: A New Public Container Registry | AWS News Blog](https://aws.amazon.com/blogs/aws/amazon-ecr-public-a-new-public-container-registry/)
+- [Amazon Elastic Container Registry Public: A New Public Container Registry - AWS News Blog](https://aws.amazon.com/blogs/aws/amazon-ecr-public-a-new-public-container-registry/)
 - [Amazon ECR Public service quotas - Amazon ECR Public](https://docs.aws.amazon.com/AmazonECR/latest/public/public-service-quotas.html)
 - [Did Dockerhub rate limit affect Github Action? · Issue #1445 · actions/runner-images](https://github.com/actions/runner-images/issues/1445#issuecomment-713861495)
