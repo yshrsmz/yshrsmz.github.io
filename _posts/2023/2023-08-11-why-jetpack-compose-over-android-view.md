@@ -47,6 +47,7 @@ tags:
   - Android View と異なりすべてが関数なので、input/output が明確でセットアップし易いのは確実
   - VRT(画像回帰テスト) もやりやすい
   - [良いコードとは何か - エンジニア新卒研修 スライド公開｜CyberZ Developer](https://note.com/cyberz_cto/n/n26f535d6c575)
+  - テストが書きやすいということは自動テストで担保できる範囲が広がるので、品質を担保しつつ flaky で時間のかかる手動テストを減らせる、ということ
 - コードが少なくてすむ
   - 顕著なのは RecyclerView
 - Android View の方が実装速度はやい？
