@@ -28,12 +28,12 @@ tags:
     - Jim Sproch 氏は Jetpack Compose 生みの親
   - 新機能の追加は限定的になっていく
   - 直接 Android View の話ではないが、 DataBinding(と ViewBinding) はメンテナンスモードへの移行がアナウンスされている
-    - https://issuetracker.google.com/issues/173030256
+    - [https://issuetracker.google.com/issues/173030256](https://issuetracker.google.com/issues/173030256)
     - これは DataBinding の依存する kapt がメンテナンスモードに入っているから
     - kapt 後継の ksp に対応する予定はない
     - kapt は Kotlin 2.0 で正式導入される K2 Compiler では現状サポートされていない
       - kapt サポートの予定自体はありそう
-        - https://slack-chats.kotlinlang.org/t/9019545/new-kotlin-intensifies-purple-party-parrot-mega-kotlin-1-8-2
+        - [https://slack-chats.kotlinlang.org/t/9019545/new-kotlin-intensifies-purple-party-parrot-mega-kotlin-1-8-2](https://slack-chats.kotlinlang.org/t/9019545/new-kotlin-intensifies-purple-party-parrot-mega-kotlin-1-8-2)
     - Jetpack Compose への移行が推奨されている
     - 実際に使えなくなることはそうないと思うが、これがなくなると Android View での開発は片腕をもがれたような状態になる
       - なにかのタイミングで deprecated されるかもしれないものに依存して開発を続けるのか？
