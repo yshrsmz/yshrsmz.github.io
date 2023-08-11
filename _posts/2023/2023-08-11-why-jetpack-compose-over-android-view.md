@@ -18,7 +18,7 @@ tags:
 ---
 
 - これ読んで
-  - [Why Compose  |  Jetpack Compose  |  Android Developers](https://developer.android.com/jetpack/compose/why-adopt)
+  - [Why Compose - Jetpack Compose - Android Developers](https://developer.android.com/jetpack/compose/why-adopt)
 - Google が時期主力 UI 開発ツールキットとして移行を推奨している
   - 開発リソースは Jetpack Compose へ寄っていくことが予想できる
 - 故に Android View はそのうちメンテナンスモードになる
