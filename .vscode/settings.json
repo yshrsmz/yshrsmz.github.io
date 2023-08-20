@@ -1,0 +1,17 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.format.enable": true,
+  "eslint.options": {
+    "extensions": [".js", ".vue", ".ts"]
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "vue",
+    "html"
+  ],
+  "eslint.onIgnoredFiles": "warn",
+  "liveServer.settings.root": ".vitepress/dist/"
+}

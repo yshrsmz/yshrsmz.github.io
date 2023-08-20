@@ -1,4 +1,4 @@
-name: Build and deploy Jekyll site to GitHub Pages
+name: Build and deploy site to GitHub Pages
 
 on:
   push:
@@ -11,16 +11,23 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
+      - uses: pnpm/action-setup@v2
 
-      - run: bundle exec jekyll build
+      - name: Setup node env 🏗
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.node-version'
+          cache: 'pnpm'
+
+      - name: Install dependencies 👨🏻‍💻
+        run: pnpm install --frozen-lockfile
+
+      - name: build
+        run: pnpm docs:build
 
       - uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          publish_dir: ./.vitepress/dist
           publish_branch: master
           force_orphan: true
-
