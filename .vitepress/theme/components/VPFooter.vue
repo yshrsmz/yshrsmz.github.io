@@ -16,32 +16,50 @@ const year = new Date().getUTCFullYear()
         <p class="sr-only">Social links</p>
         <ul class="flex flex-row items-center gap-4">
           <li class="h-8 w-8">
-            <a href="https://feeds.feedburner.com/codingfeline"
+            <a
+              href="https://feeds.feedburner.com/codingfeline"
+              target="_blank"
+              rel="noopener noreferrer"
               ><VPRssIcon class="fill-current dark:text-gray-100"
             /></a>
           </li>
           <li class="h-8 w-8">
-            <a href="https://github.com/yshrsmz"
+            <a
+              href="https://github.com/yshrsmz"
+              target="_blank"
+              rel="noopener noreferrer"
               ><VPGitHubIcon class="fill-current dark:text-gray-100"
             /></a>
           </li>
           <li class="h-8 w-8">
-            <a href="https://stackexchange.com/users/456702/yshrsmz"
+            <a
+              href="https://stackexchange.com/users/456702/yshrsmz"
+              target="_blank"
+              rel="noopener noreferrer"
               ><VPStackExchangeIcon class="fill-current dark:text-gray-100"
             /></a>
           </li>
           <li class="h-8 w-8">
-            <a href="https://stackoverflow.com/users/855599/yshrsmz"
+            <a
+              href="https://stackoverflow.com/users/855599/yshrsmz"
+              target="_blank"
+              rel="noopener noreferrer"
               ><VPStackOverflowIcon class="fill-current dark:text-gray-100"
             /></a>
           </li>
           <li class="h-8 w-8">
-            <a href="https://twitter.com/_yshrsmz"
+            <a
+              href="https://twitter.com/_yshrsmz"
+              target="_blank"
+              rel="noopener noreferrer"
               ><VPXIcon class="fill-current dark:text-gray-100"
             /></a>
           </li>
           <li class="h-8 w-8">
-            <a href="https://reddit.com/user/yshrsmz"
+            <a
+              href="https://reddit.com/user/yshrsmz"
+              target="_blank"
+              rel="noopener noreferrer"
               ><VPRedditIcon class="fill-current dark:text-gray-100"
             /></a>
           </li>
