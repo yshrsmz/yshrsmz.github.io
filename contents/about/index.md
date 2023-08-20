@@ -4,9 +4,10 @@ title: ABOUT
 ---
 
 Yasuhiro Shimizu  
-Android and JavaScript lover.
+Android and JavaScript/TypeScript lover.  
+Co-host of [AndroidDagashi](https://androiddagashi.github.io).
 
-Please refer to [PRODUCTS](/products/) page for my personal works.
+Please refer to [Products](/products/) page for my personal works.
 
 ## Support me
 
