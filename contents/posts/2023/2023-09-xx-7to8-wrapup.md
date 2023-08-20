@@ -2,6 +2,7 @@
 layout: post
 title: 2023年07-08月振り返り
 category: diary
+draft: true
 tags:
   - diary
 ---

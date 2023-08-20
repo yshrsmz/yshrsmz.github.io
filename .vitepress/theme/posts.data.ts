@@ -16,6 +16,7 @@ export default createContentLoader(POST_MARKDOWN_PATTERN, {
   },
   transform(raw: ContentData[]): Post[] {
     return raw
+      .filter(({ frontmatter }) => !frontmatter.draft)
       .map(({ url, frontmatter, excerpt }) => {
         return {
           title: frontmatter.title,
