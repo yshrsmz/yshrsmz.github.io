@@ -29,7 +29,7 @@ if (typeof window !== 'undefined') {
 
 <template>
   <div
-    class="flex min-h-screen w-screen max-w-full flex-col items-center bg-gray-100 text-gray-950 dark:bg-slate-900 dark:text-white"
+    class="flex min-h-screen w-screen max-w-full flex-col items-center"
     :class="{ 'py-8': !showNavigation }"
   >
     <VPHeader v-if="showNavigation" :title-tag="titleTag" />

@@ -38,7 +38,7 @@ import { data } from '../tags.data.js'
                   class="text-gray-500 dark:text-gray-400"
                   :datetime="post.date.time"
                   >{{ post.date.time }}</time
-                ><span>{{ post.title }}</span></a
+                ><span class="underline">{{ post.title }}</span></a
               >
             </li>
           </ul>
