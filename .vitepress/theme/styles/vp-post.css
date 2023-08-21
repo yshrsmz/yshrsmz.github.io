@@ -306,7 +306,7 @@
 }
 
 .VPPost__content a > code {
-  color: var(--vp-c-brand);
+  @apply text-gray-100 dark:text-white;
 }
 
 .VPPost__content div[class*='language-'],
