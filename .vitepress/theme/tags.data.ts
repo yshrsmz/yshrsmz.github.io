@@ -24,6 +24,10 @@ export default createContentLoader(POST_MARKDOWN_PATTERN, {
     // group post by frontmatter.tags
     const postsByTag = raw.reduce(
       (acc, post) => {
+        if (post.frontmatter.draft) {
+          return acc
+        }
+
         const tags: string[] = post.frontmatter.tags ?? []
         tags.forEach((tag) => {
           if (!hasOwnProperty(acc, tag)) {

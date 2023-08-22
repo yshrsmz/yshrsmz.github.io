@@ -1,4 +1,5 @@
-import { createContentLoader, type ContentData } from 'vitepress'
+import { createContentLoader } from 'vitepress'
+import type { ContentData } from 'vitepress'
 import type { Post } from './types'
 import {
   POST_MARKDOWN_PATTERN,

@@ -39,6 +39,117 @@ tailwindcss でいい感じにしてやった。
 
 Markdown のスタイルは、 [`@tailwindcss/typography`](https://tailwindcss.com/docs/typography-plugin) がめちゃくちゃ捗った。記事面はほぼこれを適用しているだけ。
 
+### 記事一覧, タグ一覧
+
+これは VitePress の機能としては存在しないので、自分で実装する必要がある。
+
+幸い [`createContentLoader`](https://vitepress.dev/guide/data-loading) というコンテンツの読み込み・整形 API があるので、これを利用する。
+
+記事一覧だとこんな感じ
+
+```ts
+import { createContentLoader } from 'vitepress'
+import type { ContentData } from 'vitepress'
+import type { Post } from './types'
+import {
+  createExcerpt,
+  getPublishedDateFromPath,
+  rewritePostUrl,
+} from './helper'
+
+declare const data: Post[]
+export { data }
+
+export default createContentLoader('./contents/posts/*/*.md', {
+  excerpt: (file, _options) => {
+    file.excerpt = createExcerpt(file.content)
+  },
+  transform(raw: ContentData[]): Post[] {
+    return raw
+      // draft フラグの立っているファイルを除外
+      .filter(({ frontmatter }) => !frontmatter.draft)
+      .map(({ url, frontmatter, excerpt }) => {
+        return {
+          title: frontmatter.title,
+          frontmatter,
+          // 後述の rewrites に記事 url をあわせる
+          url: rewritePostUrl(url),
+          excerpt,
+          // ファイル名に含まれる日付データを取得
+          date: getPublishedDateFromPath(url),
+        }
+      })
+      // 日付順にソート
+      .sort((a, b) => (b.date.time > a.date.time ? 1 : -1))
+  },
+})
+```
+
+タグ一覧はもう少し複雑になる。  
+基本は同じだけど、記事データからタグを抽出し、データの持ち方をタグベースに変える必要がある。
+
+```ts
+import { createContentLoader } from 'vitepress'
+import type { ContentData } from 'vitepress'
+import type { PostDate } from './types'
+import {
+  getPublishedDateFromPath,
+  rewritePostUrl,
+} from './helper'
+
+interface PostsForTag {
+  tag: string
+  posts: { title: string; url: string; date: PostDate }[]
+}
+
+declare const data: PostsForTag[]
+export { data }
+
+function hasOwnProperty(obj: unknown, prop: string): boolean {
+  return Object.prototype.hasOwnProperty.call(obj, prop)
+}
+
+export default createContentLoader('./contents/posts/*/*.md', {
+  transform(raw: ContentData[]): PostsForTag[] {
+    // group post by frontmatter.tags
+    const postsByTag = raw.reduce(
+      (acc, post) => {
+        if (post.frontmatter.draft) {
+          return acc
+        }
+
+        const tags: string[] = post.frontmatter.tags ?? []
+        tags.forEach((tag) => {
+          if (!hasOwnProperty(acc, tag)) {
+            acc[tag] = []
+          }
+
+          acc[tag].push({
+            title: post.frontmatter.title,
+            url: rewritePostUrl(post.url),
+            date: getPublishedDateFromPath(post.url),
+          })
+        })
+
+        return acc
+      },
+      {} as Record<string, PostsForTag['posts'][number][]>,
+    )
+
+    return Object.entries(postsByTag)
+      // タグの名前順にソート
+      .sort((a, b) => a[0].localeCompare(b[0]))
+      .map(([tag, posts]) => {
+        return {
+          tag,
+          // 記事を日付順にソート
+          posts: posts.sort((a, b) => (b.date.time > a.date.time ? 1 : -1)),
+        }
+      })
+  },
+})
+```
+
 ## パスを Jekyll と合わせる
 
 これは VitePress の設定にある `rewrites` で何とかする感じ。
@@ -82,7 +193,7 @@ head: [
     'script',
     {
       async: '',
-      src: 'https://www.googletagmanager.com/gtag/js?id=G-XZRK8ZP8XC',
+      src: `https://www.googletagmanager.com/gtag/js?id=${YOUR_GA4_ID}`,
     },
   ],
   [
@@ -91,7 +202,7 @@ head: [
     `window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-XZRK8ZP8XC');`,
+    gtag('config', ${YOUR_GA4_ID});`,
   ],
 ]
 ```
@@ -130,7 +241,7 @@ head: [
 
 `config.ts` の `buildEnd()` フックを使うことによって、VitePress の `createContentLoader` API を使って生成することができた。
 
-フィードの生成自体は [`jpmonette/feed](https://github.com/jpmonette/feed) を使うことで実現できる(どうでもいいけど jpmonette 氏は私の出した PR に反応してほしい…)。
+フィードの生成自体は [`jpmonette/feed`](https://github.com/jpmonette/feed) を使うことで実現できる(どうでもいいけど jpmonette 氏は私の出した PR に反応してほしい…)。
 
 ---
 
