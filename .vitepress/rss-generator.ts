@@ -17,6 +17,7 @@ export async function generateRssFeed(
     },
     transform(data) {
       return data
+        .filter((item) => !item.frontmatter.draft)
         .map((item) => toPost(item))
         .sort((a, b) => (b.date.time > a.date.time ? 1 : -1))
         .slice(0, 30)
@@ -29,7 +30,7 @@ export async function generateRssFeed(
     id: hostname,
     link: hostname,
     language: 'ja',
-    updated: new Date(),
+    updated: new Date(posts[0].date.time),
     copyright: `All rights reserved 2020, yshrsmz`,
   })
 
@@ -40,7 +41,7 @@ export async function generateRssFeed(
       id: link,
       link: link,
       description: post.excerpt ? `${post.excerpt}…` : undefined,
-      date: new Date(post.date.string),
+      date: new Date(post.date.time),
     })
   })
 
