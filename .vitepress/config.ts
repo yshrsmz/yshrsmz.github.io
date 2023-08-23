@@ -9,7 +9,7 @@ import { generateOGPMeta } from './ogp'
 
 const TITLE = 'CodingFeline'
 const DESCRIPTION = 'Thoughts, stories and ideas'
-const HOST_NAME = 'https://codingfeline.com/'
+const HOST_NAME = 'https://www.codingfeline.com/'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
