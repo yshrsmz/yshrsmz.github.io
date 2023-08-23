@@ -5,6 +5,7 @@ import {
 } from './theme/helper'
 import type { PostDate } from './theme/types'
 import { generateRssFeed } from './rss-generator'
+import { generateOGPMeta } from './ogp'
 
 const TITLE = 'CodingFeline'
 const DESCRIPTION = 'Thoughts, stories and ideas'
@@ -14,6 +15,7 @@ const HOST_NAME = 'https://codingfeline.com/'
 export default defineConfig({
   title: TITLE,
   description: DESCRIPTION,
+  lang: 'ja-JP',
   srcDir: 'contents',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' }],
@@ -63,6 +65,14 @@ export default defineConfig({
         crossorigin: 'anonymous',
       },
     ],
+    ...generateOGPMeta({
+      url: HOST_NAME,
+      type: 'blog',
+      title: TITLE,
+      description: DESCRIPTION,
+      siteName: TITLE,
+      image: `${HOST_NAME}ogp.jpg`,
+    }),
   ],
   themeConfig: {},
   markdown: {
@@ -87,6 +97,16 @@ export default defineConfig({
     if (pageData.frontmatter.layout === 'post') {
       const date = getPublishedDateFromPath(pageData.filePath)
       pageData.date = date
+      pageData.frontmatter = {
+        ...pageData.frontmatter,
+        head: [
+          ...(pageData.frontmatter.head ?? []),
+          ...generateOGPMeta({
+            url: `${HOST_NAME}${pageData.relativePath.replace('index.md', '')}`,
+            title: pageData.title,
+          }),
+        ],
+      }
     }
   },
   async buildEnd(siteConfig) {
