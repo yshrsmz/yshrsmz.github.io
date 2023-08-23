@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview",
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
     "lint": "eslint './.vitepress/**/*.{js,ts,vue}'",
     "lint:fix": "eslint --fix './.vitepress/**/*.{js,ts,vue}'"
   },
