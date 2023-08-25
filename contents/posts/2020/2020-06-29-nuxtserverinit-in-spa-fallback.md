@@ -3,7 +3,7 @@ layout: post
 title: Nuxt.js静的サイトモードのfallbackのSPAモードとnuxtServerInit
 category: programming
 tags:
-  - vue.js
+  - Vue.js
   - nuxt.js
   - TIL
 ---

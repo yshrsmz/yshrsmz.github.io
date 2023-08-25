@@ -3,7 +3,7 @@ layout: post
 title: Nuxt.jsでgenerateした時のfallbackオプションについて
 category: programming
 tags:
-  - vue.js
+  - Vue.js
   - nuxt.js
   - TIL
 ---

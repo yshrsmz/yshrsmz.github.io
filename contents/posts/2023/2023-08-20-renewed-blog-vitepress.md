@@ -1,6 +1,9 @@
 ---
 layout: post
 title: ブログを VitePress で書き直した
+tags:
+  - Vue.js
+  - VitePress
 ---
 
 ふと思い立って Jekyll から VitePress に移行してみた。

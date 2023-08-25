@@ -4,7 +4,7 @@ title: AndroidDagashiを支える技術
 category: programming
 tags:
   - GitHub
-  - vue.js
+  - Vue.js
   - nuxt.js
   - AndroidDagashi
 ---
