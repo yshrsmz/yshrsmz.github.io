@@ -20,8 +20,9 @@ export function generateOGPMeta({
   const results: HeadConfig[] = [
     ['meta', { property: 'og:url', content: url }],
     ['meta', { property: 'og:title', content: title }],
-    ['meta', { property: 'twitter:card', content: 'summary' }],
+    ['meta', { property: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { property: 'twitter:site', content: '@_yshrsmz' }],
+    ['meta', { property: 'twitter:creator', content: '@_yshrsmz' }],
   ]
 
   if (type) {
