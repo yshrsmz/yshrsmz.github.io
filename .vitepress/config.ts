@@ -6,10 +6,13 @@ import {
 import type { PostDate } from './theme/types'
 import { generateRssFeed } from './rss-generator'
 import { generateOGPMeta } from './ogp'
+import { OGPImageGenerator } from './ogp-generator'
 
 const TITLE = 'CodingFeline'
 const DESCRIPTION = 'Thoughts, stories and ideas'
 const HOST_NAME = 'https://www.codingfeline.com/'
+
+const ogpGenerator = new OGPImageGenerator()
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -93,7 +96,7 @@ export default defineConfig({
     'posts/:skipped/:year-:month-:day-:slug.md':
       ':year/:month/:day/:slug/index.md',
   },
-  transformPageData(pageData, _ctx) {
+  async transformPageData(pageData, ctx) {
     if (pageData.frontmatter.layout === 'post') {
       const date = getPublishedDateFromPath(pageData.filePath)
       pageData.date = date
@@ -104,13 +107,25 @@ export default defineConfig({
           ...generateOGPMeta({
             url: `${HOST_NAME}${pageData.relativePath.replace('index.md', '')}`,
             title: pageData.title,
+            image: `${HOST_NAME}${pageData.relativePath.replace(
+              'index.md',
+              'ogp.png',
+            )}`,
           }),
         ],
       }
+
+      ogpGenerator.registerPost(
+        pageData.title,
+        date.string,
+        ctx.siteConfig.outDir,
+        pageData.relativePath,
+      )
     }
   },
   async buildEnd(siteConfig) {
     await generateRssFeed(siteConfig, HOST_NAME, TITLE, DESCRIPTION)
+    await ogpGenerator.generateAll()
   },
 })
 

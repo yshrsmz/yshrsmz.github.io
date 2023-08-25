@@ -14,3 +14,8 @@
 - [x] AdSense
 - [x] og tags
   - https://github.com/vuejs/vitepress/issues/883
+- [x] Kindle Widget
+- [ ] Goods Widget
+  - Amazon
+  - Generic
+- [x] OGP image
