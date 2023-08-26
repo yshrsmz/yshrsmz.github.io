@@ -24,7 +24,7 @@
     "date-fns": "2.30.0",
     "eslint": "8.48.0",
     "eslint-config-prettier": "9.0.0",
-    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-import": "2.28.1",
     "eslint-plugin-jest": "27.2.3",
     "eslint-plugin-prettier": "5.0.0",
     "eslint-plugin-unused-imports": "3.0.0",
