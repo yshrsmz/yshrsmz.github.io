@@ -44,7 +44,7 @@ OG 画像の作り方にはいくつか種類がある。
 
 というわけでこれらを参考にしたら、 OG 画像が生成できそう。
 
-で、結論から言うと、 [vercel/satori](https://github.com/vercel/satori) と [yisibl/resvg-js](https://github.com/yisibl/resvg-js) で実現できた。
+結論から言うと、 [vercel/satori](https://github.com/vercel/satori) と [yisibl/resvg-js](https://github.com/yisibl/resvg-js) で実現できた。
 
 ## 実装
 
@@ -80,7 +80,7 @@ await satori(
 )
 ```
 
-今回は下記のような HTML(+CSS) なので、それをいい感じに上記記法に変換する。
+今回は下記のような HTML(+CSS) なので、これをいい感じに上記記法に変換する。
 
 ```html
 <div style="display: flex; flex-direction: column; align-items: center; width: 100%; height: 100%; background-color: white; font-size: 48px;">
