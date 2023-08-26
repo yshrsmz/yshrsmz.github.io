@@ -7,7 +7,7 @@ defineProps<{ url: string }>()
 <template>
   <a
     :href="url"
-    class="bg-amazon inline-block px-4 py-1 text-center font-semibold text-black decoration-transparent"
+    class="inline-block bg-amazon px-4 py-1 text-center font-semibold text-black decoration-transparent"
     target="_blank"
     rel="noopener noreferrer"
     ><VPAmazonIcon
