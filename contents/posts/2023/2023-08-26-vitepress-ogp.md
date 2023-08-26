@@ -86,9 +86,9 @@ await satori(
 ```html
 <div style="display: flex; flex-direction: column; align-items: center; width: 100%; height: 100%; background-color: white; font-size: 48px;">
   <div style="display: flex; flex-direction: column; align-items: center; height: 100%; padding: 20px 56px;">
-    <p style="display: flex; align-items: center; flex-grow: 1; font-weight: 700;"></p>
-    <p style="font-size: 42px; font-weight: 400;"></p>
-    <p style="font-size: 48px; font-weight: 700;"></p>
+    <p style="display: flex; align-items: center; flex-grow: 1; font-weight: 700;">ブログ各記事の OG 画像を作った</p>
+    <p style="font-size: 42px; font-weight: 400;">August 26, 2023</p>
+    <p style="font-size: 48px; font-weight: 700;">codingfeline.com</p>
   </div>
 </div>
 ```
