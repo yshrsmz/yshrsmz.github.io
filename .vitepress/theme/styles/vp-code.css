@@ -1,0 +1,17 @@
+@media (prefers-color-scheme: dark) {
+  .vp-adaptive-theme {
+    @apply !bg-gray-800;
+  }
+  .vp-code-light {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .vp-adaptive-theme {
+    @apply !bg-gray-200;
+  }
+  .vp-code-dark {
+    display: none;
+  }
+}

@@ -77,6 +77,7 @@ export default defineConfig({
       image: `${HOST_NAME}ogp.jpg`,
     }),
   ],
+  appearance: false,
   themeConfig: {},
   markdown: {
     toc: {},

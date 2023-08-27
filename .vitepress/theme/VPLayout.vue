@@ -8,6 +8,7 @@ import VPPosts from './components/VPPosts.vue'
 import VPTags from './components/VPTags.vue'
 import NotFound from './NotFound.vue'
 import { computed } from 'vue'
+import './styles/vp-code.css'
 
 const { page, frontmatter } = useData()
 
