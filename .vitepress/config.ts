@@ -99,7 +99,9 @@ export default defineConfig({
   async transformPageData(pageData, ctx) {
     if (pageData.frontmatter.layout === 'post') {
       const date = getPublishedDateFromPath(pageData.filePath)
-      pageData.date = date
+      if (date) {
+        pageData.date = date
+      }
       pageData.frontmatter = {
         ...pageData.frontmatter,
         head: [
@@ -115,12 +117,14 @@ export default defineConfig({
         ],
       }
 
-      ogpGenerator.registerPost(
-        pageData.title,
-        date.string,
-        ctx.siteConfig.outDir,
-        pageData.relativePath,
-      )
+      if (date) {
+        ogpGenerator.registerPost(
+          pageData.title,
+          date.string,
+          ctx.siteConfig.outDir,
+          pageData.relativePath,
+        )
+      }
     }
   },
   async buildEnd(siteConfig) {

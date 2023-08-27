@@ -3,7 +3,12 @@ import { createContentLoader } from 'vitepress'
 import { Feed } from 'feed'
 import { writeFile } from 'node:fs/promises'
 import { resolve, join } from 'node:path'
-import { POST_MARKDOWN_PATTERN, createExcerpt, toPost } from './theme/helper'
+import {
+  POST_MARKDOWN_PATTERN,
+  createExcerpt,
+  sortByDate,
+  toPost,
+} from './theme/helper'
 
 export async function generateRssFeed(
   siteConfig: SiteConfig,
@@ -19,7 +24,8 @@ export async function generateRssFeed(
       return data
         .filter((item) => !item.frontmatter.draft)
         .map((item) => toPost(item))
-        .sort((a, b) => (b.date.time > a.date.time ? 1 : -1))
+        .filter((item) => !!item.date)
+        .sort((a, b) => sortByDate(a, b))
         .slice(0, 30)
     },
   }).load()
@@ -29,19 +35,24 @@ export async function generateRssFeed(
     description: description,
     id: hostname,
     link: hostname,
-    language: 'ja',
-    updated: new Date(posts[0].date.time),
+    language: 'ja-JP',
+    updated: posts[0].date?.time ? new Date(posts[0].date?.time) : new Date(),
     copyright: `All rights reserved 2020, yshrsmz`,
   })
 
   posts.forEach((post) => {
     const link = join(hostname, post.url)
+    const time = post.date?.time
+    if (!time) {
+      return
+    }
+
     feed.addItem({
       title: post.title,
       id: link,
       link: link,
       description: post.excerpt ? `${post.excerpt}…` : undefined,
-      date: new Date(post.date.time),
+      date: new Date(time),
     })
   })
 

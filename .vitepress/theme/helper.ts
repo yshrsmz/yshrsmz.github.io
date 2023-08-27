@@ -21,15 +21,28 @@ export function getPublishedDateFromRewrittenUrl(
   return undefined
 }
 
-export function getPublishedDateFromPath(filePath: string): PostDate {
+export function getPublishedDateFromPath(
+  filePath: string,
+): PostDate | undefined {
   const file = filePath.split('/').slice(-1)[0]
   const [year, month, day] = file.split('-').slice(0, 3)
 
   return formatDate(year, month, day)
 }
 
-function formatDate(year: string, month: string, day: string): PostDate {
+function isValidDate(date: Date): boolean {
+  return date instanceof Date && !isNaN(+date)
+}
+
+function formatDate(
+  year: string,
+  month: string,
+  day: string,
+): PostDate | undefined {
   const publishedAt = new Date(`${year}-${month}-${day}T00:00:00Z`)
+  if (!isValidDate(publishedAt)) {
+    return undefined
+  }
   publishedAt.setUTCHours(12)
   return {
     time: `${year}-${month}-${day}`,
@@ -65,4 +78,11 @@ export function toPost({ url, frontmatter, excerpt }: ContentData): Post {
     excerpt,
     date: getPublishedDateFromPath(url),
   }
+}
+
+export function sortByDate(
+  a: { date: PostDate | undefined },
+  b: { date: PostDate | undefined },
+): number {
+  return (b.date?.time ?? 0) > (a.date?.time ?? 0) ? 1 : -1
 }

@@ -11,7 +11,7 @@ export interface Post {
   frontmatter: Record<string, any>
   title: string
   url: string
-  date: PostDate
+  date: PostDate | undefined
   excerpt: string | undefined
 }
 

@@ -8,8 +8,8 @@ const { page, frontmatter } = useData()
 <template>
   <div class="VPPost mt-6 flex flex-col items-center">
     <h1 class="text-center text-2xl font-bold">{{ frontmatter.title }}</h1>
-    <time class="mt-4 inline-block" :datetime="page.date.time">{{
-      page.date.string
+    <time class="mt-4 inline-block" :datetime="page.date?.time">{{
+      page.date?.string
     }}</time>
     <ul class="tags not-prose my-4 flex flex-row gap-2">
       <li

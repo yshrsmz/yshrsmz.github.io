@@ -5,11 +5,12 @@ import {
   POST_MARKDOWN_PATTERN,
   getPublishedDateFromPath,
   rewritePostUrl,
+  sortByDate,
 } from './helper'
 
 interface PostsForTag {
   tag: string
-  posts: { title: string; url: string; date: PostDate }[]
+  posts: { title: string; url: string; date: PostDate | undefined }[]
 }
 
 declare const data: PostsForTag[]
@@ -51,7 +52,7 @@ export default createContentLoader(POST_MARKDOWN_PATTERN, {
       .map(([tag, posts]) => {
         return {
           tag,
-          posts: posts.sort((a, b) => (b.date.time > a.date.time ? 1 : -1)),
+          posts: posts.sort((a, b) => sortByDate(a, b)),
         }
       })
   },

@@ -12,9 +12,9 @@ const recentPosts = posts.slice(0, 10)
         <a :href="post.url" class="block">
           <p class="font-bold underline">{{ post.frontmatter.title }}</p>
           <time
-            :datetime="post.date.time"
+            :datetime="post.date?.time"
             class="text-sm text-gray-500 dark:text-gray-400"
-            >{{ post.date.string }}</time
+            >{{ post.date?.string }}</time
           >
           <!-- eslint-disable vue/no-v-html -->
           <div

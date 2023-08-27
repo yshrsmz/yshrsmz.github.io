@@ -5,7 +5,11 @@ import type { Post } from '../types'
 // group by year
 const postsByYear = data.reduce(
   (acc, post) => {
-    const year = post.date.year
+    const year = post.date?.year
+    if (!year) {
+      return acc
+    }
+
     let yearlyPosts = acc.find((p) => p.year === year)
     if (!yearlyPosts) {
       yearlyPosts = { year, posts: [] }
@@ -18,7 +22,7 @@ const postsByYear = data.reduce(
 )
 
 const formatPublishedAt = (post: Post): string => {
-  return `${post.date.month}-${post.date.day}`
+  return `${post.date?.month}-${post.date?.day}`
 }
 </script>
 
@@ -39,7 +43,7 @@ const formatPublishedAt = (post: Post): string => {
                 <time
                   :class="$style.time"
                   class="text-gray-500 dark:text-gray-400"
-                  :datetime="post.date.time"
+                  :datetime="post.date?.time"
                   >{{ formatPublishedAt(post) }}</time
                 >
                 <span class="underline">{{ post.frontmatter.title }}</span>

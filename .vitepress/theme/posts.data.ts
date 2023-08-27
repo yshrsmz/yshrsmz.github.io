@@ -4,8 +4,8 @@ import type { Post } from './types'
 import {
   POST_MARKDOWN_PATTERN,
   createExcerpt,
-  getPublishedDateFromPath,
-  rewritePostUrl,
+  sortByDate,
+  toPost,
 } from './helper'
 
 declare const data: Post[]
@@ -18,15 +18,8 @@ export default createContentLoader(POST_MARKDOWN_PATTERN, {
   transform(raw: ContentData[]): Post[] {
     return raw
       .filter(({ frontmatter }) => !frontmatter.draft)
-      .map(({ url, frontmatter, excerpt }) => {
-        return {
-          title: frontmatter.title,
-          frontmatter,
-          url: rewritePostUrl(url),
-          excerpt,
-          date: getPublishedDateFromPath(url),
-        }
-      })
-      .sort((a, b) => (b.date.time > a.date.time ? 1 : -1))
+      .map((content) => toPost(content))
+      .filter((post) => !!post.date)
+      .sort((a, b) => sortByDate(a, b))
   },
 })
