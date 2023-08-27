@@ -67,7 +67,7 @@ export function createExcerpt(content: string): string | undefined {
     return undefined
   }
 
-  return excerpt
+  return `${excerpt}…`
 }
 
 export function toPost({ url, frontmatter, excerpt }: ContentData): Post {

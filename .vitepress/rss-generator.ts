@@ -51,7 +51,7 @@ export async function generateRssFeed(
       title: post.title,
       id: link,
       link: link,
-      description: post.excerpt ? `${post.excerpt}…` : undefined,
+      description: post.excerpt,
       date: new Date(time),
     })
   })
