@@ -18,7 +18,6 @@ const recentPosts = posts.slice(0, 10)
           >
           <!-- eslint-disable vue/no-v-html -->
           <div
-            :class="$style.excerpt"
             class="text-gray-700 dark:text-gray-300"
             v-html="post.excerpt"
           ></div>
@@ -34,9 +33,3 @@ const recentPosts = posts.slice(0, 10)
     </ul>
   </div>
 </template>
-
-<style lang="postcss" module>
-.excerpt > p::after {
-  content: '…';
-}
-</style>

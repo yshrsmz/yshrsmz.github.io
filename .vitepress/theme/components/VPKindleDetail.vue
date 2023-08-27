@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 import { useAmazonLink } from '../composables/useAmazonLink'
 import type { KindleDetail } from '../types'
-import VPKindleLink from './VPKindleLink.vue'
+import VPAmazonLink from './VPAmazonLink.vue'
 
 const props = withDefaults(
   defineProps<{
@@ -25,7 +25,9 @@ const { productUrl, imageUrl } = useAmazonLink(props.detail.asin)
 </script>
 
 <template>
-  <div class="VPKindleDetail flex flex-row items-center decoration-transparent">
+  <div
+    class="VPKindleDetail flex flex-row items-center object-contain decoration-transparent"
+  >
     <a :href="productUrl" target="_blank" rel="noopener noreferrer">
       <img
         class="!my-3 px-3"
@@ -54,7 +56,7 @@ const { productUrl, imageUrl } = useAmazonLink(props.detail.asin)
           <dd>{{ detail.publishedAt }}</dd>
         </template>
       </dl>
-      <VPKindleLink :url="productUrl" class="mt-3" />
+      <VPAmazonLink :url="productUrl" class="mt-3" />
     </div>
     <div v-if="$slots.default" class="note"><slot /></div>
   </div>

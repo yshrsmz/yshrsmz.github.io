@@ -5,7 +5,7 @@ import {
   createProductsUrl,
   createImageUrl,
 } from '../composables/useAmazonLink'
-import VPKindleLink from './VPKindleLink.vue'
+import VPAmazonLink from './VPAmazonLink.vue'
 import type { KindleDetail } from '../types'
 
 const props = defineProps<{
@@ -41,7 +41,7 @@ const authors = computed(() => {
           rel="noopener noreferrer"
         >
           <img
-            class="!my-0"
+            class="!my-0 object-contain"
             :src="createImageUrl(detail.asin)"
             :alt="detail.title"
             :title="detail.title"
@@ -56,7 +56,7 @@ const authors = computed(() => {
       <dd>{{ publisher }}</dd>
     </dl>
     <div v-if="seriesUrl" class="mx-3 mt-2">
-      <VPKindleLink :url="seriesUrl" />
+      <VPAmazonLink :url="seriesUrl" />
     </div>
   </div>
 </template>
