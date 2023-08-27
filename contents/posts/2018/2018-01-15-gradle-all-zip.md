@@ -11,7 +11,7 @@ tags:
 
 最初からコマンドラインで`gradle-x.y.z-all.zip`を取得するには`build.gradle`ファイルに一手間必要
 
-```gradle
+```groovy
 // rootのbuild.gradle
 task wrapper(type: Wrapper) {
   gradleVersion = "x.y.z"

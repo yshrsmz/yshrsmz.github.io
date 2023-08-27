@@ -34,7 +34,7 @@ class SomeTest {
 まずはライブラリの追加。
 commonTestでは`kotlin-test`を読み込みつつ、androidTestでは`kotlin-test`と`androidx.test.ext:junit`や`Robolectric`を読み込んでいく。iosTestは特に必要ありません。
 
-```gradle
+```groovy
 kotlin {
     android()
     iosX64("ios") {

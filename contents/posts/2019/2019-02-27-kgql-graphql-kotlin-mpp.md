@@ -178,7 +178,7 @@ Kotlinは1.3.20以降。
 Gradleは5.1.1以降を推奨。Jetifier使わなければ4.10でも動くかも。  
 一応Android ProjectでもKMPでも動くはず
 
-```gradle
+```groovy
 // ./build.gradle
 buildScript {
     repositories {
@@ -193,7 +193,7 @@ buildScript {
 ```
 
 
-```gradle
+```groovy
 // ./common/build.gradle
 apply plugin: 'org.jetbrains.kotlin.multiplatform'
 apply plugin: 'com.codingfeline.kgql'

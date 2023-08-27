@@ -24,7 +24,7 @@ Gradleは4.10とかでも動くはずだけど、5.1.1以降を推奨。
 あとMultiplatform Projectでないと動きません。
 
 
-```gradle
+```groovy
 // ./build.gradle
 buildScript {
     repositories {
@@ -38,7 +38,7 @@ buildScript {
 ```
 
 
-```gradle
+```groovy
 // ./common/build.gradle
 apply plugin: 'org.jetbrains.kotlin.multiplatform'
 apply plugin: 'com.codingfeline.buildkonfig'
@@ -125,7 +125,7 @@ buildkonfig.flavor=dev
 
 次に`build.gradle`でフレーバー毎のbuildkonfig設定を記述する。
 
-```gradle
+```groovy
 buildkonfig {
     packageName = 'com.example.app'
     

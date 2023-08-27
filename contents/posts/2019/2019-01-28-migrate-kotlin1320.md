@@ -13,7 +13,7 @@ tags:
 
 今まではターゲットは下記のように設定していた。
 
-```gradle
+```groovy
 kotlin {
     targets {
         fromPreset(presets.jvm, 'jvm')
@@ -53,7 +53,7 @@ iOS側の参照をすべて書き換えるのでも対応できなくはない�
 ターゲットの設定方法を1.3.20からの新しいDSLに書き換えると下記のようになり、今まで通り`${module名}.framework`な成果物が得られる。  
 ちなみにcopyタスクの方を書き換え忘れると存在しないタスクを参照しようとしてビルドが失敗する。
 
-```gradle
+```groovy
 kotlin {
   jvm()
   iosX64('ios') {
@@ -85,7 +85,7 @@ task copyFramework {
 
 このDSLの変更により、一つのターゲットに対して複数の成果物を設定することができるようになったらしい。
 
-```gradle
+```groovy
 kotlin {
   iosX64 {
     binaries {

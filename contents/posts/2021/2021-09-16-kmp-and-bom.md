@@ -11,7 +11,7 @@ tags:
 
 maven の BOM を使おうと思って Kotlin Multiplatform Project で下記のように書いてもうまく動かず、よくわからないエラーが出る。
 
-```gradle
+```groovy
 apply plugin: 'org.jetbrains.kotlin.multiplatform'
 
 kotlin {
@@ -199,7 +199,7 @@ Possible solutions: notify(), toString(), toString(), toString(), toString(), sp
 
 Kotlin のフォーラムや YouTrack を見たところ、
 
-```gradle
+```groovy
 implementation project.dependencies.platform("org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.5.2-native-mt")
 ```
 
