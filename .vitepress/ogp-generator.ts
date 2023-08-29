@@ -30,48 +30,6 @@ export class OGPImageGenerator {
       {
         type: 'div',
         props: {
-          children: [
-            {
-              type: 'div',
-              props: {
-                children: [
-                  {
-                    type: 'p',
-                    props: {
-                      children: title,
-                      style: {
-                        display: 'flex',
-                        alignItems: 'center',
-                        flexGrow: 1,
-                        fontWeight: '700',
-                      },
-                    },
-                  },
-                  {
-                    type: 'p',
-                    props: {
-                      children: publishedAt,
-                      style: { fontSize: '42px', fontWeight: '400' },
-                    },
-                  },
-                  {
-                    type: 'p',
-                    props: {
-                      children: 'codingfeline.com',
-                      style: { fontSize: '40px', fontWeight: '700' },
-                    },
-                  },
-                ],
-                style: {
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  height: '100%',
-                  padding: '20px 56px',
-                },
-              },
-            },
-          ],
           style: {
             display: 'flex',
             flexDirection: 'column',
@@ -81,6 +39,48 @@ export class OGPImageGenerator {
             backgroundColor: 'white',
             fontSize: '48px',
           },
+          children: [
+            {
+              type: 'div',
+              props: {
+                style: {
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  height: '100%',
+                  padding: '20px 56px',
+                },
+                children: [
+                  {
+                    type: 'p',
+                    props: {
+                      style: {
+                        display: 'flex',
+                        alignItems: 'center',
+                        flexGrow: 1,
+                        fontWeight: '700',
+                      },
+                      children: title,
+                    },
+                  },
+                  {
+                    type: 'p',
+                    props: {
+                      style: { fontSize: '42px', fontWeight: '400' },
+                      children: publishedAt,
+                    },
+                  },
+                  {
+                    type: 'p',
+                    props: {
+                      style: { fontSize: '40px', fontWeight: '700' },
+                      children: 'codingfeline.com',
+                    },
+                  },
+                ],
+              },
+            },
+          ],
         },
       },
       {
