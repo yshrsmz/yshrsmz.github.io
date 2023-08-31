@@ -63,8 +63,8 @@ devDependencies:
     specifier: 0.5.3
     version: 0.5.3(prettier@3.0.2)
   satori:
-    specifier: 0.10.3
-    version: 0.10.3
+    specifier: 0.10.4
+    version: 0.10.4
   sitemap:
     specifier: 7.1.1
     version: 7.1.1
@@ -3140,8 +3140,8 @@ packages:
       is-regex: 1.1.4
     dev: true
 
-  /satori@0.10.3:
-    resolution: {integrity: sha512-8tZPu7AGiRWimbOyja1s2HK0hEC4DacZ8cAKDITxlVI5tKQZbOuMiVgSB50CABwc0I4Imgtkq7o9Egj1WOJTKg==}
+  /satori@0.10.4:
+    resolution: {integrity: sha512-GJNIsuiXhiC9kWGLvz04Op5DZy2UFYZAWsuUtkTlQt3r15o0K96PeD+FMfGN4luMPUHc4uV9gXqAoPxOK0omSw==}
     engines: {node: '>=16'}
     dependencies:
       '@shuding/opentype.js': 1.4.0-beta.0
