@@ -1,8 +1,9 @@
 /// <reference types="vite/client" />
 
 interface ImportMetaEnv {
-  readonly PA_API_KEY: string
-  readonly PA_API_SECRET: string
+  DEV: boolean
+  PROD: boolean
+  MODE: string
 }
 
 interface ImportMeta {
