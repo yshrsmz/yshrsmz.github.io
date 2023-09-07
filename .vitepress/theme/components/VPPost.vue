@@ -23,6 +23,7 @@ const { page, frontmatter } = useData()
     <Content
       class="VPPost__content prose mt-8 max-w-full flex-grow dark:prose-invert hover:prose-a:decoration-dotted"
     />
+    <hr class="mt-12 w-2/4" />
   </div>
 </template>
 

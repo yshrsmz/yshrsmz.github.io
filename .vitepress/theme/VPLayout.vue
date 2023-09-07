@@ -20,7 +20,9 @@ const showNavigation = computed<boolean>(
   () => frontmatter.value.navigation ?? true,
 )
 
-const shouldShowContents = computed(() => frontmatter.value.draft !== true || import.meta.env.DEV)
+const shouldShowContents = computed(
+  () => frontmatter.value.draft !== true || import.meta.env.DEV,
+)
 
 if (typeof window !== 'undefined') {
   const router = useRouter()
@@ -37,7 +39,10 @@ if (typeof window !== 'undefined') {
   >
     <VPHeader v-if="showNavigation" :title-tag="titleTag" />
 
-    <div v-if="page.isNotFound || !shouldShowContents" class="flex flex-grow flex-col sm:max-w-3xl">
+    <div
+      v-if="page.isNotFound || !shouldShowContents"
+      class="flex flex-grow flex-col sm:max-w-3xl"
+    >
       <NotFound class="mx-8 flex-grow" />
     </div>
     <div v-else-if="frontmatter.layout === 'home'" class="max-w-3xl flex-grow">
@@ -66,7 +71,7 @@ if (typeof window !== 'undefined') {
       <Content class="prose dark:prose-invert sm:max-w-3xl" />
     </div>
 
-    <VPFooter v-if="showNavigation" />
+    <VPFooter v-if="showNavigation" class="pt-24" />
   </div>
 </template>
 
