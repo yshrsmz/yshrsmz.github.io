@@ -4,6 +4,8 @@ title: Google Pixel 7 から Galaxy Z Fold 5 に機種変更したときにし�
 category: diary
 tags:
   - diary
+  - Android
+  - TIL
 ---
 
 移行アシスタントを使わずに新端末をセットアップしてみて躓いたことなど。
