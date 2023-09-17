@@ -2,7 +2,7 @@ import type { SiteConfig } from 'vitepress'
 import { createContentLoader } from 'vitepress'
 import { Feed } from 'feed'
 import { writeFile } from 'node:fs/promises'
-import { resolve, join } from 'node:path'
+import { resolve } from 'node:path'
 import {
   POST_MARKDOWN_PATTERN,
   createExcerpt,
@@ -41,8 +41,9 @@ export async function generateRssFeed(
   })
 
   posts.forEach((post) => {
-    const link = join(hostname, post.url)
+    const link = new URL(post.url, hostname).href
     const time = post.date?.time
+
     if (!time) {
       return
     }
