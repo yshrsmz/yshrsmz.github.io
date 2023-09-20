@@ -79,7 +79,7 @@ Gmail は自分でどのラベルを受信するか設定する必要がある�
 
 ## ドコモ絵文字の駆逐
 
-zFont3 である程度変更できる。
+[zFont3](https://play.google.com/store/apps/details?id=com.htetznaing.zfont2) である程度変更できる。
 
 zFont3 内を `Android` で検索すると出てくるフォント(Android12L)を使う。  
 `Auto(Recommended)` を使いそうになるが、一番下の `OneUI #All` を利用すること。
@@ -105,6 +105,14 @@ zFont3 内を `Android` で検索すると出てくるフォント(Android12L)�
 条件: デバイス > 折りたたみ状態 > 完全に閉じた状態
 実行内容: ディスプレイ > 画面の向き > 縦画面
 ```
+
+## カメラの無音化
+
+無音化する必要は特にないんだけど、いかんせんシャッター音がでかすぎる。
+
+無音化のほうが手っ取り早そうだったのでそうした。
+
+[SetEdit](https://play.google.com/store/apps/details?id=by4a.setedit22) というアプリで、`csc_pref_camera_forced_shuttersound_key` を `0` に変更する。
 
 ---
 
