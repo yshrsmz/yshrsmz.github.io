@@ -26,7 +26,7 @@ const { productUrl, imageUrl } = useAmazonLink(props.detail.asin)
 
 <template>
   <div
-    class="VPKindleDetail flex flex-row items-center object-contain decoration-transparent"
+    class="VPKindleDetail flex flex-row items-center object-contain decoration-transparent not-prose"
   >
     <a :href="productUrl" target="_blank" rel="noopener noreferrer">
       <img

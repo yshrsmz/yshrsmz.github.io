@@ -28,7 +28,7 @@ const authors = computed(() => {
 </script>
 
 <template>
-  <div class="VPKindleDetailList">
+  <div class="VPKindleDetailList not-prose">
     <ul class="books !my-3 flex !list-none flex-row flex-wrap gap-1 !px-3">
       <li
         v-for="(detail, i) in details"
