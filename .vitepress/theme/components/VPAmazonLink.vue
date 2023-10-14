@@ -12,7 +12,7 @@ defineProps<{ url: string }>()
     rel="noopener noreferrer"
     ><VPAmazonIcon
       alt=""
-      class="mr-2 inline h-5 w-5 !hover:decoration-transparent"
+      class="!hover:decoration-transparent mr-2 inline h-5 w-5"
     />クリックして今すぐチェック</a
   >
 </template>
