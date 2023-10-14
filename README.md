@@ -19,3 +19,12 @@
   - Amazon
   - Generic
 - [x] OGP image
+
+
+## Development
+
+### Update vp-doc style
+
+- `vitepress/dist/client/theme-default/styles/components/vp-doc.css`
+- `vitepress/dist/client/theme-default/styles/components/vp-code.css`
+- `vitepress/dist/client/theme-default/styles/vars.css`

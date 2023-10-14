@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useData } from 'vitepress'
-import '../styles/vp-post.css'
 
 const { page, frontmatter } = useData()
 </script>
@@ -21,14 +20,14 @@ const { page, frontmatter } = useData()
       </li>
     </ul>
     <Content
-      class="VPPost__content prose mt-8 max-w-full flex-grow dark:prose-invert hover:prose-a:decoration-dotted"
+      class="VPPost__content vp-doc prose mt-8 max-w-full flex-grow dark:prose-invert hover:prose-a:decoration-dotted"
     />
     <hr class="mt-12 w-2/4" />
   </div>
 </template>
 
 <style lang="postcss">
-@import url('../styles/vp-post.css');
+@import url('../styles/vp-doc.css');
 
 .table-of-contents {
   @apply rounded-md border-2 border-gray-300 bg-gray-50 px-3;
