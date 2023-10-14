@@ -3,6 +3,9 @@ import VPLayout from './VPLayout.vue'
 import VPKindleDetail from './components/VPKindleDetail.vue'
 import VPKindleDetailList from './components/VPKindleDetailList.vue'
 import VPAmazonGoods from './components/VPAmazonGoods.vue'
+import './styles/vars.css'
+import './styles/vp-code.css'
+import './styles/vp-doc.css'
 import './style.css'
 
 export default {

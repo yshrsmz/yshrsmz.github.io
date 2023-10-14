@@ -13,7 +13,8 @@
  * -------------------------------------------------------------------------- */
 
  :root {
-  --vp-c-brand: #646cff;
+  --vp-c-brand-1: #ffffff;
+  --vp-c-brand-2: #ffffff;
   --vp-c-brand-light: #747bff;
   --vp-c-brand-lighter: #9499ff;
   --vp-c-brand-lightest: #bcc0ff;

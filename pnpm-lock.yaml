@@ -72,8 +72,8 @@ devDependencies:
     specifier: 5.2.2
     version: 5.2.2
   vitepress:
-    specifier: 1.0.0-rc.15
-    version: 1.0.0-rc.15(@algolia/client-search@4.20.0)(search-insights@2.9.0)
+    specifier: 1.0.0-rc.21
+    version: 1.0.0-rc.21(@algolia/client-search@4.20.0)(postcss@8.4.31)(search-insights@2.9.0)
   vue:
     specifier: 3.3.4
     version: 3.3.4
@@ -781,6 +781,21 @@ packages:
 
   /@types/json5@0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+    dev: true
+
+  /@types/linkify-it@3.0.3:
+    resolution: {integrity: sha512-pTjcqY9E4nOI55Wgpz7eiI8+LzdYnw3qxXCfHyBDdPbYvbyLgWLJGh8EdPvqawwMK1Uo1794AUkkR38Fr0g+2g==}
+    dev: true
+
+  /@types/markdown-it@13.0.2:
+    resolution: {integrity: sha512-Tla7hH9oeXHOlJyBFdoqV61xWE9FZf/y2g+gFVwQ2vE1/eBzjUno5JCd3Hdb5oATve5OF6xNjZ/4VIZhVVx+hA==}
+    dependencies:
+      '@types/linkify-it': 3.0.3
+      '@types/mdurl': 1.0.3
+    dev: true
+
+  /@types/mdurl@1.0.3:
+    resolution: {integrity: sha512-T5k6kTXak79gwmIOaDF2UUQXFbnBE0zBUzF20pz7wDYu0RQMzWg+Ml/Pz50214NsFHBITkoi5VtdjFZnJ2ijjA==}
     dev: true
 
   /@types/node@17.0.45:
@@ -3472,23 +3487,28 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitepress@1.0.0-rc.15(@algolia/client-search@4.20.0)(search-insights@2.9.0):
-    resolution: {integrity: sha512-5criiHoEibkT/du7t6wQ2xQVsuTNuirQZbMAi0M9Hp0YzJoJvEX68Ej9p2PtNC84bYb/CxAh5QkMtMutk03lHw==}
+  /vitepress@1.0.0-rc.21(@algolia/client-search@4.20.0)(postcss@8.4.31)(search-insights@2.9.0):
+    resolution: {integrity: sha512-eHX057NgAqmrj6FIqh7Sqsbk/kftrFMBUpCKjuQIZ+c+bYTbmzXsXrHSbT5b4WWy4vLx1993a+H3wIRy2dHi8g==}
     hasBin: true
     peerDependencies:
       markdown-it-mathjax3: ^4.3.2
+      postcss: ^8.4.31
     peerDependenciesMeta:
       markdown-it-mathjax3:
+        optional: true
+      postcss:
         optional: true
     dependencies:
       '@docsearch/css': 3.5.2
       '@docsearch/js': 3.5.2(@algolia/client-search@4.20.0)(search-insights@2.9.0)
+      '@types/markdown-it': 13.0.2
       '@vue/devtools-api': 6.5.1
       '@vueuse/core': 10.5.0(vue@3.3.4)
       '@vueuse/integrations': 10.5.0(focus-trap@7.5.4)(vue@3.3.4)
       focus-trap: 7.5.4
       mark.js: 8.11.1
       minisearch: 6.1.0
+      postcss: 8.4.31
       shiki: 0.14.5
       vite: 4.4.11
       vue: 3.3.4
