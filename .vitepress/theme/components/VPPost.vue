@@ -27,10 +27,32 @@ const { page, frontmatter } = useData()
 </template>
 
 <style lang="postcss">
-@import url('../styles/vp-doc.css');
+.VPPost {
+  .table-of-contents {
+    @apply rounded-md border-2 border-gray-300 bg-gray-50 px-3;
+    @apply dark:border-gray-700 dark:bg-gray-900;
 
-.table-of-contents {
-  @apply rounded-md border-2 border-gray-300 bg-gray-50 px-3;
-  @apply dark:border-gray-700 dark:bg-gray-900;
+    a {
+      @apply text-gray-600;
+      @apply dark:text-gray-400;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .vp-doc {
+    --vp-code-link-color: #fff;
+    --vp-code-link-hover-color: #fff;
+    --vp-code-color: #fff;
+    --vp-c-text-2: #fff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .vp-doc {
+    --vp-code-link-color: rgb(3, 7, 18);
+    --vp-code-link-hover-color: rgb(3, 7, 18);
+    --vp-code-color: rgb(3, 7, 18);
+  }
 }
 </style>
