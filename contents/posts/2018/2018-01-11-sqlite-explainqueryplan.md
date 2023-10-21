@@ -8,19 +8,19 @@ tags:
 ---
 
 ```sql
-explain query plan SQL_QUERY
+explain query plan SQL_QUERY;
 ```
 
 でクエリ実行計画を確認できる。
 
  ```sql
- CREATE TABLE IF NOT EXISTS `bank` 
+CREATE TABLE IF NOT EXISTS `bank` 
   (
     `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
     `bank_code` TEXT NOT NULL, 
     `name` TEXT NOT NULL, 
     `kana` TEXT NOT NULL
-  )
+  );
 ```
 
 たとえばこういうテーブルがあったときに`bank_code`でデータを取得するクエリの実行計画を見てみると、下記のようになる。
