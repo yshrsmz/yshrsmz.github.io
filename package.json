@@ -16,7 +16,7 @@
   "license": "ISC",
   "packageManager": "pnpm@8.9.2",
   "devDependencies": {
-    "@resvg/resvg-js": "2.4.1",
+    "@resvg/resvg-js": "2.6.0",
     "@tailwindcss/typography": "0.5.10",
     "@typescript-eslint/eslint-plugin": "6.8.0",
     "@typescript-eslint/parser": "6.8.0",
