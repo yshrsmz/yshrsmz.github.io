@@ -59,6 +59,7 @@ export class OGPImageGenerator {
                         alignItems: 'center',
                         flexGrow: 1,
                         fontWeight: '700',
+                        textAlign: 'center',
                       },
                       children: title,
                     },
