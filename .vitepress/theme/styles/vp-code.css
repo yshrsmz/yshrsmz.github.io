@@ -1,17 +1,19 @@
 @media (prefers-color-scheme: dark) {
-  .vp-adaptive-theme {
-    @apply !bg-gray-800;
+  :root {
+    /* tailwindcss gray-800 */
+    --vp-code-block-bg: #1f2937;
   }
-  .vp-code-light {
-    display: none;
+  .vp-code span {
+    color: var(--shiki-dark, inherit);
   }
 }
 
 @media (prefers-color-scheme: light) {
-  .vp-adaptive-theme {
-    @apply !bg-gray-200;
+  :root {
+    /* tailwindcss gray-200 */
+    --vp-code-block-bg: #e5e7eb;
   }
-  .vp-code-dark {
-    display: none;
+  .vp-code span{
+    color: var(--shiki-light, inherit);
   }
 }
