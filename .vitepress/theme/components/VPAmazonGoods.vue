@@ -27,7 +27,7 @@ const { imageUrl, productUrl } = useAmazonLink(props.detail.asin)
         <dt>商品名:</dt>
         <dd>{{ detail.title }}</dd>
         <dt>メーカー:</dt>
-        <dd>{{ detail.maker ?? '-'}}</dd>
+        <dd>{{ detail.maker ?? '-' }}</dd>
       </dl>
       <VPAmazonLink :url="productUrl" class="mt-3" />
     </div>
