@@ -11,6 +11,8 @@ concurrency:
 
 jobs:
   gh-pages:
+    # skip deployment if `[skip]` is in the commit message
+    if: ${{ !contains(github.event.head_commit.message, '[skip]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
