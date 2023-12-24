@@ -4,11 +4,11 @@ javascript:(function (d) {
   const ASIN_REGEX =
     /https:\/\/www.amazon.co.jp\/(.*\/|)(dp|gp)\/(product\/|)([A-Z0-9]+).*/;
 
-  const title = d.getElementById('productTitle').textContent.trim();
-  const authors = [...document.querySelectorAll('#bylineInfo .author')]
+  let title = d.getElementById('productTitle').textContent.trim();
+  let authors = [...document.querySelectorAll('#bylineInfo .author')]
     .map((el) => el.textContent.replace(/\n/g,'').replace(/\t/g,'').replace(/\s+/g, ' ').trim())
     .join('');
-  const publisher = d.querySelector(
+  let publisher = d.querySelector(
     '#rpi-attribute-book_details-publisher .rpi-attribute-value',
   )?.textContent?.trim();
   const publishedAt = d.querySelector(
@@ -18,6 +18,13 @@ javascript:(function (d) {
   const seriesAsin = d
     .querySelector('#seriesBulletWidget_feature_div a')
     ?.href?.match(ASIN_REGEX)[4];
+
+  if (title) {
+    title = title.replace("'", "&#39;")
+  }
+  if (authors) {
+    authors = authors.replace("'", "&#39;")
+  }
 
   const data = { title, authors, publisher, publishedAt, asin, seriesAsin };
 

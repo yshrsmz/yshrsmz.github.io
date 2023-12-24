@@ -2,6 +2,7 @@ import type { Theme } from 'vitepress'
 import VPLayout from './VPLayout.vue'
 import VPKindleDetail from './components/VPKindleDetail.vue'
 import VPKindleDetailList from './components/VPKindleDetailList.vue'
+import VPKindleDetails from './components/VPKindleDetails.vue'
 import VPAmazonGoods from './components/VPAmazonGoods.vue'
 import './styles/vars.css'
 import './styles/vp-code.css'
@@ -14,5 +15,6 @@ export default {
     app.component('VPKindleDetail', VPKindleDetail)
     app.component('VPKindleDetailList', VPKindleDetailList)
     app.component('VPAmazonGoods', VPAmazonGoods)
+    app.component('VPKindleDetails', VPKindleDetails)
   },
 } satisfies Theme
