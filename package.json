@@ -18,8 +18,8 @@
   "devDependencies": {
     "@resvg/resvg-js": "2.6.0",
     "@tailwindcss/typography": "0.5.10",
-    "@typescript-eslint/eslint-plugin": "6.15.0",
-    "@typescript-eslint/parser": "6.15.0",
+    "@typescript-eslint/eslint-plugin": "6.16.0",
+    "@typescript-eslint/parser": "6.16.0",
     "autoprefixer": "10.4.16",
     "date-fns": "3.0.6",
     "eslint": "8.56.0",
