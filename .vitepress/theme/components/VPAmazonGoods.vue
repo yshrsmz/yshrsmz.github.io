@@ -3,7 +3,7 @@ import { useAmazonLink } from '../composables/useAmazonLink'
 import VPAmazonLink from './VPAmazonLink.vue'
 
 const props = defineProps<{
-  detail: { asin: string; title: string; maker?: string }
+  detail: { asin: string; title: string; maker?: string; imageUrl?: string }
 }>()
 
 const { imageUrl, productUrl } = useAmazonLink(props.detail.asin)
@@ -15,9 +15,9 @@ const { imageUrl, productUrl } = useAmazonLink(props.detail.asin)
   >
     <a :href="productUrl" target="_blank" rel="noopener noreferrer">
       <img
-        class="!my-3 min-w-[100px] object-contain px-3"
+        class="!my-3 max-h-[160px] min-w-[100px] object-contain px-3"
         style="min-width: 150px; min-height: 125px"
-        :src="imageUrl"
+        :src="detail.imageUrl ?? imageUrl"
         :alt="detail.title"
         :title="detail.title"
       />

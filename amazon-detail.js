@@ -12,6 +12,7 @@ javascript:(function (d) {
       maker = els[0].querySelector('span + span')?.textContent?.trim();
     }
   }
+  const imageUrl = document.querySelector('#imgTagWrapperId img')?.src;
 
   if (title) {
     title = title.replace("'", "&#39;")
@@ -22,7 +23,7 @@ javascript:(function (d) {
 
   const asin = d.location.href.match(ASIN_REGEX)[4];
 
-  const data = { title, maker, asin };
+  const data = { title, maker, asin, imageUrl };
 
   navigator.clipboard.writeText(JSON.stringify(data));
 })(document);

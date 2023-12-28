@@ -18,6 +18,7 @@ javascript:(function (d) {
   const seriesAsin = d
     .querySelector('#seriesBulletWidget_feature_div a')
     ?.href?.match(ASIN_REGEX)[4];
+  const imageUrl = document.querySelector('#imgTagWrapperId img')?.src;
 
   if (title) {
     title = title.replace("'", "&#39;")
@@ -26,7 +27,7 @@ javascript:(function (d) {
     authors = authors.replace("'", "&#39;")
   }
 
-  const data = { title, authors, publisher, publishedAt, asin, seriesAsin };
+  const data = { title, authors, publisher, publishedAt, asin, seriesAsin, imageUrl };
 
   navigator.clipboard.writeText(JSON.stringify(data));
 })(document);
