@@ -11,8 +11,8 @@ inputs:
 
 
 outputs:
-  result:
-    description: 'result json'
+  scrap:
+    description: 'result Scrap JSON'
 
 runs:
   using: 'node20'
