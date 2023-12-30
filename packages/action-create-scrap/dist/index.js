@@ -30782,35 +30782,6 @@ module.exports = parseParams
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__nccwpck_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__nccwpck_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__nccwpck_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__nccwpck_require__.o(definition, key) && !__nccwpck_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__nccwpck_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -30831,33 +30802,55 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
+// ESM COMPAT FLAG
 __nccwpck_require__.r(__webpack_exports__);
-/* harmony import */ var _actions_core__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(4237);
-/* harmony import */ var _actions_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__nccwpck_require__.n(_actions_core__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _actions_github__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(7131);
-/* harmony import */ var _actions_github__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__nccwpck_require__.n(_actions_github__WEBPACK_IMPORTED_MODULE_1__);
+
+// EXTERNAL MODULE: ../../node_modules/.pnpm/@actions+core@1.10.1/node_modules/@actions/core/lib/core.js
+var core = __nccwpck_require__(4237);
+// EXTERNAL MODULE: ../../node_modules/.pnpm/@actions+github@6.0.0/node_modules/@actions/github/lib/github.js
+var github = __nccwpck_require__(7131);
+;// CONCATENATED MODULE: ./src/data/github.ts
+async function getIssues(repo, issueNumber, octokit) {
+    const { data, status } = await octokit.rest.issues.get({
+        ...repo,
+        issue_number: issueNumber,
+    });
+    console.log({ status, data });
+    if (status !== 200) {
+        throw new Error(`Failed to get issue #${issueNumber}: ${status}`);
+    }
+    const res = await octokit.paginate(octokit.rest.issues.listComments, {
+        ...repo,
+        issue_number: issueNumber,
+        per_page: 10,
+    }, (response) => response.data);
+    // const res = await octokit.rest.issues.listComments({
+    //   ...repo,
+    //   issue_number: issueNumber,
+    //   per_page: 10,
+    // })
+    console.log({ comments: res });
+}
+
+;// CONCATENATED MODULE: ./src/index.ts
+
 
 
 async function run() {
-    console.log("@codingfeline/action-create-scrap start");
-    const repo = _actions_github__WEBPACK_IMPORTED_MODULE_1__.context.repo;
+    console.log('@codingfeline/action-create-scrap start');
+    const repo = github.context.repo;
     try {
-        const token = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)("github_token", { required: true });
-        const issueNumber = Number((0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)("issue_number", { required: true }));
-        const octokit = (0,_actions_github__WEBPACK_IMPORTED_MODULE_1__.getOctokit)(token);
-        const { data, status } = await octokit.rest.issues.get({
-            owner: repo.owner,
-            repo: repo.repo,
-            issue_number: issueNumber,
-        });
-        console.log({ status, data });
+        const token = (0,core.getInput)('github_token', { required: true });
+        const issueNumber = Number((0,core.getInput)('issue_number', { required: true }));
+        const octokit = (0,github.getOctokit)(token);
+        await getIssues(repo, issueNumber, octokit);
     }
     catch (error) {
         if (error instanceof Error) {
-            (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.setFailed)(error.message);
+            (0,core.setFailed)(error.message);
         }
         else {
-            (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.setFailed)(`Unknown error: ${error}`);
+            (0,core.setFailed)(`Unknown error: ${error}`);
         }
     }
 }

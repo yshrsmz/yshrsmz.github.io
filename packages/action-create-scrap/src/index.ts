@@ -1,5 +1,6 @@
 import { getInput, setFailed } from '@actions/core'
 import { context, getOctokit } from '@actions/github'
+import { getIssues } from './data/github'
 
 async function run(): Promise<void> {
   console.log('@codingfeline/action-create-scrap start')
@@ -11,22 +12,7 @@ async function run(): Promise<void> {
 
     const octokit = getOctokit(token)
 
-    const { data, status } = await octokit.rest.issues.get({
-      ...repo,
-      issue_number: issueNumber,
-    })
-
-    if (status !== 200) {
-      throw new Error(`Failed to get issue #${issueNumber}: ${status}`)
-    }
-
-    await octokit.rest.issues.listComments({
-      ...repo,
-      issue_number: issueNumber,
-      per_page: 10,
-    })
-
-    console.log({ status, data })
+    await getIssues(repo, issueNumber, octokit)
   } catch (error) {
     if (error instanceof Error) {
       setFailed(error.message)
