@@ -20,7 +20,7 @@ jobs:
   create-scrap:
     runs-on: ubuntu-latest
     outputs:
-      output: ${{ steps.create.outputs.result }}
+      output: ${{ steps.create.outputs.scrap }}
     steps:
       - name: create scrap
         id: create

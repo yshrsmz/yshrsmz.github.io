@@ -16,6 +16,8 @@ async function run(): Promise<void> {
     const issue = await getIssues(repo, issueNumber, octokit)
     const scrap = convertToScrap(issue.issue, issue.comments)
 
+    console.log({ scrap })
+
     setOutput('scrap', scrap)
   } catch (error) {
     if (error instanceof Error) {

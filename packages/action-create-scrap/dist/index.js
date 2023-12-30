@@ -30866,6 +30866,7 @@ async function run() {
         const octokit = (0,github.getOctokit)(token);
         const issue = await getIssues(repo, issueNumber, octokit);
         const scrap = convertToScrap(issue.issue, issue.comments);
+        console.log({ scrap });
         (0,core.setOutput)('scrap', scrap);
     }
     catch (error) {
