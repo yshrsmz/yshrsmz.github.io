@@ -39,6 +39,6 @@
     "tailwindcss": "3.4.0",
     "typescript": "5.3.3",
     "vitepress": "1.0.0-rc.33",
-    "vue": "3.3.13"
+    "vue": "3.4.1"
   }
 }
