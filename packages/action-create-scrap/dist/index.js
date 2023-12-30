@@ -30839,6 +30839,7 @@ __nccwpck_require__.r(__webpack_exports__);
 
 
 async function run() {
+    console.log("@codingfeline/action-create-scrap start");
     const repo = _actions_github__WEBPACK_IMPORTED_MODULE_1__.context.repo;
     try {
         const token = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)("github_token", { required: true });
