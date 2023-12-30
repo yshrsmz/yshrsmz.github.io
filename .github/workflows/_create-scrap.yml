@@ -7,8 +7,8 @@ on:
         description: 'Issue number'
         type: number
         required: true
-      issue:
-        description: 'Issue'
+      github_token:
+        description: 'github token'
         type: string
         required: true
 
@@ -16,4 +16,8 @@ jobs:
   create-scrap:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ fromJson(inputs.issue) }}"
+      - name: create scrap
+        uses: ./packages/action-create-scrap
+        with:
+          issue_number: ${{ github.event.inputs.issue_number }}
+          github_token: ${{ github.event.inputs.github_token }}
