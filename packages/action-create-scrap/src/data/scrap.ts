@@ -7,6 +7,7 @@ export interface ScrapComment {
 }
 
 export interface Scrap {
+  number: number
   title: string
   body?: string
   state: 'open' | 'closed'
@@ -20,6 +21,7 @@ export interface Scrap {
 
 export function convertToScrap(issue: Issue, comments: IssueComment[]): Scrap {
   return {
+    number: issue.number,
     title: issue.title,
     body: issue.body ? issue.body : undefined,
     state: issue.state as Scrap['state'],

@@ -30834,12 +30834,13 @@ async function getIssues(repo, issueNumber, octokit) {
 ;// CONCATENATED MODULE: ./src/data/scrap.ts
 function convertToScrap(issue, comments) {
     return {
+        number: issue.number,
         title: issue.title,
         body: issue.body ? issue.body : undefined,
         state: issue.state,
         labels: issue.labels
             .map((l) => (typeof l === 'string' ? l : l.name))
-            .filter((l) => l !== undefined),
+            .filter((l) => l != undefined),
         originUrl: issue.html_url,
         createdAt: issue.created_at,
         updatedAt: issue.updated_at,
@@ -30858,13 +30859,23 @@ function convertToScrap(issue, comments) {
 
 
 async function run() {
-    console.log('@codingfeline/action-create-scrap start');
     const repo = github.context.repo;
     try {
         const token = (0,core.getInput)('github_token', { required: true });
         const issueNumber = Number((0,core.getInput)('issue_number', { required: true }));
+        const excludeLabels = (0,core.getInput)('exclude_labels')
+            .split(',')
+            .map((v) => v.trim());
         const octokit = (0,github.getOctokit)(token);
         const issue = await getIssues(repo, issueNumber, octokit);
+        const hasExcludedLabels = issue.issue.labels.some((l) => {
+            const label = typeof l === 'string' ? l : l.name;
+            return excludeLabels.includes(label ?? '');
+        });
+        if (hasExcludedLabels) {
+            (0,core.info)('Issue has excluded labels. Skip creating scrap.');
+            return;
+        }
         const scrap = convertToScrap(issue.issue, issue.comments);
         console.log({ scrap });
         (0,core.setOutput)('scrap', scrap);
