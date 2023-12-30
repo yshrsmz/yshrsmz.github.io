@@ -9,10 +9,20 @@
     "blog:build": "pnpm --filter @codingfeline/blog build",
     "blog:preview": "pnpm --filter @codingfeline/blog preview",
     "lint": "pnpm -r lint",
+    "lint2": "eslint '**/*.{js,ts,vue}'",
+    "lint2:fix": "eslint --fix '**/*.{js,ts,vue}'",
     "lint:fix": "pnpm -r lint:fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@8.13.1"
+  "packageManager": "pnpm@8.13.1",
+  "devDependencies": {
+    "eslint": "8.56.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-prettier": "5.1.2",
+    "eslint-plugin-unused-imports": "3.0.0",
+    "prettier": "3.1.1"
+  }
 }

@@ -1,0 +1,6 @@
+node_modules/
+!packages/blog/.vitepress/
+packages/blog/.vitepress/dist/
+packages/blog/.vitepress/cache/
+packages/blog/contents/public/javascripts/
+packages/action-create-scrap/dist/

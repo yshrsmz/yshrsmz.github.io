@@ -66,7 +66,9 @@ if (typeof window !== 'undefined') {
       <VPTags class="mx-8" />
     </div>
     <div v-else class="mx-8 flex flex-grow flex-col items-center">
-      <h1 class="mt-6 text-3xl font-bold">{{ frontmatter.title }}</h1>
+      <h1 class="mt-6 text-3xl font-bold">
+        {{ frontmatter.title }}
+      </h1>
       <Content class="prose dark:prose-invert sm:max-w-3xl" />
     </div>
 

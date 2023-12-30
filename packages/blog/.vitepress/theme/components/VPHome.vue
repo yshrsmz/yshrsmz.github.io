@@ -17,10 +17,7 @@ const recentPosts = posts.slice(0, 10)
             >{{ post.date?.string }}</time
           >
           <!-- eslint-disable vue/no-v-html -->
-          <div
-            class="text-gray-700 dark:text-gray-300"
-            v-html="post.excerpt"
-          ></div>
+          <div class="text-gray-700 dark:text-gray-300" v-html="post.excerpt" />
           <!-- eslint-enable -->
         </a>
       </li>
