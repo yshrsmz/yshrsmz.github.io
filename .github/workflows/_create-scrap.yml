@@ -1,0 +1,15 @@
+name: dispatch scrap update
+
+on:
+  workflow_call:
+    inputs:
+      issue_number:
+        description: 'Issue number'
+        type: number
+        required: true
+
+jobs:
+  create-scrap:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{ inputs.issue_number }}"

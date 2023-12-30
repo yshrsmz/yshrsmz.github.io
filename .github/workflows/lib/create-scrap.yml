@@ -1,7 +1,0 @@
-name: dispatch scrap update
-
-jobs:
-  create-scrap:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "test"
