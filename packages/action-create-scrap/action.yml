@@ -8,6 +8,9 @@ inputs:
   issue_number:
     description: 'target issue number'
     required: true
+  exclude_labels:
+    description: 'labels to exclude(comma-separated)'
+    default: private
 
 
 outputs:
