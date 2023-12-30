@@ -1,6 +1,7 @@
-import { getInput, setFailed } from '@actions/core'
+import { getInput, setFailed, setOutput } from '@actions/core'
 import { context, getOctokit } from '@actions/github'
 import { getIssues } from './data/github'
+import { convertToScrap } from './data/scrap'
 
 async function run(): Promise<void> {
   console.log('@codingfeline/action-create-scrap start')
@@ -12,7 +13,10 @@ async function run(): Promise<void> {
 
     const octokit = getOctokit(token)
 
-    await getIssues(repo, issueNumber, octokit)
+    const issue = await getIssues(repo, issueNumber, octokit)
+    const scrap = convertToScrap(issue.issue, issue.comments)
+
+    setOutput('scrap', scrap)
   } catch (error) {
     if (error instanceof Error) {
       setFailed(error.message)

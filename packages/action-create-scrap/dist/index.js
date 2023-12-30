@@ -30811,28 +30811,49 @@ var core = __nccwpck_require__(4237);
 var github = __nccwpck_require__(7131);
 ;// CONCATENATED MODULE: ./src/data/github.ts
 async function getIssues(repo, issueNumber, octokit) {
-    const { data, status } = await octokit.rest.issues.get({
+    const { data: issue, status } = await octokit.rest.issues.get({
         ...repo,
         issue_number: issueNumber,
     });
-    console.log({ status, data });
+    console.log({ status, issue });
     if (status !== 200) {
         throw new Error(`Failed to get issue #${issueNumber}: ${status}`);
     }
-    const res = await octokit.paginate(octokit.rest.issues.listComments, {
+    const comments = await octokit.paginate(octokit.rest.issues.listComments, {
         ...repo,
         issue_number: issueNumber,
         per_page: 10,
     }, (response) => response.data);
-    // const res = await octokit.rest.issues.listComments({
-    //   ...repo,
-    //   issue_number: issueNumber,
-    //   per_page: 10,
-    // })
-    console.log({ comments: res });
+    console.log({ comments });
+    return {
+        issue,
+        comments,
+    };
+}
+
+;// CONCATENATED MODULE: ./src/data/scrap.ts
+function convertToScrap(issue, comments) {
+    return {
+        title: issue.title,
+        body: issue.body ? issue.body : undefined,
+        state: issue.state,
+        labels: issue.labels
+            .map((l) => (typeof l === 'string' ? l : l.name))
+            .filter((l) => l !== undefined),
+        originUrl: issue.html_url,
+        createdAt: issue.created_at,
+        updatedAt: issue.updated_at,
+        closedAt: issue.closed_at ? issue.closed_at : undefined,
+        comments: comments.map((c) => ({
+            body: c.body,
+            createdAt: c.created_at,
+            updatedAt: c.updated_at,
+        })),
+    };
 }
 
 ;// CONCATENATED MODULE: ./src/index.ts
+
 
 
 
@@ -30843,7 +30864,9 @@ async function run() {
         const token = (0,core.getInput)('github_token', { required: true });
         const issueNumber = Number((0,core.getInput)('issue_number', { required: true }));
         const octokit = (0,github.getOctokit)(token);
-        await getIssues(repo, issueNumber, octokit);
+        const issue = await getIssues(repo, issueNumber, octokit);
+        const scrap = convertToScrap(issue.issue, issue.comments);
+        (0,core.setOutput)('scrap', scrap);
     }
     catch (error) {
         if (error instanceof Error) {

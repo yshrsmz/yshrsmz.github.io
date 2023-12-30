@@ -1,27 +1,36 @@
 import type { getOctokit } from '@actions/github'
+import type { GitHub } from '@actions/github/lib/utils'
 
 export type Repo = {
   owner: string
   repo: string
 }
 
+export type Issue = Awaited<
+  ReturnType<InstanceType<typeof GitHub>['rest']['issues']['get']>
+>['data']
+
+export type IssueComment = Awaited<
+  ReturnType<InstanceType<typeof GitHub>['rest']['issues']['listComments']>
+>['data'][number]
+
 export async function getIssues(
   repo: Repo,
   issueNumber: number,
   octokit: ReturnType<typeof getOctokit>,
 ) {
-  const { data, status } = await octokit.rest.issues.get({
+  const { data: issue, status } = await octokit.rest.issues.get({
     ...repo,
     issue_number: issueNumber,
   })
 
-  console.log({ status, data })
+  console.log({ status, issue })
 
   if (status !== 200) {
     throw new Error(`Failed to get issue #${issueNumber}: ${status}`)
   }
 
-  const res = await octokit.paginate(
+  const comments = await octokit.paginate(
     octokit.rest.issues.listComments,
     {
       ...repo,
@@ -31,11 +40,10 @@ export async function getIssues(
     (response) => response.data,
   )
 
-  // const res = await octokit.rest.issues.listComments({
-  //   ...repo,
-  //   issue_number: issueNumber,
-  //   per_page: 10,
-  // })
+  console.log({ comments })
 
-  console.log({ comments: res })
+  return {
+    issue,
+    comments,
+  }
 }
