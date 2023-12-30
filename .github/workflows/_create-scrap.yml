@@ -7,9 +7,13 @@ on:
         description: 'Issue number'
         type: number
         required: true
+      issue:
+        description: 'Issue'
+        type: string
+        required: true
 
 jobs:
   create-scrap:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ inputs.issue_number }}"
+      - run: echo "${{ fromJson(inputs.issue) }}"
