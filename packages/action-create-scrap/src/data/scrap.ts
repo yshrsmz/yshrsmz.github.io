@@ -11,7 +11,7 @@ export interface Scrap {
   title: string
   body?: string
   state: 'open' | 'closed'
-  labels: string[]
+  tags: string[]
   originUrl: string
   createdAt: string
   updatedAt: string
@@ -25,7 +25,7 @@ export function convertToScrap(issue: Issue, comments: IssueComment[]): Scrap {
     title: issue.title,
     body: issue.body ? issue.body : undefined,
     state: issue.state as Scrap['state'],
-    labels: issue.labels
+    tags: issue.labels
       .map((l) => (typeof l === 'string' ? l : l.name))
       .filter((l): l is string => l != undefined),
     originUrl: issue.html_url,
