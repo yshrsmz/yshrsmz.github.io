@@ -30835,6 +30835,7 @@ async function getIssues(repo, issueNumber, octokit) {
 function convertToScrap(issue, comments) {
     return {
         number: issue.number,
+        id: issue.node_id,
         title: issue.title,
         body: issue.body ? issue.body : undefined,
         state: issue.state,
@@ -30849,6 +30850,7 @@ function convertToScrap(issue, comments) {
             body: c.body,
             createdAt: c.created_at,
             updatedAt: c.updated_at,
+            id: c.node_id,
         })),
     };
 }
