@@ -30,11 +30,7 @@ const authors = computed(() => {
 <template>
   <div class="VPKindleDetailList not-prose">
     <ul class="books !my-3 flex !list-none flex-row flex-wrap gap-1 !px-3">
-      <li
-        v-for="(detail, i) in details"
-        :key="`image_${i}`"
-        class="!mx-0 !my-0 !p-0"
-      >
+      <li v-for="(detail, i) in details" :key="`image_${i}`" class="!mx-0 !my-0 !p-0">
         <a
           :href="createProductUrl(detail.asin)"
           target="_blank"

@@ -3,12 +3,7 @@ import { createContentLoader } from 'vitepress'
 import { Feed } from 'feed'
 import { writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
-import {
-  POST_MARKDOWN_PATTERN,
-  createExcerpt,
-  sortByDate,
-  toPost,
-} from './theme/helper'
+import { POST_MARKDOWN_PATTERN, createExcerpt, sortByDate, toPost } from './theme/helper'
 
 export async function generateRssFeed(
   siteConfig: SiteConfig,

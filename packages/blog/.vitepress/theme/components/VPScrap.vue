@@ -5,16 +5,13 @@ import { computed } from 'vue'
 import VPTagLabel from './VPTagLabel.vue'
 import VPCheckIcon from './icons/VPCheckIcon.vue'
 import VPEditIcon from './icons/VPEditIcon.vue'
-
-console.log(scraps)
+import VPScrapLabel from './VPScrapLabel.vue'
 
 const { page } = useData()
 
 const scrapNumber = computed(() => page.value.params!.number)
 
-const scrap = computed(
-  () => scraps.find((s) => s.number === scrapNumber.value)!,
-)
+const scrap = computed(() => scraps.find((s) => s.number === scrapNumber.value)!)
 
 const updatedAt = computed(() => {
   if (scrap.value.closedAt) {
@@ -33,14 +30,7 @@ const bodies = computed(() => [scrap.value, ...scrap.value.comments])
   <div class="VPScrap mt-6 flex flex-col items-center">
     <div class="flex flex-col items-center">
       <div>
-        <span
-          class="mr-2 rounded-full px-4 py-1 text-sm"
-          :class="{
-            'bg-green-600 text-white': scrap.state === 'open',
-            'bg-violet-600 text-white': scrap.state === 'closed',
-          }"
-          >{{ scrap.state.toUpperCase() }}</span
-        >
+        <VPScrapLabel :state="scrap.state" />
         <time class="text-gray-600 dark:text-gray-400">{{ updatedAt }}</time>
       </div>
       <h1 class="mt-2 text-center text-2xl font-bold">
@@ -65,10 +55,9 @@ const bodies = computed(() => [scrap.value, ...scrap.value.comments])
             v-html="item.body"
           ></div>
           <!-- eslint-enable vue/no-v-html -->
-          <time
-            class="inline-block self-end text-sm text-gray-500 dark:text-gray-400"
-            >{{ item.createdAt }}</time
-          >
+          <time class="inline-block self-end text-sm text-gray-500 dark:text-gray-400">{{
+            item.createdAt
+          }}</time>
         </article>
       </li>
     </ul>
@@ -89,9 +78,7 @@ const bodies = computed(() => [scrap.value, ...scrap.value.comments])
         :href="scrap.originUrl"
         target="_blank"
         class="inline-flex items-center font-medium underline"
-        ><VPEditIcon class="inline-block" /><span class="mx-2"
-          >編集する</span
-        ></a
+        ><VPEditIcon class="inline-block" /><span class="mx-2">編集する</span></a
       >
     </div>
   </div>

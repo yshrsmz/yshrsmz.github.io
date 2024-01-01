@@ -42,5 +42,11 @@ export default {
           closedAt: formatDate(scrap.closedAt),
         }
       })
+      .sort((a, b) => {
+        const aDate = a.closedAt ?? a.updatedAt ?? a.createdAt ?? 0
+        const bDate = b.closedAt ?? b.updatedAt ?? b.createdAt ?? 0
+
+        return bDate > aDate ? 1 : -1
+      })
   },
 }

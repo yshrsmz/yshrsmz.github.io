@@ -94,8 +94,9 @@ export default defineConfig({
     },
   },
   rewrites: {
-    'posts/:skipped/:year-:month-:day-:slug.md':
-      ':year/:month/:day/:slug/index.md',
+    'posts/:skipped/:year-:month-:day-:slug.md': ':year/:month/:day/:slug/index.md',
+    'scraps/index.md': 'scraps/index.md',
+    'scraps/:number.md': 'scraps/:number/index.md',
   },
   async transformPageData(pageData, ctx) {
     if (pageData.frontmatter.layout === 'post') {
@@ -110,10 +111,7 @@ export default defineConfig({
           ...generateOGPMeta({
             url: `${HOST_NAME}${pageData.relativePath.replace('index.md', '')}`,
             title: pageData.title,
-            image: `${HOST_NAME}${pageData.relativePath.replace(
-              'index.md',
-              'ogp.png',
-            )}`,
+            image: `${HOST_NAME}${pageData.relativePath.replace('index.md', 'ogp.png')}`,
           }),
         ],
       }

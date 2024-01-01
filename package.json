@@ -8,10 +8,8 @@
     "blog:dev": "pnpm --filter @codingfeline/blog dev",
     "blog:build": "pnpm --filter @codingfeline/blog build",
     "blog:preview": "pnpm --filter @codingfeline/blog preview",
-    "lint": "pnpm -r lint",
-    "lint2": "eslint '**/*.{js,ts,vue}'",
-    "lint2:fix": "eslint --fix '**/*.{js,ts,vue}'",
-    "lint:fix": "pnpm -r lint:fix"
+    "lint": "eslint '**/*.{js,ts,vue}'",
+    "lint:fix": "eslint --fix '**/*.{js,ts,vue}'"
   },
   "keywords": [],
   "author": "",

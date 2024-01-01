@@ -4,9 +4,7 @@ const props = defineProps<{ titleTag: string }>()
 
 <template>
   <header class="VPHeader flex w-full flex-col items-center py-6">
-    <div
-      class="flex w-full max-w-4xl flex-row items-baseline justify-between px-3"
-    >
+    <div class="flex w-full max-w-4xl flex-row items-baseline justify-between px-3">
       <component :is="props.titleTag" class="text-lg font-bold">
         <a href="/">CodingFeline</a>
       </component>
