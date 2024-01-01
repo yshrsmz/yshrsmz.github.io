@@ -20,6 +20,7 @@
     "autoprefixer": "10.4.16",
     "date-fns": "3.0.6",
     "eslint-plugin-vue": "9.19.2",
+    "fast-glob": "^3.3.2",
     "feed": "4.2.2",
     "postcss": "8.4.32",
     "postcss-import": "15.1.0",

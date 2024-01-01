@@ -23,3 +23,22 @@ export interface KindleDetail {
   publishedAt: string
   seriesAsin?: string
 }
+
+export interface ScrapComment {
+  body?: string
+  createdAt: string
+  updatedAt: string
+}
+
+export interface Scrap {
+  number: number
+  title: string
+  body?: string
+  state: 'open' | 'closed'
+  tags: string[]
+  originUrl: string
+  createdAt: string
+  updatedAt: string
+  closedAt?: string
+  comments: ScrapComment[]
+}

@@ -6,6 +6,7 @@ import VPHome from './components/VPHome.vue'
 import VPPost from './components/VPPost.vue'
 import VPPosts from './components/VPPosts.vue'
 import VPTags from './components/VPTags.vue'
+import VPScrap from './components/VPScrap.vue'
 import NotFound from './NotFound.vue'
 import { computed } from 'vue'
 
@@ -64,6 +65,12 @@ if (typeof window !== 'undefined') {
       class="flex-grow sm:max-w-3xl"
     >
       <VPTags class="mx-8" />
+    </div>
+    <div
+      v-else-if="frontmatter.layout === 'scrap'"
+      class="w-full flex-grow sm:max-w-3xl"
+    >
+      <VPScrap class="sm:mx-8" />
     </div>
     <div v-else class="mx-8 flex flex-grow flex-col items-center">
       <h1 class="mt-6 text-3xl font-bold">
