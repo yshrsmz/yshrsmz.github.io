@@ -48,16 +48,19 @@ const bodies = computed(() => [scrap.value, ...scrap.value.comments])
         :key="`item_${i}`"
         class="mt-3 border-b border-t border-gray-300 bg-gray-50 sm:rounded-md sm:border dark:border-gray-400 dark:bg-gray-900"
       >
-        <article class="relative mx-8 my-3 flex flex-col">
+        <article :id="item.id" class="relative mx-8 my-3 flex flex-col">
           <!-- eslint-disable vue/no-v-html -->
           <div
             class="VPPost__content vp-doc prose dark:prose-invert hover:prose-a:decoration-dotted prose-a:break-all mt-4 max-w-full flex-grow"
             v-html="item.body"
           ></div>
           <!-- eslint-enable vue/no-v-html -->
-          <time class="inline-block self-end text-sm text-gray-500 dark:text-gray-400">{{
-            item.createdAt
-          }}</time>
+          <a
+            :href="`#${item.id}`"
+            class="inline-block self-end text-sm text-gray-500 dark:text-gray-400"
+          >
+            <time>{{ item.createdAt }}</time>
+          </a>
         </article>
       </li>
     </ul>

@@ -8,12 +8,14 @@ export interface KindleDetail {
 }
 
 export interface ScrapComment {
+  id: string
   body?: string
   createdAt: string
   updatedAt: string
 }
 
 export interface Scrap {
+  id: string
   number: number
   title: string
   body?: string
