@@ -3,14 +3,14 @@ import { useData } from 'vitepress'
 import { data as scraps } from '../scraps.data.js'
 import { computed } from 'vue'
 import VPTagLabel from './VPTagLabel.vue'
+import VPCheckIcon from './icons/VPCheckIcon.vue'
+import VPEditIcon from './icons/VPEditIcon.vue'
 
 console.log(scraps)
 
 const { page } = useData()
 
 const scrapNumber = computed(() => page.value.params!.number)
-
-console.log(scrapNumber.value)
 
 const scrap = computed(
   () => scraps.find((s) => s.number === scrapNumber.value)!,
@@ -72,6 +72,28 @@ const bodies = computed(() => [scrap.value, ...scrap.value.comments])
         </article>
       </li>
     </ul>
+
+    <div
+      v-if="scrap.state === 'closed'"
+      class="mx-4 mt-6 flex flex-col items-center py-2 text-gray-600 dark:text-gray-400"
+    >
+      <VPCheckIcon class="inline-block h-12 w-12 text-current" />
+      <p class="mt-4 text-center">
+        このスクラップは<time class="mx-1">{{ scrap.closedAt }}</time
+        >に完了しました
+      </p>
+    </div>
+
+    <div class="flex w-full justify-end py-3 text-gray-600 dark:text-white">
+      <a
+        :href="scrap.originUrl"
+        target="_blank"
+        class="inline-flex items-center font-medium underline"
+        ><VPEditIcon class="inline-block" /><span class="mx-2"
+          >編集する</span
+        ></a
+      >
+    </div>
   </div>
 </template>
 
