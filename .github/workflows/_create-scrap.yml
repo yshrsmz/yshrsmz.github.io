@@ -24,7 +24,7 @@ jobs:
     steps:
       - name: create scrap
         id: create
-        uses: yshrsmz/yshrsmz.github.io/packages/action-create-scrap@scraps
+        uses: yshrsmz/yshrsmz.github.io/packages/action-create-scrap@development
         with:
           issue_number: ${{ inputs.issue_number }}
           github_token: ${{ secrets.target_github_token }}
