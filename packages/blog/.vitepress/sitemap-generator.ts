@@ -9,10 +9,7 @@ export class SitemapGenerator {
   private links: { url: string; lastmod?: string }[] = []
 
   onTransformPageData(pageData: PageData) {
-    const relativePath = pageData.relativePath.replace(
-      /((^|\/)index)?\.md$/,
-      '$2',
-    )
+    const relativePath = pageData.relativePath.replace(/((^|\/)index)?\.md$/, '$2')
 
     this.links.push({
       url: relativePath,
@@ -25,9 +22,7 @@ export class SitemapGenerator {
       hostname: 'https://codingfeline.com/',
     })
 
-    const writeStream = createWriteStream(
-      resolve(siteConfig.outDir, 'sitemap.xml'),
-    )
+    const writeStream = createWriteStream(resolve(siteConfig.outDir, 'sitemap.xml'))
 
     sitemap.pipe(writeStream)
 

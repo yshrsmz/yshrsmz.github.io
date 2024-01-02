@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable prettier/prettier */
 // eslint-disable-next-line no-unused-labels
 javascript:(function (d) {

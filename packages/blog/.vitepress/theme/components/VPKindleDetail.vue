@@ -42,9 +42,9 @@ const { productUrl, imageUrl } = useAmazonLink(props.detail.asin)
         <template v-if="detail.title && showTitle">
           <dt class="sr-only" :class="$style.title">タイトル</dt>
           <dd class="text-lg font-semibold sm:text-xl">
-            <component :is="titleTag" class="!mt-0">{{
-              detail.title
-            }}</component>
+            <component :is="titleTag" class="!mt-0">
+              {{ detail.title }}
+            </component>
           </dd>
         </template>
         <dt class="font-semibold">著者:</dt>
@@ -58,7 +58,9 @@ const { productUrl, imageUrl } = useAmazonLink(props.detail.asin)
       </dl>
       <VPAmazonLink :url="productUrl" class="mt-3" />
     </div>
-    <div v-if="$slots.default" class="note"><slot /></div>
+    <div v-if="$slots.default" class="note">
+      <slot />
+    </div>
   </div>
 </template>
 

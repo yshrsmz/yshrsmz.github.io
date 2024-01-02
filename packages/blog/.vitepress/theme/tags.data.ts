@@ -1,27 +1,19 @@
 import { createContentLoader } from 'vitepress'
 import type { ContentData } from 'vitepress'
-import type { PostDate } from './types'
+import type { EntriesForTag, Entry } from './types'
 import {
   POST_MARKDOWN_PATTERN,
   getPublishedDateFromPath,
+  hasOwnProperty,
   rewritePostUrl,
   sortByDate,
 } from './helper'
 
-interface PostsForTag {
-  tag: string
-  posts: { title: string; url: string; date: PostDate | undefined }[]
-}
-
-declare const data: PostsForTag[]
+declare const data: EntriesForTag[]
 export { data }
 
-function hasOwnProperty(obj: unknown, prop: string): boolean {
-  return Object.prototype.hasOwnProperty.call(obj, prop)
-}
-
 export default createContentLoader(POST_MARKDOWN_PATTERN, {
-  transform(raw: ContentData[]): PostsForTag[] {
+  transform(raw: ContentData[]): EntriesForTag[] {
     // group post by frontmatter.tags
     const postsByTag = raw.reduce(
       (acc, post) => {
@@ -44,7 +36,7 @@ export default createContentLoader(POST_MARKDOWN_PATTERN, {
 
         return acc
       },
-      {} as Record<string, PostsForTag['posts'][number][]>,
+      {} as Record<string, Entry[]>,
     )
 
     return Object.entries(postsByTag)
@@ -52,7 +44,7 @@ export default createContentLoader(POST_MARKDOWN_PATTERN, {
       .map(([tag, posts]) => {
         return {
           tag,
-          posts: posts.sort((a, b) => sortByDate(a, b)),
+          entries: posts.sort((a, b) => sortByDate(a, b)),
         }
       })
   },

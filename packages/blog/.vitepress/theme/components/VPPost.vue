@@ -6,11 +6,13 @@ const { page, frontmatter } = useData()
 
 <template>
   <div class="VPPost mt-6 flex flex-col items-center">
-    <h1 class="text-center text-2xl font-bold">{{ frontmatter.title }}</h1>
+    <h1 class="text-center text-2xl font-bold">
+      {{ frontmatter.title }}
+    </h1>
     <time class="mt-4 inline-block" :datetime="page.date?.time">{{
       page.date?.string
     }}</time>
-    <ul class="tags not-prose my-4 flex flex-row gap-2">
+    <ul class="tags not-prose my-4 flex flex-row flex-wrap gap-2">
       <li
         v-for="(tag, i) in frontmatter.tags"
         :key="`tag_${i}`"
@@ -20,7 +22,7 @@ const { page, frontmatter } = useData()
       </li>
     </ul>
     <Content
-      class="VPPost__content vp-doc prose mt-8 max-w-full flex-grow dark:prose-invert hover:prose-a:decoration-dotted"
+      class="VPPost__content vp-doc prose dark:prose-invert hover:prose-a:decoration-dotted prose-a:break-all mt-8 max-w-full flex-grow"
     />
     <hr class="mt-12 w-2/4" />
   </div>

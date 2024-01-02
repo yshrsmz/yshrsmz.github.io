@@ -1,7 +1,25 @@
 <script setup lang="ts">
 import VPTagLabel from './VPTagLabel.vue'
 import VPTagIcon from './icons/VPTagIcon.vue'
-import { data } from '../tags.data.js'
+import { data as tagsForPosts } from '../tags.data.js'
+import { data as tagsForScraps } from '../tags-scraps.data.js'
+import type { Entry } from '../types'
+import { hasOwnProperty, sortByDate } from '../helper'
+
+const entriesByTag = [...tagsForPosts, ...tagsForScraps].reduce<Record<string, Entry[]>>(
+  (acc, { tag, entries }) => {
+    if (!hasOwnProperty(acc, tag)) {
+      acc[tag] = []
+    }
+    acc[tag].push(...entries)
+    return acc
+  },
+  {},
+)
+
+const tagEntries = Object.entries(entriesByTag)
+  .sort(([tagA], [tagB]) => tagA.localeCompare(tagB))
+  .map(([tag, entries]) => ({ tag, entries: entries.sort((a, b) => sortByDate(a, b)) }))
 </script>
 
 <template>
@@ -10,7 +28,7 @@ import { data } from '../tags.data.js'
 
     <ul class="mt-6 flex flex-row flex-wrap gap-1">
       <li>all tags:</li>
-      <li v-for="(postsForTag, i) in data" :key="`tagname_${i}`">
+      <li v-for="(postsForTag, i) in tagEntries" :key="`tagname_${i}`">
         <VPTagLabel :name="postsForTag.tag" :link="`#${postsForTag.tag}`" />
       </li>
     </ul>
@@ -18,17 +36,15 @@ import { data } from '../tags.data.js'
     <section class="mt-6">
       <h2 class="sr-only">posts for each tag</h2>
       <ul>
-        <li v-for="(postsForTag, i) in data" :key="`tag_${i}`" class="my-4">
+        <li v-for="(postsForTag, i) in tagEntries" :key="`tag_${i}`" class="my-4">
           <h2 :id="postsForTag.tag" class="align-middle text-xl font-semibold">
-            <a
-              :href="`#${postsForTag.tag}`"
-              class="inline-flex flex-row items-center"
+            <a :href="`#${postsForTag.tag}`" class="inline-flex flex-row items-center"
               ><VPTagIcon class="mr-1 inline" />{{ postsForTag.tag }}</a
             >
           </h2>
           <ul>
             <li
-              v-for="(post, j) in postsForTag.posts"
+              v-for="(post, j) in postsForTag.entries"
               :key="`tag_${i}_${j}`"
               class="mt-1"
             >

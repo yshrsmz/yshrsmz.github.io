@@ -28,3 +28,9 @@
 - `vitepress/dist/client/theme-default/styles/components/vp-doc.css`
 - `vitepress/dist/client/theme-default/styles/components/vp-code.css`
 - `vitepress/dist/client/theme-default/styles/vars.css`
+
+### Update package/action-create-scrap binary
+
+```shell
+pnpm --filter @codingfeline/action-create-scrap package
+```

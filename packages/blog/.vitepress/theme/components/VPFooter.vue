@@ -5,6 +5,7 @@ import VPGitHubIcon from './icons/VPGitHubIcon.vue'
 import VPStackOverflowIcon from './icons/VPStackOverflowIcon.vue'
 import VPStackExchangeIcon from './icons/VPStackExchangeIcon.vue'
 import VPRssIcon from './icons/VPRssIcon.vue'
+import VPBskyIcon from './icons/VPBskyIcon.vue'
 
 const year = new Date().getUTCFullYear()
 </script>
@@ -24,10 +25,7 @@ const year = new Date().getUTCFullYear()
             /></a>
           </li>
           <li class="h-8 w-8">
-            <a
-              href="https://github.com/yshrsmz"
-              target="_blank"
-              rel="noopener noreferrer"
+            <a href="https://github.com/yshrsmz" target="_blank" rel="noopener noreferrer"
               ><VPGitHubIcon class="fill-current dark:text-gray-100"
             /></a>
           </li>
@@ -53,6 +51,14 @@ const year = new Date().getUTCFullYear()
               target="_blank"
               rel="noopener noreferrer"
               ><VPXIcon class="fill-current dark:text-gray-100"
+            /></a>
+          </li>
+          <li class="h-8 w-8">
+            <a
+              href="https://bsky.app/profile/codingfeline.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><VPBskyIcon class="fill-current dark:text-gray-100"
             /></a>
           </li>
           <li class="h-8 w-8">

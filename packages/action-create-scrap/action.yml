@@ -1,0 +1,22 @@
+name: 'action-scraps'
+description: 'create scrap data'
+
+inputs:
+  github_token:
+    description: 'GitHub Token for creating tag & branch'
+    required: true
+  issue_number:
+    description: 'target issue number'
+    required: true
+  exclude_labels:
+    description: 'labels to exclude(comma-separated)'
+    default: private
+
+
+outputs:
+  scrap:
+    description: 'result Scrap JSON'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

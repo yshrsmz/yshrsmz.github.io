@@ -31,7 +31,9 @@ const formatPublishedAt = (post: Post): string => {
     <h1 class="text-3xl font-bold">POSTS</h1>
     <ul class="mt-6">
       <li v-for="posts in postsByYear" :key="posts.year" class="py-2">
-        <h2 class="text-2xl font-bold">{{ posts.year }}</h2>
+        <h2 class="text-2xl font-bold">
+          {{ posts.year }}
+        </h2>
         <ul>
           <li
             v-for="(post, i) in posts.posts"

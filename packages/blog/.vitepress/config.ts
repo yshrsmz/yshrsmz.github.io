@@ -1,18 +1,30 @@
 import { defineConfig } from 'vitepress'
 import {
+  getPublishedDateFromGitHubDatetime,
   getPublishedDateFromPath,
   getPublishedDateFromRewrittenUrl,
 } from './theme/helper'
-import type { PostDate } from './theme/types'
+import type { EntryDate, Scrap } from './theme/types'
 import { generateRssFeed } from './rss-generator'
 import { generateOGPMeta } from './ogp'
 import { OGPImageGenerator } from './ogp-generator'
+import { readFileSync } from 'node:fs'
 
 const TITLE = 'CodingFeline'
 const DESCRIPTION = 'Thoughts, stories and ideas'
 const HOST_NAME = 'https://www.codingfeline.com/'
 
 const ogpGenerator = new OGPImageGenerator()
+
+function detectPageTypeFromPath(path: string): 'post' | 'scrap' | 'other' {
+  if (path.match(/^scraps\/(\d+)\//)) {
+    return 'scrap'
+  }
+  if (path.match(/^\d{4}\/\d{2}\/\d{2}\/.*\//)) {
+    return 'post'
+  }
+  return 'other'
+}
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -86,46 +98,65 @@ export default defineConfig({
     hostname: HOST_NAME,
     transformItems(items) {
       return items.map((item) => {
+        const type = detectPageTypeFromPath(item.url)
+        let lastmod: string | undefined = undefined
+        if (type === 'post') {
+          lastmod = getPublishedDateFromRewrittenUrl(item.url)
+        } else if (type === 'scrap') {
+          const number = item.url.match(/^scraps\/(\d+)\//)?.[1]
+          const json: Scrap = JSON.parse(
+            readFileSync(`data/scraps/${number}.json`, 'utf-8'),
+          )
+          lastmod = json.closedAt ?? json.updatedAt ?? json.createdAt
+        }
         return {
           ...item,
-          lastmod: getPublishedDateFromRewrittenUrl(item.url),
+          lastmod,
         }
       })
     },
   },
   rewrites: {
-    'posts/:skipped/:year-:month-:day-:slug.md':
-      ':year/:month/:day/:slug/index.md',
+    'posts/:skipped/:year-:month-:day-:slug.md': ':year/:month/:day/:slug/index.md',
+    'scraps/index.md': 'scraps/index.md',
+    'scraps/:number.md': 'scraps/:number/index.md',
   },
   async transformPageData(pageData, ctx) {
+    let needsOGPImage = false
     if (pageData.frontmatter.layout === 'post') {
       const date = getPublishedDateFromPath(pageData.filePath)
       if (date) {
+        needsOGPImage = true
         pageData.date = date
       }
-      pageData.frontmatter = {
-        ...pageData.frontmatter,
-        head: [
-          ...(pageData.frontmatter.head ?? []),
-          ...generateOGPMeta({
-            url: `${HOST_NAME}${pageData.relativePath.replace('index.md', '')}`,
-            title: pageData.title,
-            image: `${HOST_NAME}${pageData.relativePath.replace(
-              'index.md',
-              'ogp.png',
-            )}`,
-          }),
-        ],
-      }
-
+    } else if (pageData.frontmatter.layout === 'scrap') {
+      pageData.title = pageData.params!.title
+      const date = getPublishedDateFromGitHubDatetime(pageData.params!.lastmod)
       if (date) {
-        ogpGenerator.registerPost(
-          pageData.title,
-          date.string,
-          ctx.siteConfig.outDir,
-          pageData.relativePath,
-        )
+        needsOGPImage = true
+        pageData.date = date
       }
+    }
+    pageData.frontmatter = {
+      ...pageData.frontmatter,
+      head: [
+        ...(pageData.frontmatter.head ?? []),
+        ...generateOGPMeta({
+          url: `${HOST_NAME}${pageData.relativePath.replace('index.md', '')}`,
+          title: pageData.title,
+          image: needsOGPImage
+            ? `${HOST_NAME}${pageData.relativePath.replace('index.md', 'ogp.png')}`
+            : undefined,
+        }),
+      ],
+    }
+    if (needsOGPImage) {
+      ogpGenerator.registerPost(
+        pageData.title,
+        pageData.date.string,
+        ctx.siteConfig.outDir,
+        pageData.relativePath,
+      )
     }
   },
   async buildEnd(siteConfig) {
@@ -136,6 +167,6 @@ export default defineConfig({
 
 declare module 'vitepress' {
   interface PageData {
-    date: PostDate
+    date: EntryDate
   }
 }

@@ -12,12 +12,7 @@ export class OGPImageGenerator {
 
   private posts: { title: string; publishedAt: string; path: string }[] = []
 
-  registerPost(
-    title: string,
-    publishedAt: string,
-    outDir: string,
-    path: string,
-  ) {
+  registerPost(title: string, publishedAt: string, outDir: string, path: string) {
     this.posts.push({
       title,
       publishedAt,
@@ -122,9 +117,7 @@ export class OGPImageGenerator {
     }
 
     await Promise.all(
-      this.posts.map((post) =>
-        this.generate2(post.title, post.publishedAt, post.path),
-      ),
+      this.posts.map((post) => this.generate2(post.title, post.publishedAt, post.path)),
     )
   }
 }

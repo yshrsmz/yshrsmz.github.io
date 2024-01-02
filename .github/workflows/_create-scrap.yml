@@ -1,0 +1,30 @@
+name: dispatch scrap update
+
+on:
+  workflow_call:
+    inputs:
+      issue_number:
+        description: 'Issue number'
+        type: number
+        required: true
+    outputs:
+      output:
+        description: 'Scrap JSON'
+        value: ${{ jobs.create-scrap.outputs.output }}
+    secrets:
+      target_github_token:
+        description: 'github token for target repo'
+        required: true
+
+jobs:
+  create-scrap:
+    runs-on: ubuntu-latest
+    outputs:
+      output: ${{ steps.create.outputs.scrap }}
+    steps:
+      - name: create scrap
+        id: create
+        uses: yshrsmz/yshrsmz.github.io/packages/action-create-scrap@scraps
+        with:
+          issue_number: ${{ inputs.issue_number }}
+          github_token: ${{ secrets.target_github_token }}
