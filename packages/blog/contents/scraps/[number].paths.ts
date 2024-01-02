@@ -14,6 +14,7 @@ export default {
           params: {
             number: scrap.number,
             title: scrap.title,
+            lastmod: scrap.closedAt ?? scrap.updatedAt ?? scrap.createdAt,
           },
         }
       })
