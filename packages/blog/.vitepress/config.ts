@@ -1,3 +1,4 @@
+import type { HeadConfig } from 'vitepress'
 import { defineConfig } from 'vitepress'
 import {
   getPublishedDateFromGitHubDatetime,
@@ -15,6 +16,38 @@ const DESCRIPTION = 'Thoughts, stories and ideas'
 const HOST_NAME = 'https://www.codingfeline.com/'
 
 const ogpGenerator = new OGPImageGenerator()
+
+const isProduction = process.env.NODE_ENV === 'production'
+const shouldUseGTM = isProduction
+const shouldUseAdsense = isProduction
+const productionHeads = new Set<HeadConfig>()
+if (shouldUseGTM) {
+  productionHeads.add([
+    'script',
+    {
+      async: '',
+      src: 'https://www.googletagmanager.com/gtag/js?id=G-XZRK8ZP8XC',
+    },
+  ])
+  productionHeads.add([
+    'script',
+    { id: 'init-gtm' },
+    `window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XZRK8ZP8XC');`,
+  ])
+}
+if (shouldUseAdsense) {
+  productionHeads.add([
+    'script',
+    {
+      async: '',
+      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1022395241918455',
+      crossorigin: 'anonymous',
+    },
+  ])
+}
 
 function detectPageTypeFromPath(path: string): 'post' | 'scrap' | 'other' {
   if (path.match(/^scraps\/(\d+)\//)) {
@@ -34,21 +67,6 @@ export default defineConfig({
   srcDir: 'contents',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' }],
-    [
-      'script',
-      {
-        async: '',
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-XZRK8ZP8XC',
-      },
-    ],
-    [
-      'script',
-      { id: 'init-gtm' },
-      `window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XZRK8ZP8XC');`,
-    ],
     // https://zenn.dev/catnose99/articles/329d7d61968efb
     // https://developer.twitter.com/en/docs/twitter-for-websites/javascript-api/guides/set-up-twitter-for-websites
     [
@@ -71,15 +89,6 @@ export default defineConfig({
         return t;
       })(document, 'script', 'twitter-wjs');`,
     ],
-    // adsense
-    [
-      'script',
-      {
-        async: '',
-        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1022395241918455',
-        crossorigin: 'anonymous',
-      },
-    ],
     ...generateOGPMeta({
       url: HOST_NAME,
       type: 'blog',
@@ -88,6 +97,7 @@ export default defineConfig({
       siteName: TITLE,
       image: `${HOST_NAME}ogp.jpg`,
     }),
+    ...productionHeads,
   ],
   appearance: false,
   themeConfig: {},
