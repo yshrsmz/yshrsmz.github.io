@@ -66,7 +66,11 @@ export function createExcerpt(content: string): string | undefined {
   const excerpt = content
     .split('\n')
     .slice(0, 10)
-    .filter((line) => line.trim() !== '')[0]
+    .filter((line) => line.trim() !== '')
+    .map((line) => {
+      // remove `。` and `.` from the end of the line
+      return line.trim().replace(/。$/, '').replace(/\.$/, '')
+    })[0]
 
   if (excerpt?.startsWith('<')) {
     return undefined
