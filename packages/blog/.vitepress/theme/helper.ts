@@ -1,5 +1,5 @@
 import type { ContentData } from 'vitepress'
-import type { EntryDate, Post, PostDate } from './types'
+import type { EntryDate, Post } from './types'
 import { getDate, getMonth, getYear, parseISO } from 'date-fns'
 
 export const POST_MARKDOWN_PATTERN = './contents/posts/*/*.md'
@@ -20,7 +20,7 @@ export function getPublishedDateFromRewrittenUrl(url: string): string | undefine
   return undefined
 }
 
-export function getPublishedDateFromPath(filePath: string): PostDate | undefined {
+export function getPublishedDateFromPath(filePath: string): EntryDate | undefined {
   const file = filePath.split('/').slice(-1)[0]
   const [year, month, date] = file.split('-').slice(0, 3)
 
@@ -90,8 +90,8 @@ export function toPost({ url, frontmatter, excerpt }: ContentData): Post {
 }
 
 export function sortByDate(
-  a: { date: PostDate | undefined },
-  b: { date: PostDate | undefined },
+  a: { date: EntryDate | undefined },
+  b: { date: EntryDate | undefined },
 ): number {
   return (b.date?.time ?? 0) > (a.date?.time ?? 0) ? 1 : -1
 }
