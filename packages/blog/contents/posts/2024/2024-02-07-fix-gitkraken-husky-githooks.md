@@ -4,6 +4,7 @@ title: GitKraken で Husky の Git Hooks と連携できるようにする
 tags:
   - TIL
   - GitKraken
+  - Git
 ---
 
 GitKraken から、 Husky で設定した Git Hooks が実行されない件
