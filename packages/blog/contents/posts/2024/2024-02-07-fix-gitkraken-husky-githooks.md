@@ -6,6 +6,7 @@ tags:
   - GitKraken
 ---
 
+GitKraken から、 Husky で設定した Git Hooks が実行されない件
 
 **目次**
 [[toc]]
