@@ -147,10 +147,12 @@ export default defineConfig({
         pageData.date = date
       }
     }
+    const canonicalUrl = `${HOST_NAME}${pageData.relativePath.replace('index.md', '')}`
     pageData.frontmatter = {
       ...pageData.frontmatter,
       head: [
         ...(pageData.frontmatter.head ?? []),
+        ['link', { rel: 'canonical', href: canonicalUrl }],
         ...generateOGPMeta({
           url: `${HOST_NAME}${pageData.relativePath.replace('index.md', '')}`,
           title: pageData.title,
