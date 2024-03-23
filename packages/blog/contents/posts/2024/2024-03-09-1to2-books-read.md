@@ -36,6 +36,8 @@ tags:
   :details='[{"title":"ハクメイとミコチ 12巻 (HARTA COMIX)","authors":"樫木 祐人 (著)","publisher":"KADOKAWA","publishedAt":"2024/1/15","asin":"B0CQSD4WHS","seriesAsin":"B074C78RP6","imageUrl":"https://m.media-amazon.com/images/I/91D+XYRlF1L._SY522_.jpg"}]'
   />
 
+この機会に久しぶりに読み返してみたら結構発見が多かった。
+
 ## ニセモノの錬金術師　1 (MFC)
 
 <VPKindleDetails
@@ -161,6 +163,8 @@ tags:
 <VPKindleDetails
   :details='[{"title":"北欧貴族と猛禽妻の雪国狩り暮らし １０ (PASH! コミックス)","authors":"白樺鹿夜 (著),江本マシメサ (著),あかねこ (その他)","publisher":"主婦と生活社","publishedAt":"2024/2/2","asin":"B0CSFGKGR6","seriesAsin":"B07V1X2GR3","imageUrl":"https://m.media-amazon.com/images/I/81Apxgk-cfL._SY522_.jpg"}]'
   />
+
+ついに完結。最後まであたたかくていい話だった。
 
 ## 作りたい女と食べたい女 5 (it COMICS)
 
