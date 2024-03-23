@@ -2,7 +2,7 @@ import type { ContentData } from 'vitepress'
 import type { EntryDate, Post } from './types'
 import { getDate, getMonth, getYear, parseISO } from 'date-fns'
 
-export const POST_MARKDOWN_PATTERN = './contents/posts/*/*.md'
+export const POST_MARKDOWN_PATTERN = './posts/*/*.md'
 
 export function rewritePostUrl(url: string): string {
   // convert `/posts/2023/2023-05-31-jest-environment-directory.html` to `/2023/05/31/jest-environment-directory/`
