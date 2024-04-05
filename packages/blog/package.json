@@ -15,8 +15,8 @@
   "devDependencies": {
     "@resvg/resvg-js": "2.6.2",
     "@tailwindcss/typography": "0.5.12",
-    "@typescript-eslint/eslint-plugin": "7.4.0",
-    "@typescript-eslint/parser": "7.4.0",
+    "@typescript-eslint/eslint-plugin": "7.5.0",
+    "@typescript-eslint/parser": "7.5.0",
     "autoprefixer": "10.4.19",
     "date-fns": "3.6.0",
     "eslint-plugin-vue": "9.24.0",
@@ -29,8 +29,8 @@
     "satori": "0.10.13",
     "sitemap": "7.1.1",
     "tailwindcss": "3.4.3",
-    "typescript": "5.4.3",
-    "vitepress": "1.0.1",
+    "typescript": "5.4.4",
+    "vitepress": "1.0.2",
     "vue": "3.4.21"
   }
 }
