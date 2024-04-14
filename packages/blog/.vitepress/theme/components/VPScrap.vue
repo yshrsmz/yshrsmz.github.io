@@ -53,7 +53,7 @@ const bodies = computed(() => [scrap.value, ...scrap.value.comments])
           <div
             class="VPPost__content vp-doc prose dark:prose-invert hover:prose-a:decoration-dotted prose-a:break-all mt-4 max-w-full flex-grow"
             v-html="item.body"
-          ></div>
+          />
           <!-- eslint-enable vue/no-v-html -->
           <a
             :href="`#${item.id}`"
