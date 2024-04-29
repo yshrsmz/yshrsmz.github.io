@@ -33,6 +33,6 @@
     "typescript": "5.4.5",
     "typescript-eslint": "7.7.1",
     "vitepress": "1.1.4",
-    "vue": "3.4.25"
+    "vue": "3.4.26"
   }
 }
