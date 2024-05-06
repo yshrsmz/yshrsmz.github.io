@@ -14,7 +14,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@9.0.6",
+  "packageManager": "pnpm@9.1.0",
   "devDependencies": {
     "@codingfeline/eslint-config": "workspace:*",
     "eslint": "9.2.0",
