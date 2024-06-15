@@ -2,6 +2,7 @@ import eslint from '@eslint/js'
 import eslintConfigPrettier from 'eslint-config-prettier'
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 import tseslint from 'typescript-eslint'
+import unusedImports from 'eslint-plugin-unused-imports'
 
 export default tseslint.config(
   eslint.configs.recommended,
@@ -19,6 +20,7 @@ export default tseslint.config(
     ],
   },
   {
+    plugins: { 'unused-imports': unusedImports },
     rules: {
       camelcase: 'off',
       'no-unused-vars': 'off',
