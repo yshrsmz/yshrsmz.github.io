@@ -5,6 +5,7 @@ export interface KindleDetail {
   publisher: string
   publishedAt: string
   seriesAsin?: string
+  imageUrl?: string
 }
 
 export interface ScrapComment {

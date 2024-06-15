@@ -31,8 +31,8 @@ const { productUrl, imageUrl } = useAmazonLink(props.detail.asin)
     <a :href="productUrl" target="_blank" rel="noopener noreferrer">
       <img
         class="!my-3 px-3"
-        style="min-width: 100px; min-height: 125px"
-        :src="imageUrl"
+        style="min-width: 100px; min-height: 125px; max-height: 160px; object-fit: contain;"
+        :src="detail.imageUrl ?? imageUrl"
         :alt="detail.title"
         :title="detail.title"
       />

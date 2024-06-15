@@ -38,7 +38,8 @@ const authors = computed(() => {
         >
           <img
             class="!my-0 object-contain"
-            :src="createImageUrl(detail.asin)"
+            style="max-height: 160px;"
+            :src="detail.imageUrl ?? createImageUrl(detail.asin)"
             :alt="detail.title"
             :title="detail.title"
           />
