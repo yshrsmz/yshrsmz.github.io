@@ -22,7 +22,7 @@
     "eslint-plugin-vue": "9.26.0",
     "fast-glob": "3.3.2",
     "feed": "4.2.2",
-    "globals": "15.4.0",
+    "globals": "15.5.0",
     "postcss": "8.4.38",
     "postcss-import": "16.1.0",
     "postcss-nesting": "12.1.5",
