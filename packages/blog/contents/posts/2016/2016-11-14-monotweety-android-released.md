@@ -143,6 +143,6 @@ DataSourceの差し替えとか実際にアプリの実行中に発生するこ�
 
 参考: 
 
-- PlayStoreリンク: ~~https://play.google.com/store/apps/details?id=net.yslibrary.monotweety~~  
+- PlayStoreリンク: ~~ttps://play.google.com/store/apps/details?id=net.yslibrary.monotweety~~  
 - GitHubリンク: [yshrsmz/monotweety](https://github.com/yshrsmz/monotweety)  
 - [TwitterにURLを共有するAndroidアプリ、Omnitweetyを公開した](/2015/11/10/omnitweety-andrid-released-share-url-twitter/)
