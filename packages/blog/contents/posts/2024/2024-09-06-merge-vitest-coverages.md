@@ -267,9 +267,7 @@ export async function mergeCoverageSummaries() {
     coverageSummary.total.branches.covered,
     coverageSummary.total.branches.total,
   )
-  if (
-    coverageSummary.total.branchesTrue.covered === 0 && coverageSummary.total.branchesTrue.total === 0
-  ) {
+  if (coverageSummary.total.branchesTrue.covered === 0 && coverageSummary.total.branchesTrue.total === 0) {
     coverageSummary.total.branchesTrue.pct = 'Unknown'
   } else {
     coverageSummary.total.branchesTrue.pct = calculatePercentage(
