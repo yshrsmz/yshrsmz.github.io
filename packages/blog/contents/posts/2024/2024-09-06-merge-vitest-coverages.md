@@ -227,40 +227,24 @@ export async function mergeCoverageSummaries() {
           skipped: (prevTotal?.lines?.covered ?? 0) + json.total.lines.skipped,
         },
         statements: {
-          total:
-            (prevTotal?.statements?.total ?? 0) + json.total.statements.total,
-          covered:
-            (prevTotal?.statements?.covered ?? 0) +
-            json.total.statements.covered,
-          skipped:
-            (prevTotal?.statements?.skipped ?? 0) +
-            json.total.statements.skipped,
+          total:  (prevTotal?.statements?.total ?? 0) + json.total.statements.total,
+          covered: (prevTotal?.statements?.covered ?? 0) + json.total.statements.covered,
+          skipped: (prevTotal?.statements?.skipped ?? 0) + json.total.statements.skipped,
         },
         functions: {
-          total:
-            (prevTotal?.functions?.total ?? 0) + json.total.functions.total,
-          covered:
-            (prevTotal?.functions?.covered ?? 0) + json.total.functions.covered,
-          skipped:
-            (prevTotal?.functions?.skipped ?? 0) + json.total.functions.skipped,
+          total: (prevTotal?.functions?.total ?? 0) + json.total.functions.total,
+          covered: (prevTotal?.functions?.covered ?? 0) + json.total.functions.covered,
+          skipped: (prevTotal?.functions?.skipped ?? 0) + json.total.functions.skipped,
         },
         branches: {
           total: (prevTotal?.branches?.total ?? 0) + json.total.branches.total,
-          covered:
-            (prevTotal?.branches?.covered ?? 0) + json.total.branches.covered,
-          skipped:
-            (prevTotal?.branches?.skipped ?? 0) + json.total.branches.skipped,
+          covered: (prevTotal?.branches?.covered ?? 0) + json.total.branches.covered,
+          skipped: (prevTotal?.branches?.skipped ?? 0) + json.total.branches.skipped,
         },
         branchesTrue: {
-          total:
-            (prevTotal?.branchesTrue?.total ?? 0) +
-            json.total.branchesTrue.total,
-          covered:
-            (prevTotal?.branchesTrue?.covered ?? 0) +
-            json.total.branchesTrue.covered,
-          skipped:
-            (prevTotal?.branchesTrue?.skipped ?? 0) +
-            json.total.functions.skipped,
+          total: (prevTotal?.branchesTrue?.total ?? 0) + json.total.branchesTrue.total,
+          covered: (prevTotal?.branchesTrue?.covered ?? 0) + json.total.branchesTrue.covered,
+          skipped: (prevTotal?.branchesTrue?.skipped ?? 0) + json.total.functions.skipped,
         },
       }
       coverageSummary = { ...coverageSummary, ...json, total }
@@ -284,8 +268,7 @@ export async function mergeCoverageSummaries() {
     coverageSummary.total.branches.total,
   )
   if (
-    coverageSummary.total.branchesTrue.covered === 0 &&
-    coverageSummary.total.branchesTrue.total === 0
+    coverageSummary.total.branchesTrue.covered === 0 && coverageSummary.total.branchesTrue.total === 0
   ) {
     coverageSummary.total.branchesTrue.pct = 'Unknown'
   } else {
