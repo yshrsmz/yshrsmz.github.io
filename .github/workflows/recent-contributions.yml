@@ -1,0 +1,40 @@
+name: fetch and save recent contributions
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+concurrency:
+  group: fetch-and-save-recent-contributions
+  cancel-in-progress: true
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PUBLIC_PAT }}
+
+      - uses: pnpm/action-setup@v2
+
+      - name: Setup node env 🏗
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.node-version'
+          cache: 'pnpm'
+
+      - name: Install dependencies 👨🏻‍💻
+        run: pnpm install --frozen-lockfile
+
+      - name: fetch recent contributions
+        run: pnpm --filter @codingfeline/recent-contributions start
+
+      - name: commit if there are new contributions
+        run: |
+          git config --global user.email "recent-contributions-bot@usersusers.noreply.github.com"
+          git config --global user.name "recent-contributions-bot"
+          git add ./packages/blog/data/recent-contributions.json
+          git commit -m "chore: update recent contributions"
+          git push origin development
