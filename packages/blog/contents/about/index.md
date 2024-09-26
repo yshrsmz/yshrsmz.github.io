@@ -9,6 +9,8 @@ Co-host of [AndroidDagashi](https://androiddagashi.github.io).
 
 Please refer to [Products](/products/) page for my personal works.
 
+You can check my OSS contributions [here](/recent-contributions/)
+
 ## Support me
 
 PayPal: [https://paypal.me/yshrsmz](https://paypal.me/yshrsmz)  
