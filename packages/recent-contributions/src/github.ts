@@ -1,5 +1,5 @@
 import { Octokit } from 'octokit'
-import { PullRequest, User } from './types'
+import { Contributions, PullRequest, User } from './types'
 
 export async function fetchMe(octokit: Octokit): Promise<User> {
   const { data } = await octokit.request('GET /user')
@@ -29,7 +29,10 @@ export async function fetchRepo(octokit: Octokit, owner: string, name: string) {
   return data
 }
 
-export async function fetchContributions(octokit: Octokit, user: User) {
+export async function fetchContributions(
+  octokit: Octokit,
+  user: User,
+): Promise<Contributions> {
   const { data } = await octokit.request('GET /search/issues', {
     q: `type:pr+author:${user.username}`,
     per_page: 50,
@@ -50,12 +53,16 @@ export async function fetchContributions(octokit: Octokit, user: User) {
       title: pr.title,
       url: pr.html_url,
       created_at: pr.created_at,
-      state: pr.pull_request?.merged_at ? 'merged' : pr.draft ? 'draft' : pr.state as 'open' | 'closed',
+      state: pr.pull_request?.merged_at
+        ? 'merged'
+        : pr.draft
+          ? 'draft'
+          : (pr.state as 'open' | 'closed'),
       number: pr.number,
       type: repo.owner.type,
       stars: repo.stargazers_count,
     })
   }
 
-  return prs
+  return { user, prs }
 }
