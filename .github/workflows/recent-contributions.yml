@@ -30,6 +30,8 @@ jobs:
 
       - name: fetch recent contributions
         run: pnpm --filter @codingfeline/recent-contributions start
+        env:
+          GH_PUBLIC_PAT: ${{ secrets.GH_PUBLIC_PAT }}
 
       - name: commit if there are new contributions
         run: |
