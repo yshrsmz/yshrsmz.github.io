@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GH_PUBLIC_PAT }}
+          token: ${{ secrets.COMMIT_TOKEN }}
 
       - uses: pnpm/action-setup@v2
 
