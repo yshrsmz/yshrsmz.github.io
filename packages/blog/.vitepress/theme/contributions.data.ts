@@ -1,4 +1,4 @@
-import type { Contributions } from "./types"
+import type { Contributions } from './types'
 import fs from 'node:fs'
 import assert from 'node:assert'
 
@@ -9,11 +9,11 @@ export { data }
 export default {
   watch: ['data/recent-contributions.json'],
   async load(watchedFiles: string[]) {
-
     assert(watchedFiles.length === 1, `expected one file to be watched: ${watchedFiles}`)
 
-    return watchedFiles
-      .map((file) => fs.readFileSync(file, 'utf-8'))
-      .map((text) => JSON.parse(text))[0]
+    const filePath = watchedFiles[0]
+    const file = fs.readFileSync(filePath, 'utf-8')
+
+    return JSON.parse(file)
   },
 }
