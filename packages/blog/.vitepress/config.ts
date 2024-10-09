@@ -127,7 +127,7 @@ export default defineConfig({
     },
   },
   rewrites: {
-    'posts/:skipped/:year-:month-:day-:slug.md': ':year/:month/:day/:slug/index.md',
+    'posts/:skipped/:year-:month-:day-:slug(.*).md': ':year/:month/:day/:slug/index.md',
     'scraps/index.md': 'scraps/index.md',
     'scraps/:number.md': 'scraps/:number/index.md',
   },
