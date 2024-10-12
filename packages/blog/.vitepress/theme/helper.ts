@@ -76,6 +76,10 @@ export function createExcerpt(content: string): string | undefined {
     return undefined
   }
 
+  if (excerpt?.startsWith('```')) {
+    return undefined
+  }
+
   return `${excerpt}…`
 }
 
