@@ -8,7 +8,7 @@ tags:
 ---
 
 ```sql
-explain query plan SQL_QUERY;
+EXPLAIN QUERY PLAN SQL_QUERY;
 ```
 
 でクエリ実行計画を確認できる。
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `bank`
 たとえばこういうテーブルがあったときに`bank_code`でデータを取得するクエリの実行計画を見てみると、下記のようになる。
 
 ```
-explain query plan select * from bank where bank_code = "0001"
+EXPLAIN QUERY PLAN SELECT * FROM bank WHERE bank_code = "0001"
 
 selectid    order       from        detail          
 ----------  ----------  ----------  ----------------
@@ -40,7 +40,7 @@ CREATE UNIQUE INDEX `index_bank_bank_code` ON `bank` (`bank_code`)
 ```
 
 ```
-explain query plan select * from bank where bank_code = "0001"
+EXPLAIN QUERY PLAN SELECT * FROM bank WHERE bank_code = "0001"
 
 selectid    order       from        detail          
 ----------  ----------  ----------  ----------------
