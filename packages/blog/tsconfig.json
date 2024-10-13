@@ -11,7 +11,7 @@
     "verbatimModuleSyntax": true,
     "jsx": "preserve",
     "lib": ["esnext", "dom", "dom.iterable"],
-    "types": [".vitepress/theme/types/*"]
+    "typeRoots": [".vitepress/theme/types/"],
   },
   "include": ["./.vitepress/**/*"]
 }
