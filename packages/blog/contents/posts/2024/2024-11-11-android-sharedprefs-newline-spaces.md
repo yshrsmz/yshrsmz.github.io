@@ -76,4 +76,4 @@ fun test() {
 
 ## なんで今さら
 
-もう10年近く運用してるアプリでなんで今さらこんな仕様バグみたいなの踏むの、って思ったら今年の夏まで SharedPreferences 使ってなかったからだった。それまでは Tray とい SharedPreferences 互換の別ライブラリを使っていたんだけど、いい加減メンテされてなくて jCenter クローズとともに闇に消えたので、夏の minSdk 更新といっしょに大急ぎで SharedPreferences に移行したんでした。
+もう10年近く運用してるアプリでなんで今さらこんな仕様バグみたいなの踏むの、って思ったら今年の夏まで SharedPreferences 使ってなかったからだった。それまでは Tray という SharedPreferences 互換の別ライブラリを使っていたんだけど、いい加減メンテされてなくて jCenter クローズとともに闇に消えたので、夏の minSdk 更新といっしょに大急ぎで SharedPreferences に移行したんでした。
