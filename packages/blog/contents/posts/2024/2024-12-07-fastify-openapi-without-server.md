@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fastify のサーバを起動せずに OpenAPI ドキュメントを出力する
+title: Fastify のサーバをー起動せずに OpenAPI ドキュメントを出力する
 category: diary
 tags:
   - TIL
