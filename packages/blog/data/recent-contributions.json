@@ -53,7 +53,7 @@
       "state": "merged",
       "number": 4052,
       "type": "Organization",
-      "stars": 7786
+      "stars": 7815
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -93,7 +93,7 @@
       "state": "open",
       "number": 41,
       "type": "Organization",
-      "stars": 371
+      "stars": 372
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -143,7 +143,7 @@
       "state": "merged",
       "number": 3125,
       "type": "Organization",
-      "stars": 7786
+      "stars": 7815
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -293,7 +293,7 @@
       "state": "open",
       "number": 23,
       "type": "Organization",
-      "stars": 371
+      "stars": 372
     },
     {
       "repo": "sqlc-dev/sqlc-gen-typescript",
@@ -303,7 +303,7 @@
       "state": "merged",
       "number": 16,
       "type": "Organization",
-      "stars": 371
+      "stars": 372
     },
     {
       "repo": "sqlc-dev/sqlc-gen-typescript",
@@ -313,7 +313,7 @@
       "state": "merged",
       "number": 13,
       "type": "Organization",
-      "stars": 371
+      "stars": 372
     },
     {
       "repo": "yshrsmz/sqlstitch",
@@ -333,7 +333,7 @@
       "state": "merged",
       "number": 371,
       "type": "Organization",
-      "stars": 2377
+      "stars": 2378
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -493,7 +493,7 @@
       "state": "merged",
       "number": 466,
       "type": "Organization",
-      "stars": 411
+      "stars": 413
     }
   ]
 }
