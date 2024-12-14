@@ -16,6 +16,7 @@ export interface PullRequest {
 }
 
 export interface Contributions {
+  updated_at: number
   user: User
   prs: PullRequest[]
 }

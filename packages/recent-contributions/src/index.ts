@@ -1,4 +1,4 @@
-import { Octokit, App } from 'octokit'
+import { Octokit } from 'octokit'
 import { fetchContributions, fetchMe } from './github'
 import fs from 'node:fs/promises'
 

@@ -10,6 +10,7 @@ export async function fetchMe(octokit: Octokit): Promise<User> {
   }
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const REPO_CACHE = new Map<string, any>()
 
 export async function fetchRepo(octokit: Octokit, owner: string, name: string) {
@@ -64,5 +65,5 @@ export async function fetchContributions(
     })
   }
 
-  return { user, prs }
+  return { updated_at: Date.now(), user, prs }
 }

@@ -1,7 +1,17 @@
 <script setup lang="ts">
-
+import { computed } from 'vue'
 import { data } from '../contributions.data.js'
 import VPPullRequest from './VPPullRequest.vue';
+
+const datetime = computed(() => {
+  const date = new Date(data.updated_at);
+  return date.toISOString();
+})
+
+const updatedAt = computed(() => {
+  const date = new Date(data.updated_at);
+  return date.toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' });
+})
 </script>
 
 <template>
@@ -16,6 +26,7 @@ import VPPullRequest from './VPPullRequest.vue';
           @{{ data.user.username }}'s recent pull requests on GitHub.
         </a>
       </p>
+      <p class=" text-sm text-gray-500 dark:text-gray-400">Last update: <time :datetime="datetime">{{ updatedAt }}</time></p>
       <div class="flex items-center align-center text-center flex-row mt-2 sm:mt-6 mb-6 sm:mb-10 w-1/2 mx-auto animate-pulse">
         <div class="flex border-gray-200 dark:border-gray-800 w-full border-t border-solid"></div>
       </div>
