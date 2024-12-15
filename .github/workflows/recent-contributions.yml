@@ -3,7 +3,7 @@ name: fetch and save recent contributions
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * 0'
+    - cron: '0 0 * * 1,4'
 
 concurrency:
   group: fetch-and-save-recent-contributions
