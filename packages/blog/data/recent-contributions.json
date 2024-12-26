@@ -1,5 +1,5 @@
 {
-  "updated_at": 1734913537644,
+  "updated_at": 1735172668499,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
@@ -54,7 +54,7 @@
       "state": "merged",
       "number": 4052,
       "type": "Organization",
-      "stars": 7999
+      "stars": 8042
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -144,7 +144,7 @@
       "state": "merged",
       "number": 3125,
       "type": "Organization",
-      "stars": 7999
+      "stars": 8042
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -204,7 +204,7 @@
       "state": "merged",
       "number": 168,
       "type": "User",
-      "stars": 820
+      "stars": 821
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -214,7 +214,7 @@
       "state": "merged",
       "number": 167,
       "type": "User",
-      "stars": 820
+      "stars": 821
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -224,7 +224,7 @@
       "state": "merged",
       "number": 166,
       "type": "User",
-      "stars": 820
+      "stars": 821
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -234,7 +234,7 @@
       "state": "open",
       "number": 165,
       "type": "User",
-      "stars": 820
+      "stars": 821
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -334,7 +334,7 @@
       "state": "merged",
       "number": 371,
       "type": "Organization",
-      "stars": 2389
+      "stars": 2394
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -494,7 +494,7 @@
       "state": "merged",
       "number": 466,
       "type": "Organization",
-      "stars": 414
+      "stars": 415
     }
   ]
 }
