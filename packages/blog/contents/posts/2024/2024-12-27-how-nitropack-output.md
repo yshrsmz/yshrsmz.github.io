@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nitro がどのように成果物を生成するか
+title: Nitro がどこで成果物内の node_modules を生成するか
 tags:
   - TIL
   - Node.js
