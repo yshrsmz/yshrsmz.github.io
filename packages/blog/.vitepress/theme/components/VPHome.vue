@@ -22,7 +22,7 @@ function updatedAt(scrap: Scrap) {
   <div class="VPHome mt-6 flex flex-col items-center">
     <h2 class="text-2xl font-bold">RECENT POSTS</h2>
     <ul class="mt-6 w-full">
-      <li v-for="(post, index) in recentPosts" :key="index" class="py-3">
+      <li v-for="(post, index) in recentPosts" :key="index" class="py-3 px-8">
         <a :href="post.url" class="block">
           <p class="font-bold underline">{{ post.frontmatter.title }}</p>
           <time
@@ -35,7 +35,7 @@ function updatedAt(scrap: Scrap) {
           <!-- eslint-enable -->
         </a>
       </li>
-      <li class="mt-4 text-center">
+      <li class="mt-4 text-center px-8">
         <hr />
         <a href="/posts/" class="inline-block py-4 text-center underline"
           >See all posts -></a
@@ -47,7 +47,7 @@ function updatedAt(scrap: Scrap) {
 
     <h2 class="mt-6 text-2xl font-bold">RECENT SCRAPS</h2>
     <ul class="mt-6 w-full">
-      <li v-for="(scrap, index) in recentScraps" :key="index" class="py-3">
+      <li v-for="(scrap, index) in recentScraps" :key="index" class="py-3 px-8">
         <a :href="`/scraps/${scrap.number}/`" class="block">
           <p class="px-1 font-bold underline">{{ scrap.title }}</p>
           <p>
@@ -59,7 +59,7 @@ function updatedAt(scrap: Scrap) {
           </p>
         </a>
       </li>
-      <li class="mt-4 text-center">
+      <li class="mt-4 text-center px-8">
         <hr />
         <a href="/scraps/" class="inline-block py-4 text-center underline"
           >See all scraps -></a

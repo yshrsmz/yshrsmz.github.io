@@ -38,7 +38,7 @@ if (typeof window !== 'undefined') {
       <NotFound class="mx-8 flex-grow" />
     </div>
     <div v-else-if="frontmatter.layout === 'home'" class="max-w-3xl flex-grow">
-      <VPHome class="mx-8" />
+      <VPHome />
     </div>
     <div v-else-if="frontmatter.layout === 'posts'" class="flex-grow sm:max-w-3xl">
       <VPPosts class="mx-8" />
