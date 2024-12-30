@@ -13,6 +13,15 @@ javascript:(function (d) {
       maker = els[0].querySelector('span + span')?.textContent?.trim();
     }
   }
+  if (!maker) {
+    const els = document.querySelectorAll('table.prodDetTable tr');
+    els.forEach((el) => {
+      const key = el.querySelector('th')?.textContent?.trim();
+      if (key === 'メーカー名') {
+        maker = el.querySelector('td')?.textContent?.trim();
+      }
+    });
+  }
   const imageUrl = document.querySelector('#imgTagWrapperId img')?.src;
 
   if (title) {
