@@ -22,7 +22,7 @@ First, you need to need the 'expect' declaration in common code.
 ```kotlin
 // commonMain
 @Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
-expect annotation class IgnoreIos
+expect annotation class IgnoreIos()
 ```
 
 Then you need to write corresponding 'actual' declarations in each platform.
