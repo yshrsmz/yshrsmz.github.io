@@ -56,5 +56,5 @@ Github: [https://github.com/yshrsmz/monotweety](https://github.com/yshrsmz/monot
 
 ## Others
 
-- [Android Dagashi](https://androiddagashi.github.io)
+- [AndroidDagashi](https://androiddagashi.github.io)
   - weekly Android news digest for Japanese Android developers.
