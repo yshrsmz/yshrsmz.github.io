@@ -50,7 +50,7 @@ function updatedAt(scrap: Scrap) {
       <li v-for="(scrap, index) in recentScraps" :key="index" class="py-3 px-8">
         <a :href="`/scraps/${scrap.number}/`" class="block">
           <p class="px-1 font-bold underline">{{ scrap.title }}</p>
-          <p>
+          <p class="mt-0.5">
             <VPScrapLabel :state="scrap.state" /><time
               :datetime="updatedAt(scrap)"
               class="text-sm text-gray-500 dark:text-gray-400"
