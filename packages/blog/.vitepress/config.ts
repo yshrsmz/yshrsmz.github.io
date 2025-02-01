@@ -10,6 +10,7 @@ import { generateRssFeed } from './rss-generator'
 import { generateOGPMeta } from './ogp'
 import { OGPImageGenerator } from './ogp-generator'
 import { readFileSync } from 'node:fs'
+import tailwindcss from "@tailwindcss/vite";
 
 const TITLE = 'CodingFeline'
 const DESCRIPTION = 'Thoughts, stories and ideas'
@@ -61,6 +62,11 @@ function detectPageTypeFromPath(path: string): 'post' | 'scrap' | 'other' {
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
+  },
   title: TITLE,
   description: DESCRIPTION,
   lang: 'ja-JP',
