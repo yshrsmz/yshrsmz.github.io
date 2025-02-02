@@ -28,7 +28,9 @@ const { page, frontmatter } = useData()
   </div>
 </template>
 
-<style lang="postcss">
+<style>
+@reference "../style.css";
+
 .VPPost {
   .table-of-contents {
     @apply rounded-md border-2 border-gray-300 bg-gray-50 px-3;

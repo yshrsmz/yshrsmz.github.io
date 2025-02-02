@@ -23,7 +23,7 @@ function updatedAt(scrap: Scrap) {
         <a :href="`/scraps/${scrap.number}/`" class="block">
           <div>
             <span class="px-1 underline">{{ scrap.title }}</span>
-            <p class="block">
+            <p class="block mt-0.5">
               <VPScrapLabel :state="scrap.state" />
               <time>{{ updatedAt(scrap) }}</time>
             </p>

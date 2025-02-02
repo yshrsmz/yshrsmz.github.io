@@ -68,5 +68,3 @@ if (typeof window !== 'undefined') {
     <VPFooter v-if="showNavigation" class="pt-24" />
   </div>
 </template>
-
-<style lang="postcss" module></style>
