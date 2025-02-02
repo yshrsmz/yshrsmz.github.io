@@ -51,7 +51,7 @@ const bodies = computed(() => [scrap.value, ...scrap.value.comments])
         <article :id="item.id" class="relative mx-8 my-3 flex flex-col">
           <!-- eslint-disable vue/no-v-html -->
           <div
-            class="VPPost__content vp-doc prose dark:prose-invert hover:prose-a:decoration-dotted prose-a:break-all mt-4 max-w-full flex-grow"
+            class="VPPost__content vp-doc prose dark:prose-invert prose-a:hover:decoration-dotted prose-a:break-all mt-4 max-w-full flex-grow"
             v-html="item.body"
           />
           <!-- eslint-enable vue/no-v-html -->
