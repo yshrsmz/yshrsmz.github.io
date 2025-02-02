@@ -24,7 +24,7 @@ const shouldShowContents = computed(
 
 if (typeof window !== 'undefined') {
   const router = useRouter()
-  router.onAfterRouteChanged = (_to) => {
+  router.onAfterRouteChange = (_to) => {
     window.twttr.widgets.load()
   }
 }
