@@ -28,7 +28,7 @@ const { page, frontmatter } = useData()
   </div>
 </template>
 
-<style>
+<style language="postcss">
 @reference "../style.css";
 
 .VPPost {
