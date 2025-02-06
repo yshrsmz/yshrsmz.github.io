@@ -32,7 +32,7 @@
     "sitemap": "8.0.0",
     "tailwindcss": "4.0.3",
     "typescript": "5.7.3",
-    "typescript-eslint": "8.22.0",
+    "typescript-eslint": "8.23.0",
     "vitepress": "1.6.3",
     "vue": "3.5.13"
   },
