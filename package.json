@@ -14,11 +14,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.2.0",
+  "packageManager": "pnpm@10.3.0",
   "devDependencies": {
     "@codingfeline/eslint-config": "workspace:*",
-    "eslint": "9.19.0",
-    "prettier": "3.4.2",
+    "eslint": "9.20.0",
+    "prettier": "3.5.0",
     "typescript": "5.7.3"
   }
 }
