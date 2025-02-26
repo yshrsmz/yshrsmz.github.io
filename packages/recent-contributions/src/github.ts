@@ -1,5 +1,5 @@
 import { Octokit } from 'octokit'
-import { Contributions, PullRequest, User } from './types'
+import type { Contributions, PullRequest, User } from './types'
 
 export async function fetchMe(octokit: Octokit): Promise<User> {
   const { data } = await octokit.request('GET /user')
