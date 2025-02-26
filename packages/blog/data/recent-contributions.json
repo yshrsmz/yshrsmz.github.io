@@ -1,11 +1,31 @@
 {
-  "updated_at": 1738196616016,
+  "updated_at": 1740556326266,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/BuildKonfig",
+      "title": "chore(master): release 0.17.1",
+      "url": "https://github.com/yshrsmz/BuildKonfig/pull/199",
+      "created_at": "2025-02-26T03:33:24Z",
+      "state": "open",
+      "number": 199,
+      "type": "User",
+      "stars": 873
+    },
+    {
+      "repo": "yshrsmz/BuildKonfig",
+      "title": "chore(master): release 0.17.0",
+      "url": "https://github.com/yshrsmz/BuildKonfig/pull/192",
+      "created_at": "2025-02-13T13:42:47Z",
+      "state": "merged",
+      "number": 192,
+      "type": "User",
+      "stars": 873
+    },
     {
       "repo": "yshrsmz/sqlstitch",
       "title": "deps: update Rust to 1.84.0",
@@ -21,10 +41,10 @@
       "title": "fix repository url in package.json",
       "url": "https://github.com/primefaces/tailwindcss-primeui/pull/12",
       "created_at": "2025-01-14T08:48:24Z",
-      "state": "open",
+      "state": "merged",
       "number": 12,
       "type": "Organization",
-      "stars": 32
+      "stars": 37
     },
     {
       "repo": "yshrsmz/sqlstitch",
@@ -74,7 +94,7 @@
       "state": "merged",
       "number": 4052,
       "type": "Organization",
-      "stars": 8622
+      "stars": 9043
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -114,7 +134,7 @@
       "state": "open",
       "number": 41,
       "type": "Organization",
-      "stars": 393
+      "stars": 406
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -164,7 +184,7 @@
       "state": "merged",
       "number": 3125,
       "type": "Organization",
-      "stars": 8622
+      "stars": 9043
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -224,7 +244,7 @@
       "state": "merged",
       "number": 168,
       "type": "User",
-      "stars": 842
+      "stars": 873
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -234,7 +254,7 @@
       "state": "merged",
       "number": 167,
       "type": "User",
-      "stars": 842
+      "stars": 873
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -244,17 +264,17 @@
       "state": "merged",
       "number": 166,
       "type": "User",
-      "stars": 842
+      "stars": 873
     },
     {
       "repo": "yshrsmz/BuildKonfig",
-      "title": "chore(master): release 0.15.3",
+      "title": "chore(master): release 0.16.0",
       "url": "https://github.com/yshrsmz/BuildKonfig/pull/165",
       "created_at": "2024-08-31T16:06:29Z",
-      "state": "open",
+      "state": "merged",
       "number": 165,
       "type": "User",
-      "stars": 842
+      "stars": 873
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -314,7 +334,7 @@
       "state": "open",
       "number": 23,
       "type": "Organization",
-      "stars": 393
+      "stars": 406
     },
     {
       "repo": "sqlc-dev/sqlc-gen-typescript",
@@ -324,7 +344,7 @@
       "state": "merged",
       "number": 16,
       "type": "Organization",
-      "stars": 393
+      "stars": 406
     },
     {
       "repo": "sqlc-dev/sqlc-gen-typescript",
@@ -334,7 +354,7 @@
       "state": "merged",
       "number": 13,
       "type": "Organization",
-      "stars": 393
+      "stars": 406
     },
     {
       "repo": "yshrsmz/sqlstitch",
@@ -354,7 +374,7 @@
       "state": "merged",
       "number": 371,
       "type": "Organization",
-      "stars": 2440
+      "stars": 2473
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -473,26 +493,6 @@
       "created_at": "2024-01-28T10:43:25Z",
       "state": "merged",
       "number": 6,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/sqlstitch",
-      "title": "refactor: separate logic from main.rs",
-      "url": "https://github.com/yshrsmz/sqlstitch/pull/5",
-      "created_at": "2024-01-28T10:35:35Z",
-      "state": "merged",
-      "number": 5,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/sqlstitch",
-      "title": "ci: add pr-title-validation workflow",
-      "url": "https://github.com/yshrsmz/sqlstitch/pull/4",
-      "created_at": "2024-01-28T09:28:07Z",
-      "state": "merged",
-      "number": 4,
       "type": "User",
       "stars": 2
     }
