@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@source "./**/*.vue";
+
 
 /**
  * Customize default theme styling by overriding CSS variables:
