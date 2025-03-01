@@ -12,11 +12,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "22.13.4",
+    "@types/node": "22.13.7",
     "@codingfeline/eslint-config": "workspace:*",
-    "tsx": "4.19.2",
-    "typescript": "5.7.3",
-    "vitest": "3.0.6"
+    "tsx": "4.19.3",
+    "typescript": "5.8.2",
+    "vitest": "3.0.7"
   },
   "dependencies": {
     "octokit": "4.1.2"

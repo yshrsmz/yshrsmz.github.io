@@ -5,10 +5,10 @@
     "package": "ncc build src/index.ts --out dist --source-map"
   },
   "devDependencies": {
-    "@types/node": "22.13.4",
+    "@types/node": "22.13.7",
     "@vercel/ncc": "0.38.3",
-    "typescript": "5.7.3",
-    "vitest": "3.0.6"
+    "typescript": "5.8.2",
+    "vitest": "3.0.7"
   },
   "dependencies": {
     "@actions/core": "1.11.1",
