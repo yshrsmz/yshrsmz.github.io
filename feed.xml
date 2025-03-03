@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>CodingFeline</title>
+        <link>https://www.codingfeline.com/</link>
+        <description>Thoughts, stories and ideas</description>
+        <lastBuildDate>Sat, 01 Mar 2025 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja-JP</language>
+        <copyright>All rights reserved 2020, yshrsmz</copyright>
+        <item>
+            <title><![CDATA[2025年01-02月振り返り]]></title>
+            <link>https://www.codingfeline.com/2025/03/01/01to02-wrapup/</link>
+            <guid>https://www.codingfeline.com/2025/03/01/01to02-wrapup/</guid>
+            <pubDate>Sat, 01 Mar 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>2025の1月-2月を振り返るよ…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[ブログを tailwindcss v4 に移行]]></title>
+            <link>https://www.codingfeline.com/2025/02/02/tailwindcss-v4-migration/</link>
+            <guid>https://www.codingfeline.com/2025/02/02/tailwindcss-v4-migration/</guid>
+            <pubDate>Sun, 02 Feb 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>掲題の通り…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[2024年を振り返って]]></title>
+            <link>https://www.codingfeline.com/2024/12/31/2024-wrapup/</link>
+            <guid>https://www.codingfeline.com/2024/12/31/2024-wrapup/</guid>
+            <pubDate>Tue, 31 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>2024年を振り返るよ…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[2024年11-12月振り返り]]></title>
+            <link>https://www.codingfeline.com/2024/12/31/11to12-wrapup/</link>
+            <guid>https://www.codingfeline.com/2024/12/31/11to12-wrapup/</guid>
+            <pubDate>Tue, 31 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>2024年の11月-12月を振り返るよ…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[2024年買ってよかったもの]]></title>
+            <link>https://www.codingfeline.com/2024/12/30/bestbuy2024/</link>
+            <guid>https://www.codingfeline.com/2024/12/30/bestbuy2024/</guid>
+            <pubDate>Mon, 30 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>買ってよかったもの振り返るよ…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Nitro がどこで成果物内の node_modules を生成するか]]></title>
+            <link>https://www.codingfeline.com/2024/12/27/how-nitropack-output/</link>
+            <guid>https://www.codingfeline.com/2024/12/27/how-nitropack-output/</guid>
+            <pubDate>Fri, 27 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p><code>Nitro</code> ってどうやって <code>node_modules</code> 内の必要なものだけを <code>.output</code> に持ってきてるんだろう…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Fastify のサーバーを起動せずに OpenAPI ドキュメントを出力する]]></title>
+            <link>https://www.codingfeline.com/2024/12/07/fastify-openapi-without-server/</link>
+            <guid>https://www.codingfeline.com/2024/12/07/fastify-openapi-without-server/</guid>
+            <pubDate>Sat, 07 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p><code>@fastify/swagger</code> で OpenAPI ドキュメントを自動生成しているとき、サーバー起動せずに OpenAPI ドキュメントを出力しよう…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[2024年09-10月に読んだ本]]></title>
+            <link>https://www.codingfeline.com/2024/11/17/9to10-books-read/</link>
+            <guid>https://www.codingfeline.com/2024/11/17/9to10-books-read/</guid>
+            <pubDate>Sun, 17 Nov 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>2024年の9月-10月に読んだ本を振り返るよ…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[SharedPreferences に末尾が改行になる文字列を保存するとよくわからんスペースが4つ追加される件]]></title>
+            <link>https://www.codingfeline.com/2024/11/11/android-sharedprefs-newline-spaces/</link>
+            <guid>https://www.codingfeline.com/2024/11/11/android-sharedprefs-newline-spaces/</guid>
+            <pubDate>Mon, 11 Nov 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>なぜか4つスペースが追加されたしばらく悩んだ…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[2024年09-10月振り返り]]></title>
+            <link>https://www.codingfeline.com/2024/11/04/9to10-wrapup/</link>
+            <guid>https://www.codingfeline.com/2024/11/04/9to10-wrapup/</guid>
+            <pubDate>Mon, 04 Nov 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>2024年の9月-10月を振り返るよ…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Husky で設定した Git hooks を VSCode でも動くようにする]]></title>
+            <link>https://www.codingfeline.com/2024/09/27/husky-vscode/</link>
+            <guid>https://www.codingfeline.com/2024/09/27/husky-vscode/</guid>
+            <pubDate>Fri, 27 Sep 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>掲題の通り。レポジトリ内の設定だけだと、VSCode の Source Control からだと動かない…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[2024年07-08月に読んだ本]]></title>
+            <link>https://www.codingfeline.com/2024/09/07/7to8-books-read/</link>
+            <guid>https://www.codingfeline.com/2024/09/07/7to8-books-read/</guid>
+            <pubDate>Sat, 07 Sep 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>2024年の7月-8月に読んだ本を振り返るよ…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Vitest のカバレッジをマージする]]></title>
+            <link>https://www.codingfeline.com/2024/09/06/merge-vitest-coverages/</link>
+            <guid>https://www.codingfeline.com/2024/09/06/merge-vitest-coverages/</guid>
+            <pubDate>Fri, 06 Sep 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>Vitest カバレッジファイル複数をマージしたいときどうするか…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[2024年07-08月振り返り]]></title>
+            <link>https://www.codingfeline.com/2024/09/03/7to8-wrapup/</link>
+            <guid>https://www.codingfeline.com/2024/09/03/7to8-wrapup/</guid>
+            <pubDate>Tue, 03 Sep 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>2024年の7月-8月を振り返るよ…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[2024年05-06月振り返り]]></title>
+            <link>https://www.codingfeline.com/2024/07/06/5to6-wrapup/</link>
+            <guid>https://www.codingfeline.com/2024/07/06/5to6-wrapup/</guid>
+            <pubDate>Sat, 06 Jul 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>2024年の5月-6月を振り返るよ…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[2024年05-06月に読んだ本]]></title>
+            <link>https://www.codingfeline.com/2024/07/06/5to6-books-read/</link>
+            <guid>https://www.codingfeline.com/2024/07/06/5to6-books-read/</guid>
+            <pubDate>Sat, 06 Jul 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>2024年の5月-6月に読んだ本を振り返るよ…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[2024年03-04月に読んだ本]]></title>
+            <link>https://www.codingfeline.com/2024/06/15/3to4-books-read/</link>
+            <guid>https://www.codingfeline.com/2024/06/15/3to4-books-read/</guid>
+            <pubDate>Sat, 15 Jun 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>2024年の3月-4月に読んだ本を振り返るよ…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[2024年03-04月振り返り]]></title>
+            <link>https://www.codingfeline.com/2024/05/07/3to4-wrapup/</link>
+            <guid>https://www.codingfeline.com/2024/05/07/3to4-wrapup/</guid>
+            <pubDate>Tue, 07 May 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>2024年の3月-4月を振り返るよ…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[2024年01-02月振り返り]]></title>
+            <link>https://www.codingfeline.com/2024/03/09/1to2-wrapup/</link>
+            <guid>https://www.codingfeline.com/2024/03/09/1to2-wrapup/</guid>
+            <pubDate>Sat, 09 Mar 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>2024年の1月-2月を振り返るよ…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[2024年01-02月に読んだ本]]></title>
+            <link>https://www.codingfeline.com/2024/03/09/1to2-books-read/</link>
+            <guid>https://www.codingfeline.com/2024/03/09/1to2-books-read/</guid>
+            <pubDate>Sat, 09 Mar 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>2024年の1月-2月に読んだ本を振り返るよ…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[複数の DDL ファイルを外部キー依存順に並べて結合するツール、 sqlstitch を作った]]></title>
+            <link>https://www.codingfeline.com/2024/02/24/sqlstitch/</link>
+            <guid>https://www.codingfeline.com/2024/02/24/sqlstitch/</guid>
+            <pubDate>Sat, 24 Feb 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>スキーマ定義をテーブル毎にファイル分割したい、でもなにも考えずに結合するとそのまま流せなくない？　を解決するツール…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[GitKraken で Husky の Git Hooks と連携できるようにする]]></title>
+            <link>https://www.codingfeline.com/2024/02/07/fix-gitkraken-husky-githooks/</link>
+            <guid>https://www.codingfeline.com/2024/02/07/fix-gitkraken-husky-githooks/</guid>
+            <pubDate>Wed, 07 Feb 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>GitKraken から、 Husky で設定した Git Hooks が実行されない件…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[2023年を振り返って]]></title>
+            <link>https://www.codingfeline.com/2024/01/03/2023-wrapup/</link>
+            <guid>https://www.codingfeline.com/2024/01/03/2023-wrapup/</guid>
+            <pubDate>Wed, 03 Jan 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>2023年を振り返るよ…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[2023年11-12月振り返り]]></title>
+            <link>https://www.codingfeline.com/2023/12/28/11to12-wrapup/</link>
+            <guid>https://www.codingfeline.com/2023/12/28/11to12-wrapup/</guid>
+            <pubDate>Thu, 28 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>2023年の11月-12月を振り返るよ…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[2023年買ってよかったもの]]></title>
+            <link>https://www.codingfeline.com/2023/12/24/bestbuy2023/</link>
+            <guid>https://www.codingfeline.com/2023/12/24/bestbuy2023/</guid>
+            <pubDate>Sun, 24 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>買ってよかったもの振り返るよ…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[2023年09-10月振り返り]]></title>
+            <link>https://www.codingfeline.com/2023/11/07/9to10-wrapup/</link>
+            <guid>https://www.codingfeline.com/2023/11/07/9to10-wrapup/</guid>
+            <pubDate>Tue, 07 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>2023年の9月-10月を振り返るよ…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Google Pixel 7 から Galaxy Z Fold 5 に機種変更したときにしたこと]]></title>
+            <link>https://www.codingfeline.com/2023/09/16/things-done-migrating-to-galaxy/</link>
+            <guid>https://www.codingfeline.com/2023/09/16/things-done-migrating-to-galaxy/</guid>
+            <pubDate>Sat, 16 Sep 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>移行アシスタントを使わずに新端末をセットアップしてみて躓いたことなど…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[2023年07-08月振り返り]]></title>
+            <link>https://www.codingfeline.com/2023/08/27/7to8-wrapup/</link>
+            <guid>https://www.codingfeline.com/2023/08/27/7to8-wrapup/</guid>
+            <pubDate>Sun, 27 Aug 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>2023年の7月-8月を振り返るよ…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[ブログ各記事の OG 画像を作った]]></title>
+            <link>https://www.codingfeline.com/2023/08/26/vitepress-ogp/</link>
+            <guid>https://www.codingfeline.com/2023/08/26/vitepress-ogp/</guid>
+            <pubDate>Sat, 26 Aug 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>ブログ作り直したので、ついでに OG 画像もタイトル入ったやつをちゃんと作ろうと思い立った…</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[ブログを VitePress で書き直した]]></title>
+            <link>https://www.codingfeline.com/2023/08/20/renewed-blog-vitepress/</link>
+            <guid>https://www.codingfeline.com/2023/08/20/renewed-blog-vitepress/</guid>
+            <pubDate>Sun, 20 Aug 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>ふと思い立って Jekyll から VitePress に移行してみた…</p>
+]]></description>
+        </item>
+    </channel>
+</rss>
