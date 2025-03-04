@@ -1,4 +1,4 @@
-import { getInput, setFailed, setOutput, info } from '@actions/core'
+import { getInput, info, setFailed, setOutput } from '@actions/core'
 import { context, getOctokit } from '@actions/github'
 import { getIssues } from './data/github'
 import { convertToScrap } from './data/scrap'

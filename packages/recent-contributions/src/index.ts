@@ -1,6 +1,6 @@
-import { Octokit } from 'octokit'
-import { fetchContributions, fetchMe } from './github'
 import fs from 'node:fs/promises'
+import { Octokit } from 'octokit'
+import { fetchContributions, fetchMe } from './github.js'
 
 async function getRecentPRs() {
   const octokit = new Octokit({ auth: process.env.GH_PUBLIC_PAT })

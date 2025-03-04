@@ -14,7 +14,7 @@ const props = withDefaults(
 )
 
 defineSlots<{
-  default: void
+  default: undefined
 }>()
 
 const titleTag = `h${props.titleLevel}` as const

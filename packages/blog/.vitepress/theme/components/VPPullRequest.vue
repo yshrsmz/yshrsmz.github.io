@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { Contributions } from '../types';
-import VPPullRequestIcon from './icons/VPPullRequestIcon.vue';
-import VPStarIcon from './icons/VPStarIcon.vue';
 import { useTimeAgo } from '@vueuse/core'
+import type { Contributions } from '../types'
+import VPPullRequestIcon from './icons/VPPullRequestIcon.vue'
+import VPStarIcon from './icons/VPStarIcon.vue'
 
 defineProps<{
   pr: Contributions['prs'][number]

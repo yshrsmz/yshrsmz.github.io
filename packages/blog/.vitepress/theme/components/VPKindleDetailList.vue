@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import {
+  createImageUrl,
   createProductUrl,
   createProductsUrl,
-  createImageUrl,
 } from '../composables/useAmazonLink'
-import VPAmazonLink from './VPAmazonLink.vue'
 import type { KindleDetail } from '../types'
+import VPAmazonLink from './VPAmazonLink.vue'
 
 const props = defineProps<{
   details: KindleDetail[]

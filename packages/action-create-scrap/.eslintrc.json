@@ -1,8 +1,0 @@
-{
-  "root": false,
-  "extends": ["../../.eslintrc.json"],
-  "env": {
-    "browser": true,
-    "node": true
-  }
-}

@@ -1,5 +1,8 @@
-import { Octokit } from 'octokit'
-import type { Contributions, PullRequest, User } from './types'
+import type { Endpoints } from '@octokit/types'
+import type { Octokit } from 'octokit'
+import type { Contributions, PullRequest, User } from './types.js'
+
+type GHRepo = Endpoints['GET /repos/{owner}/{repo}']['response']['data']
 
 export async function fetchMe(octokit: Octokit): Promise<User> {
   const { data } = await octokit.request('GET /user')
@@ -10,14 +13,18 @@ export async function fetchMe(octokit: Octokit): Promise<User> {
   }
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const REPO_CACHE = new Map<string, any>()
+const REPO_CACHE = new Map<string, GHRepo>()
 
-export async function fetchRepo(octokit: Octokit, owner: string, name: string) {
+export async function fetchRepo(
+  octokit: Octokit,
+  owner: string,
+  name: string,
+): Promise<GHRepo> {
   const key = `${owner}/${name}`
 
   if (REPO_CACHE.has(key)) {
-    return REPO_CACHE.get(key)
+    // biome-ignore lint/style/noNonNullAssertion: we know it's in the cache
+    return REPO_CACHE.get(key)!
   }
 
   const { data } = await octokit.request('GET /repos/{owner}/{name}', {
@@ -27,7 +34,7 @@ export async function fetchRepo(octokit: Octokit, owner: string, name: string) {
 
   REPO_CACHE.set(key, data)
 
-  return data
+  return data as GHRepo
 }
 
 export async function fetchContributions(
@@ -60,7 +67,7 @@ export async function fetchContributions(
           ? 'draft'
           : (pr.state as 'open' | 'closed'),
       number: pr.number,
-      type: repo.owner.type,
+      type: repo.owner.type as PullRequest['type'],
       stars: repo.stargazers_count,
     })
   }

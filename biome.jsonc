@@ -1,0 +1,49 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "ignoreUnknown": false,
+    "include": [
+      // for @codingfeline/blog. biome's monorepo suport is limited for now.
+      // https://github.com/biomejs/biome/issues/2228
+      ".vitepress/**/*",
+      "contents/**/*.ts",
+      // defaults
+      "src/**/*.ts",
+      "test/**/*.ts",
+      "*.config.ts",
+      "package.json"
+    ],
+    "ignore": [
+      ".vitepress/cache/**/*",
+      ".vitepress/dist/**/*",
+      "cache/**/*",
+      "dist/**/*",
+      "kindle-detail.js",
+      "amazon-detail.js"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space"
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "semicolons": "asNeeded"
+    }
+  }
+}

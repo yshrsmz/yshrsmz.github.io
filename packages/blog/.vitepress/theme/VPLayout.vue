@@ -1,22 +1,26 @@
 <script setup lang="ts">
 import { useData, useRouter } from 'vitepress'
-import VPHeader from './components/VPHeader.vue'
+import { computed } from 'vue'
+import NotFound from './NotFound.vue'
+import VPContributions from './components/VPContributions.vue'
 import VPFooter from './components/VPFooter.vue'
+import VPHeader from './components/VPHeader.vue'
 import VPHome from './components/VPHome.vue'
 import VPPost from './components/VPPost.vue'
 import VPPosts from './components/VPPosts.vue'
-import VPTags from './components/VPTags.vue'
 import VPScrap from './components/VPScrap.vue'
 import VPScraps from './components/VPScraps.vue'
-import VPContributions from './components/VPContributions.vue'
-import NotFound from './NotFound.vue'
-import { computed } from 'vue'
+import VPTags from './components/VPTags.vue'
 
 const { page, frontmatter } = useData()
 
-const titleTag = computed(() => (frontmatter.value.layout === 'home' ? 'h1' : 'h2'))
+const titleTag = computed(() =>
+  frontmatter.value.layout === 'home' ? 'h1' : 'h2',
+)
 
-const showNavigation = computed<boolean>(() => frontmatter.value.navigation ?? true)
+const showNavigation = computed<boolean>(
+  () => frontmatter.value.navigation ?? true,
+)
 
 const shouldShowContents = computed(
   () => frontmatter.value.draft !== true || import.meta.env.DEV,

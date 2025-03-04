@@ -30,7 +30,7 @@ export function convertToScrap(issue: Issue, comments: IssueComment[]): Scrap {
     state: issue.state as Scrap['state'],
     tags: issue.labels
       .map((l) => (typeof l === 'string' ? l : l.name))
-      .filter((l): l is string => l != undefined),
+      .filter((l): l is string => l !== undefined),
     originUrl: issue.html_url,
     createdAt: issue.created_at,
     updatedAt: issue.updated_at,

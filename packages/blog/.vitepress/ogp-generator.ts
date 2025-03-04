@@ -1,8 +1,8 @@
+import { readFile, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
-import { writeFile, readFile } from 'node:fs/promises'
+import { Resvg } from '@resvg/resvg-js'
 import type { Font } from 'satori'
 import satori from 'satori'
-import { Resvg } from '@resvg/resvg-js'
 
 const size = { width: 1200, height: 630 }
 const cwd = process.cwd()
@@ -12,7 +12,12 @@ export class OGPImageGenerator {
 
   private posts: { title: string; publishedAt: string; path: string }[] = []
 
-  registerPost(title: string, publishedAt: string, outDir: string, path: string) {
+  registerPost(
+    title: string,
+    publishedAt: string,
+    outDir: string,
+    path: string,
+  ) {
     this.posts.push({
       title,
       publishedAt,
@@ -117,7 +122,9 @@ export class OGPImageGenerator {
     }
 
     await Promise.all(
-      this.posts.map((post) => this.generate2(post.title, post.publishedAt, post.path)),
+      this.posts.map((post) =>
+        this.generate2(post.title, post.publishedAt, post.path),
+      ),
     )
   }
 }

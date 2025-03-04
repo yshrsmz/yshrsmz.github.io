@@ -1,7 +1,11 @@
-import type { Scrap } from './types'
 import { readFileSync } from 'node:fs'
-import { parseISO, format } from 'date-fns'
-import { createMarkdownRenderer, type SiteConfig } from 'vitepress'
+import { format, parseISO } from 'date-fns'
+import { type SiteConfig, createMarkdownRenderer } from 'vitepress'
+import type { Scrap } from './types'
+
+declare global {
+  var VITEPRESS_CONFIG: SiteConfig
+}
 
 declare const data: Scrap[]
 export { data }
@@ -14,8 +18,7 @@ function formatDate(date?: string): string | undefined {
 export default {
   watch: ['data/scraps/*.json'],
   async load(watchedFiles: string[]) {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const config: SiteConfig = (global as any).VITEPRESS_CONFIG
+    const config: SiteConfig = global.VITEPRESS_CONFIG
 
     const md = await createMarkdownRenderer(
       config.srcDir,

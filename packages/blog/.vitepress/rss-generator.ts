@@ -1,9 +1,14 @@
-import type { SiteConfig } from 'vitepress'
-import { createContentLoader } from 'vitepress'
-import { Feed } from 'feed'
 import { writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
-import { POST_MARKDOWN_PATTERN, createExcerpt, sortByDate, toPost } from './theme/helper'
+import { Feed } from 'feed'
+import type { SiteConfig } from 'vitepress'
+import { createContentLoader } from 'vitepress'
+import {
+  POST_MARKDOWN_PATTERN,
+  createExcerpt,
+  sortByDate,
+  toPost,
+} from './theme/helper'
 
 export async function generateRssFeed(
   siteConfig: SiteConfig,
@@ -32,15 +37,15 @@ export async function generateRssFeed(
     link: hostname,
     language: 'ja-JP',
     updated: posts[0].date?.time ? new Date(posts[0].date?.time) : new Date(),
-    copyright: `All rights reserved 2020, yshrsmz`,
+    copyright: 'All rights reserved 2020, yshrsmz',
   })
 
-  posts.forEach((post) => {
+  for (const post of posts) {
     const link = new URL(post.url, hostname).href
     const time = post.date?.time
 
     if (!time) {
-      return
+      continue
     }
 
     feed.addItem({
@@ -50,7 +55,7 @@ export async function generateRssFeed(
       description: post.excerpt,
       date: new Date(time),
     })
-  })
+  }
 
   await writeFile(resolve(siteConfig.outDir, 'feed.xml'), feed.rss2())
 }

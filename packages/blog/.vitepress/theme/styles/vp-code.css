@@ -13,7 +13,7 @@
     /* tailwindcss gray-200 */
     --vp-code-block-bg: #e5e7eb;
   }
-  .vp-code span{
+  .vp-code span {
     color: var(--shiki-light, inherit);
   }
 }

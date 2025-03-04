@@ -30,9 +30,7 @@ function updatedAt(scrap: Scrap) {
             class="text-sm text-gray-500 dark:text-gray-400"
             >{{ post.date?.string }}</time
           >
-          <!-- eslint-disable vue/no-v-html -->
           <div class="text-gray-700 dark:text-gray-300" v-html="post.excerpt" />
-          <!-- eslint-enable -->
         </a>
       </li>
       <li class="mt-4 text-center px-8">

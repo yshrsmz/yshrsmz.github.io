@@ -1,6 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable prettier/prettier */
-// eslint-disable-next-line no-unused-labels
 javascript:(function (d) {
   const ASIN_REGEX =
     /https:\/\/www.amazon.co.jp\/(.*\/|)(dp|gp)\/(product\/|)([A-Z0-9]+).*/;

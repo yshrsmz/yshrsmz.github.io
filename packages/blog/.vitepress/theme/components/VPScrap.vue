@@ -1,17 +1,21 @@
 <script setup lang="ts">
 import { useData } from 'vitepress'
-import { data as scraps } from '../scraps.data.js'
 import { computed } from 'vue'
+import { data as scraps } from '../scraps.data.js'
+import VPScrapLabel from './VPScrapLabel.vue'
 import VPTagLabel from './VPTagLabel.vue'
 import VPCheckIcon from './icons/VPCheckIcon.vue'
 import VPEditIcon from './icons/VPEditIcon.vue'
-import VPScrapLabel from './VPScrapLabel.vue'
 
 const { page } = useData()
 
+// biome-ignore lint/style/noNonNullAssertion: it should exist
 const scrapNumber = computed(() => page.value.params!.number)
 
-const scrap = computed(() => scraps.find((s) => s.number === scrapNumber.value)!)
+const scrap = computed(
+  // biome-ignore lint/style/noNonNullAssertion: should found
+  () => scraps.find((s) => s.number === scrapNumber.value)!,
+)
 
 const updatedAt = computed(() => {
   if (scrap.value.closedAt) {
@@ -49,12 +53,10 @@ const bodies = computed(() => [scrap.value, ...scrap.value.comments])
         class="mt-3 border-b border-t border-gray-300 bg-gray-50 sm:rounded-md sm:border dark:border-gray-400 dark:bg-gray-900"
       >
         <article :id="item.id" class="relative mx-8 my-3 flex flex-col">
-          <!-- eslint-disable vue/no-v-html -->
           <div
             class="VPPost__content vp-doc prose dark:prose-invert prose-a:hover:decoration-dotted prose-a:break-all mt-4 max-w-full flex-grow"
             v-html="item.body"
           />
-          <!-- eslint-enable vue/no-v-html -->
           <a
             :href="`#${item.id}`"
             class="inline-block self-end text-sm text-gray-500 dark:text-gray-400"

@@ -1,13 +1,13 @@
 import { createContentLoader } from 'vitepress'
 import type { ContentData } from 'vitepress'
-import type { EntriesForTag, Entry } from './types'
 import {
   POST_MARKDOWN_PATTERN,
   getPublishedDateFromPath,
-  hasOwnProperty,
+  objectHasOwnProperty,
   rewritePostUrl,
   sortByDate,
 } from './helper'
+import type { EntriesForTag, Entry } from './types'
 
 declare const data: EntriesForTag[]
 export { data }
@@ -22,17 +22,16 @@ export default createContentLoader(POST_MARKDOWN_PATTERN, {
         }
 
         const tags: string[] = post.frontmatter.tags ?? []
-        tags.forEach((tag) => {
-          if (!hasOwnProperty(acc, tag)) {
+        for (const tag of tags) {
+          if (!objectHasOwnProperty(acc, tag)) {
             acc[tag] = []
           }
-
           acc[tag].push({
             title: post.frontmatter.title,
             url: rewritePostUrl(post.url),
             date: getPublishedDateFromPath(post.url),
           })
-        })
+        }
 
         return acc
       },

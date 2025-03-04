@@ -1,16 +1,16 @@
+import { readFileSync } from 'node:fs'
+import tailwindcss from '@tailwindcss/vite'
 import type { HeadConfig } from 'vitepress'
 import { defineConfig } from 'vitepress'
+import { generateOGPMeta } from './ogp'
+import { OGPImageGenerator } from './ogp-generator'
+import { generateRssFeed } from './rss-generator'
 import {
   getPublishedDateFromGitHubDatetime,
   getPublishedDateFromPath,
   getPublishedDateFromRewrittenUrl,
 } from './theme/helper'
 import type { EntryDate, Scrap } from './theme/types'
-import { generateRssFeed } from './rss-generator'
-import { generateOGPMeta } from './ogp'
-import { OGPImageGenerator } from './ogp-generator'
-import { readFileSync } from 'node:fs'
-import tailwindcss from "@tailwindcss/vite";
 
 const TITLE = 'CodingFeline'
 const DESCRIPTION = 'Thoughts, stories and ideas'
@@ -63,9 +63,7 @@ function detectPageTypeFromPath(path: string): 'post' | 'scrap' | 'other' {
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   vite: {
-    plugins: [
-      tailwindcss(),
-    ],
+    plugins: [tailwindcss()],
   },
   title: TITLE,
   description: DESCRIPTION,
@@ -133,7 +131,8 @@ export default defineConfig({
     },
   },
   rewrites: {
-    'posts/:skipped/:year-:month-:day-:slug(.*).md': ':year/:month/:day/:slug/index.md',
+    'posts/:skipped/:year-:month-:day-:slug(.*).md':
+      ':year/:month/:day/:slug/index.md',
     'scraps/index.md': 'scraps/index.md',
     'scraps/:number.md': 'scraps/:number/index.md',
   },
@@ -146,8 +145,10 @@ export default defineConfig({
         pageData.date = date
       }
     } else if (pageData.frontmatter.layout === 'scrap') {
-      pageData.title = pageData.params!.title
-      const date = getPublishedDateFromGitHubDatetime(pageData.params!.lastmod)
+      const { title = '', lastmod = '' } = pageData.params ?? {}
+
+      pageData.title = title
+      const date = getPublishedDateFromGitHubDatetime(lastmod)
       if (date) {
         needsOGPImage = true
         pageData.date = date

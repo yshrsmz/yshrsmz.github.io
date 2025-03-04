@@ -1,16 +1,19 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { data } from '../contributions.data.js'
-import VPPullRequest from './VPPullRequest.vue';
+import VPPullRequest from './VPPullRequest.vue'
 
 const datetime = computed(() => {
-  const date = new Date(data.updated_at);
-  return date.toISOString();
+  const date = new Date(data.updated_at)
+  return date.toISOString()
 })
 
 const updatedAt = computed(() => {
-  const date = new Date(data.updated_at);
-  return date.toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' });
+  const date = new Date(data.updated_at)
+  return date.toLocaleString('en-US', {
+    dateStyle: 'medium',
+    timeStyle: 'short',
+  })
 })
 </script>
 

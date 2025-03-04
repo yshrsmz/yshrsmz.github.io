@@ -1,25 +1,27 @@
 <script setup lang="ts">
+import { objectHasOwnProperty, sortByDate } from '../helper'
+import { data as tagsForScraps } from '../tags-scraps.data.js'
+import { data as tagsForPosts } from '../tags.data.js'
+import type { Entry } from '../types'
 import VPTagLabel from './VPTagLabel.vue'
 import VPTagIcon from './icons/VPTagIcon.vue'
-import { data as tagsForPosts } from '../tags.data.js'
-import { data as tagsForScraps } from '../tags-scraps.data.js'
-import type { Entry } from '../types'
-import { hasOwnProperty, sortByDate } from '../helper'
 
-const entriesByTag = [...tagsForPosts, ...tagsForScraps].reduce<Record<string, Entry[]>>(
-  (acc, { tag, entries }) => {
-    if (!hasOwnProperty(acc, tag)) {
-      acc[tag] = []
-    }
-    acc[tag].push(...entries)
-    return acc
-  },
-  {},
-)
+const entriesByTag = [...tagsForPosts, ...tagsForScraps].reduce<
+  Record<string, Entry[]>
+>((acc, { tag, entries }) => {
+  if (!objectHasOwnProperty(acc, tag)) {
+    acc[tag] = []
+  }
+  acc[tag].push(...entries)
+  return acc
+}, {})
 
 const tagEntries = Object.entries(entriesByTag)
   .sort(([tagA], [tagB]) => tagA.localeCompare(tagB))
-  .map(([tag, entries]) => ({ tag, entries: entries.sort((a, b) => sortByDate(a, b)) }))
+  .map(([tag, entries]) => ({
+    tag,
+    entries: entries.sort((a, b) => sortByDate(a, b)),
+  }))
 </script>
 
 <template>

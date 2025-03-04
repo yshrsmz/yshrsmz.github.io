@@ -1,0 +1,25 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "extends": ["../../biome.json"],
+  "files": {
+    "include": [
+      ".vitepress/**/*",
+      "contents/**/*.ts",
+      "*.config.ts",
+      "package.json",
+      "tsconfig.json"
+    ],
+    "ignore": [
+      ".vitepress/cache/**/*",
+      ".vitepress/dist/**/*",
+      "contents/public/javascripts/*",
+      "data/**/*.json"
+    ]
+  },
+  "linter": {
+    "enabled": true
+  },
+  "formatter": {
+    "enabled": true
+  }
+}

@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import VPRedditIcon from './icons/VPRedditIcon.vue'
-import VPXIcon from './icons/VPXIcon.vue'
-import VPGitHubIcon from './icons/VPGitHubIcon.vue'
-import VPStackOverflowIcon from './icons/VPStackOverflowIcon.vue'
-import VPStackExchangeIcon from './icons/VPStackExchangeIcon.vue'
-import VPRssIcon from './icons/VPRssIcon.vue'
 import VPBskyIcon from './icons/VPBskyIcon.vue'
+import VPGitHubIcon from './icons/VPGitHubIcon.vue'
+import VPRedditIcon from './icons/VPRedditIcon.vue'
+import VPRssIcon from './icons/VPRssIcon.vue'
+import VPStackExchangeIcon from './icons/VPStackExchangeIcon.vue'
+import VPStackOverflowIcon from './icons/VPStackOverflowIcon.vue'
+import VPXIcon from './icons/VPXIcon.vue'
 
 const year = new Date().getUTCFullYear()
 </script>
