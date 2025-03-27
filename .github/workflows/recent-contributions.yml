@@ -17,7 +17,7 @@ jobs:
         with:
           token: ${{ secrets.COMMIT_TOKEN }}
 
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v4
 
       - name: Setup node env 🏗
         uses: actions/setup-node@v4
