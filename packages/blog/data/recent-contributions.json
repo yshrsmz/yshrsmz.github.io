@@ -1,5 +1,5 @@
 {
-  "updated_at": 1743035160161,
+  "updated_at": 1743380891118,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
@@ -54,7 +54,7 @@
       "state": "open",
       "number": 199,
       "type": "User",
-      "stars": 900
+      "stars": 902
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -64,7 +64,7 @@
       "state": "merged",
       "number": 192,
       "type": "User",
-      "stars": 900
+      "stars": 902
     },
     {
       "repo": "yshrsmz/sqlstitch",
@@ -134,7 +134,7 @@
       "state": "merged",
       "number": 4052,
       "type": "Organization",
-      "stars": 9530
+      "stars": 9581
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -174,7 +174,7 @@
       "state": "open",
       "number": 41,
       "type": "Organization",
-      "stars": 415
+      "stars": 416
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -224,7 +224,7 @@
       "state": "merged",
       "number": 3125,
       "type": "Organization",
-      "stars": 9530
+      "stars": 9581
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -284,7 +284,7 @@
       "state": "merged",
       "number": 168,
       "type": "User",
-      "stars": 900
+      "stars": 902
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -294,7 +294,7 @@
       "state": "merged",
       "number": 167,
       "type": "User",
-      "stars": 900
+      "stars": 902
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -304,7 +304,7 @@
       "state": "merged",
       "number": 166,
       "type": "User",
-      "stars": 900
+      "stars": 902
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -314,7 +314,7 @@
       "state": "merged",
       "number": 165,
       "type": "User",
-      "stars": 900
+      "stars": 902
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -374,7 +374,7 @@
       "state": "open",
       "number": 23,
       "type": "Organization",
-      "stars": 415
+      "stars": 416
     },
     {
       "repo": "sqlc-dev/sqlc-gen-typescript",
@@ -384,7 +384,7 @@
       "state": "merged",
       "number": 16,
       "type": "Organization",
-      "stars": 415
+      "stars": 416
     },
     {
       "repo": "sqlc-dev/sqlc-gen-typescript",
@@ -394,7 +394,7 @@
       "state": "merged",
       "number": 13,
       "type": "Organization",
-      "stars": 415
+      "stars": 416
     },
     {
       "repo": "yshrsmz/sqlstitch",
@@ -414,7 +414,7 @@
       "state": "merged",
       "number": 371,
       "type": "Organization",
-      "stars": 2512
+      "stars": 2518
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
