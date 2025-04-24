@@ -1,11 +1,21 @@
 {
-  "updated_at": 1745195334527,
+  "updated_at": 1745454419523,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/BuildKonfig",
+      "title": "chore(master): release 0.17.2",
+      "url": "https://github.com/yshrsmz/BuildKonfig/pull/209",
+      "created_at": "2025-04-23T06:26:24Z",
+      "state": "open",
+      "number": 209,
+      "type": "User",
+      "stars": 914
+    },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
       "title": "make sure IssueStore#fetchById is called upon every navigation",
@@ -64,7 +74,7 @@
       "state": "merged",
       "number": 199,
       "type": "User",
-      "stars": 909
+      "stars": 914
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -74,7 +84,7 @@
       "state": "merged",
       "number": 192,
       "type": "User",
-      "stars": 909
+      "stars": 914
     },
     {
       "repo": "yshrsmz/sqlstitch",
@@ -144,7 +154,7 @@
       "state": "merged",
       "number": 4052,
       "type": "Organization",
-      "stars": 9981
+      "stars": 10033
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -184,7 +194,7 @@
       "state": "open",
       "number": 41,
       "type": "Organization",
-      "stars": 429
+      "stars": 431
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -234,7 +244,7 @@
       "state": "merged",
       "number": 3125,
       "type": "Organization",
-      "stars": 9981
+      "stars": 10033
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -294,7 +304,7 @@
       "state": "merged",
       "number": 168,
       "type": "User",
-      "stars": 909
+      "stars": 914
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -304,7 +314,7 @@
       "state": "merged",
       "number": 167,
       "type": "User",
-      "stars": 909
+      "stars": 914
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -314,7 +324,7 @@
       "state": "merged",
       "number": 166,
       "type": "User",
-      "stars": 909
+      "stars": 914
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -324,7 +334,7 @@
       "state": "merged",
       "number": 165,
       "type": "User",
-      "stars": 909
+      "stars": 914
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -384,7 +394,7 @@
       "state": "open",
       "number": 23,
       "type": "Organization",
-      "stars": 429
+      "stars": 431
     },
     {
       "repo": "sqlc-dev/sqlc-gen-typescript",
@@ -394,7 +404,7 @@
       "state": "merged",
       "number": 16,
       "type": "Organization",
-      "stars": 429
+      "stars": 431
     },
     {
       "repo": "sqlc-dev/sqlc-gen-typescript",
@@ -404,7 +414,7 @@
       "state": "merged",
       "number": 13,
       "type": "Organization",
-      "stars": 429
+      "stars": 431
     },
     {
       "repo": "yshrsmz/sqlstitch",
@@ -424,7 +434,7 @@
       "state": "merged",
       "number": 371,
       "type": "Organization",
-      "stars": 2544
+      "stars": 2549
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -493,16 +503,6 @@
       "created_at": "2024-01-30T11:51:17Z",
       "state": "merged",
       "number": 16,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/sqlstitch",
-      "title": "ci: introduce cargo-dist",
-      "url": "https://github.com/yshrsmz/sqlstitch/pull/11",
-      "created_at": "2024-01-28T13:58:39Z",
-      "state": "merged",
-      "number": 11,
       "type": "User",
       "stars": 2
     }
