@@ -1,5 +1,5 @@
 {
-  "updated_at": 1745800123680,
+  "updated_at": 1746059455052,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
@@ -8,13 +8,23 @@
   "prs": [
     {
       "repo": "yshrsmz/BuildKonfig",
+      "title": "ci: configures Maven Central publishing via Central Portal",
+      "url": "https://github.com/yshrsmz/BuildKonfig/pull/213",
+      "created_at": "2025-04-29T11:50:07Z",
+      "state": "merged",
+      "number": 213,
+      "type": "User",
+      "stars": 921
+    },
+    {
+      "repo": "yshrsmz/BuildKonfig",
       "title": "chore(master): release 0.17.2",
       "url": "https://github.com/yshrsmz/BuildKonfig/pull/209",
       "created_at": "2025-04-23T06:26:24Z",
       "state": "open",
       "number": 209,
       "type": "User",
-      "stars": 920
+      "stars": 921
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -74,7 +84,7 @@
       "state": "merged",
       "number": 199,
       "type": "User",
-      "stars": 920
+      "stars": 921
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -84,7 +94,7 @@
       "state": "merged",
       "number": 192,
       "type": "User",
-      "stars": 920
+      "stars": 921
     },
     {
       "repo": "yshrsmz/sqlstitch",
@@ -154,7 +164,7 @@
       "state": "merged",
       "number": 4052,
       "type": "Organization",
-      "stars": 10067
+      "stars": 10111
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -194,7 +204,7 @@
       "state": "open",
       "number": 41,
       "type": "Organization",
-      "stars": 432
+      "stars": 434
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -244,7 +254,7 @@
       "state": "merged",
       "number": 3125,
       "type": "Organization",
-      "stars": 10067
+      "stars": 10111
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -304,7 +314,7 @@
       "state": "merged",
       "number": 168,
       "type": "User",
-      "stars": 920
+      "stars": 921
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -314,7 +324,7 @@
       "state": "merged",
       "number": 167,
       "type": "User",
-      "stars": 920
+      "stars": 921
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -324,7 +334,7 @@
       "state": "merged",
       "number": 166,
       "type": "User",
-      "stars": 920
+      "stars": 921
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -334,7 +344,7 @@
       "state": "merged",
       "number": 165,
       "type": "User",
-      "stars": 920
+      "stars": 921
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -394,7 +404,7 @@
       "state": "open",
       "number": 23,
       "type": "Organization",
-      "stars": 432
+      "stars": 434
     },
     {
       "repo": "sqlc-dev/sqlc-gen-typescript",
@@ -404,7 +414,7 @@
       "state": "merged",
       "number": 16,
       "type": "Organization",
-      "stars": 432
+      "stars": 434
     },
     {
       "repo": "sqlc-dev/sqlc-gen-typescript",
@@ -414,7 +424,7 @@
       "state": "merged",
       "number": 13,
       "type": "Organization",
-      "stars": 432
+      "stars": 434
     },
     {
       "repo": "yshrsmz/sqlstitch",
@@ -434,7 +444,7 @@
       "state": "merged",
       "number": 371,
       "type": "Organization",
-      "stars": 2551
+      "stars": 2559
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -493,16 +503,6 @@
       "created_at": "2024-02-01T07:29:19Z",
       "state": "merged",
       "number": 19,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/sqlstitch",
-      "title": "docs: add LICENSE",
-      "url": "https://github.com/yshrsmz/sqlstitch/pull/16",
-      "created_at": "2024-01-30T11:51:17Z",
-      "state": "merged",
-      "number": 16,
       "type": "User",
       "stars": 2
     }
