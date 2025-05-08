@@ -1,5 +1,5 @@
 {
-  "updated_at": 1746404984427,
+  "updated_at": 1746664075824,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
@@ -164,7 +164,7 @@
       "state": "merged",
       "number": 4052,
       "type": "Organization",
-      "stars": 10160
+      "stars": 10213
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -254,7 +254,7 @@
       "state": "merged",
       "number": 3125,
       "type": "Organization",
-      "stars": 10160
+      "stars": 10213
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -444,7 +444,7 @@
       "state": "merged",
       "number": 371,
       "type": "Organization",
-      "stars": 2564
+      "stars": 2573
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
