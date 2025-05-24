@@ -19,7 +19,7 @@
     "autoprefixer": "10.4.21",
     "date-fns": "4.1.0",
     "fast-glob": "3.3.3",
-    "feed": "4.2.2",
+    "feed": "5.0.1",
     "globals": "16.1.0",
     "postcss": "8.5.3",
     "postcss-import": "16.1.0",
