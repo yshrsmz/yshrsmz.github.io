@@ -1,3 +1,7 @@
+## prerequisite
+
+- mise
+
 ## todo
 
 - [x] rss
@@ -19,7 +23,6 @@
   - Amazon
   - Generic
 - [x] OGP image
-
 
 ## Development
 
