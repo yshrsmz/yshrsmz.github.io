@@ -25,7 +25,6 @@ jobs:
       - name: Check Node.js version
         run: |
           mise exec node -- node --version
-          corepack enable pnpm
 
       - name: Install dependencies 👨🏻‍💻
         run: pnpm install --frozen-lockfile
