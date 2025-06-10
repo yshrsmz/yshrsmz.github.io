@@ -12,13 +12,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@octokit/types": "14.0.0",
-    "@types/node": "22.15.21",
+    "@octokit/types": "14.1.0",
+    "@types/node": "22.15.31",
     "tsx": "4.19.4",
     "typescript": "5.8.3",
-    "vitest": "3.1.4"
+    "vitest": "3.2.3"
   },
   "dependencies": {
-    "octokit": "5.0.2"
+    "octokit": "5.0.3"
   }
 }
