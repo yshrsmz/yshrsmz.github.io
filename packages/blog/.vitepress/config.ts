@@ -15,13 +15,19 @@ import type { EntryDate, Scrap } from './theme/types'
 const TITLE = 'CodingFeline'
 const DESCRIPTION = 'Thoughts, stories and ideas'
 const HOST_NAME = 'https://www.codingfeline.com/'
+const commitHash = process.env.GITHUB_SHA || 'development'
 
 const ogpGenerator = new OGPImageGenerator()
 
 const isProduction = process.env.NODE_ENV === 'production'
 const shouldUseGTM = isProduction
 const shouldUseAdsense = isProduction
-const productionHeads = new Set<HeadConfig>()
+const productionHeads = new Set<HeadConfig>(
+  [
+    ['meta', { name: 'deployed-version', content: commitHash }],
+  ]
+)
+
 if (shouldUseGTM) {
   productionHeads.add([
     'script',
