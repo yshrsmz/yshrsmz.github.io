@@ -1,11 +1,111 @@
 {
-  "updated_at": 1749429041195,
+  "updated_at": 1749688095544,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/unorm-dart",
+      "title": "add workflows/update_unicode_data.yml",
+      "url": "https://github.com/yshrsmz/unorm-dart/pull/26",
+      "created_at": "2025-06-11T14:19:35Z",
+      "state": "merged",
+      "number": 26,
+      "type": "User",
+      "stars": 14
+    },
+    {
+      "repo": "yshrsmz/unorm-dart",
+      "title": "add tools/unicode_data_updater.dart",
+      "url": "https://github.com/yshrsmz/unorm-dart/pull/25",
+      "created_at": "2025-06-11T14:00:44Z",
+      "state": "merged",
+      "number": 25,
+      "type": "User",
+      "stars": 14
+    },
+    {
+      "repo": "yshrsmz/unorm-dart",
+      "title": "add unorm_normalizer_builder",
+      "url": "https://github.com/yshrsmz/unorm-dart/pull/24",
+      "created_at": "2025-06-11T04:15:17Z",
+      "state": "merged",
+      "number": 24,
+      "type": "User",
+      "stars": 14
+    },
+    {
+      "repo": "yshrsmz/unorm-dart",
+      "title": "use Dart 3.8.1",
+      "url": "https://github.com/yshrsmz/unorm-dart/pull/23",
+      "created_at": "2025-06-11T03:22:47Z",
+      "state": "merged",
+      "number": 23,
+      "type": "User",
+      "stars": 14
+    },
+    {
+      "repo": "yshrsmz/unorm-dart",
+      "title": "add mise.toml",
+      "url": "https://github.com/yshrsmz/unorm-dart/pull/22",
+      "created_at": "2025-06-10T14:59:00Z",
+      "state": "merged",
+      "number": 22,
+      "type": "User",
+      "stars": 14
+    },
+    {
+      "repo": "yshrsmz/mockwebserver-dart",
+      "title": "add publish.yml",
+      "url": "https://github.com/yshrsmz/mockwebserver-dart/pull/8",
+      "created_at": "2025-06-09T14:03:06Z",
+      "state": "merged",
+      "number": 8,
+      "type": "User",
+      "stars": 1
+    },
+    {
+      "repo": "yshrsmz/mockwebserver-dart",
+      "title": "update document",
+      "url": "https://github.com/yshrsmz/mockwebserver-dart/pull/7",
+      "created_at": "2025-06-09T13:47:24Z",
+      "state": "merged",
+      "number": 7,
+      "type": "User",
+      "stars": 1
+    },
+    {
+      "repo": "yshrsmz/mockwebserver-dart",
+      "title": "pin github actions",
+      "url": "https://github.com/yshrsmz/mockwebserver-dart/pull/6",
+      "created_at": "2025-06-09T13:44:31Z",
+      "state": "merged",
+      "number": 6,
+      "type": "User",
+      "stars": 1
+    },
+    {
+      "repo": "yshrsmz/mockwebserver-dart",
+      "title": ":chore: Increase pub.dev score",
+      "url": "https://github.com/yshrsmz/mockwebserver-dart/pull/2",
+      "created_at": "2025-06-09T10:53:55Z",
+      "state": "merged",
+      "number": 2,
+      "type": "User",
+      "stars": 1
+    },
+    {
+      "repo": "yshrsmz/mockwebserver-dart",
+      "title": "add ci.yml",
+      "url": "https://github.com/yshrsmz/mockwebserver-dart/pull/1",
+      "created_at": "2025-06-07T12:30:47Z",
+      "state": "merged",
+      "number": 1,
+      "type": "User",
+      "stars": 1
+    },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
       "title": "migrate to mise, from nodenv",
@@ -24,7 +124,7 @@
       "state": "merged",
       "number": 213,
       "type": "User",
-      "stars": 949
+      "stars": 951
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -34,7 +134,7 @@
       "state": "open",
       "number": 209,
       "type": "User",
-      "stars": 949
+      "stars": 951
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -94,7 +194,7 @@
       "state": "merged",
       "number": 199,
       "type": "User",
-      "stars": 949
+      "stars": 951
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -104,7 +204,7 @@
       "state": "merged",
       "number": 192,
       "type": "User",
-      "stars": 949
+      "stars": 951
     },
     {
       "repo": "yshrsmz/sqlstitch",
@@ -174,7 +274,7 @@
       "state": "merged",
       "number": 4052,
       "type": "Organization",
-      "stars": 10757
+      "stars": 10792
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -264,7 +364,7 @@
       "state": "merged",
       "number": 3125,
       "type": "Organization",
-      "stars": 10757
+      "stars": 10792
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -324,7 +424,7 @@
       "state": "merged",
       "number": 168,
       "type": "User",
-      "stars": 949
+      "stars": 951
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -334,7 +434,7 @@
       "state": "merged",
       "number": 167,
       "type": "User",
-      "stars": 949
+      "stars": 951
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -344,7 +444,7 @@
       "state": "merged",
       "number": 166,
       "type": "User",
-      "stars": 949
+      "stars": 951
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -354,7 +454,7 @@
       "state": "merged",
       "number": 165,
       "type": "User",
-      "stars": 949
+      "stars": 951
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -403,106 +503,6 @@
       "created_at": "2024-04-07T03:29:54Z",
       "state": "merged",
       "number": 32,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "sqlc-dev/sqlc-gen-typescript",
-      "title": "fix: return `number | string` from mysql execlastid",
-      "url": "https://github.com/sqlc-dev/sqlc-gen-typescript/pull/23",
-      "created_at": "2024-03-04T09:25:39Z",
-      "state": "open",
-      "number": 23,
-      "type": "Organization",
-      "stars": 449
-    },
-    {
-      "repo": "sqlc-dev/sqlc-gen-typescript",
-      "title": "use string for mysql bigint",
-      "url": "https://github.com/sqlc-dev/sqlc-gen-typescript/pull/16",
-      "created_at": "2024-02-26T09:19:55Z",
-      "state": "merged",
-      "number": 16,
-      "type": "Organization",
-      "stars": 449
-    },
-    {
-      "repo": "sqlc-dev/sqlc-gen-typescript",
-      "title": "add execlastid implementation for mysql",
-      "url": "https://github.com/sqlc-dev/sqlc-gen-typescript/pull/13",
-      "created_at": "2024-02-15T13:07:58Z",
-      "state": "merged",
-      "number": 13,
-      "type": "Organization",
-      "stars": 449
-    },
-    {
-      "repo": "yshrsmz/sqlstitch",
-      "title": "ci: update cargo-dist v0.10.0",
-      "url": "https://github.com/yshrsmz/sqlstitch/pull/25",
-      "created_at": "2024-02-11T14:49:25Z",
-      "state": "merged",
-      "number": 25,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "unjs/unbuild",
-      "title": "fix: generate stub types of with explicit extension import if pkg type is `module`",
-      "url": "https://github.com/unjs/unbuild/pull/371",
-      "created_at": "2024-02-10T03:01:05Z",
-      "state": "merged",
-      "number": 371,
-      "type": "Organization",
-      "stars": 2605
-    },
-    {
-      "repo": "yshrsmz/yshrsmz.github.io",
-      "title": "add canonical",
-      "url": "https://github.com/yshrsmz/yshrsmz.github.io/pull/147",
-      "created_at": "2024-02-07T13:30:11Z",
-      "state": "merged",
-      "number": 147,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/yshrsmz.github.io",
-      "title": "Create 2024-02-07-fix-gitkraken-husky-githooks.md",
-      "url": "https://github.com/yshrsmz/yshrsmz.github.io/pull/146",
-      "created_at": "2024-02-07T07:56:21Z",
-      "state": "merged",
-      "number": 146,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/sqlstitch",
-      "title": "ci: add a step to check head commit message",
-      "url": "https://github.com/yshrsmz/sqlstitch/pull/23",
-      "created_at": "2024-02-03T10:42:46Z",
-      "state": "merged",
-      "number": 23,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/sqlstitch",
-      "title": "ci: update cargo-dist to 0.9.0",
-      "url": "https://github.com/yshrsmz/sqlstitch/pull/22",
-      "created_at": "2024-02-03T10:32:38Z",
-      "state": "merged",
-      "number": 22,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/sqlstitch",
-      "title": "test: add unit tests",
-      "url": "https://github.com/yshrsmz/sqlstitch/pull/21",
-      "created_at": "2024-02-03T10:19:18Z",
-      "state": "merged",
-      "number": 21,
       "type": "User",
       "stars": 2
     }
