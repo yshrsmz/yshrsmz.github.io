@@ -1,11 +1,21 @@
 {
-  "updated_at": 1749688095544,
+  "updated_at": 1750033807815,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/unorm-dart",
+      "title": "add publish workflow",
+      "url": "https://github.com/yshrsmz/unorm-dart/pull/29",
+      "created_at": "2025-06-12T04:08:25Z",
+      "state": "merged",
+      "number": 29,
+      "type": "User",
+      "stars": 14
+    },
     {
       "repo": "yshrsmz/unorm-dart",
       "title": "add workflows/update_unicode_data.yml",
@@ -124,7 +134,7 @@
       "state": "merged",
       "number": 213,
       "type": "User",
-      "stars": 951
+      "stars": 956
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -134,7 +144,7 @@
       "state": "open",
       "number": 209,
       "type": "User",
-      "stars": 951
+      "stars": 956
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -194,7 +204,7 @@
       "state": "merged",
       "number": 199,
       "type": "User",
-      "stars": 951
+      "stars": 956
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -204,7 +214,7 @@
       "state": "merged",
       "number": 192,
       "type": "User",
-      "stars": 951
+      "stars": 956
     },
     {
       "repo": "yshrsmz/sqlstitch",
@@ -274,7 +284,7 @@
       "state": "merged",
       "number": 4052,
       "type": "Organization",
-      "stars": 10792
+      "stars": 10842
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -314,7 +324,7 @@
       "state": "open",
       "number": 41,
       "type": "Organization",
-      "stars": 449
+      "stars": 451
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -364,7 +374,7 @@
       "state": "merged",
       "number": 3125,
       "type": "Organization",
-      "stars": 10792
+      "stars": 10842
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -424,7 +434,7 @@
       "state": "merged",
       "number": 168,
       "type": "User",
-      "stars": 951
+      "stars": 956
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -434,7 +444,7 @@
       "state": "merged",
       "number": 167,
       "type": "User",
-      "stars": 951
+      "stars": 956
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -444,7 +454,7 @@
       "state": "merged",
       "number": 166,
       "type": "User",
-      "stars": 951
+      "stars": 956
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -454,7 +464,7 @@
       "state": "merged",
       "number": 165,
       "type": "User",
-      "stars": 951
+      "stars": 956
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -493,16 +503,6 @@
       "created_at": "2024-04-07T03:34:05Z",
       "state": "merged",
       "number": 33,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/sqlstitch",
-      "title": "feat: support multiple DDLs in a file",
-      "url": "https://github.com/yshrsmz/sqlstitch/pull/32",
-      "created_at": "2024-04-07T03:29:54Z",
-      "state": "merged",
-      "number": 32,
       "type": "User",
       "stars": 2
     }
