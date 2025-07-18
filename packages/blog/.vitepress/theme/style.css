@@ -113,8 +113,7 @@
   --docsearch-primary-color: var(--vp-c-brand) !important;
 }
 
-
- /* Custom Style */
+/* Custom Style */
 a:hover {
   text-decoration: underline dotted;
 
