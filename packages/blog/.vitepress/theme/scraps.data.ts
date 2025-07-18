@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs'
 import { format, parseISO } from 'date-fns'
-import { type SiteConfig, createMarkdownRenderer } from 'vitepress'
+import { createMarkdownRenderer, type SiteConfig } from 'vitepress'
 import type { Scrap } from './types'
 
 declare global {

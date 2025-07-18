@@ -2,10 +2,10 @@
 import { useData } from 'vitepress'
 import { computed } from 'vue'
 import { data as scraps } from '../scraps.data.js'
-import VPScrapLabel from './VPScrapLabel.vue'
-import VPTagLabel from './VPTagLabel.vue'
 import VPCheckIcon from './icons/VPCheckIcon.vue'
 import VPEditIcon from './icons/VPEditIcon.vue'
+import VPScrapLabel from './VPScrapLabel.vue'
+import VPTagLabel from './VPTagLabel.vue'
 
 const { page } = useData()
 

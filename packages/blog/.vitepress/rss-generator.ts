@@ -4,8 +4,8 @@ import { Feed } from 'feed'
 import type { SiteConfig } from 'vitepress'
 import { createContentLoader } from 'vitepress'
 import {
-  POST_MARKDOWN_PATTERN,
   createExcerpt,
+  POST_MARKDOWN_PATTERN,
   sortByDate,
   toPost,
 } from './theme/helper'

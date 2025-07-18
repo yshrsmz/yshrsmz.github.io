@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { useData, useRouter } from 'vitepress'
 import { computed } from 'vue'
-import NotFound from './NotFound.vue'
 import VPContributions from './components/VPContributions.vue'
 import VPFooter from './components/VPFooter.vue'
 import VPHeader from './components/VPHeader.vue'
@@ -11,6 +10,7 @@ import VPPosts from './components/VPPosts.vue'
 import VPScrap from './components/VPScrap.vue'
 import VPScraps from './components/VPScraps.vue'
 import VPTags from './components/VPTags.vue'
+import NotFound from './NotFound.vue'
 
 const { page, frontmatter } = useData()
 

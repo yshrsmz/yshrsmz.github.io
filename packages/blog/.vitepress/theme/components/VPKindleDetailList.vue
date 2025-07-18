@@ -2,8 +2,8 @@
 import { computed } from 'vue'
 import {
   createImageUrl,
-  createProductUrl,
   createProductsUrl,
+  createProductUrl,
 } from '../composables/useAmazonLink'
 import type { KindleDetail } from '../types'
 import VPAmazonLink from './VPAmazonLink.vue'
