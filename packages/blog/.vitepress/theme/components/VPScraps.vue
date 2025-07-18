@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import VPScrapLabel from './VPScrapLabel.vue'
-
 import { data } from '../scraps.data.js'
 import type { Scrap } from '../types'
+import VPScrapLabel from './VPScrapLabel.vue'
 
 function updatedAt(scrap: Scrap) {
   if (scrap.closedAt) {

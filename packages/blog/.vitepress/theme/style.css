@@ -29,11 +29,6 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --vp-c-bg: #1b1b1f;
-    --vp-c-bg-alt: #161618;
-    --vp-c-bg-elv: #202127;
-    --vp-c-bg-soft: #202127;
-
     /* Colors: Palette */
     --vp-c-gray-1: #515c67;
     --vp-c-gray-2: #414853;
@@ -118,6 +113,8 @@
   --docsearch-primary-color: var(--vp-c-brand) !important;
 }
 
+
+ /* Custom Style */
 a:hover {
   text-decoration: underline dotted;
 

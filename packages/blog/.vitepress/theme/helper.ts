@@ -1,6 +1,6 @@
 import { getDate, getMonth, getYear, parseISO } from 'date-fns'
 import type { ContentData } from 'vitepress'
-import type { EntryDate, Post } from './types'
+import type { EntryDate, Post } from './types.ts'
 
 export const POST_MARKDOWN_PATTERN = './posts/*/*.md'
 
@@ -108,6 +108,6 @@ export function sortByDate(
   return (b.date?.time ?? 0) > (a.date?.time ?? 0) ? 1 : -1
 }
 
-export function objectHasOwnProperty(obj: unknown, prop: string): boolean {
-  return Object.prototype.hasOwnProperty.call(obj, prop)
+export function objectHasOwnProperty(obj: object, prop: string): boolean {
+  return Object.hasOwn(obj, prop)
 }

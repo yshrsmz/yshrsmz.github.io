@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { objectHasOwnProperty, sortByDate } from '../helper'
-import { data as tagsForScraps } from '../tags-scraps.data.js'
+import { objectHasOwnProperty, sortByDate } from '../helper.ts'
 import { data as tagsForPosts } from '../tags.data.js'
-import type { Entry } from '../types'
-import VPTagLabel from './VPTagLabel.vue'
+import { data as tagsForScraps } from '../tags-scraps.data.js'
+import type { Entry } from '../types.ts'
 import VPTagIcon from './icons/VPTagIcon.vue'
+import VPTagLabel from './VPTagLabel.vue'
 
 const entriesByTag = [...tagsForPosts, ...tagsForScraps].reduce<
   Record<string, Entry[]>

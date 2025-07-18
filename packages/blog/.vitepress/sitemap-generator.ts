@@ -1,8 +1,7 @@
 import { createWriteStream } from 'node:fs'
 import { resolve } from 'node:path'
 import { SitemapStream } from 'sitemap'
-import type { SiteConfig } from 'vitepress'
-import type { PageData } from 'vitepress'
+import type { PageData, SiteConfig } from 'vitepress'
 
 // https://github.com/vuejs/vitepress/issues/520#issuecomment-1566062351
 export class SitemapGenerator {

@@ -17,5 +17,5 @@
   "[jsonc]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
-  "mise.enable": false,
+  "mise.enable": false
 }

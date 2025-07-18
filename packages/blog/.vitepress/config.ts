@@ -22,11 +22,9 @@ const ogpGenerator = new OGPImageGenerator()
 const isProduction = process.env.NODE_ENV === 'production'
 const shouldUseGTM = isProduction
 const shouldUseAdsense = isProduction
-const productionHeads = new Set<HeadConfig>(
-  [
-    ['meta', { name: 'deployed-version', content: commitHash }],
-  ]
-)
+const productionHeads = new Set<HeadConfig>([
+  ['meta', { name: 'deployed-version', content: commitHash }],
+])
 
 if (shouldUseGTM) {
   productionHeads.add([
@@ -119,7 +117,7 @@ export default defineConfig({
     transformItems(items) {
       return items.map((item) => {
         const type = detectPageTypeFromPath(item.url)
-        let lastmod: string | undefined = undefined
+        let lastmod: string | undefined
         if (type === 'post') {
           lastmod = getPublishedDateFromRewrittenUrl(item.url)
         } else if (type === 'scrap') {

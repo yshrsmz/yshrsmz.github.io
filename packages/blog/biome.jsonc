@@ -1,23 +1,26 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-  "extends": ["../../biome.json"],
+  "root": false,
+  "$schema": "https://biomejs.dev/schemas/2.1.2/schema.json",
+  "extends": "//",
   "files": {
-    "include": [
-      ".vitepress/**/*",
-      "contents/**/*.ts",
-      "*.config.ts",
-      "package.json",
-      "tsconfig.json"
-    ],
-    "ignore": [
-      ".vitepress/cache/**/*",
-      ".vitepress/dist/**/*",
-      "contents/public/javascripts/*",
-      "data/**/*.json"
+    "includes": [
+      "**/.vitepress/**/*",
+      "**/contents/**/*.ts",
+      "**/*.config.ts",
+      "**/package.json",
+      "**/tsconfig.json",
+      "!.vitepress/theme/styles/components/vp-doc.css",
+      "!**/.vitepress/cache/**/*",
+      "!**/.vitepress/dist/**/*",
+      "!**/contents/public/javascripts/**/*",
+      "!**/data/**/*.json"
     ]
   },
   "linter": {
-    "enabled": true
+    "enabled": true,
+    "domains": {
+      "vue": "none"
+    }
   },
   "formatter": {
     "enabled": true

@@ -1,12 +1,12 @@
 import type { Theme } from 'vitepress'
-import VPLayout from './VPLayout.vue'
 import VPAmazonGoods from './components/VPAmazonGoods.vue'
 import VPKindleDetail from './components/VPKindleDetail.vue'
 import VPKindleDetailList from './components/VPKindleDetailList.vue'
 import VPKindleDetails from './components/VPKindleDetails.vue'
+import VPLayout from './VPLayout.vue'
 import './styles/vars.css'
-import './styles/vp-code.css'
-import './styles/vp-doc.css'
+import './styles/components/vp-code.css'
+import './styles/components/vp-doc.css'
 import './style.css'
 
 export default {
