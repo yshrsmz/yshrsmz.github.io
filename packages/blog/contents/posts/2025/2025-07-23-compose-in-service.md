@@ -366,3 +366,5 @@ fun MyOverlayPreview() {
 Service で Compose 使うの、めんどくさいといえばめんどくさいけど、View で作っていたときと同様に手順さえ踏めばうまく動く(`ComposeView` 使ってるのでそれはそう)。
 
 特にアニメーションとか状態管理が必要な場合は、Compose の恩恵を強く感じる。SavedStateRegistry の初期化順序さえ間違えなければ、そんなに難しくないので、Service で UI 表示したい人は試してみてほしい。
+
+この記事書いてるときに気づいたけど、 [lifecycle-service](https://developer.android.com/reference/androidx/lifecycle/LifecycleService) という実装があるらしいので、これ使ったらちょい楽になりそう。後で試してみる。
