@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SharedPreferences から DataStore への移行でユーザーデータを守る
+title: SharedPreferences から DataStore への移行
 tags:
   - Android
   - DataStore
