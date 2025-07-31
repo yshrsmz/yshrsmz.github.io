@@ -1,11 +1,161 @@
 {
-  "updated_at": 1753662789557,
+  "updated_at": 1753921865123,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Fix stale branch detection in cleanup command",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/18",
+      "created_at": "2025-07-29T13:43:38Z",
+      "state": "merged",
+      "number": 18,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "exploration: Display mode toggle (not merged - insights only)",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/17",
+      "created_at": "2025-07-29T07:35:09Z",
+      "state": "merged",
+      "number": 17,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "exploration: Two-column ID display (not merged - insights only)",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/16",
+      "created_at": "2025-07-29T07:33:43Z",
+      "state": "merged",
+      "number": 16,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "feat: implement responsive ID column width in TUI list view",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/15",
+      "created_at": "2025-07-29T04:03:49Z",
+      "state": "merged",
+      "number": 15,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/homebrew-calibre3",
+      "title": "migrate to newer deprecate method",
+      "url": "https://github.com/yshrsmz/homebrew-calibre3/pull/1",
+      "created_at": "2025-07-28T14:49:22Z",
+      "state": "merged",
+      "number": 1,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Fix TUI breakage after returning from external editor",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/14",
+      "created_at": "2025-07-28T08:28:50Z",
+      "state": "merged",
+      "number": 14,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Fix TUI ticket detail view scrolling issue",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/13",
+      "created_at": "2025-07-28T07:47:07Z",
+      "state": "merged",
+      "number": 13,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Fix golangci-lint errors blocking CI",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/11",
+      "created_at": "2025-07-28T06:57:15Z",
+      "state": "merged",
+      "number": 11,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Fix integration tests failing on PR branches",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/10",
+      "created_at": "2025-07-28T06:10:04Z",
+      "state": "merged",
+      "number": 10,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Fix TestWorktreeWorkflow test failure on macOS and add GitHub Actions CI",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/9",
+      "created_at": "2025-07-28T04:58:16Z",
+      "state": "merged",
+      "number": 9,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Fix cleanup command --force flag not working",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/8",
+      "created_at": "2025-07-27T15:22:07Z",
+      "state": "merged",
+      "number": 8,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "チケット内のcreated_at, started_at, closed_atの日付フォーマットを統一する",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/7",
+      "created_at": "2025-07-27T13:20:32Z",
+      "state": "merged",
+      "number": 7,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Fix worktree sync issue by changing commit order",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/4",
+      "created_at": "2025-07-27T11:59:16Z",
+      "state": "merged",
+      "number": 4,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Add ticket file to worktreeFix ticketflow close command when run from worktree - current-ticket.md not found",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/3",
+      "created_at": "2025-07-27T11:17:42Z",
+      "state": "merged",
+      "number": 3,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "250726-183403-fix-branch-already-exist-on-start",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/2",
+      "created_at": "2025-07-27T03:14:07Z",
+      "state": "merged",
+      "number": 2,
+      "type": "User",
+      "stars": 0
+    },
     {
       "repo": "yshrsmz/unorm-dart",
       "title": "add publish workflow",
@@ -134,7 +284,7 @@
       "state": "merged",
       "number": 213,
       "type": "User",
-      "stars": 978
+      "stars": 981
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -144,7 +294,7 @@
       "state": "open",
       "number": 209,
       "type": "User",
-      "stars": 978
+      "stars": 981
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -204,7 +354,7 @@
       "state": "merged",
       "number": 199,
       "type": "User",
-      "stars": 978
+      "stars": 981
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -214,7 +364,7 @@
       "state": "merged",
       "number": 192,
       "type": "User",
-      "stars": 978
+      "stars": 981
     },
     {
       "repo": "yshrsmz/sqlstitch",
@@ -234,7 +384,7 @@
       "state": "merged",
       "number": 12,
       "type": "Organization",
-      "stars": 47
+      "stars": 46
     },
     {
       "repo": "yshrsmz/sqlstitch",
@@ -284,7 +434,7 @@
       "state": "merged",
       "number": 4052,
       "type": "Organization",
-      "stars": 11352
+      "stars": 11388
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -324,7 +474,7 @@
       "state": "open",
       "number": 41,
       "type": "Organization",
-      "stars": 462
+      "stars": 464
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -345,166 +495,6 @@
       "number": 505,
       "type": "Organization",
       "stars": 9
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "migrate to nitro, vite",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/504",
-      "created_at": "2024-09-19T14:14:23Z",
-      "state": "merged",
-      "number": 504,
-      "type": "Organization",
-      "stars": 9
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "migrate to bridge.meta",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/503",
-      "created_at": "2024-09-19T09:22:50Z",
-      "state": "merged",
-      "number": 503,
-      "type": "Organization",
-      "stars": 9
-    },
-    {
-      "repo": "scalar/scalar",
-      "title": "fix(api-reference): placeholders in the license header not replaced",
-      "url": "https://github.com/scalar/scalar/pull/3125",
-      "created_at": "2024-09-17T08:25:36Z",
-      "state": "merged",
-      "number": 3125,
-      "type": "Organization",
-      "stars": 11352
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "migrate to defineNuxtPlugin",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/502",
-      "created_at": "2024-09-17T02:27:45Z",
-      "state": "merged",
-      "number": 502,
-      "type": "Organization",
-      "stars": 9
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": ":fire: @types/rimraf",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/500",
-      "created_at": "2024-09-16T14:37:17Z",
-      "state": "merged",
-      "number": 500,
-      "type": "Organization",
-      "stars": 9
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "migrate to bridge.capi",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/498",
-      "created_at": "2024-09-16T14:13:16Z",
-      "state": "merged",
-      "number": 498,
-      "type": "Organization",
-      "stars": 9
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "migrate Nuxt2 typescript support to bridge",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/496",
-      "created_at": "2024-09-16T11:02:23Z",
-      "state": "merged",
-      "number": 496,
-      "type": "Organization",
-      "stars": 9
-    },
-    {
-      "repo": "yshrsmz/yshrsmz.github.io",
-      "title": "Create 2024-09-06-merge-vitest-coverages.md",
-      "url": "https://github.com/yshrsmz/yshrsmz.github.io/pull/202",
-      "created_at": "2024-09-06T10:24:31Z",
-      "state": "merged",
-      "number": 202,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "chore: add release-please-config.json",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/168",
-      "created_at": "2024-09-01T07:33:46Z",
-      "state": "merged",
-      "number": 168,
-      "type": "User",
-      "stars": 978
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "chore: remove release-type option from workflow",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/167",
-      "created_at": "2024-09-01T07:22:31Z",
-      "state": "merged",
-      "number": 167,
-      "type": "User",
-      "stars": 978
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "chore: migrate to release-please-action v4",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/166",
-      "created_at": "2024-09-01T07:05:40Z",
-      "state": "merged",
-      "number": 166,
-      "type": "User",
-      "stars": 978
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "chore(master): release 0.16.0",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/165",
-      "created_at": "2024-08-31T16:06:29Z",
-      "state": "merged",
-      "number": 165,
-      "type": "User",
-      "stars": 978
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "add nuxt/bridge while disabling it",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/481",
-      "created_at": "2024-06-16T09:46:47Z",
-      "state": "merged",
-      "number": 481,
-      "type": "Organization",
-      "stars": 9
-    },
-    {
-      "repo": "yshrsmz/sqlstitch",
-      "title": "docs: add supported statements section",
-      "url": "https://github.com/yshrsmz/sqlstitch/pull/36",
-      "created_at": "2024-04-07T03:51:36Z",
-      "state": "merged",
-      "number": 36,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/sqlstitch",
-      "title": "chore(ci): check tagging logic",
-      "url": "https://github.com/yshrsmz/sqlstitch/pull/35",
-      "created_at": "2024-04-07T03:45:42Z",
-      "state": "merged",
-      "number": 35,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/sqlstitch",
-      "title": "feat: report Circular Dependency",
-      "url": "https://github.com/yshrsmz/sqlstitch/pull/33",
-      "created_at": "2024-04-07T03:34:05Z",
-      "state": "merged",
-      "number": 33,
-      "type": "User",
-      "stars": 2
     }
   ]
 }
