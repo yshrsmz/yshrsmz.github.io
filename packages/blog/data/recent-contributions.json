@@ -1,11 +1,171 @@
 {
-  "updated_at": 1753921865123,
+  "updated_at": 1754267637037,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "feat: Add --parent flag to ticketflow new command",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/34",
+      "created_at": "2025-08-03T15:43:30Z",
+      "state": "open",
+      "number": 34,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Refactor tests to remove os.Chdir and fix race conditions",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/33",
+      "created_at": "2025-08-03T11:57:29Z",
+      "state": "merged",
+      "number": 33,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Fix: Handle existing branches when creating worktrees",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/32",
+      "created_at": "2025-08-03T04:12:19Z",
+      "state": "merged",
+      "number": 32,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Improve test coverage with comprehensive unit tests",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/31",
+      "created_at": "2025-08-02T16:12:50Z",
+      "state": "merged",
+      "number": 31,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "refactor: extract common CLI command parsing logic",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/30",
+      "created_at": "2025-08-02T13:20:03Z",
+      "state": "merged",
+      "number": 30,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Replace fmt.Printf with structured logging using log/slog for better observability",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/29",
+      "created_at": "2025-08-02T11:33:35Z",
+      "state": "merged",
+      "number": 29,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Add graceful shutdown with signal handling",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/28",
+      "created_at": "2025-08-02T09:38:13Z",
+      "state": "merged",
+      "number": 28,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Add timeout configuration support",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/27",
+      "created_at": "2025-08-02T08:55:06Z",
+      "state": "merged",
+      "number": 27,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Add comprehensive context cancellation tests",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/26",
+      "created_at": "2025-08-02T07:48:39Z",
+      "state": "merged",
+      "number": 26,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Add context-aware file I/O operations",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/25",
+      "created_at": "2025-08-02T06:22:04Z",
+      "state": "merged",
+      "number": 25,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Add context.Context support throughout codebase",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/24",
+      "created_at": "2025-08-02T05:26:56Z",
+      "state": "merged",
+      "number": 24,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Fix code quality issues: extract magic strings to constants",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/23",
+      "created_at": "2025-08-02T02:16:34Z",
+      "state": "merged",
+      "number": 23,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Standardize error handling with custom error types",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/22",
+      "created_at": "2025-08-02T01:22:33Z",
+      "state": "merged",
+      "number": 22,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Decompose large functions into smaller, focused functions",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/21",
+      "created_at": "2025-08-01T02:51:49Z",
+      "state": "merged",
+      "number": 21,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Extract interfaces for testability",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/20",
+      "created_at": "2025-08-01T01:04:35Z",
+      "state": "merged",
+      "number": 20,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Update the default ticket template in the code to use English instead of Japanese",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/19",
+      "created_at": "2025-07-31T15:54:53Z",
+      "state": "merged",
+      "number": 19,
+      "type": "User",
+      "stars": 0
+    },
     {
       "repo": "yshrsmz/ticketflow",
       "title": "Fix stale branch detection in cleanup command",
@@ -284,7 +444,7 @@
       "state": "merged",
       "number": 213,
       "type": "User",
-      "stars": 981
+      "stars": 982
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -294,7 +454,7 @@
       "state": "open",
       "number": 209,
       "type": "User",
-      "stars": 981
+      "stars": 982
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -333,166 +493,6 @@
       "created_at": "2025-03-25T05:34:25Z",
       "state": "merged",
       "number": 514,
-      "type": "Organization",
-      "stars": 9
-    },
-    {
-      "repo": "yshrsmz/yshrsmz.github.io",
-      "title": "setup mongolyy/reviewdog-action-biome",
-      "url": "https://github.com/yshrsmz/yshrsmz.github.io/pull/279",
-      "created_at": "2025-03-04T10:49:06Z",
-      "state": "merged",
-      "number": 279,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "chore(master): release 0.17.1",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/199",
-      "created_at": "2025-02-26T03:33:24Z",
-      "state": "merged",
-      "number": 199,
-      "type": "User",
-      "stars": 981
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "chore(master): release 0.17.0",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/192",
-      "created_at": "2025-02-13T13:42:47Z",
-      "state": "merged",
-      "number": 192,
-      "type": "User",
-      "stars": 981
-    },
-    {
-      "repo": "yshrsmz/sqlstitch",
-      "title": "deps: update Rust to 1.84.0",
-      "url": "https://github.com/yshrsmz/sqlstitch/pull/60",
-      "created_at": "2025-01-24T02:36:31Z",
-      "state": "merged",
-      "number": 60,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "primefaces/tailwindcss-primeui",
-      "title": "fix repository url in package.json",
-      "url": "https://github.com/primefaces/tailwindcss-primeui/pull/12",
-      "created_at": "2025-01-14T08:48:24Z",
-      "state": "merged",
-      "number": 12,
-      "type": "Organization",
-      "stars": 46
-    },
-    {
-      "repo": "yshrsmz/sqlstitch",
-      "title": "chore(ci): dist v0.25.1",
-      "url": "https://github.com/yshrsmz/sqlstitch/pull/55",
-      "created_at": "2024-12-01T04:22:10Z",
-      "state": "merged",
-      "number": 55,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/sqlstitch",
-      "title": "chore(ci): tagging via git command",
-      "url": "https://github.com/yshrsmz/sqlstitch/pull/54",
-      "created_at": "2024-12-01T04:16:01Z",
-      "state": "merged",
-      "number": 54,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/sqlstitch",
-      "title": "chore(ci): migrate to googleapis/release-please-action@v4",
-      "url": "https://github.com/yshrsmz/sqlstitch/pull/53",
-      "created_at": "2024-12-01T03:57:13Z",
-      "state": "merged",
-      "number": 53,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/sqlstitch",
-      "title": "chore(ci): await tagging in release script",
-      "url": "https://github.com/yshrsmz/sqlstitch/pull/52",
-      "created_at": "2024-12-01T03:18:27Z",
-      "state": "merged",
-      "number": 52,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "scalar/scalar",
-      "title": "fix(fastify-api-reference): export map needs explicit types condition",
-      "url": "https://github.com/scalar/scalar/pull/4052",
-      "created_at": "2024-11-29T02:00:11Z",
-      "state": "merged",
-      "number": 4052,
-      "type": "Organization",
-      "stars": 11388
-    },
-    {
-      "repo": "yshrsmz/yshrsmz.github.io",
-      "title": "add post count per year",
-      "url": "https://github.com/yshrsmz/yshrsmz.github.io/pull/229",
-      "created_at": "2024-11-11T13:11:34Z",
-      "state": "merged",
-      "number": 229,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/sqlstitch",
-      "title": "ci: update cargo-dist v0.22.1",
-      "url": "https://github.com/yshrsmz/sqlstitch/pull/46",
-      "created_at": "2024-10-01T14:03:01Z",
-      "state": "merged",
-      "number": 46,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/sqlstitch",
-      "title": "fix: backquoted table name cause crash",
-      "url": "https://github.com/yshrsmz/sqlstitch/pull/45",
-      "created_at": "2024-10-01T13:52:40Z",
-      "state": "merged",
-      "number": 45,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "sqlc-dev/sqlc-gen-typescript",
-      "title": "fix: escape backquotes in a query",
-      "url": "https://github.com/sqlc-dev/sqlc-gen-typescript/pull/41",
-      "created_at": "2024-09-27T01:42:14Z",
-      "state": "open",
-      "number": 41,
-      "type": "Organization",
-      "stars": 464
-    },
-    {
-      "repo": "yshrsmz/yshrsmz.github.io",
-      "title": "add recent-contributions script",
-      "url": "https://github.com/yshrsmz/yshrsmz.github.io/pull/209",
-      "created_at": "2024-09-26T11:15:08Z",
-      "state": "merged",
-      "number": 209,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "disable bridge.vite for now",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/505",
-      "created_at": "2024-09-21T07:55:25Z",
-      "state": "merged",
-      "number": 505,
       "type": "Organization",
       "stars": 9
     }
