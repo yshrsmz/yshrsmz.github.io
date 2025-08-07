@@ -1,5 +1,5 @@
 {
-  "updated_at": 1754267637037,
+  "updated_at": 1754526703584,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
@@ -8,10 +8,80 @@
   "prs": [
     {
       "repo": "yshrsmz/ticketflow",
+      "title": "Decision: Don't implement worktree recovery - keep ticketflow focused",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/41",
+      "created_at": "2025-08-06T08:33:11Z",
+      "state": "merged",
+      "number": 41,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Handle branch divergence when starting tickets",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/40",
+      "created_at": "2025-08-05T06:53:02Z",
+      "state": "merged",
+      "number": 40,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Extract common test setup code to reduce duplication",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/39",
+      "created_at": "2025-08-05T02:44:34Z",
+      "state": "merged",
+      "number": 39,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Add context support for cancellation of long-running operations",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/38",
+      "created_at": "2025-08-04T14:51:36Z",
+      "state": "merged",
+      "number": 38,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Add comprehensive benchmarks for critical paths",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/37",
+      "created_at": "2025-08-04T12:13:41Z",
+      "state": "merged",
+      "number": 37,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Add --force flag to ticketflow start command",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/36",
+      "created_at": "2025-08-04T08:59:08Z",
+      "state": "merged",
+      "number": 36,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Optimize IO operations with pre-allocated slices and string builders",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/35",
+      "created_at": "2025-08-04T06:42:45Z",
+      "state": "merged",
+      "number": 35,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
       "title": "feat: Add --parent flag to ticketflow new command",
       "url": "https://github.com/yshrsmz/ticketflow/pull/34",
       "created_at": "2025-08-03T15:43:30Z",
-      "state": "open",
+      "state": "merged",
       "number": 34,
       "type": "User",
       "stars": 0
@@ -425,76 +495,6 @@
       "number": 1,
       "type": "User",
       "stars": 1
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "migrate to mise, from nodenv",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/545",
-      "created_at": "2025-05-25T11:46:13Z",
-      "state": "merged",
-      "number": 545,
-      "type": "Organization",
-      "stars": 9
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "ci: configures Maven Central publishing via Central Portal",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/213",
-      "created_at": "2025-04-29T11:50:07Z",
-      "state": "merged",
-      "number": 213,
-      "type": "User",
-      "stars": 982
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "chore(master): release 0.17.2",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/209",
-      "created_at": "2025-04-23T06:26:24Z",
-      "state": "open",
-      "number": 209,
-      "type": "User",
-      "stars": 982
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "make sure IssueStore#fetchById is called upon every navigation",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/525",
-      "created_at": "2025-03-31T04:00:30Z",
-      "state": "merged",
-      "number": 525,
-      "type": "Organization",
-      "stars": 9
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "pin github actions with digests",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/519",
-      "created_at": "2025-03-25T13:25:50Z",
-      "state": "merged",
-      "number": 519,
-      "type": "Organization",
-      "stars": 9
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "update @atproto/api usage",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/516",
-      "created_at": "2025-03-25T12:29:29Z",
-      "state": "merged",
-      "number": 516,
-      "type": "Organization",
-      "stars": 9
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "⬆️ Nuxt3",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/514",
-      "created_at": "2025-03-25T05:34:25Z",
-      "state": "merged",
-      "number": 514,
-      "type": "Organization",
-      "stars": 9
     }
   ]
 }
