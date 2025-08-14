@@ -1,5 +1,5 @@
 {
-  "updated_at": 1754872337400,
+  "updated_at": 1755131357270,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
@@ -8,10 +8,120 @@
   "prs": [
     {
       "repo": "yshrsmz/ticketflow",
+      "title": "Migrate start command to new Command interface",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/62",
+      "created_at": "2025-08-13T16:29:13Z",
+      "state": "merged",
+      "number": 62,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Migrate new command to new Command interface",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/61",
+      "created_at": "2025-08-13T14:29:45Z",
+      "state": "merged",
+      "number": 61,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Migrate show command to new Command interface",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/60",
+      "created_at": "2025-08-13T08:33:35Z",
+      "state": "merged",
+      "number": 60,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "feat: Migrate list command to new Command interface",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/59",
+      "created_at": "2025-08-13T05:26:17Z",
+      "state": "merged",
+      "number": 59,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "feat: Migrate status command to new Command interface",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/57",
+      "created_at": "2025-08-12T12:32:34Z",
+      "state": "merged",
+      "number": 57,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Migrate init command to new Command interface",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/56",
+      "created_at": "2025-08-12T09:57:12Z",
+      "state": "merged",
+      "number": 56,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Migrate help command to new Command interface",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/55",
+      "created_at": "2025-08-12T08:59:28Z",
+      "state": "merged",
+      "number": 55,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "refactor: Define Command interface hierarchy for better code organization",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/54",
+      "created_at": "2025-08-12T07:11:44Z",
+      "state": "merged",
+      "number": 54,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Enable parallel test execution for unit tests",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/53",
+      "created_at": "2025-08-11T16:36:46Z",
+      "state": "merged",
+      "number": 53,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Cancel object pooling optimization after profiling analysis",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/52",
+      "created_at": "2025-08-11T14:14:33Z",
+      "state": "merged",
+      "number": 52,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "feat: Implement concurrent directory operations for List command",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/50",
+      "created_at": "2025-08-11T09:39:12Z",
+      "state": "merged",
+      "number": 50,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
       "title": "feat: Add comprehensive benchmark infrastructure for performance optimization",
       "url": "https://github.com/yshrsmz/ticketflow/pull/49",
       "created_at": "2025-08-10T01:23:49Z",
-      "state": "open",
+      "state": "merged",
       "number": 49,
       "type": "User",
       "stars": 0
@@ -385,116 +495,6 @@
       "number": 10,
       "type": "User",
       "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Fix TestWorktreeWorkflow test failure on macOS and add GitHub Actions CI",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/9",
-      "created_at": "2025-07-28T04:58:16Z",
-      "state": "merged",
-      "number": 9,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Fix cleanup command --force flag not working",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/8",
-      "created_at": "2025-07-27T15:22:07Z",
-      "state": "merged",
-      "number": 8,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "チケット内のcreated_at, started_at, closed_atの日付フォーマットを統一する",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/7",
-      "created_at": "2025-07-27T13:20:32Z",
-      "state": "merged",
-      "number": 7,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Fix worktree sync issue by changing commit order",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/4",
-      "created_at": "2025-07-27T11:59:16Z",
-      "state": "merged",
-      "number": 4,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Add ticket file to worktreeFix ticketflow close command when run from worktree - current-ticket.md not found",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/3",
-      "created_at": "2025-07-27T11:17:42Z",
-      "state": "merged",
-      "number": 3,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "250726-183403-fix-branch-already-exist-on-start",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/2",
-      "created_at": "2025-07-27T03:14:07Z",
-      "state": "merged",
-      "number": 2,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/unorm-dart",
-      "title": "add publish workflow",
-      "url": "https://github.com/yshrsmz/unorm-dart/pull/29",
-      "created_at": "2025-06-12T04:08:25Z",
-      "state": "merged",
-      "number": 29,
-      "type": "User",
-      "stars": 14
-    },
-    {
-      "repo": "yshrsmz/unorm-dart",
-      "title": "add workflows/update_unicode_data.yml",
-      "url": "https://github.com/yshrsmz/unorm-dart/pull/26",
-      "created_at": "2025-06-11T14:19:35Z",
-      "state": "merged",
-      "number": 26,
-      "type": "User",
-      "stars": 14
-    },
-    {
-      "repo": "yshrsmz/unorm-dart",
-      "title": "add tools/unicode_data_updater.dart",
-      "url": "https://github.com/yshrsmz/unorm-dart/pull/25",
-      "created_at": "2025-06-11T14:00:44Z",
-      "state": "merged",
-      "number": 25,
-      "type": "User",
-      "stars": 14
-    },
-    {
-      "repo": "yshrsmz/unorm-dart",
-      "title": "add unorm_normalizer_builder",
-      "url": "https://github.com/yshrsmz/unorm-dart/pull/24",
-      "created_at": "2025-06-11T04:15:17Z",
-      "state": "merged",
-      "number": 24,
-      "type": "User",
-      "stars": 14
-    },
-    {
-      "repo": "yshrsmz/unorm-dart",
-      "title": "use Dart 3.8.1",
-      "url": "https://github.com/yshrsmz/unorm-dart/pull/23",
-      "created_at": "2025-06-11T03:22:47Z",
-      "state": "merged",
-      "number": 23,
-      "type": "User",
-      "stars": 14
     }
   ]
 }
