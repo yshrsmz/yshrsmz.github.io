@@ -1,11 +1,181 @@
 {
-  "updated_at": 1755131357270,
+  "updated_at": 1755477104334,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Improve JSON validation logic for integration tests",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/79",
+      "created_at": "2025-08-17T04:15:45Z",
+      "state": "merged",
+      "number": 79,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Add 'workflow' command to print development guide",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/78",
+      "created_at": "2025-08-17T02:35:51Z",
+      "state": "merged",
+      "number": 78,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "feat: centralize format constants to eliminate duplication",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/77",
+      "created_at": "2025-08-16T15:12:29Z",
+      "state": "merged",
+      "number": 77,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Refactor all CLI commands to use NewAppWithFormat",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/76",
+      "created_at": "2025-08-16T14:17:28Z",
+      "state": "merged",
+      "number": 76,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Refactor CLI package to respect JSON format setting",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/75",
+      "created_at": "2025-08-16T12:13:44Z",
+      "state": "merged",
+      "number": 75,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Add early context cancellation checks to all commands",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/74",
+      "created_at": "2025-08-16T07:13:20Z",
+      "state": "merged",
+      "number": 74,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "feat: improve test coverage for maintenance commands (cleanup, worktree, status)",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/73",
+      "created_at": "2025-08-16T03:39:22Z",
+      "state": "merged",
+      "number": 73,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "test: add comprehensive integration tests for zero-coverage commands",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/72",
+      "created_at": "2025-08-15T16:29:03Z",
+      "state": "merged",
+      "number": 72,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Improve test coverage for core workflow commands (start and close)",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/71",
+      "created_at": "2025-08-15T14:21:30Z",
+      "state": "merged",
+      "number": 71,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Finalize Command Interface Migration",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/70",
+      "created_at": "2025-08-15T07:43:16Z",
+      "state": "merged",
+      "number": 70,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Migrate worktree command to new Command interface",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/69",
+      "created_at": "2025-08-15T06:07:07Z",
+      "state": "merged",
+      "number": 69,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Migrate cleanup command to new Command interface",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/68",
+      "created_at": "2025-08-15T01:19:42Z",
+      "state": "merged",
+      "number": 68,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Remove deprecated migrate command",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/67",
+      "created_at": "2025-08-14T10:18:00Z",
+      "state": "merged",
+      "number": 67,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Fix: Prevent incorrect removal of current-ticket.md when closing non-current tickets",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/66",
+      "created_at": "2025-08-14T08:24:36Z",
+      "state": "merged",
+      "number": 66,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Migrate restore command to new Command interface",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/65",
+      "created_at": "2025-08-14T07:14:55Z",
+      "state": "merged",
+      "number": 65,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "refactor: App methods return primary entities instead of just errors",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/64",
+      "created_at": "2025-08-14T06:04:35Z",
+      "state": "merged",
+      "number": 64,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "refine: Prepare close command migration ticket with comprehensive implementation guide",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/63",
+      "created_at": "2025-08-14T02:04:31Z",
+      "state": "merged",
+      "number": 63,
+      "type": "User",
+      "stars": 0
+    },
     {
       "repo": "yshrsmz/ticketflow",
       "title": "Migrate start command to new Command interface",
@@ -333,166 +503,6 @@
       "created_at": "2025-08-02T07:48:39Z",
       "state": "merged",
       "number": 26,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Add context-aware file I/O operations",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/25",
-      "created_at": "2025-08-02T06:22:04Z",
-      "state": "merged",
-      "number": 25,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Add context.Context support throughout codebase",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/24",
-      "created_at": "2025-08-02T05:26:56Z",
-      "state": "merged",
-      "number": 24,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Fix code quality issues: extract magic strings to constants",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/23",
-      "created_at": "2025-08-02T02:16:34Z",
-      "state": "merged",
-      "number": 23,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Standardize error handling with custom error types",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/22",
-      "created_at": "2025-08-02T01:22:33Z",
-      "state": "merged",
-      "number": 22,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Decompose large functions into smaller, focused functions",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/21",
-      "created_at": "2025-08-01T02:51:49Z",
-      "state": "merged",
-      "number": 21,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Extract interfaces for testability",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/20",
-      "created_at": "2025-08-01T01:04:35Z",
-      "state": "merged",
-      "number": 20,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Update the default ticket template in the code to use English instead of Japanese",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/19",
-      "created_at": "2025-07-31T15:54:53Z",
-      "state": "merged",
-      "number": 19,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Fix stale branch detection in cleanup command",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/18",
-      "created_at": "2025-07-29T13:43:38Z",
-      "state": "merged",
-      "number": 18,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "exploration: Display mode toggle (not merged - insights only)",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/17",
-      "created_at": "2025-07-29T07:35:09Z",
-      "state": "merged",
-      "number": 17,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "exploration: Two-column ID display (not merged - insights only)",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/16",
-      "created_at": "2025-07-29T07:33:43Z",
-      "state": "merged",
-      "number": 16,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "feat: implement responsive ID column width in TUI list view",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/15",
-      "created_at": "2025-07-29T04:03:49Z",
-      "state": "merged",
-      "number": 15,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/homebrew-calibre3",
-      "title": "migrate to newer deprecate method",
-      "url": "https://github.com/yshrsmz/homebrew-calibre3/pull/1",
-      "created_at": "2025-07-28T14:49:22Z",
-      "state": "merged",
-      "number": 1,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Fix TUI breakage after returning from external editor",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/14",
-      "created_at": "2025-07-28T08:28:50Z",
-      "state": "merged",
-      "number": 14,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Fix TUI ticket detail view scrolling issue",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/13",
-      "created_at": "2025-07-28T07:47:07Z",
-      "state": "merged",
-      "number": 13,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Fix golangci-lint errors blocking CI",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/11",
-      "created_at": "2025-07-28T06:57:15Z",
-      "state": "merged",
-      "number": 11,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Fix integration tests failing on PR branches",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/10",
-      "created_at": "2025-07-28T06:10:04Z",
-      "state": "merged",
-      "number": 10,
       "type": "User",
       "stars": 0
     }
