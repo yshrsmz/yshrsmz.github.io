@@ -1,5 +1,5 @@
 {
-  "updated_at": 1755735999955,
+  "updated_at": 1756081756849,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
@@ -8,10 +8,30 @@
   "prs": [
     {
       "repo": "yshrsmz/ticketflow",
+      "title": "refactor: extract common helper functions from CLI commands",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/84",
+      "created_at": "2025-08-22T04:58:40Z",
+      "state": "merged",
+      "number": 84,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "refactor: remove unused CloseTicketInternalError struct",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/83",
+      "created_at": "2025-08-21T08:39:02Z",
+      "state": "merged",
+      "number": 83,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
       "title": "Fix: Commands ignoring --format json parameter",
       "url": "https://github.com/yshrsmz/ticketflow/pull/82",
       "created_at": "2025-08-20T09:06:52Z",
-      "state": "open",
+      "state": "merged",
       "number": 82,
       "type": "User",
       "stars": 0
@@ -34,7 +54,7 @@
       "state": "open",
       "number": 21772,
       "type": "Organization",
-      "stars": 24624
+      "stars": 24661
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -483,26 +503,6 @@
       "created_at": "2025-08-03T04:12:19Z",
       "state": "merged",
       "number": 32,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Improve test coverage with comprehensive unit tests",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/31",
-      "created_at": "2025-08-02T16:12:50Z",
-      "state": "merged",
-      "number": 31,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "refactor: extract common CLI command parsing logic",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/30",
-      "created_at": "2025-08-02T13:20:03Z",
-      "state": "merged",
-      "number": 30,
       "type": "User",
       "stars": 0
     }
