@@ -1,11 +1,21 @@
 {
-  "updated_at": 1756340820918,
+  "updated_at": 1756686818991,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "feat(tui): add close with reason dialog",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/87",
+      "created_at": "2025-08-28T09:56:19Z",
+      "state": "merged",
+      "number": 87,
+      "type": "User",
+      "stars": 0
+    },
     {
       "repo": "yshrsmz/ticketflow",
       "title": "refactor: extract common helper functions from CLI commands",
@@ -51,10 +61,10 @@
       "title": "Kotlin Multiplatform polymorphism with custom discriminator support ",
       "url": "https://github.com/OpenAPITools/openapi-generator/pull/21772",
       "created_at": "2025-08-19T16:24:00Z",
-      "state": "open",
+      "state": "merged",
       "number": 21772,
       "type": "Organization",
-      "stars": 24689
+      "stars": 24706
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -493,16 +503,6 @@
       "created_at": "2025-08-03T11:57:29Z",
       "state": "merged",
       "number": 33,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Fix: Handle existing branches when creating worktrees",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/32",
-      "created_at": "2025-08-03T04:12:19Z",
-      "state": "merged",
-      "number": 32,
       "type": "User",
       "stars": 0
     }
