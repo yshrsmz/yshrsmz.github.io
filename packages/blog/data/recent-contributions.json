@@ -1,11 +1,21 @@
 {
-  "updated_at": 1756945529848,
+  "updated_at": 1757291314451,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/action-mise-values",
+      "title": "add branding",
+      "url": "https://github.com/yshrsmz/action-mise-values/pull/3",
+      "created_at": "2025-09-06T12:45:35Z",
+      "state": "merged",
+      "number": 3,
+      "type": "User",
+      "stars": 0
+    },
     {
       "repo": "OpenAPITools/openapi-generator",
       "title": "fix typo in Kotlin client discriminator samples",
@@ -14,7 +24,7 @@
       "state": "merged",
       "number": 21853,
       "type": "Organization",
-      "stars": 24733
+      "stars": 24759
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -74,7 +84,7 @@
       "state": "merged",
       "number": 21772,
       "type": "Organization",
-      "stars": 24733
+      "stars": 24759
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -493,16 +503,6 @@
       "created_at": "2025-08-04T06:42:45Z",
       "state": "merged",
       "number": 35,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "feat: Add --parent flag to ticketflow new command",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/34",
-      "created_at": "2025-08-03T15:43:30Z",
-      "state": "merged",
-      "number": 34,
       "type": "User",
       "stars": 0
     }
