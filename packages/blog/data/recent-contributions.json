@@ -1,11 +1,61 @@
 {
-  "updated_at": 1757291314451,
+  "updated_at": 1757550399318,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "fix: disable GPG signing in tests and simplify pre-commit hook",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/94",
+      "created_at": "2025-09-10T15:53:00Z",
+      "state": "merged",
+      "number": 94,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "refactor: pin GitHub Actions to specific commit SHAs for security",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/93",
+      "created_at": "2025-09-10T15:20:25Z",
+      "state": "merged",
+      "number": 93,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "refactor: make workflow documentation project-agnostic",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/92",
+      "created_at": "2025-09-10T15:03:47Z",
+      "state": "merged",
+      "number": 92,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/unorm-dart",
+      "title": "chore(ci): pin github actions with commit SHA",
+      "url": "https://github.com/yshrsmz/unorm-dart/pull/37",
+      "created_at": "2025-09-10T01:26:40Z",
+      "state": "merged",
+      "number": 37,
+      "type": "User",
+      "stars": 14
+    },
+    {
+      "repo": "AndroidDagashi/AndroidDagashi",
+      "title": "pin actions with commit SHA",
+      "url": "https://github.com/AndroidDagashi/AndroidDagashi/pull/3520",
+      "created_at": "2025-09-09T03:21:30Z",
+      "state": "merged",
+      "number": 3520,
+      "type": "Organization",
+      "stars": 93
+    },
     {
       "repo": "yshrsmz/action-mise-values",
       "title": "add branding",
@@ -24,7 +74,7 @@
       "state": "merged",
       "number": 21853,
       "type": "Organization",
-      "stars": 24759
+      "stars": 24791
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -84,7 +134,7 @@
       "state": "merged",
       "number": 21772,
       "type": "Organization",
-      "stars": 24759
+      "stars": 24791
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -443,66 +493,6 @@
       "created_at": "2025-08-06T08:33:11Z",
       "state": "merged",
       "number": 41,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Handle branch divergence when starting tickets",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/40",
-      "created_at": "2025-08-05T06:53:02Z",
-      "state": "merged",
-      "number": 40,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Extract common test setup code to reduce duplication",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/39",
-      "created_at": "2025-08-05T02:44:34Z",
-      "state": "merged",
-      "number": 39,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Add context support for cancellation of long-running operations",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/38",
-      "created_at": "2025-08-04T14:51:36Z",
-      "state": "merged",
-      "number": 38,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Add comprehensive benchmarks for critical paths",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/37",
-      "created_at": "2025-08-04T12:13:41Z",
-      "state": "merged",
-      "number": 37,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Add --force flag to ticketflow start command",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/36",
-      "created_at": "2025-08-04T08:59:08Z",
-      "state": "merged",
-      "number": 36,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Optimize IO operations with pre-allocated slices and string builders",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/35",
-      "created_at": "2025-08-04T06:42:45Z",
-      "state": "merged",
-      "number": 35,
       "type": "User",
       "stars": 0
     }
