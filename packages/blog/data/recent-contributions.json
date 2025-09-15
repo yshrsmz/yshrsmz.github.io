@@ -1,5 +1,5 @@
 {
-  "updated_at": 1757550399318,
+  "updated_at": 1757896141383,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
@@ -57,6 +57,16 @@
       "stars": 93
     },
     {
+      "repo": "AndroidDagashi/androiddagashi.github.io",
+      "title": "test",
+      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/552",
+      "created_at": "2025-09-09T03:12:50Z",
+      "state": "open",
+      "number": 552,
+      "type": "Organization",
+      "stars": 9
+    },
+    {
       "repo": "yshrsmz/action-mise-values",
       "title": "add branding",
       "url": "https://github.com/yshrsmz/action-mise-values/pull/3",
@@ -74,7 +84,7 @@
       "state": "merged",
       "number": 21853,
       "type": "Organization",
-      "stars": 24791
+      "stars": 24818
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -134,7 +144,7 @@
       "state": "merged",
       "number": 21772,
       "type": "Organization",
-      "stars": 24791
+      "stars": 24818
     },
     {
       "repo": "yshrsmz/ticketflow",
