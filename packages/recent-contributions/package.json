@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@octokit/types": "14.1.0",
+    "@octokit/types": "15.0.0",
     "@types/node": "22.18.4",
     "tsx": "4.20.5",
     "typescript": "5.9.2",
