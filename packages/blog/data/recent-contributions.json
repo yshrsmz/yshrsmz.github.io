@@ -1,11 +1,31 @@
 {
-  "updated_at": 1757896141383,
+  "updated_at": 1758155146519,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Fix worktree creation path when running from worktree",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/96",
+      "created_at": "2025-09-17T11:22:34Z",
+      "state": "merged",
+      "number": 96,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Improve start command messages and fix test isolation in worktrees",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/95",
+      "created_at": "2025-09-17T04:46:44Z",
+      "state": "merged",
+      "number": 95,
+      "type": "User",
+      "stars": 0
+    },
     {
       "repo": "yshrsmz/ticketflow",
       "title": "fix: disable GPG signing in tests and simplify pre-commit hook",
@@ -54,7 +74,7 @@
       "state": "merged",
       "number": 3520,
       "type": "Organization",
-      "stars": 93
+      "stars": 94
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -84,7 +104,7 @@
       "state": "merged",
       "number": 21853,
       "type": "Organization",
-      "stars": 24818
+      "stars": 24849
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -144,7 +164,7 @@
       "state": "merged",
       "number": 21772,
       "type": "Organization",
-      "stars": 24818
+      "stars": 24849
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -483,26 +503,6 @@
       "created_at": "2025-08-08T14:55:11Z",
       "state": "merged",
       "number": 45,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Fix current-ticket.md duplication in worktree mode",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/44",
-      "created_at": "2025-08-08T09:43:52Z",
-      "state": "merged",
-      "number": 44,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Decision: Don't implement worktree recovery - keep ticketflow focused",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/41",
-      "created_at": "2025-08-06T08:33:11Z",
-      "state": "merged",
-      "number": 41,
       "type": "User",
       "stars": 0
     }
