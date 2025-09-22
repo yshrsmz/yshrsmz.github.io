@@ -1,11 +1,31 @@
 {
-  "updated_at": 1758155146519,
+  "updated_at": 1758500965128,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "refactor: merge testsupport into testutil by deleting dead code",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/98",
+      "created_at": "2025-09-20T14:03:00Z",
+      "state": "merged",
+      "number": 98,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "refactor: reduce test helper duplication across packages",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/97",
+      "created_at": "2025-09-20T07:55:01Z",
+      "state": "merged",
+      "number": 97,
+      "type": "User",
+      "stars": 0
+    },
     {
       "repo": "yshrsmz/ticketflow",
       "title": "Fix worktree creation path when running from worktree",
@@ -104,7 +124,7 @@
       "state": "merged",
       "number": 21853,
       "type": "Organization",
-      "stars": 24849
+      "stars": 24874
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -164,7 +184,7 @@
       "state": "merged",
       "number": 21772,
       "type": "Organization",
-      "stars": 24849
+      "stars": 24874
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -483,26 +503,6 @@
       "created_at": "2025-08-09T04:46:04Z",
       "state": "merged",
       "number": 47,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "feat: Improve worktree error messages with actionable guidance",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/46",
-      "created_at": "2025-08-09T02:40:52Z",
-      "state": "merged",
-      "number": 46,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Improve close error message to suggest restore command",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/45",
-      "created_at": "2025-08-08T14:55:11Z",
-      "state": "merged",
-      "number": 45,
       "type": "User",
       "stars": 0
     }
