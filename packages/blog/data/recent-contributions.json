@@ -1,11 +1,51 @@
 {
-  "updated_at": 1758760010450,
+  "updated_at": 1759105686936,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "test: add comprehensive test coverage for interspersed flag support (Phase 3)",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/102",
+      "created_at": "2025-09-28T12:26:54Z",
+      "state": "merged",
+      "number": 102,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "refactor: remove custom flag helpers and use pflag directly (Phase 2)",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/101",
+      "created_at": "2025-09-28T10:54:52Z",
+      "state": "merged",
+      "number": 101,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/ticketflow",
+      "title": "Phase 1: Replace standard flag package with pflag for interspersed flag support",
+      "url": "https://github.com/yshrsmz/ticketflow/pull/100",
+      "created_at": "2025-09-27T14:42:25Z",
+      "state": "merged",
+      "number": 100,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/BuildKonfig",
+      "title": "ci: pin GitHub Actions to specific SHAs",
+      "url": "https://github.com/yshrsmz/BuildKonfig/pull/238",
+      "created_at": "2025-09-25T14:13:01Z",
+      "state": "merged",
+      "number": 238,
+      "type": "User",
+      "stars": 1018
+    },
     {
       "repo": "yshrsmz/ticketflow",
       "title": "refactor: merge testsupport into testutil by deleting dead code",
@@ -114,7 +154,7 @@
       "state": "merged",
       "number": 21853,
       "type": "Organization",
-      "stars": 24898
+      "stars": 24922
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -174,7 +214,7 @@
       "state": "merged",
       "number": 21772,
       "type": "Organization",
-      "stars": 24898
+      "stars": 24922
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -453,46 +493,6 @@
       "created_at": "2025-08-11T14:14:33Z",
       "state": "merged",
       "number": 52,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "feat: Implement concurrent directory operations for List command",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/50",
-      "created_at": "2025-08-11T09:39:12Z",
-      "state": "merged",
-      "number": 50,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "feat: Add comprehensive benchmark infrastructure for performance optimization",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/49",
-      "created_at": "2025-08-10T01:23:49Z",
-      "state": "merged",
-      "number": 49,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "feat: Add close-with-reason functionality for abandoned/invalid tickets",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/48",
-      "created_at": "2025-08-09T13:17:43Z",
-      "state": "merged",
-      "number": 48,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Improve related field quoting to prevent YAML linting warnings",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/47",
-      "created_at": "2025-08-09T04:46:04Z",
-      "state": "merged",
-      "number": 47,
       "type": "User",
       "stars": 0
     }
