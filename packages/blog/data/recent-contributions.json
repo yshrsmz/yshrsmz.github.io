@@ -1,11 +1,21 @@
 {
-  "updated_at": 1759105686936,
+  "updated_at": 1759364735522,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/unorm-dart",
+      "title": "Release v0.3.2",
+      "url": "https://github.com/yshrsmz/unorm-dart/pull/42",
+      "created_at": "2025-10-01T02:10:37Z",
+      "state": "merged",
+      "number": 42,
+      "type": "User",
+      "stars": 14
+    },
     {
       "repo": "yshrsmz/ticketflow",
       "title": "test: add comprehensive test coverage for interspersed flag support (Phase 3)",
@@ -44,7 +54,7 @@
       "state": "merged",
       "number": 238,
       "type": "User",
-      "stars": 1018
+      "stars": 1019
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -154,7 +164,7 @@
       "state": "merged",
       "number": 21853,
       "type": "Organization",
-      "stars": 24922
+      "stars": 24945
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -214,7 +224,7 @@
       "state": "merged",
       "number": 21772,
       "type": "Organization",
-      "stars": 24922
+      "stars": 24945
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -483,16 +493,6 @@
       "created_at": "2025-08-11T16:36:46Z",
       "state": "merged",
       "number": 53,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Cancel object pooling optimization after profiling analysis",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/52",
-      "created_at": "2025-08-11T14:14:33Z",
-      "state": "merged",
-      "number": 52,
       "type": "User",
       "stars": 0
     }
