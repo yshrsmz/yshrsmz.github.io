@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useData } from 'vitepress'
-import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { onMounted, onUnmounted, ref } from 'vue'
 
 const { frontmatter } = useData()
 
@@ -9,39 +9,40 @@ const MAX_RECORDS = 5000 // Easily configurable limit
 
 // Types
 interface KeyRecord {
+  id: number
   key: string
   timestamp: number
   timeDiff: number | null
 }
 
 // State
+let recordId = 0
 const records = ref<KeyRecord[]>([])
 const inputElement = ref<HTMLTextAreaElement | null>(null)
 const inputText = ref('')
 
-// Computed
-const recordsDescending = computed(() => [...records.value].reverse())
-
 // Handlers
 const handleKeyDown = (event: KeyboardEvent) => {
   const now = performance.now()
-  const lastRecord = records.value[records.value.length - 1]
+  const lastRecord = records.value[0]
   const timeDiff = lastRecord ? now - lastRecord.timestamp : null
 
   // Display "Space" for space key instead of empty character
   const displayKey = event.key === ' ' ? 'Space' : event.key
 
   const newRecord: KeyRecord = {
+    id: recordId++,
     key: displayKey,
     timestamp: now,
     timeDiff,
   }
 
-  records.value.push(newRecord)
+  // Add to front for descending order (newest first)
+  records.value.unshift(newRecord)
 
   // Auto-limit: remove oldest records if exceeding MAX_RECORDS
   if (records.value.length > MAX_RECORDS) {
-    records.value.shift()
+    records.value.pop()
   }
 }
 
@@ -99,7 +100,7 @@ onUnmounted(() => {
         <div
           class="h-[70vh] overflow-y-auto rounded-md border border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-800">
           <ul v-if="records.length > 0" class="space-y-2 font-mono text-sm">
-            <li v-for="(record, index) in recordsDescending" :key="`record_${index}`"
+            <li v-for="record in records" :key="record.id"
               class="flex items-center justify-between border-b border-gray-200 py-2 last:border-b-0 dark:border-gray-700">
               <span class="font-semibold text-gray-900 dark:text-gray-100">
                 {{ record.key }}
