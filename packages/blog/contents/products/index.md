@@ -58,3 +58,5 @@ Github: [https://github.com/yshrsmz/monotweety](https://github.com/yshrsmz/monot
 
 - [AndroidDagashi](https://androiddagashi.github.io)
   - weekly Android news digest for Japanese Android developers.
+- [Tapping-Term Tester](/tapping-term-tester/)
+  - simple tool to check keyboard tapping term(useful for QMK/RMK/ZMK keymap debugging)
