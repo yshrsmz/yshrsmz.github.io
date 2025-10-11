@@ -10,6 +10,7 @@ import VPPosts from './components/VPPosts.vue'
 import VPScrap from './components/VPScrap.vue'
 import VPScraps from './components/VPScraps.vue'
 import VPTags from './components/VPTags.vue'
+import VPTappingTermTester from './components/VPTappingTermTester.vue'
 import NotFound from './NotFound.vue'
 
 const { page, frontmatter } = useData()
@@ -61,6 +62,9 @@ if (typeof window !== 'undefined') {
     </div>
     <div v-else-if="frontmatter.layout === 'contributions'" class="w-full flex-grow sm:max-w-3xl">
       <VPContributions class="mx-8" />
+    </div>
+    <div v-else-if="frontmatter.layout === 'tapping-term-tester'" class="w-full flex-grow sm:max-w-3xl">
+      <VPTappingTermTester class="mx-8" />
     </div>
     <div v-else class="mx-8 flex flex-grow flex-col items-center">
       <h1 class="mt-6 text-3xl font-bold">
