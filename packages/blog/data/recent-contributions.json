@@ -1,11 +1,21 @@
 {
-  "updated_at": 1762388890520,
+  "updated_at": 1762734617821,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/kover-report-action",
+      "title": "feat: add build-and-commit workflow for automated dist/ updates",
+      "url": "https://github.com/yshrsmz/kover-report-action/pull/59",
+      "created_at": "2025-11-08T16:22:17Z",
+      "state": "merged",
+      "number": 59,
+      "type": "User",
+      "stars": 2
+    },
     {
       "repo": "yshrsmz/changelog-compose",
       "title": "docs: update project documentation with latest information",
@@ -354,7 +364,7 @@
       "state": "merged",
       "number": 238,
       "type": "User",
-      "stars": 1030
+      "stars": 1032
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -464,7 +474,7 @@
       "state": "merged",
       "number": 21853,
       "type": "Organization",
-      "stars": 25178
+      "stars": 25205
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -483,16 +493,6 @@
       "created_at": "2025-08-22T04:58:40Z",
       "state": "merged",
       "number": 84,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "refactor: remove unused CloseTicketInternalError struct",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/83",
-      "created_at": "2025-08-21T08:39:02Z",
-      "state": "merged",
-      "number": 83,
       "type": "User",
       "stars": 0
     }
