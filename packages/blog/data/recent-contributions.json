@@ -1,5 +1,5 @@
 {
-  "updated_at": 1762734617821,
+  "updated_at": 1762993728519,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
@@ -364,7 +364,7 @@
       "state": "merged",
       "number": 238,
       "type": "User",
-      "stars": 1032
+      "stars": 1034
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -474,7 +474,7 @@
       "state": "merged",
       "number": 21853,
       "type": "Organization",
-      "stars": 25205
+      "stars": 25227
     },
     {
       "repo": "yshrsmz/ticketflow",
