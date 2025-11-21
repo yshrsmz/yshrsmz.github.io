@@ -19,6 +19,6 @@
     "vitest": "3.2.4"
   },
   "dependencies": {
-    "octokit": "5.0.4"
+    "octokit": "5.0.5"
   }
 }
