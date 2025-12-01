@@ -1,11 +1,91 @@
 {
-  "updated_at": 1764203345464,
+  "updated_at": 1764549351372,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/historian",
+      "title": "chore: update Claude Code configuration for Historian",
+      "url": "https://github.com/yshrsmz/historian/pull/33",
+      "created_at": "2025-11-30T15:14:52Z",
+      "state": "merged",
+      "number": 33,
+      "type": "User",
+      "stars": 25
+    },
+    {
+      "repo": "yshrsmz/historian",
+      "title": "feat: Migrate library from Java to Kotlin",
+      "url": "https://github.com/yshrsmz/historian/pull/31",
+      "created_at": "2025-11-30T13:58:19Z",
+      "state": "merged",
+      "number": 31,
+      "type": "User",
+      "stars": 25
+    },
+    {
+      "repo": "yshrsmz/historian",
+      "title": "build: migrate Gradle scripts from Groovy to Kotlin DSL",
+      "url": "https://github.com/yshrsmz/historian/pull/29",
+      "created_at": "2025-11-30T04:10:12Z",
+      "state": "merged",
+      "number": 29,
+      "type": "User",
+      "stars": 25
+    },
+    {
+      "repo": "yshrsmz/historian",
+      "title": "ci: update release workflow and add release-please",
+      "url": "https://github.com/yshrsmz/historian/pull/22",
+      "created_at": "2025-11-29T16:28:00Z",
+      "state": "merged",
+      "number": 22,
+      "type": "User",
+      "stars": 25
+    },
+    {
+      "repo": "yshrsmz/historian",
+      "title": "Remove AutoService dependency by using robolectric.properties",
+      "url": "https://github.com/yshrsmz/historian/pull/21",
+      "created_at": "2025-11-29T16:03:43Z",
+      "state": "merged",
+      "number": 21,
+      "type": "User",
+      "stars": 25
+    },
+    {
+      "repo": "yshrsmz/historian",
+      "title": "Migrate from dependencies.gradle to Gradle Version Catalog",
+      "url": "https://github.com/yshrsmz/historian/pull/18",
+      "created_at": "2025-11-29T15:30:37Z",
+      "state": "merged",
+      "number": 18,
+      "type": "User",
+      "stars": 25
+    },
+    {
+      "repo": "yshrsmz/historian",
+      "title": "Modernize Gradle build configuration",
+      "url": "https://github.com/yshrsmz/historian/pull/15",
+      "created_at": "2025-11-29T14:19:42Z",
+      "state": "merged",
+      "number": 15,
+      "type": "User",
+      "stars": 25
+    },
+    {
+      "repo": "AndroidDagashi/androiddagashi.github.io",
+      "title": "feat: Nuxt 4.2.1へアップグレード",
+      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/570",
+      "created_at": "2025-11-29T06:43:32Z",
+      "state": "merged",
+      "number": 570,
+      "type": "Organization",
+      "stars": 10
+    },
     {
       "repo": "yshrsmz/kover-report-action",
       "title": "feat: add build-and-commit workflow for automated dist/ updates",
@@ -364,7 +444,7 @@
       "state": "merged",
       "number": 238,
       "type": "User",
-      "stars": 1041
+      "stars": 1044
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -423,76 +503,6 @@
       "created_at": "2025-09-10T15:20:25Z",
       "state": "merged",
       "number": 93,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "refactor: make workflow documentation project-agnostic",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/92",
-      "created_at": "2025-09-10T15:03:47Z",
-      "state": "merged",
-      "number": 92,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/unorm-dart",
-      "title": "chore(ci): pin github actions with commit SHA",
-      "url": "https://github.com/yshrsmz/unorm-dart/pull/37",
-      "created_at": "2025-09-10T01:26:40Z",
-      "state": "merged",
-      "number": 37,
-      "type": "User",
-      "stars": 14
-    },
-    {
-      "repo": "AndroidDagashi/AndroidDagashi",
-      "title": "pin actions with commit SHA",
-      "url": "https://github.com/AndroidDagashi/AndroidDagashi/pull/3520",
-      "created_at": "2025-09-09T03:21:30Z",
-      "state": "merged",
-      "number": 3520,
-      "type": "Organization",
-      "stars": 96
-    },
-    {
-      "repo": "yshrsmz/action-mise-values",
-      "title": "add branding",
-      "url": "https://github.com/yshrsmz/action-mise-values/pull/3",
-      "created_at": "2025-09-06T12:45:35Z",
-      "state": "merged",
-      "number": 3,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "OpenAPITools/openapi-generator",
-      "title": "fix typo in Kotlin client discriminator samples",
-      "url": "https://github.com/OpenAPITools/openapi-generator/pull/21853",
-      "created_at": "2025-09-01T10:33:06Z",
-      "state": "merged",
-      "number": 21853,
-      "type": "Organization",
-      "stars": 25313
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "feat(tui): add close with reason dialog",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/87",
-      "created_at": "2025-08-28T09:56:19Z",
-      "state": "merged",
-      "number": 87,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "refactor: extract common helper functions from CLI commands",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/84",
-      "created_at": "2025-08-22T04:58:40Z",
-      "state": "merged",
-      "number": 84,
       "type": "User",
       "stars": 0
     }
