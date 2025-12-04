@@ -1,11 +1,41 @@
 {
-  "updated_at": 1764549351372,
+  "updated_at": 1764808191434,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/omniatp",
+      "title": "Update @atproto/* dependencies to latest versions",
+      "url": "https://github.com/yshrsmz/omniatp/pull/57",
+      "created_at": "2025-12-03T10:00:55Z",
+      "state": "merged",
+      "number": 57,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/omniatp",
+      "title": "Migrate ESLint to flat config format",
+      "url": "https://github.com/yshrsmz/omniatp/pull/52",
+      "created_at": "2025-12-03T08:57:05Z",
+      "state": "merged",
+      "number": 52,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/omnitweety",
+      "title": "chore: migrate to ESLint 9 with flat config",
+      "url": "https://github.com/yshrsmz/omnitweety/pull/323",
+      "created_at": "2025-12-01T10:06:41Z",
+      "state": "merged",
+      "number": 323,
+      "type": "User",
+      "stars": 3
+    },
     {
       "repo": "yshrsmz/historian",
       "title": "chore: update Claude Code configuration for Historian",
@@ -14,7 +44,7 @@
       "state": "merged",
       "number": 33,
       "type": "User",
-      "stars": 25
+      "stars": 26
     },
     {
       "repo": "yshrsmz/historian",
@@ -24,7 +54,7 @@
       "state": "merged",
       "number": 31,
       "type": "User",
-      "stars": 25
+      "stars": 26
     },
     {
       "repo": "yshrsmz/historian",
@@ -34,7 +64,7 @@
       "state": "merged",
       "number": 29,
       "type": "User",
-      "stars": 25
+      "stars": 26
     },
     {
       "repo": "yshrsmz/historian",
@@ -44,7 +74,7 @@
       "state": "merged",
       "number": 22,
       "type": "User",
-      "stars": 25
+      "stars": 26
     },
     {
       "repo": "yshrsmz/historian",
@@ -54,7 +84,7 @@
       "state": "merged",
       "number": 21,
       "type": "User",
-      "stars": 25
+      "stars": 26
     },
     {
       "repo": "yshrsmz/historian",
@@ -64,7 +94,7 @@
       "state": "merged",
       "number": 18,
       "type": "User",
-      "stars": 25
+      "stars": 26
     },
     {
       "repo": "yshrsmz/historian",
@@ -74,7 +104,7 @@
       "state": "merged",
       "number": 15,
       "type": "User",
-      "stars": 25
+      "stars": 26
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -444,7 +474,7 @@
       "state": "merged",
       "number": 238,
       "type": "User",
-      "stars": 1044
+      "stars": 1047
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -473,36 +503,6 @@
       "created_at": "2025-09-17T11:22:34Z",
       "state": "merged",
       "number": 96,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Improve start command messages and fix test isolation in worktrees",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/95",
-      "created_at": "2025-09-17T04:46:44Z",
-      "state": "merged",
-      "number": 95,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "fix: disable GPG signing in tests and simplify pre-commit hook",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/94",
-      "created_at": "2025-09-10T15:53:00Z",
-      "state": "merged",
-      "number": 94,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "refactor: pin GitHub Actions to specific commit SHAs for security",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/93",
-      "created_at": "2025-09-10T15:20:25Z",
-      "state": "merged",
-      "number": 93,
       "type": "User",
       "stars": 0
     }
