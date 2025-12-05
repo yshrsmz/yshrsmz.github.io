@@ -14,9 +14,9 @@
   "devDependencies": {
     "@octokit/types": "16.0.0",
     "@types/node": "24.10.1",
-    "tsx": "4.20.6",
+    "tsx": "4.21.0",
     "typescript": "5.9.3",
-    "vitest": "4.0.14"
+    "vitest": "4.0.15"
   },
   "dependencies": {
     "octokit": "5.0.5"
