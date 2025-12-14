@@ -11,7 +11,7 @@
     "vitest": "4.0.15"
   },
   "dependencies": {
-    "@actions/core": "1.11.1",
+    "@actions/core": "2.0.1",
     "@actions/github": "6.0.1",
     "date-fns": "4.1.0"
   }
