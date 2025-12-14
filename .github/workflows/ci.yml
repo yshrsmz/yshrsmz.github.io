@@ -35,7 +35,7 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
-      - uses: mongolyy/reviewdog-action-biome@c2164b641fa929a960da224ea4a47b7930eadaa1 # v2.7.0
+      - uses: mongolyy/reviewdog-action-biome@abafdf75a79678ef8e2715298ee2dfc12262c82f # v2.7.1
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
