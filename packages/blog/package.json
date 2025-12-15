@@ -16,7 +16,7 @@
     "@resvg/resvg-js": "2.6.2",
     "@tailwindcss/typography": "0.5.19",
     "@tailwindcss/vite": "4.1.18",
-    "autoprefixer": "10.4.22",
+    "autoprefixer": "10.4.23",
     "date-fns": "4.1.0",
     "fast-glob": "3.3.3",
     "feed": "5.1.0",
