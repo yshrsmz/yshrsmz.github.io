@@ -8,7 +8,7 @@
     "@types/node": "24.10.4",
     "@vercel/ncc": "0.38.4",
     "typescript": "5.9.3",
-    "vitest": "4.0.15"
+    "vitest": "4.0.16"
   },
   "dependencies": {
     "@actions/core": "2.0.1",
