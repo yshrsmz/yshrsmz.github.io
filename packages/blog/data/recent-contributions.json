@@ -1,5 +1,5 @@
 {
-  "updated_at": 1765758741073,
+  "updated_at": 1766017631017,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
@@ -474,7 +474,7 @@
       "state": "merged",
       "number": 238,
       "type": "User",
-      "stars": 1054
+      "stars": 1053
     },
     {
       "repo": "yshrsmz/ticketflow",
