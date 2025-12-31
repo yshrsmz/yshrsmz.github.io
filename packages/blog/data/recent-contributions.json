@@ -1,11 +1,21 @@
 {
-  "updated_at": 1765413027950,
+  "updated_at": 1766968412414,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/changelog-compose",
+      "title": "ci: add setup-build composite action and CI workflow",
+      "url": "https://github.com/yshrsmz/changelog-compose/pull/34",
+      "created_at": "2025-12-19T10:10:13Z",
+      "state": "merged",
+      "number": 34,
+      "type": "User",
+      "stars": 1
+    },
     {
       "repo": "yshrsmz/omniatp",
       "title": "Update @atproto/* dependencies to latest versions",
@@ -474,7 +484,7 @@
       "state": "merged",
       "number": 238,
       "type": "User",
-      "stars": 1050
+      "stars": 1057
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -493,16 +503,6 @@
       "created_at": "2025-09-20T07:55:01Z",
       "state": "merged",
       "number": 97,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Fix worktree creation path when running from worktree",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/96",
-      "created_at": "2025-09-17T11:22:34Z",
-      "state": "merged",
-      "number": 96,
       "type": "User",
       "stars": 0
     }
