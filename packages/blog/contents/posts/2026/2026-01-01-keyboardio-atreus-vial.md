@@ -132,3 +132,9 @@ QMK のビルドは、ファームウェアサイズが上限を超えるとエ�
 Keyboardio Atreus に Vial を導入することで、GUI からリアルタイムにキーマップやコンボ、タップダンスの設定を変更できるようになった。さらに `QMK_SETTINGS` を有効にしたことで、各種タイミング設定も GUI から調整できる。
 
 Chrysalis と比べて設定の自由度が大幅に上がるので、Atreus ユーザーにはおすすめです。
+
+## 参考
+
+- [vial-qmk/keyboards/keyboardio/atreus at vial · vial-kb/vial-qmk](https://github.com/vial-kb/vial-qmk/tree/vial/keyboards/keyboardio/atreus)
+- [Select Vial GUI features (for size) - Vial](https://get.vial.today/docs/firmware-size.html#qmk-settings)
+- [Chrysalis](https://chrysalis.keyboard.io/)
