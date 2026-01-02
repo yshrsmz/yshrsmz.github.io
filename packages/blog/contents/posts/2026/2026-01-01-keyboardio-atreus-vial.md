@@ -34,7 +34,7 @@ Vial 公式が [vial-qmk](https://github.com/vial-kb/vial-qmk) という QMK フ
 
 問題は、`QMK_SETTINGS` を有効にするとファームウェアのサイズが増えて、Atreus のフラッシュメモリに収まらなくなること。そこで、使わない QMK の機能を無効化してファームウェアサイズを削減し、`QMK_SETTINGS` のための容量を確保する。
 
-以下のパッチを [vial-qmk](https://github.com/vial-kb/vial-qmk) に当てる。対象コミットは `ab824d6becfdb3dfcbc08041649612ea1906f8d5`。
+以下のパッチを [vial-qmk](https://github.com/vial-kb/vial-qmk) に当てる。対象コミットは `ab824d6becfdb3dfcbc08041649612ea1906f8d5`。もちろん最新のコミットを使ってもらうのがいいんだけど、qmk や qmk-vial の機能追加によっては以下の内容だと足りない可能性もあるのでよしなに調整してください。
 
 ```patch
 diff --git a/keyboards/keyboardio/atreus/keymaps/vial/config.h b/keyboards/keyboardio/atreus/keymaps/vial/config.h
