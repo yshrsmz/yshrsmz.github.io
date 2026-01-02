@@ -8,6 +8,7 @@
     "blog:dev": "pnpm --filter @codingfeline/blog dev",
     "blog:build": "pnpm --filter @codingfeline/blog build",
     "blog:preview": "pnpm --filter @codingfeline/blog preview",
+    "post:new": "bash scripts/new-post.sh",
     "lint": "biome check",
     "lint:fix": "biome check --write ."
   },
