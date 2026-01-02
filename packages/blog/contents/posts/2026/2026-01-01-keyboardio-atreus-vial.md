@@ -136,5 +136,6 @@ Chrysalis と比べて設定の自由度が大幅に上がるので、Atreus ユ
 ## 参考
 
 - [vial-qmk/keyboards/keyboardio/atreus at vial · vial-kb/vial-qmk](https://github.com/vial-kb/vial-qmk/tree/vial/keyboards/keyboardio/atreus)
+- [Configuring QMK | QMK Firmware](https://docs.qmk.fm/config_options#feature-options)
 - [Select Vial GUI features (for size) - Vial](https://get.vial.today/docs/firmware-size.html#qmk-settings)
 - [Chrysalis](https://chrysalis.keyboard.io/)
