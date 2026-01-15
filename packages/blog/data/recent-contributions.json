@@ -1,11 +1,21 @@
 {
-  "updated_at": 1768177980821,
+  "updated_at": 1768436931096,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "jpmonette/feed",
+      "title": "fix exports field in package.json",
+      "url": "https://github.com/jpmonette/feed/pull/238",
+      "created_at": "2026-01-14T04:40:52Z",
+      "state": "open",
+      "number": 238,
+      "type": "User",
+      "stars": 1335
+    },
     {
       "repo": "yshrsmz/changelog-compose",
       "title": "ci: add setup-build composite action and CI workflow",
@@ -484,7 +494,7 @@
       "state": "merged",
       "number": 238,
       "type": "User",
-      "stars": 1079
+      "stars": 1080
     },
     {
       "repo": "yshrsmz/ticketflow",
@@ -493,16 +503,6 @@
       "created_at": "2025-09-20T14:03:00Z",
       "state": "merged",
       "number": 98,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "refactor: reduce test helper duplication across packages",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/97",
-      "created_at": "2025-09-20T07:55:01Z",
-      "state": "merged",
-      "number": 97,
       "type": "User",
       "stars": 0
     }
