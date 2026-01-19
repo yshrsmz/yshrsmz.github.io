@@ -1,11 +1,21 @@
 {
-  "updated_at": 1768436931096,
+  "updated_at": 1768782838456,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/changelog-compose",
+      "title": "ci: update release-please.yml runner to ubuntu-slim",
+      "url": "https://github.com/yshrsmz/changelog-compose/pull/39",
+      "created_at": "2026-01-16T03:34:37Z",
+      "state": "merged",
+      "number": 39,
+      "type": "User",
+      "stars": 1
+    },
     {
       "repo": "jpmonette/feed",
       "title": "fix exports field in package.json",
@@ -14,7 +24,7 @@
       "state": "open",
       "number": 238,
       "type": "User",
-      "stars": 1335
+      "stars": 1338
     },
     {
       "repo": "yshrsmz/changelog-compose",
@@ -494,17 +504,7 @@
       "state": "merged",
       "number": 238,
       "type": "User",
-      "stars": 1080
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "refactor: merge testsupport into testutil by deleting dead code",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/98",
-      "created_at": "2025-09-20T14:03:00Z",
-      "state": "merged",
-      "number": 98,
-      "type": "User",
-      "stars": 0
+      "stars": 1084
     }
   ]
 }
