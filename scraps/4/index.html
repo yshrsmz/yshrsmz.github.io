@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ja-JP" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SaaS のテナント分離戦略について | CodingFeline</title>
+    <meta name="description" content="Thoughts, stories and ideas">
+    <meta name="generator" content="VitePress v1.6.4">
+    <link rel="preload stylesheet" href="/assets/style.DiV_ukwQ.css" as="style">
+    <link rel="preload stylesheet" href="/vp-icons.css" as="style">
+    
+    <script type="module" src="/assets/app.9sHLlCVv.js"></script>
+    <link rel="modulepreload" href="/assets/chunks/theme.CauwL2iT.js">
+    <link rel="modulepreload" href="/assets/chunks/framework.BPPv2K3c.js">
+    <link rel="modulepreload" href="/assets/scraps_4_index.md.pZ0m-gff.lean.js">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script id="register-twitter-widget">window.twttr=function(r,n,i){var e,s=r.getElementsByTagName(n)[0],t=window.twttr||{};return r.getElementById(i)||(e=r.createElement(n),e.id=i,e.src="https://platform.twitter.com/widgets.js",s.parentNode.insertBefore(e,s),t._e=[],t.ready=function(w){t._e.push(w)}),t}(document,"script","twitter-wjs");</script>
+    <meta property="og:type" content="blog">
+    <meta property="og:description" content="Thoughts, stories and ideas">
+    <meta property="og:site_name" content="CodingFeline">
+    <meta name="deployed-version" content="a94ab78a63612591faf21741d155904022d7cce6">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZRK8ZP8XC"></script>
+    <script id="init-gtm">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XZRK8ZP8XC");</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1022395241918455" crossorigin="anonymous"></script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+    <link rel="canonical" href="https://www.codingfeline.com/scraps/4/">
+    <meta property="og:url" content="https://www.codingfeline.com/scraps/4/">
+    <meta property="og:title" content="SaaS のテナント分離戦略について">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@_yshrsmz">
+    <meta property="twitter:creator" content="@_yshrsmz">
+    <meta property="og:image" content="https://www.codingfeline.com/scraps/4/ogp.png">
+  </head>
+  <body>
+    <div id="app"><div class="flex min-h-screen w-screen max-w-full flex-col items-center"><header class="VPHeader flex w-full flex-col items-center py-6"><div class="flex w-full max-w-4xl flex-row items-baseline justify-between px-3"><h2 class="text-lg font-bold"><a href="/">CodingFeline</a></h2><nav><ul class="flex flex-row gap-3"><li><a href="/about/">About</a></li><li><a href="/products/">Products</a></li><li><a href="/tags/">Tags</a></li></ul></nav></div></header><div class="w-full flex-grow sm:max-w-3xl"><div class="VPScrap mt-6 flex flex-col items-center sm:mx-8"><div class="flex flex-col items-center"><div><span class="mr-2 rounded-full px-4 py-1 text-sm bg-green-600 text-white">OPEN</span><time class="text-gray-600 dark:text-gray-400">更新日: January 10, 2024 12:04</time></div><h1 class="mt-2 text-center text-2xl font-bold">SaaS のテナント分離戦略について</h1><ul class="tags not-prose my-4 flex flex-row flex-wrap gap-2"><!--[--><li><a href="/tags/#SaaS" class="VPTagLabel rounded-full border border-gray-600 px-3 text-gray-600 hover:border-gray-400 hover:text-gray-400 dark:border-gray-400 dark:text-gray-400">SaaS</a></li><li><a href="/tags/#AWS" class="VPTagLabel rounded-full border border-gray-600 px-3 text-gray-600 hover:border-gray-400 hover:text-gray-400 dark:border-gray-400 dark:text-gray-400">AWS</a></li><!--]--></ul></div><ul class="w-full"><!--[--><li class="mt-3 border-b border-t border-gray-300 bg-gray-50 sm:rounded-md sm:border dark:border-gray-400 dark:bg-gray-900"><article id="I_kwDOK-znbM57e4mO" class="relative mx-8 my-3 flex flex-col"><div class="VPPost__content vp-doc prose dark:prose-invert prose-a:hover:decoration-dotted prose-a:break-all mt-4 max-w-full flex-grow"><p><a href="https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/saas-tenant-isolation-strategies.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/saas-tenant-isolation-strategies.html</a></p>
+<p>SaaS Tenant Isolation Strategies: Isolating Resources in a Multi-Tenant Environment</p>
+<p>これ読む</p>
+</div><a href="#I_kwDOK-znbM57e4mO" class="inline-block self-end text-sm text-gray-500 dark:text-gray-400"><time>January 9, 2024 06:11</time></a></article></li><li class="mt-3 border-b border-t border-gray-300 bg-gray-50 sm:rounded-md sm:border dark:border-gray-400 dark:bg-gray-900"><article id="IC_kwDOK-znbM5wNHVN" class="relative mx-8 my-3 flex flex-col"><div class="VPPost__content vp-doc prose dark:prose-invert prose-a:hover:decoration-dotted prose-a:break-all mt-4 max-w-full flex-grow"><h2 id="the-isolation-mindset" tabindex="-1">The isolation mindset <a class="header-anchor" href="#the-isolation-mindset" aria-label="Permalink to &quot;The isolation mindset&quot;">&ZeroWidthSpace;</a></h2>
+<p><a href="https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/the-isolation-mindset.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/the-isolation-mindset.html</a></p>
+<ul>
+<li>分離はオプショナルではない
+<ul>
+<li>分離は SaaS の基本的な構成要素である</li>
+<li>マルチテナント型 SaaS のプロバイダは、テナントのリソースを分離するための方策を取る必要がある</li>
+</ul>
+</li>
+<li>認証/認可と分離は別物
+<ul>
+<li>ログイン管理/アクセス管理を下からと言ってリソースを分離したことにはならない</li>
+<li>分離というパズルのピースの一つであるけど、それだけで充分ではない</li>
+</ul>
+</li>
+<li>分離の実装/強制は SaaS 利用者に委ねてはならない
+<ul>
+<li>分離を侵害するようなコードを書くとは思わないが、確実ではない。</li>
+<li>そもそもそのようなことが起こらないように、アクセススコープの管理は分離規則を管理する共通の処理によって行われるべき
+<ul>
+<li>SaaS 利用者に委ねない、ということ</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>分離のための既存のソリューションがなければ自作する必要がある
+<ul>
+<li>AWS Identity や IAM など、テナント分離を容易にするソリューションは多数存在する</li>
+<li>これらを組み合わせることでテナント分離をある程度シンプルに実現できることもある</li>
+<li>しかし、既存のソリューションが適さない場合ももちろんある。</li>
+<li>だからといってそれがテナント分離の要件を引き下げる理由になってはならない。なければ自作すること</li>
+</ul>
+</li>
+<li>分離はリソースレベルの構成要素ではない
+<ul>
+<li>マルチテナントと分離の文脈では、分離を具体的なインフラリソースの境界と見る向きもある
+<ul>
+<li>これはDB、ECS、VPCなどのインフラ全体をテナント毎に運用することに繋がる</li>
+<li>確かにこれはよくある分離の形態のひとつであるが、テナント分離の実現方法はこれだけではない</li>
+</ul>
+</li>
+<li>各種リソースを共用するような場合においても、テナント分離は実現できる
+<ul>
+<li>このようなリソース共有型のモデルでも、分離は論理的な構成要素として、ランタイムに実現可能</li>
+</ul>
+</li>
+<li>要点: 分離はリソースのサイロ化によってのみ実現するものではない</li>
+</ul>
+</li>
+<li>事業ドメインによっては特定の分離要件がある
+<ul>
+<li>テナント分離のアプローチは様々あるが、事業ドメインによっては特定のアプローチが必要な場合もある</li>
+<li>例えば高いコンプライアンスが求められる業界では、ポリシーベースの分離では不十分で、テナント毎にDBを用意する必要があるかもしれない。</li>
+</ul>
+</li>
+</ul>
+</div><a href="#IC_kwDOK-znbM5wNHVN" class="inline-block self-end text-sm text-gray-500 dark:text-gray-400"><time>January 9, 2024 06:32</time></a></article></li><li class="mt-3 border-b border-t border-gray-300 bg-gray-50 sm:rounded-md sm:border dark:border-gray-400 dark:bg-gray-900"><article id="IC_kwDOK-znbM5wNSui" class="relative mx-8 my-3 flex flex-col"><div class="VPPost__content vp-doc prose dark:prose-invert prose-a:hover:decoration-dotted prose-a:break-all mt-4 max-w-full flex-grow"><h2 id="isolation-security-or-noisy-neighbor" tabindex="-1">Isolation: Security or noisy neighbor? <a class="header-anchor" href="#isolation-security-or-noisy-neighbor" aria-label="Permalink to &quot;Isolation: Security or noisy neighbor?&quot;">&ZeroWidthSpace;</a></h2>
+<p><a href="https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/isolation-security-or-noisy-neighbor.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/isolation-security-or-noisy-neighbor.html</a></p>
+<ul>
+<li>分離というトピックはカテゴリ分けしづらい</li>
+<li>一般的にはセキュリティやコンプライアンスという文脈で考慮されることが多い
+<ul>
+<li>テナント間のリソースアクセスを制限する境界をつくるため</li>
+</ul>
+</li>
+<li>これは重要な要素である一方、「ノイジー・ネイバー」やパフォーマンス問題を解決するための分離、という観点もある</li>
+<li>このペーパーでは、セキュリティによる重きを置きつつも、両方の観点をカバーしていく</li>
+</ul>
+<p>ノイジー・ネイバー: 共有リソースを一部のテナントが大量に消費して、別のテナントに悪影響(パフォーマンス下がるとか)がでる問題</p>
+</div><a href="#IC_kwDOK-znbM5wNSui" class="inline-block self-end text-sm text-gray-500 dark:text-gray-400"><time>January 9, 2024 07:23</time></a></article></li><li class="mt-3 border-b border-t border-gray-300 bg-gray-50 sm:rounded-md sm:border dark:border-gray-400 dark:bg-gray-900"><article id="IC_kwDOK-znbM5wNXHR" class="relative mx-8 my-3 flex flex-col"><div class="VPPost__content vp-doc prose dark:prose-invert prose-a:hover:decoration-dotted prose-a:break-all mt-4 max-w-full flex-grow"><p><a href="https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/silo-isolation.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/silo-isolation.html</a></p>
+<h2 id="core-isolation-concepts-silo-isolation" tabindex="-1">Core isolation concepts - Silo isolation <a class="header-anchor" href="#core-isolation-concepts-silo-isolation" aria-label="Permalink to &quot;Core isolation concepts - Silo isolation&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>テナント毎に個別のリソーススタックを用意する
+<ul>
+<li>E2E で完全に分離されたテナント分離を実現する</li>
+</ul>
+</li>
+<li>Pros
+<ul>
+<li>厳しいコンプライアンスモデルのサポート</li>
+<li>ノイジー・ネイバーの懸念なし</li>
+<li>テナント毎のコスト計算</li>
+<li>障害の影響範囲が狭い</li>
+</ul>
+</li>
+<li>Cons
+<ul>
+<li>ビジネスのスケール
+<ul>
+<li>作成できるアカウントの数に限りがある</li>
+<li>アカウントが増えたときのメンテコスト</li>
+</ul>
+</li>
+<li>コスト
+<ul>
+<li>全アカウントが個別の環境を持つのでコスト高い</li>
+</ul>
+</li>
+<li>フットワークの軽さ
+<ul>
+<li>非中央集権的なサイロ型はメンテナンスコストが高いので、プロダクトの迅速な進化の足かせとなる可能性がある</li>
+</ul>
+</li>
+<li>管理と監視の非中央集権化
+<ul>
+<li>すべてのテナントの活動を単一のツールで管理・監視できるようにしたい</li>
+<li>しかしサイロ化したマルチテナントでは、各テナントのインフラからデータを集計しなければならないので、難易度が高い
+<ul>
+<li>実現可能ではあるけども、比較的コストが高い</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><a href="#IC_kwDOK-znbM5wNXHR" class="inline-block self-end text-sm text-gray-500 dark:text-gray-400"><time>January 9, 2024 07:41</time></a></article></li><li class="mt-3 border-b border-t border-gray-300 bg-gray-50 sm:rounded-md sm:border dark:border-gray-400 dark:bg-gray-900"><article id="IC_kwDOK-znbM5wNjSp" class="relative mx-8 my-3 flex flex-col"><div class="VPPost__content vp-doc prose dark:prose-invert prose-a:hover:decoration-dotted prose-a:break-all mt-4 max-w-full flex-grow"><p><a href="https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/pool-isolation.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/pool-isolation.html</a></p>
+<h2 id="core-isolation-concepts-pool-isolation" tabindex="-1">Core isolation concepts - Pool isolation <a class="header-anchor" href="#core-isolation-concepts-pool-isolation" aria-label="Permalink to &quot;Core isolation concepts - Pool isolation&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>サイロ型は分離という観点ではとてもわかり易いし効果的</li>
+<li>しかし、SaaS を作りたい企業は、テナント間でリソース/インフラを共有することによる効率さとか機敏さ、コスト効率も求めているはず</li>
+<li>プール型はインフラを共有するアプローチ</li>
+<li>プール型では、全テナントが共通のインフラを利用する
+<ul>
+<li>計算資源だけでなく、DBも共有している
+<ul>
+<li>テーブルはテナントIDによってインデックスされている</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>このモデルは、SaaS プロバイダー的には効率がいいものの、テナント分離という観点では物事を複雑にしている
+<ul>
+<li>リソースが共有されているので、テナント分離の実装が何を意味するのか不明瞭</li>
+<li>典型的なネットワークや IAM による境界定義が行えない</li>
+</ul>
+</li>
+<li>実装はよりチャレンジングではあるが、だからといって <strong>テナント分離の要件を緩和する言い訳にしてはならない</strong>
+<ul>
+<li>プール型では、別テナントのデータにアクセスしてしまう危険性は高まる
+<ul>
+<li>そのため、リソースの分離を確実にすることに特に注意を払う必要がある</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Pros
+<ul>
+<li>開発の機敏さ
+<ul>
+<li>よりシンプルになるので、開発速度が上がる</li>
+<li>管理する環境が一つになるので、サイロ型のようなテナント毎に必要な作業がなくなる</li>
+</ul>
+</li>
+<li>コスト
+<ul>
+<li>プール型にすることで、インフラはテナント全体の利用に応じてスケールするようになる。</li>
+</ul>
+</li>
+<li>管理/運用がシンプル</li>
+<li>イノベーション
+<ul>
+<li>運用/管理がシンプルになるので、より機能にフォーカスできる→イノベーションが生まれる</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Cons
+<ul>
+<li>ノイジー・ネイバー
+<ul>
+<li>リソースを共有すればするほど、テナント間で計算資源の奪い合いになる可能性が上がる</li>
+<li>良いマルチテナントアーキテクチャはこの影響を最小限に抑えようとするが、プール型だとこの影響を完全に取り除くことはできない</li>
+</ul>
+</li>
+<li>テナント毎のコスト計算
+<ul>
+<li>より細かいデータの集計が必要</li>
+</ul>
+</li>
+<li>障害の影響範囲
+<ul>
+<li>障害は基本的に全テナントに影響する</li>
+<li>障害を特定し、表面化し、障害からうまく回復できるレジリエントな環境の構築に、さらに深く取り組む必要がある。</li>
+</ul>
+</li>
+<li>コンプライアンス
+<ul>
+<li>ロジック的にテナント分離は実現されていても、インフラを共有するため、顧客がこの運用を嫌がる可能性がある</li>
+<li>これはコンプライアンスの遵守や規制が厳しい事業ドメインで特に顕著
+<ul>
+<li>このような場合は、システムの一部をサイロ化する必要あり
+<ul>
+<li>ブリッジ型を参照のこと</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><a href="#IC_kwDOK-znbM5wNjSp" class="inline-block self-end text-sm text-gray-500 dark:text-gray-400"><time>January 9, 2024 08:22</time></a></article></li><li class="mt-3 border-b border-t border-gray-300 bg-gray-50 sm:rounded-md sm:border dark:border-gray-400 dark:bg-gray-900"><article id="IC_kwDOK-znbM5wOPi9" class="relative mx-8 my-3 flex flex-col"><div class="VPPost__content vp-doc prose dark:prose-invert prose-a:hover:decoration-dotted prose-a:break-all mt-4 max-w-full flex-grow"><p><a href="https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/the-bridge-model.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/the-bridge-model.html</a></p>
+<h2 id="core-isolation-concepts-the-bridge-model" tabindex="-1">Core isolation concepts - The bridge model <a class="header-anchor" href="#core-isolation-concepts-the-bridge-model" aria-label="Permalink to &quot;Core isolation concepts - The bridge model&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>サイロ型やプール型は分離に対して非常に明確なアプローチであるが、SaaS プロバイダ的には分離の見方はそれほど絶対的なものではない</li>
+<li>実際のアプリケーションを見てシステムをより小さなサービスに分解していくと、サイロ型とプール型両方のアプローチが混在が必要なことがわかる
+<ul>
+<li>これをブリッジ型と呼ぶ</li>
+</ul>
+</li>
+<li>図(元サイト参照のこと)だと
+<ul>
+<li>Web層は共通</li>
+<li>ビジネスロジックのあるアプリケーション層とDBは個別</li>
+</ul>
+</li>
+<li>このモノリスをマイクロサービスに分割しようと思うと、各種マイクロサービスはサイロ型とプール型が混在するだろうことが想像できる</li>
+<li>AWS の各機能を利用してどの用にサイロ型やプール型を実装していくかについては、また別の項で説明する</li>
+<li>重要なことは、サイロとプールの見方は、様々な分離要件を持つサービスの集まりに分解された環境では、より細かくなるということ</li>
+<li>Pros and Cons
+<ul>
+<li>ブリッジ型はサイロ型とプール型のハイブリッドで、それぞれの機能に適した実装を選択することができる</li>
+<li>サイロ型の価値観や信条はシステムの各領域に依然として適用される</li>
+<li>Pros and Cons を考える歳は、アーキテクチャの各リソースやレイヤについて、サイロ型・プール型のトレードオフを考える必要がある</li>
+</ul>
+</li>
+</ul>
+</div><a href="#IC_kwDOK-znbM5wOPi9" class="inline-block self-end text-sm text-gray-500 dark:text-gray-400"><time>January 9, 2024 10:13</time></a></article></li><li class="mt-3 border-b border-t border-gray-300 bg-gray-50 sm:rounded-md sm:border dark:border-gray-400 dark:bg-gray-900"><article id="IC_kwDOK-znbM5wORvx" class="relative mx-8 my-3 flex flex-col"><div class="VPPost__content vp-doc prose dark:prose-invert prose-a:hover:decoration-dotted prose-a:break-all mt-4 max-w-full flex-grow"><p><a href="https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/tier-based-isolation.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/tier-based-isolation.html</a></p>
+<h2 id="core-isolation-concepts-tier-based-isolation" tabindex="-1">Core isolation concepts - Tier-based isolation <a class="header-anchor" href="#core-isolation-concepts-tier-based-isolation" aria-label="Permalink to &quot;Core isolation concepts - Tier-based isolation&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>プランに応じてサイロ型/プール型を提供する</li>
+<li>アプリのアーキテクチャというよりは、サービスのパッケージング寄りの考え方</li>
+<li>基本的に、プール型と同じバージョンをサイロ型でも使う
+<ul>
+<li>この時サイロ型の環境はプール型のクローンで、たまたま1テナントだけが使ってるのでサイロ型になっている、という状態</li>
+</ul>
+</li>
+</ul>
+</div><a href="#IC_kwDOK-znbM5wORvx" class="inline-block self-end text-sm text-gray-500 dark:text-gray-400"><time>January 9, 2024 10:19</time></a></article></li><li class="mt-3 border-b border-t border-gray-300 bg-gray-50 sm:rounded-md sm:border dark:border-gray-400 dark:bg-gray-900"><article id="IC_kwDOK-znbM5wOZk6" class="relative mx-8 my-3 flex flex-col"><div class="VPPost__content vp-doc prose dark:prose-invert prose-a:hover:decoration-dotted prose-a:break-all mt-4 max-w-full flex-grow"><p><a href="https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/identity-and-isolation.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/identity-and-isolation.html</a></p>
+<h2 id="core-isolation-concepts-identity-and-isolation" tabindex="-1">Core isolation concepts - Identity and isolation <a class="header-anchor" href="#core-isolation-concepts-identity-and-isolation" aria-label="Permalink to &quot;Core isolation concepts - Identity and isolation&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>アイデンティティがどの用に分離と結びついているか考えるのも必要</li>
+<li>テナントの分離を検討しているのであれば、現在 SaaS 環境のリソースにアクセスしているテナントを表し、識別することが必要になる</li>
+<li>多くの場合、アイデンティティは他の構成要素と組み合わせて、分離スキームのコアとなるスコープ・ルールやポリシーを取得するために使われる</li>
+<li>このポリシーの定義や適用方法は各分離モデルやサービスによって異なる</li>
+<li>しかし、アプローチの基本は図5(元サイト参照のこと)のようになる</li>
+<li>この図はアイデンティティがより広い分離モデルのストーリーの中にどの用に組み込まれるかを一般化したもの
+<ul>
+<li>ユーザが認証されると、システムはテナント・コンテキストをアプリケーションに返す
+<ul>
+<li>ユーザの属するテナント情報と、そのテナントを分離するためのポリシーを含む</li>
+</ul>
+</li>
+<li>このコンテキストはすべてのインタラクションを通じてアクセスでき、SaaS 環境の顆粒の要素によってリソース(この場合はDB)へのアクセスを限定するために使われる</li>
+</ul>
+</li>
+<li>スコープの取得や適用は分離モデルや利用するリソースによって異なるが、中核となる概念は同じ</li>
+<li>重要なバリエーションとして、テナント・スコープの決定方法がある
+<ul>
+<li>このスコーピング・コンテキストはデプロイ時に決定されることもあるし、ランタイムに取得されることもある</li>
+<li>それぞれの詳細は様々なアーキテクチャにおける具体的な分離の特徴を見ながら触れていく</li>
+</ul>
+</li>
+</ul>
+</div><a href="#IC_kwDOK-znbM5wOZk6" class="inline-block self-end text-sm text-gray-500 dark:text-gray-400"><time>January 9, 2024 10:38</time></a></article></li><li class="mt-3 border-b border-t border-gray-300 bg-gray-50 sm:rounded-md sm:border dark:border-gray-400 dark:bg-gray-900"><article id="IC_kwDOK-znbM5wObM8" class="relative mx-8 my-3 flex flex-col"><div class="VPPost__content vp-doc prose dark:prose-invert prose-a:hover:decoration-dotted prose-a:break-all mt-4 max-w-full flex-grow"><p><a href="https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/full-stack-isolation.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/full-stack-isolation.html</a></p>
+<h2 id="implementing-silo-isolation-full-stack-isolation" tabindex="-1">Implementing silo isolation - Full stack isolation <a class="header-anchor" href="#implementing-silo-isolation-full-stack-isolation" aria-label="Permalink to &quot;Implementing silo isolation - Full stack isolation&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>全リソースをテナント毎に用意するパターン</li>
+<li>AWSアカウントごと分ける</li>
+<li>Virtual Private Cloud(VPC)で分離</li>
+</ul>
+</div><a href="#IC_kwDOK-znbM5wObM8" class="inline-block self-end text-sm text-gray-500 dark:text-gray-400"><time>January 9, 2024 10:42</time></a></article></li><li class="mt-3 border-b border-t border-gray-300 bg-gray-50 sm:rounded-md sm:border dark:border-gray-400 dark:bg-gray-900"><article id="IC_kwDOK-znbM5wOmo5" class="relative mx-8 my-3 flex flex-col"><div class="VPPost__content vp-doc prose dark:prose-invert prose-a:hover:decoration-dotted prose-a:break-all mt-4 max-w-full flex-grow"><p><a href="https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/subnet-silo-isolation.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/subnet-silo-isolation.html</a></p>
+<h2 id="implementing-silo-isolation-subnet-silo-isolation" tabindex="-1">Implementing silo isolation - Subnet silo isolation <a class="header-anchor" href="#implementing-silo-isolation-subnet-silo-isolation" aria-label="Permalink to &quot;Implementing silo isolation - Subnet silo isolation&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>VPC の中の個別の subnet で管理する</li>
+<li>ネットワークのルーティング周りでテナント間アクセスを防ぐ</li>
+<li>有効ではあるが、おすすめしない
+<ul>
+<li>メンテナンスコスト、スケール上の課題ですぐに破綻する</li>
+</ul>
+</li>
+</ul>
+<h3 id="targeted-silo-isolation" tabindex="-1">Targeted silo isolation <a class="header-anchor" href="#targeted-silo-isolation" aria-label="Permalink to &quot;Targeted silo isolation&quot;">&ZeroWidthSpace;</a></h3>
+<ul>
+<li>一部のマイクロサービスだけサイロ型にする</li>
+<li>TBD</li>
+</ul>
+</div><a href="#IC_kwDOK-znbM5wOmo5" class="inline-block self-end text-sm text-gray-500 dark:text-gray-400"><time>January 9, 2024 11:12</time></a></article></li><li class="mt-3 border-b border-t border-gray-300 bg-gray-50 sm:rounded-md sm:border dark:border-gray-400 dark:bg-gray-900"><article id="IC_kwDOK-znbM5wOuaE" class="relative mx-8 my-3 flex flex-col"><div class="VPPost__content vp-doc prose dark:prose-invert prose-a:hover:decoration-dotted prose-a:break-all mt-4 max-w-full flex-grow"><p><a href="https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/silo-compute-considerations.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/silo-compute-considerations.html</a></p>
+<h2 id="implementation-silo-isolation-silo-compute-considerations" tabindex="-1">Implementation silo isolation - Silo compute considerations <a class="header-anchor" href="#implementation-silo-isolation-silo-compute-considerations" aria-label="Permalink to &quot;Implementation silo isolation - Silo compute considerations&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>(前述のマイクロサービスのような)アプリケーションをサイロ化する場合、様々な計算資源の分離モデルが、どの用にアプローチに影響するか考える必要がある。</li>
+<li>様々なAWSコンピュートサービスのユニークな属性は、リソースが適切に分離されることを保証するために特定の手段を取ることを要求するかもしれない</li>
+<li>コンテナを使ってサイロ化する場合
+<ul>
+<li>悪意のあるコードや設定不十分な環境がコンテナをすり抜け、あるテナントが別のテナントの情報にアクセスできるパーミッションがあるとみなしてしまうケースがある</li>
+<li>コンテナは適切に使用されれば堅牢な分離モデルを実装することができる</li>
+<li>テナント間のアクセスを防ぐ機構は、AWS のコンテナサービスによって異なる
+<ul>
+<li>ECS では、サイロ分離を実現するためにテナント毎にクラスタを作る必要がある</li>
+<li>ECK では、EKS クラスタ内でリソースをサイロ化する追加の仕組みがある
+<ul>
+<li>図10
+<ul>
+<li>EKS namespace を利用してテナントを分けている</li>
+<li>しかし namespace だけで完全なサイロ化を実現することはできない</li>
+<li>たとえば AWS App Mesh や Tigera Calico のようなソリューションと併用する</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>AWS Lambda を使う場合
+<ul>
+<li>Lamba function はそもそも分離されている、と考えるかもしれないが、 Lambda function が前テナントをサポートする実行ロールでデプロイされている場合はその限りではない。</li>
+<li>プールはこれを回避する方法を提供してくれる
+<ul>
+<li>しかしこれは、この関数が他のテナントからは実行できない、ということを意味している</li>
+<li>図11 は Lambda で完全な分離を実現する方法の例
+<ul>
+<li>テナントの分離を実現するため、テナント毎に個別の Lambda fucntion をデプロイしている。
+<ul>
+<li>テナント専用の実行ロールで</li>
+</ul>
+</li>
+<li>説得力のあるソリューションに見えるが、扱いにくく、 AWS Lambda の制限を超える可能性がある
+<ul>
+<li>1K のテナントがあるときの管理・デプロイを想像すると…</li>
+<li>SaaS の機敏さを損なう可能性</li>
+<li>一部のプレミアムプランでのみ提供、ならあり得るかも</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>要点: サイロ型の実装を検討する際は、採用するAWSサービスによって個別の実現方法を検討する必要がある</li>
+</ul>
+</div><a href="#IC_kwDOK-znbM5wOuaE" class="inline-block self-end text-sm text-gray-500 dark:text-gray-400"><time>January 9, 2024 11:35</time></a></article></li><li class="mt-3 border-b border-t border-gray-300 bg-gray-50 sm:rounded-md sm:border dark:border-gray-400 dark:bg-gray-900"><article id="IC_kwDOK-znbM5wOxVF" class="relative mx-8 my-3 flex flex-col"><div class="VPPost__content vp-doc prose dark:prose-invert prose-a:hover:decoration-dotted prose-a:break-all mt-4 max-w-full flex-grow"><p><a href="https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/silo-for-any-resource.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/silo-for-any-resource.html</a></p>
+<h2 id="implementation-silo-isolation-silo-for-any-resource" tabindex="-1">Implementation silo isolation - Silo for any resource <a class="header-anchor" href="#implementation-silo-isolation-silo-for-any-resource" aria-label="Permalink to &quot;Implementation silo isolation - Silo for any resource&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>どのようなリソースであってもサイロ型でデプロイ可能</li>
+<li>利用する AWS　サービスを分離するストラテジーや機構はものによって異なる
+<ul>
+<li>DynamoDB ならテーブルを分けるかも</li>
+<li>別のストレージサービスなら、テナント毎に個別のクラスタが必要かも</li>
+<li>SQS や EventBridge はまた別のアプローチが必要</li>
+<li>→ 要件によってサイロ化すべきものを適切に選別するべき</li>
+</ul>
+</li>
+<li>基本的には、あらゆるリソースについて、ノイジー・ネイバーやセキュリティプロファイルを評価することが必要
+<ul>
+<li>サイロ化することで得られるメリットとデメリットを比較検討する</li>
+</ul>
+</li>
+</ul>
+</div><a href="#IC_kwDOK-znbM5wOxVF" class="inline-block self-end text-sm text-gray-500 dark:text-gray-400"><time>January 9, 2024 11:44</time></a></article></li><li class="mt-3 border-b border-t border-gray-300 bg-gray-50 sm:rounded-md sm:border dark:border-gray-400 dark:bg-gray-900"><article id="IC_kwDOK-znbM5wTQoE" class="relative mx-8 my-3 flex flex-col"><div class="VPPost__content vp-doc prose dark:prose-invert prose-a:hover:decoration-dotted prose-a:break-all mt-4 max-w-full flex-grow"><p><a href="https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/implementing-pool-isolation.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/implementing-pool-isolation.html</a></p>
+<h2 id="implementing-pool-isolation" tabindex="-1">Implementing pool isolation <a class="header-anchor" href="#implementing-pool-isolation" aria-label="Permalink to &quot;Implementing pool isolation&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>SaaS プロバイダにとってプール型は魅力的
+<ul>
+<li>効率性、機敏さ、コストなど、事業者が SaaS モデルを提供しようとした動機づけになるものが多い</li>
+</ul>
+</li>
+<li>もちろん、リソースを共有モデルに移行するとより困難な分離の問題に直面する</li>
+<li>分離を実現するツールや仕組みと、共有リソースを消費するテナントの間には、根本的なミスマッチが存在する</li>
+<li>プール型で共有したい各リソースについて、分離を実現するためにはそれぞれ異なるアプローチが必要になりうる、という点も問題を複雑にしている</li>
+<li>これらの困難は実際に存在するが、これを動機に分離要件を緩和するべきではない
+<ul>
+<li>単にプール型でリソース分離を実現するために、ツールや構成要素の組み合わせを見つけるためにより頑張らなければならない、というだけ</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>具体的なプール型の分離テクニックを掘り下げる前に、プール型が分離へのアプローチをどのように変えるかを明確にイメージしよう</li>
+<li>一般的に AWS リソースの分離について話す場合、IAM を利用してどのようにリソース間のインタラクションを管理するか、に焦点を当てる</li>
+<li>事実サイロ型では、IAM はテナント分離ポリシーを表現するのに最適である</li>
+<li>プール型では、IAM の利用はもう少し複雑</li>
+<li>図12(元サイト参照のこと)はサイロ型とプール型のマインドセットの違いを表している
+<ul>
+<li>IAM ポリシーをそれぞれのモデルでアクセスを限定するためにどう適用しているか</li>
+<li>左には２つのサイロ型デプロイがあり、テナントはそれぞれのインフラで稼働している
+<ul>
+<li>これらのテナントはどちらも他のリソース(ストレージ)にアクセスしている</li>
+<li>これらのインスタンスがデプロイされた時、各テナントに個別の IAM インスタンスプロファイルが設定される</li>
+<li>これはデプロイ時に作成されるため、核テナントが別テナントのリソースにアクセスできないようにすることができる</li>
+</ul>
+</li>
+<li>右にはプール型でデプロイした compute node がある
+<ul>
+<li>これらのノードは、すべてのテナントに代わって実行される</li>
+<li>この事実はここにデプロイされているノードに対する IAM プロファイルのスコープに直接影響する</li>
+<li>ノードを特定のテナントに制限するかわりに、すべてのテナントをサポートするのに充分オープンなプロファイルで、ノードをデプロイする必要がある</li>
+<li>この広いスコープがプール型の本当の問題を引き起こす</li>
+<li>実装しようとしている SaaS ソリューションによって矯正されるアクセスの制限を実装する、新しい方法を考え出す必要がある</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>これらプール型分離のユニークな側面を考慮すると、プール型で分離を実現するための選択肢はそれぞれ大きく異なることがわかる</li>
+<li>すべての組み合わせについて調べることは本稿の範囲を超えているが、よく適用される様々な戦略についてより良い感触を得るためにいくつかの一般的なパターンを調べることはできる</li>
+<li>以下のセクションではこれらの戦略の概要を説明する</li>
+</ul>
+</div><a href="#IC_kwDOK-znbM5wTQoE" class="inline-block self-end text-sm text-gray-500 dark:text-gray-400"><time>January 10, 2024 02:36</time></a></article></li><li class="mt-3 border-b border-t border-gray-300 bg-gray-50 sm:rounded-md sm:border dark:border-gray-400 dark:bg-gray-900"><article id="IC_kwDOK-znbM5wTgYK" class="relative mx-8 my-3 flex flex-col"><div class="VPPost__content vp-doc prose dark:prose-invert prose-a:hover:decoration-dotted prose-a:break-all mt-4 max-w-full flex-grow"><p><a href="https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/run-time-policy-based-isolation-with-iam.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/run-time-policy-based-isolation-with-iam.html</a></p>
+<h2 id="implementing-pool-isolation-run-time-policy-based-isolation-with-iam" tabindex="-1">Implementing pool isolation - Run-time, policy-based isolation with IAM <a class="header-anchor" href="#implementing-pool-isolation-run-time-policy-based-isolation-with-iam" aria-label="Permalink to &quot;Implementing pool isolation - Run-time, policy-based isolation with IAM&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>プール型の環境では、リソースを分離する戦略を見つけるために IAM を利用するのが一般的</li>
+<li>しかし上述したように、プール型で分離を実現するためには、 IAM の適用方法に工夫が必要</li>
+<li>コンビュート・ノードの IAM スコープを継承するかわりに、プール型分離モデルを実行時に矯正するためのコードを書く必要がある</li>
+<li>図13(元サイト参照のこと)はこのモデルの概念図
+<ul>
+<li>この図では、いくつかの下流リソース(DB, S3バケットなど)へのアクセスが必要なマイクロサービスがある</li>
+<li>このマイクロサービスはプール型でデプロイされ、複数テナントのリクエストを処理する</li>
+<li>このマイクロサービスの仕事は、リクエストを処理する時に、テナントが別のテナントのリソースへの境界を超え内容に製薬を適用すること</li>
+<li>この図では、マイクロサービスが分離マネージャと連携して、マイクロサービス内のコードによってアクセスされるリソースを制御するために使用されるスコープ・コンテキストを取得していることがわかる</li>
+<li>この概念モデルで、未確定要素をある程度見渡すことができる</li>
+<li>しかしこれを実際に見るには、このコンテキストがどのひょうに表現されて起用されるかを説明する、より具体的な戦略を考えていく必要がある</li>
+</ul>
+</li>
+<li>図14(元サイト参照のこと)はテナント・リソースへのアクセスの実行時制限の一部として、IAM　がどのように利用できるかを詳しく示している
+<ul>
+<li>実行時にポリシーの設定と適用を行う場合のライフサイクル全体を見ることができる</li>
+<li>最初のステップでは、テナントがシステムにオンボードする
+<ul>
+<li>このプロセスでは、テナントのユーザと IAM ポリシーを設定する(step 2-3)</li>
+</ul>
+</li>
+<li>テナントがオンボードしたら、アプリケーションのマイクロサービスに通知する(step 4)
+<ul>
+<li>このマイクロサービスはプール型で実行されているため、全テナントのリソースにアクセスできる広範な IAM スコープでデプロイされている</li>
+<li>我々の仕事は、このサービスに送信されるリクエストを見て、そのリクエストのスコープを単一のテナントに絞り込むこと</li>
+<li>これを分離マネージャに現在のテナントの認証セットを要求することで実現する(step 5)</li>
+<li>分離マネージャはテナントの IAM ポリシーを検索する(step 6)</li>
+<li>そしてテナントにスコープされた認証情報セットを生成し、呼び出し元のマイクロサービスに返す</li>
+<li>最後に、マイクロサービスは返却された認証情報を使って DB にアクセスする(step 7)</li>
+<li>これらのテナントにスコープされた新しい認証情報により、マイクロサービスのコードは別テナントのリソースにアクセスできないようになる</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>このモデルでは、基本的にマイクロサービスが他のリソースにアクセスしようとするたびに、このテナントコンテキストが適用されることになる</li>
+<li>この制約は、「<strong>マイクロサービスは、各テナントのリソースにアクセスする前に新しい認証情報を取得する</strong>」という規約の結果として適用される</li>
+</ul>
+</div><a href="#IC_kwDOK-znbM5wTgYK" class="inline-block self-end text-sm text-gray-500 dark:text-gray-400"><time>January 10, 2024 04:10</time></a></article></li><li class="mt-3 border-b border-t border-gray-300 bg-gray-50 sm:rounded-md sm:border dark:border-gray-400 dark:bg-gray-900"><article id="IC_kwDOK-znbM5wVpba" class="relative mx-8 my-3 flex flex-col"><div class="VPPost__content vp-doc prose dark:prose-invert prose-a:hover:decoration-dotted prose-a:break-all mt-4 max-w-full flex-grow"><p><a href="https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/scaling-and-managing-pool-isolation-policies.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/scaling-and-managing-pool-isolation-policies.html</a></p>
+<h2 id="implementing-pool-isolation-scaling-and-managing-pool-isolation-policies" tabindex="-1">Implementing pool isolation - Scaling and managing pool isolation policies <a class="header-anchor" href="#implementing-pool-isolation-scaling-and-managing-pool-isolation-policies" aria-label="Permalink to &quot;Implementing pool isolation - Scaling and managing pool isolation policies&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>IAM ポリシーは強力な分離構造を提供する一方で、SaaS プロバイダにスケーリング上の課題を突きつけることもある</li>
+<li>システム上に多数のテナントがあり、ポリシーの母数が多い場合、 IAM サービスの限界を超える可能性がある</li>
+<li>テナントの数やポリシーの複雑さが増すにつて、これらのポリシー管理が難しくなる可能性もある</li>
+<li>こういった場合、一部の SaaS プロバイダは実行jIに　IAM ポリシーを生成して管理する方法について、別のアプローチを試みる</li>
+</ul>
+<hr>
+<ul>
+<li>この課題へのアプローチの一つは、IAM ポリシーをランタイムに生成するモデルへの移行である
+<ul>
+<li>現在の呼び出しコンテキストを調べ、必要な IAM ポリシーをその場で生成する仕組みをシステムに実装する、というアイデア</li>
+<li>これにより、ポリシーは IAM から移動し(一過性であるため)、すべてのテナントをサポートするのに必要なポリシー数の潜在的な制限に対処できるようになる</li>
+<li>図15(元サイト参照のこと)は、このポリシー動的生成機構の概要を示している
+<ul>
+<li>このフローは、先程の例と同じ分離マネージャから始まる</li>
+<li>しかし直接 IAM にアクセスし、アクセス・スコープの制限に必要なポリシーを取得するのではなく、一連のステップを踏んでポリシーを生成する</li>
+<li>分離マネージャはまず、トークン自動販売機にリクエストを行い、テナント・スコープのトークンを取得する(step 1)</li>
+<li>テナント分離モデル用に事前に定義したテンプレートにアクセスするのはトークン自動販売機の責務(step 2)
+<ul>
+<li>これらは従来の IAM ポリシーの動的な部分を設定できるテンプレートファイルだと考えられる</li>
+<li>ファイルの重要な要素(テナントのコンテキストを表す要素)は記入されていない</li>
+<li>たとえば、DynamoDB のテーブル名やテーブルのキー条件をテナント識別子で埋めることができる</li>
+</ul>
+</li>
+<li>必要なテンプレートが取得できたら、次はトークン生成機にトークンをリクエストする(step 3)
+<ul>
+<li>このステップでは、テナント・コンテキストを渡す</li>
+<li>トークン生成機はテナントの詳細情報をテンプレートに埋め込み、完全に hydrated な IAM ポリシーを作成する(step 4-5)</li>
+<li>最後にトークン生成機はこのポリシーを利用して、ポリシーに則ったスコープを付与されたトークンを生成する</li>
+<li>トークンは分離マネージャに戻され、各テナントのリソースにアクセス可能になる(step 6-7)</li>
+</ul>
+</li>
+<li>これらのポリシーをテンプレートに移行することで、これらのポリシーがテナント分離要件を実施することを保証する責任を、あなたが負うことになる</li>
+<li>理想的には、このメカニズムの詳細は開発者の視界にほとんど入らないため、何か問題が発生する可能性は低くなる</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>このモデルの利点の一つは管理面
+<ul>
+<li>各テナントごとに個別のポリシーを作成する必要がないため、隔離ポリシーを変更する場合、その変更を適用するための経路がより簡単になる</li>
+<li>また、これらのポリシー・テンプレートのコンテンツ・ライフサイクル（独自のパイプラインを通じたバージョン管理とデプロイ）を管理することができる</li>
+</ul>
+</li>
+</ul>
+</div><a href="#IC_kwDOK-znbM5wVpba" class="inline-block self-end text-sm text-gray-500 dark:text-gray-400"><time>January 10, 2024 12:04</time></a></article></li><!--]--></ul><!----><div class="flex w-full justify-end py-3 text-gray-600 dark:text-white"><a href="https://github.com/yshrsmz/scraps/issues/4" target="_blank" class="inline-flex items-center font-medium underline"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="h-6 w-6 inline-block" role="img"><path d="M21.731 2.269a2.625 2.625 0 0 0-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 0 0 0-3.712ZM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 0 0-1.32 2.214l-.8 2.685a.75.75 0 0 0 .933.933l2.685-.8a5.25 5.25 0 0 0 2.214-1.32l8.4-8.4Z"></path><path d="M5.25 5.25a3 3 0 0 0-3 3v10.5a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3V13.5a.75.75 0 0 0-1.5 0v5.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5V8.25a1.5 1.5 0 0 1 1.5-1.5h5.25a.75.75 0 0 0 0-1.5H5.25Z"></path></svg><span class="mx-2">編集する</span></a></div></div></div><footer class="VPFooter flex w-full flex-col items-center py-6 pt-24"><div class="flex max-w-4xl flex-col items-center"><div><p class="sr-only">Social links</p><ul class="flex flex-row items-center gap-4"><li class="h-8 w-8"><a href="https://feeds.feedburner.com/codingfeline" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="fill-current dark:text-gray-100"><title>RSS</title><path fill-rule="evenodd" d="M3.75 4.5a.75.75 0 01.75-.75h.75c8.284 0 15 6.716 15 15v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75C18 11.708 12.292 6 5.25 6H4.5a.75.75 0 01-.75-.75V4.5zm0 6.75a.75.75 0 01.75-.75h.75a8.25 8.25 0 018.25 8.25v.75a.75.75 0 01-.75.75H12a.75.75 0 01-.75-.75v-.75a6 6 0 00-6-6H4.5a.75.75 0 01-.75-.75v-.75zm0 7.5a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" clip-rule="evenodd"></path></svg></a></li><li class="h-8 w-8"><a href="https://github.com/yshrsmz" target="_blank" rel="noopener noreferrer"><svg role="img" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current dark:text-gray-100"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a></li><li class="h-8 w-8"><a href="https://stackexchange.com/users/456702/yshrsmz" target="_blank" rel="noopener noreferrer"><svg role="img" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current dark:text-gray-100"><title>Stack Exchange</title><path d="M21.728 15.577v1.036c0 1.754-1.395 3.177-3.1 3.177h-.904L13.645 24v-4.21H5.371c-1.704 0-3.099-1.423-3.099-3.181v-1.032h19.456zM2.275 10.463h19.323v3.979H2.275v-3.979zm0-5.141h19.323v3.979H2.275V5.322zM18.575 0c1.681 0 3.023 1.42 3.023 3.178v1.034H2.275V3.178C2.275 1.422 3.67 0 5.375 0h13.2z"></path></svg></a></li><li class="h-8 w-8"><a href="https://stackoverflow.com/users/855599/yshrsmz" target="_blank" rel="noopener noreferrer"><svg role="img" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current dark:text-gray-100"><title>Stack Overflow</title><path d="M15.725 0l-1.72 1.277 6.39 8.588 1.716-1.277L15.725 0zm-3.94 3.418l-1.369 1.644 8.225 6.85 1.369-1.644-8.225-6.85zm-3.15 4.465l-.905 1.94 9.702 4.517.904-1.94-9.701-4.517zm-1.85 4.86l-.44 2.093 10.473 2.201.44-2.092-10.473-2.203zM1.89 15.47V24h19.19v-8.53h-2.133v6.397H4.021v-6.396H1.89zm4.265 2.133v2.13h10.66v-2.13H6.154Z"></path></svg></a></li><li class="h-8 w-8"><a href="https://twitter.com/_yshrsmz" target="_blank" rel="noopener noreferrer"><svg role="img" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current dark:text-gray-100"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"></path></svg></a></li><li class="h-8 w-8"><a href="https://bsky.app/profile/codingfeline.com" target="_blank" rel="noopener noreferrer"><svg class="octicon fill-current dark:text-gray-100" xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 16 16"><title>Bluesky</title><path d="M8 7.2c-.72-1.4-2.7-4.04-4.53-5.33C1.7.63 1.04.84.6 1.04.1 1.27 0 2.05 0 2.51c0 .46.25 3.77.42 4.32.54 1.82 2.47 2.45 4.25 2.25-2.6.38-4.92 1.33-1.88 4.71 3.33 3.46 4.57-.74 5.21-2.87.64 2.13 1.37 6.18 5.16 2.87 2.84-2.87.78-4.33-1.83-4.71 1.78.2 3.71-.43 4.25-2.25.17-.55.42-3.86.42-4.32 0-.46-.09-1.24-.6-1.47-.44-.2-1.11-.42-2.87.83A17.87 17.87 0 0 0 8 7.2Z" fill="currentColor"></path></svg></a></li><li class="h-8 w-8"><a href="https://reddit.com/user/yshrsmz" target="_blank" rel="noopener noreferrer"><svg role="img" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current dark:text-gray-100"><title>Reddit</title><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"></path></svg></a></li></ul></div><p class="mt-4">© 2020 - 2026, yshrsmz</p><a href="/privacy-policy/" class="underline">privacy policy</a></div></footer></div></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"2014_08_05_howto-update-mac-server-push-certificates_index.md\":\"CizOv6mG\",\"2015_03_30_howto-avoid-bitmap-too-large_index.md\":\"MgY_5Wsx\",\"2015_04_17_android-how-to-get-apk-from-device_index.md\":\"djP_-Zna\",\"2015_04_20_virtualbox-how-to-access-localhost-from-guest_index.md\":\"kt_8O4lu\",\"2015_04_21_how-to-update-self-hosting-ghost_index.md\":\"BrKy9vhk\",\"2015_04_22_android-support-library-221-released_index.md\":\"BRAr5h7W\",\"2015_05_08_customize-parse-com-password-reset-page_index.md\":\"5QQYBAXI\",\"2015_06_12_things-to-do-when-failed-to-install-wine-via-homebrew_index.md\":\"B-hVED_y\",\"2015_06_17_things-to-do-when-failed-to-run-node-on-windows_index.md\":\"BL10XzxP\",\"2015_06_27_how-to-publish-chrome-extension_index.md\":\"BoS8_8Xa\",\"2015_06_29_how-to-migrate-to-butterknife-7_index.md\":\"BxorjBSO\",\"2015_07_16_android-detect-keyboard-visibility-change_index.md\":\"DZ1GXn8C\",\"2015_07_30_android_how_to_detect_app_is_background_or_not_index.md\":\"DUZnovSS\",\"2015_08_21_nested-fragment-onactivityresult-not-called_index.md\":\"BWBRIf-X\",\"2015_09_10_omnitweety-tweet-from-chrome-omnibox_index.md\":\"rAUxig4Q\",\"2015_09_12_app-created-during-summer-vacation_index.md\":\"CBH1pbMj\",\"2015_09_15_reactnative-for-android-hello-world_index.md\":\"Dr8MaUK2\",\"2015_09_17_reactnative-for-android-debugging-on-real-device_index.md\":\"B6Q_aLGo\",\"2015_09_24_define-matchparent-wrapcontent-in-dimens_index.md\":\"CDZvhDsH\",\"2015_10_13_compositesubscription-is-reusable_index.md\":\"B2FgOH4g\",\"2015_11_10_omnitweety-andrid-released-share-url-twitter_index.md\":\"IumICuWZ\",\"2015_12_07_android-framework-code-reading-2_index.md\":\"Cdm676Lj\",\"2016_01_09_lookingback2015_index.md\":\"BbGLz_2j\",\"2016_02_15_customize-wakatime-project_index.md\":\"SuDfXXlc\",\"2016_06_28_rxjava-interval-oncomplete_index.md\":\"CVq9c4cA\",\"2016_07_05_ignore-directory-androidlint_index.md\":\"UiXWsgTI\",\"2016_07_08_how-to-close-realm-upon-unsubscribe_index.md\":\"DdAacT5J\",\"2016_07_21_how-to-close-realm-upon-unsubscribe-on-same-thread_index.md\":\"CmZ4EnlQ\",\"2016_09_15_connect-recoverymode-android-ubuntu_index.md\":\"DAeIUKnr\",\"2016_10_15_go-get-private-repository_index.md\":\"BaA5lDQR\",\"2016_11_14_monotweety-android-released_index.md\":\"Dc5Tbcn_\",\"2016_11_25_docker-v1-1-0-on-circleci_index.md\":\"BnQu81gU\",\"2016_12_05_repeatwhen-filter-takewhile_index.md\":\"BN6BlghH\",\"2016_12_31_lookingback-2016_index.md\":\"wHarpeYb\",\"2017_04_05_things-to-do-when-ubuntu-boot-disk-is-full_index.md\":\"mVUwmZXl\",\"2017_05_19_how-viewmodel-retail-itself_index.md\":\"Ddf4ZuU_\",\"2017_08_29_letssplit-buildlog_index.md\":\"P0biwa4u\",\"2017_10_03_dactyl-keyboard-buildlog_index.md\":\"CxhcD0L0\",\"2018_01_11_sqlite-explainqueryplan_index.md\":\"BKDXQoh2\",\"2018_01_13_lookingback-2017_index.md\":\"Bzn8PRc3\",\"2018_01_15_gradle-all-zip_index.md\":\"3f6ovyGS\",\"2018_03_27_settingup-github-slack_index.md\":\"BzH_eUHX\",\"2018_05_01_final-newline-androidstudio_index.md\":\"DIoER6L7\",\"2018_05_06_navigationbar-color_index.md\":\"BrChdpmk\",\"2018_06_10_migrate-to-androidx_index.md\":\"DF9Gzhyr\",\"2018_06_13_twitterkit-calback-url-lock_index.md\":\"D4z_vdjG\",\"2018_07_22_flutter-statefullwidget-build_index.md\":\"DAXgol9P\",\"2018_08_19_publishing-dart-package_index.md\":\"DVbsYUW9\",\"2018_11_29_debugging-iap-app-signing_index.md\":\"BPkxMyHL\",\"2018_11_29_sincetimer-android-released_index.md\":\"DPx9XUQ9\",\"2018_12_04_cst01-undelivered_index.md\":\"ZlK1Iema\",\"2018_12_05_bestbuy2018_index.md\":\"C82o7Svb\",\"2018_12_11_agent-undelivered_index.md\":\"BfTV0xPc\",\"2018_12_14_kraftwerk-undelivered_index.md\":\"BHgmhHTD\",\"2018_12_31_lookingback-2018_index.md\":\"C7YS7xLi\",\"2019_01_28_migrate-kotlin1320_index.md\":\"JJDonbrY\",\"2019_02_27_buildkonfig-kotlin-mpp_index.md\":\"mJ3SCMAM\",\"2019_02_27_kgql-graphql-kotlin-mpp_index.md\":\"BlyM5qrK\",\"2019_03_20_chrome-extension-tabs2links_index.md\":\"Dab3YoZ0\",\"2019_03_26_change-dns-server-android-emulator_index.md\":\"D0PTGWjF\",\"2019_04_04_kotlin-channel-and-android-lifecycle_index.md\":\"CHrAtlym\",\"2019_04_08_kotlin-channel-and-android-lifecycle-en_index.md\":\"y8QQHI5Y\",\"2019_04_16_thoughts-on-kotlin-mpp_index.md\":\"DusJOU4K\",\"2019_06_14_using-coroutines-from-swift-en_index.md\":\"CF4AEadJ\",\"2019_07_25_ignoring-tests-in-particular-platform-kotlin-mpp-en_index.md\":\"B8vmp67u\",\"2019_11_06_robolectric-and-kotlin-mpp-commontest_index.md\":\"LmG4e963\",\"2019_12_31_bestbuy2019_index.md\":\"BVsunpHf\",\"2019_12_31_lookingback-2019_index.md\":\"CMBbFTvQ\",\"2020_02_03_2019-stollen-wrapup_index.md\":\"CxqUGR6V\",\"2020_04_08_dealing-with-invalid-type-code-00_index.md\":\"DIXOH5FB\",\"2020_04_18_actions-checkout-v2-push_index.md\":\"CtBTQsB2\",\"2020_06_05_tech-stack-of-androiddagashi_index.md\":\"DzadMRCn\",\"2020_06_13_nuxt-generate-fallback_index.md\":\"CJNIi13Y\",\"2020_06_29_nuxtserverinit-in-spa-fallback_index.md\":\"4XIS_O7_\",\"2020_12_18_rakuten-mobile-oneplus8pro_index.md\":\"Brvb4sbl\",\"2020_12_26_review-kmp-in-production_index.md\":\"avo0p2Mr\",\"2020_12_28_bestbuy2020_index.md\":\"ClZbmf1m\",\"2020_12_31_lookingback-2020_index.md\":\"D2gBor6w\",\"2021_04_27_yarn-install-node-env_index.md\":\"SYPQhsSb\",\"2021_04_28_tailwindcss-babel-preval_index.md\":\"B45s3opW\",\"2021_06_06_dedupe-react-type-conflict_index.md\":\"Z5OpOGjs\",\"2021_09_16_kmp-and-bom_index.md\":\"Cgvx862i\",\"2021_12_29_2021-stollen-wrapup_index.md\":\"BwlJJxy5\",\"2021_12_30_bestbuy2021_index.md\":\"D4N1Npza\",\"2021_12_31_lookingback-2021_index.md\":\"X4hH2z2n\",\"2022_05_03_push-dir-to-actions-gh-pages_index.md\":\"BmK5gyZg\",\"2022_07_12_mac-setup-2022_index.md\":\"Dj8lx8AQ\",\"2022_07_14_synology-nas-plex_index.md\":\"DNBuBCSi\",\"2022_08_12_detect-branch-from-commit_index.md\":\"r8KIBOKy\",\"2022_08_19_android-docker-image-for-codebuild_index.md\":\"CuVsH_KZ\",\"2022_09_16_okhttp-post-json-content-type_index.md\":\"DHcMyr1R\",\"2022_10_01_honkit-pdf-github-actions_index.md\":\"Cew4D8XV\",\"2022_12_16_fastdateformat-timezone_index.md\":\"D_QrZc_J\",\"2022_12_26_bestbuy2022_index.md\":\"BqOVpA4K\",\"2022_12_29_2022-stollen-wrapup_index.md\":\"B-6pe1vE\",\"2022_12_31_2022-wrapup_index.md\":\"BuVdi8OM\",\"2023_03_10_1to2-wrapup_index.md\":\"D_qAM8oK\",\"2023_05_03_3to4-wrapup_index.md\":\"CyLxYs0u\",\"2023_05_31_jest-environment-directory_index.md\":\"CVRkwHZi\",\"2023_07_15_5to6-wrapup_index.md\":\"-e54Ry1r\",\"2023_07_28_github-actions-public-ecr-toomanyrequests_index.md\":\"BPF_l2MG\",\"2023_08_11_why-jetpack-compose-over-android-view_index.md\":\"DE7qBwdc\",\"2023_08_20_renewed-blog-vitepress_index.md\":\"BGlC0KRF\",\"2023_08_26_vitepress-ogp_index.md\":\"DO1k_FZS\",\"2023_08_27_7to8-wrapup_index.md\":\"BQnDpHS8\",\"2023_09_16_things-done-migrating-to-galaxy_index.md\":\"w2X9M3mE\",\"2023_11_07_9to10-wrapup_index.md\":\"DLT2EBsY\",\"2023_12_24_bestbuy2023_index.md\":\"BxpNQLZM\",\"2023_12_28_11to12-wrapup_index.md\":\"COx-Cmb0\",\"2024_01_03_2023-wrapup_index.md\":\"3ZIW2kgE\",\"2024_02_07_fix-gitkraken-husky-githooks_index.md\":\"DjQJ-p-R\",\"2024_02_24_sqlstitch_index.md\":\"DVaOJV_R\",\"2024_03_09_1to2-books-read_index.md\":\"4Rr17mQe\",\"2024_03_09_1to2-wrapup_index.md\":\"YbZlBrLi\",\"2024_05_07_3to4-wrapup_index.md\":\"CkfoRFcZ\",\"2024_06_15_3to4-books-read_index.md\":\"-_sStyy-\",\"2024_07_06_5to6-books-read_index.md\":\"ZskFbcVX\",\"2024_07_06_5to6-wrapup_index.md\":\"DBIhcQL9\",\"2024_09_03_7to8-wrapup_index.md\":\"DWO6zgMX\",\"2024_09_06_merge-vitest-coverages_index.md\":\"ehkTXCK8\",\"2024_09_07_7to8-books-read_index.md\":\"B_gkeaPp\",\"2024_09_27_husky-vscode_index.md\":\"HoJy2pbC\",\"2024_11_04_9to10-wrapup_index.md\":\"BlWW73Q5\",\"2024_11_11_android-sharedprefs-newline-spaces_index.md\":\"Bf0ZKWVb\",\"2024_11_17_9to10-books-read_index.md\":\"BBMIAsVc\",\"2024_12_07_fastify-openapi-without-server_index.md\":\"DFAZwv3A\",\"2024_12_27_how-nitropack-output_index.md\":\"CeCNo3rN\",\"2024_12_30_bestbuy2024_index.md\":\"JbEBBLgR\",\"2024_12_31_11to12-wrapup_index.md\":\"CRmRFvz3\",\"2024_12_31_2024-wrapup_index.md\":\"CT06ocxn\",\"2025_02_02_tailwindcss-v4-migration_index.md\":\"BNahkqcU\",\"2025_03_01_01to02-wrapup_index.md\":\"CXo6xZJM\",\"2025_05_03_03to04-wrapup_index.md\":\"C6ghC-0p\",\"2025_07_11_05to06-wrapup_index.md\":\"DzMycB4D\",\"2025_07_23_compose-in-service_index.md\":\"BJ8T8_9h\",\"2025_07_24_sharedpreferences-to-datastore-migration_index.md\":\"e7vCChm6\",\"2025_08_31_07to08-wrapup_index.md\":\"J7oREybg\",\"2025_10_31_09to10-wrapup_index.md\":\"ChCTa6pL\",\"2025_12_31_11to12-wrapup_index.md\":\"CWFRKsF6\",\"2025_12_31_bestbuy2025_index.md\":\"DF1L9O4a\",\"2026_01_01_2025-wrapup_index.md\":\"DYIeD-zR\",\"2026_01_01_keyboardio-atreus-vial_index.md\":\"Dccdstge\",\"2026_01_18_development-environment-2026_index.md\":\"BmZLiD2n\",\"about_index.md\":\"Sj_rZFBZ\",\"index.md\":\"DDXHYv1W\",\"posts_index.md\":\"DQbla3E9\",\"privacy-policy_index.md\":\"DDoHvWSv\",\"products_index.md\":\"Ch_dfrM2\",\"products_monotweety_privacy-policy_index.md\":\"CTVdydge\",\"products_omnitweety-android_privacy-policy_index.md\":\"v_aD0rM0\",\"products_sincetimer_index.md\":\"Tb7d9uuO\",\"products_sincetimer_privacy-policy_index.md\":\"Dzi2mCge\",\"recent-contributions_index.md\":\"CR7yyzwe\",\"scraps_2_index.md\":\"DXo8S8sB\",\"scraps_4_index.md\":\"pZ0m-gff\",\"scraps_5_index.md\":\"pyHzhqOb\",\"scraps_7_index.md\":\"DbsK2cuc\",\"scraps_8_index.md\":\"AGHeQnOx\",\"scraps_9_index.md\":\"B5GRoJSK\",\"scraps_index.md\":\"Dw9S9wQt\",\"tags_index.md\":\"C0jcBMIV\",\"tapping-term-tester_index.md\":\"nmxHYpjz\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"ja-JP\",\"dir\":\"ltr\",\"title\":\"CodingFeline\",\"description\":\"Thoughts, stories and ideas\",\"base\":\"/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":false,\"themeConfig\":{},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":false}");</script>
+    
+  </body>
+</html>
