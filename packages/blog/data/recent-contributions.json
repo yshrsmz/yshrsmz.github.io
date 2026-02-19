@@ -1,11 +1,41 @@
 {
-  "updated_at": 1771202358679,
+  "updated_at": 1771461548936,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/kover-report-action",
+      "title": "feat: make module coverage table collapsible with threshold summary",
+      "url": "https://github.com/yshrsmz/kover-report-action/pull/111",
+      "created_at": "2026-02-17T08:36:05Z",
+      "state": "merged",
+      "number": 111,
+      "type": "User",
+      "stars": 2
+    },
+    {
+      "repo": "yshrsmz/sqlstitch",
+      "title": "chore: add Claude Code configuration",
+      "url": "https://github.com/yshrsmz/sqlstitch/pull/80",
+      "created_at": "2026-02-16T06:39:53Z",
+      "state": "merged",
+      "number": 80,
+      "type": "User",
+      "stars": 2
+    },
+    {
+      "repo": "yshrsmz/sqlstitch",
+      "title": "chore: update cargo-dist from v0.29.0 to v0.30.3",
+      "url": "https://github.com/yshrsmz/sqlstitch/pull/79",
+      "created_at": "2026-02-16T06:38:29Z",
+      "state": "merged",
+      "number": 79,
+      "type": "User",
+      "stars": 2
+    },
     {
       "repo": "yshrsmz/kover-report-action",
       "title": "chore: restructure devcontainer (simplify, drop aqua)",
@@ -34,7 +64,7 @@
       "state": "open",
       "number": 238,
       "type": "User",
-      "stars": 1353
+      "stars": 1354
     },
     {
       "repo": "yshrsmz/changelog-compose",
@@ -475,36 +505,6 @@
       "number": 42,
       "type": "User",
       "stars": 14
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "test: add comprehensive test coverage for interspersed flag support (Phase 3)",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/102",
-      "created_at": "2025-09-28T12:26:54Z",
-      "state": "merged",
-      "number": 102,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "refactor: remove custom flag helpers and use pflag directly (Phase 2)",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/101",
-      "created_at": "2025-09-28T10:54:52Z",
-      "state": "merged",
-      "number": 101,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/ticketflow",
-      "title": "Phase 1: Replace standard flag package with pflag for interspersed flag support",
-      "url": "https://github.com/yshrsmz/ticketflow/pull/100",
-      "created_at": "2025-09-27T14:42:25Z",
-      "state": "merged",
-      "number": 100,
-      "type": "User",
-      "stars": 0
     }
   ]
 }
