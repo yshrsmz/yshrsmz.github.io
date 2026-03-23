@@ -20,7 +20,7 @@ jobs:
       - uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320 # v5.0.0
 
       - name: Setup mise
-        uses: jdx/mise-action@e79ddf65a11cec7b0e882bedced08d6e976efb2d # v3.6.2
+        uses: jdx/mise-action@1648a7812b9aeae629881980618f079932869151 # v4.0.1
 
       - name: Check Node.js version
         run: |
