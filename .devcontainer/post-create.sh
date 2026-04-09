@@ -17,6 +17,13 @@ cp .devcontainer/mise-global.toml "$HOME/.config/mise/config.toml"
 
 mise trust -y
 mise trust -y "$HOME/.config/mise/config.toml"
+
+# Disable keyboxd: GnuPG 2.4 の keyboxd は mise の gpg --verify と相性が悪く
+# "No public key" エラーになるため、従来の pubring.kbx 形式に戻す。
+mkdir -p "$HOME/.gnupg"
+chmod 700 "$HOME/.gnupg"
+: > "$HOME/.gnupg/common.conf"
+
 mise i
 
 # Setup npm global prefix in user directory

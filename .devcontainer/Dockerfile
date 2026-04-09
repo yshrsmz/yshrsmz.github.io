@@ -20,9 +20,9 @@ RUN apt-get update && \
     chsh -s /bin/zsh vscode
 
 # Install mise (pinned version, installed system-wide)
-ARG MISE_VERSION=v2026.4.0
-RUN install -d -o vscode -g vscode /opt/mise && \
-    curl -fsSL https://mise.run | MISE_VERSION=${MISE_VERSION} MISE_INSTALL_PATH=/usr/local/bin/mise sh && \
+# Using official installer to ensure latest bundled GPG keys for Node.js release verification
+ARG MISE_VERSION=v2026.4.7
+RUN curl -fsSL https://mise.run | MISE_VERSION=${MISE_VERSION} MISE_INSTALL_PATH=/usr/local/bin/mise sh && \
     chmod +x /usr/local/bin/mise
 
 USER vscode
