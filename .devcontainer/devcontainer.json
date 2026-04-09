@@ -1,0 +1,44 @@
+{
+  "name": "yshrsmz.github.io Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "vscode",
+  "features": {
+    "ghcr.io/devcontainers-extra/features/mise:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "biomejs.biome",
+        "bierner.markdown-mermaid",
+        "editorconfig.editorconfig",
+        "hverlin.mise-vscode",
+        "vue.volar"
+      ]
+    }
+  },
+  "mounts": [
+    "source=yshrsmz-blog-claude,target=/home/vscode/.claude,type=volume",
+    "source=yshrsmz-blog-gh-config,target=/home/vscode/.config/gh,type=volume",
+    "source=yshrsmz-blog-mise-data,target=/mnt/mise-data,type=volume",
+    "source=yshrsmz-blog-shell-history,target=/home/vscode/.shell_history,type=volume",
+    "source=yshrsmz-blog-codex,target=/home/vscode/.codex,type=volume",
+    "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,readonly",
+    "source=${localEnv:SSH_AUTH_SOCK},target=/ssh-agent,type=bind"
+  ],
+  "containerEnv": {
+    "MISE_DATA_DIR": "/mnt/mise-data",
+    "MISE_STATE_DIR": "/mnt/mise-data/state",
+    "MISE_CACHE_DIR": "/mnt/mise-data/cache",
+    "CLAUDE_CONFIG_DIR": "/home/vscode/.claude",
+    "SSH_AUTH_SOCK": "/ssh-agent"
+  },
+  "remoteEnv": {
+    "PATH": "${containerEnv:PATH}:/mnt/mise-data/shims"
+  },
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "postAttachCommand": "bash .devcontainer/post-attach.sh"
+}
