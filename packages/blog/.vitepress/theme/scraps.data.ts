@@ -16,7 +16,7 @@ function formatDate(date?: string): string | undefined {
 }
 
 export default {
-  watch: ['data/scraps/*.json'],
+  watch: ['../../data/scraps/*.json'],
   async load(watchedFiles: string[]) {
     const config: SiteConfig = global.VITEPRESS_CONFIG
 
