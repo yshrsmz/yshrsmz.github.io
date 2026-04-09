@@ -1,5 +1,5 @@
 {
-  "updated_at": 1775436312428,
+  "updated_at": 1775695018754,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
@@ -84,7 +84,7 @@
       "state": "open",
       "number": 238,
       "type": "User",
-      "stars": 1366
+      "stars": 1365
     },
     {
       "repo": "yshrsmz/changelog-compose",
