@@ -10,7 +10,7 @@ declare const data: EntriesForTag[]
 export { data }
 
 export default {
-  watch: ['data/scraps/*.json'],
+  watch: ['../../data/scraps/*.json'],
   async load(watchedFiles: string[]) {
     const scraps = watchedFiles
       .map((file) => readFileSync(file, 'utf-8'))

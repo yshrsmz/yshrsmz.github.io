@@ -7,7 +7,7 @@ declare const data: Contributions
 export { data }
 
 export default {
-  watch: ['data/recent-contributions.json'],
+  watch: ['../../data/recent-contributions.json'],
   async load(watchedFiles: string[]) {
     assert(
       watchedFiles.length === 1,
