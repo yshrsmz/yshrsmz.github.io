@@ -15,22 +15,22 @@
   "devDependencies": {
     "@resvg/resvg-js": "2.6.2",
     "@tailwindcss/typography": "0.5.19",
-    "@tailwindcss/vite": "4.2.1",
+    "@tailwindcss/vite": "4.2.2",
     "autoprefixer": "10.4.27",
     "date-fns": "4.1.0",
     "fast-glob": "3.3.3",
     "feed": "5.2.0",
     "globals": "17.4.0",
-    "postcss": "8.5.8",
+    "postcss": "8.5.9",
     "postcss-import": "16.1.1",
     "postcss-nesting": "14.0.0",
     "prettier-plugin-tailwindcss": "0.7.2",
-    "satori": "0.25.0",
+    "satori": "0.26.0",
     "sitemap": "9.0.1",
-    "tailwindcss": "4.2.1",
+    "tailwindcss": "4.2.2",
     "typescript": "5.9.3",
     "vitepress": "1.6.4",
-    "vue": "3.5.29"
+    "vue": "3.5.32"
   },
   "dependencies": {
     "@vueuse/core": "14.2.1"
