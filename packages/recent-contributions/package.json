@@ -5,8 +5,7 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "tsx src/index.ts",
-    "test": "vitest"
+    "start": "tsx src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -15,8 +14,7 @@
     "@octokit/types": "16.0.0",
     "@types/node": "24.12.2",
     "tsx": "4.21.0",
-    "typescript": "5.9.3",
-    "vitest": "4.1.4"
+    "typescript": "5.9.3"
   },
   "dependencies": {
     "octokit": "5.0.5"

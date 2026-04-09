@@ -25,6 +25,9 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: pnpm install --frozen-lockfile
 
+      - name: test
+        run: pnpm -r --if-present test
+
       - name: build
         run: pnpm blog:build
 
