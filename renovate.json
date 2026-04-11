@@ -10,6 +10,11 @@
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch",
       "matchPackageNames": ["*"]
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "matchDepNames": ["yshrsmz/yshrsmz.github.io"],
+      "enabled": false
     }
   ]
 }
