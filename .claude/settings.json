@@ -1,14 +1,27 @@
 {
+  "language": "Japanese",
   "permissions": {
     "allow": [
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "WebSearch"
     ],
+    "deny": [],
     "ask": [
       "Bash(codex:*)",
       "Bash(git push:*)"
-    ],
-    "deny": []
+    ]
+  },
+  "enabledPlugins": {
+    "github@yshrsmz-cc-plugins": true
+  },
+  "extraKnownMarketplaces": {
+    "yshrsmz-cc-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "yshrsmz/cc-plugins"
+      },
+      "autoUpdate": true
+    }
   }
 }
