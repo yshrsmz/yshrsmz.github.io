@@ -73,10 +73,13 @@ pnpm --filter @codingfeline/action-create-scrap package
 - **Node Version**: v22.17.1 (managed by mise in `/mise.toml`)
 
 ### Deployment
-- GitHub Actions deploys to GitHub Pages
-- Development branch (`development`) → Production branch (`master`)
+- GitHub Actions deploys to GitHub Pages via the official `actions/upload-pages-artifact` +
+  `actions/deploy-pages` workflow (Pages source = `GitHub Actions`, not a branch)
+- A push to `development` builds the site and deploys it as a Pages artifact — there is no
+  longer a `master` branch in the deployment loop (the old `peaceiris/actions-gh-pages` orphan
+  branch method was retired)
 - Workflows in `.github/workflows/`:
-  - `gh-pages.yml` - Main deployment
+  - `gh-pages.yml` - Main deployment (build job + deploy job with `github-pages` environment)
   - `ci.yml` - CI checks
   - `recent-contributions.yml` - Updates contributions
   - `_create-scrap.yml` - Creates scrap posts
