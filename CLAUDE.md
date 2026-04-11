@@ -96,6 +96,27 @@ pnpm --filter @codingfeline/action-create-scrap package
 - Vue files have relaxed linting for unused imports/variables
 - Production builds include Google Analytics and AdSense
 
+## Persisting Learnings: use `.claude/rules/` instead of auto memory
+
+This repository runs inside a devcontainer. While the `/home/vscode/.claude` directory is mounted on a named Docker volume so auto memory technically survives rebuilds, persisting engineering preferences and project conventions as **git-tracked files under `.claude/rules/*.md` is strongly preferred** over the standard auto memory system.
+
+When you would normally save a `feedback` / `project` / `reference` type memory:
+
+- **Do NOT write to** `/home/vscode/.claude/projects/.../memory/` (auto memory).
+- **Instead, write to** `.claude/rules/<topic>.md` in this repository, then commit it.
+- Each rule file should state the rule, a **Why** section, and a **How to apply** / **PR review** section (same structure as memory entries).
+- Keep one rule per file, named descriptively (e.g. `prefer-root-cause-fixes.md`).
+
+Benefits:
+- Persists across devcontainer rebuilds and volume resets.
+- Git-tracked, reviewable, and shared across sessions / machines.
+- Automatically picked up by the `github:review-pr-rules` agent for PR compliance checks.
+- Discoverable by other contributors and future Claude sessions.
+
+**Reusable workflows** (multi-step procedures, not single-rule preferences) should go under `.claude/skills/<skill-name>/SKILL.md` with the standard frontmatter, following the existing `snapshot-testing`, `major-upgrade`, and `baseline-diff` skills as templates.
+
+The auto memory system may still be used for transient `user`-type facts discovered within a session, but anything you want to survive long-term belongs in `.claude/rules/` or `.claude/skills/`.
+
 ## Writing Style
 
 - When mixing Japanese and English text, always insert a half-width space between them
