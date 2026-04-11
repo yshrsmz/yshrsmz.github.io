@@ -1,4 +1,4 @@
-import type { Issue, IssueComment } from './github'
+import type { Issue, IssueComment } from './github.js'
 
 export interface ScrapComment {
   id: string
