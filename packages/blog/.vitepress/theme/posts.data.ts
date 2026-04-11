@@ -9,6 +9,7 @@ import {
 import type { Post } from './types'
 
 declare const data: Post[]
+
 export { data }
 
 export default createContentLoader(POST_MARKDOWN_PATTERN, {

@@ -7,6 +7,7 @@ import {
 import type { EntriesForTag, Entry, Scrap } from './types'
 
 declare const data: EntriesForTag[]
+
 export { data }
 
 export default {

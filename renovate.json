@@ -1,6 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:best-practices", ":pinDependencies", ":pinDevDependencies"],
+  "extends": [
+    "config:best-practices",
+    ":pinDependencies",
+    ":pinDevDependencies"
+  ],
   "lockFileMaintenance": {
     "enabled": true
   },

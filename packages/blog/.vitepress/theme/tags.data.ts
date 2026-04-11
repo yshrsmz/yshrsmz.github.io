@@ -10,6 +10,7 @@ import {
 import type { EntriesForTag, Entry } from './types'
 
 declare const data: EntriesForTag[]
+
 export { data }
 
 export default createContentLoader(POST_MARKDOWN_PATTERN, {
