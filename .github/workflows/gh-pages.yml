@@ -4,13 +4,17 @@ on:
   push:
     branches:
       - development
+  # Pages source を `workflow` に切り替えた直後の手動再実行用
+  workflow_dispatch:
 
+# 公式推奨: 進行中の deploy は中断せず完走させる
+# 将来 PR preview workflow を足す場合は別 group 名 (pages-preview 等) に分離すること
 concurrency:
-  group: deploy-gh-pages
-  cancel-in-progress: true
+  group: pages
+  cancel-in-progress: false
 
 jobs:
-  gh-pages:
+  build:
     # skip deployment if `[skip]` is in the commit message
     if: ${{ !contains(github.event.head_commit.message, '[skip]') }}
     runs-on: ubuntu-latest
@@ -32,9 +36,27 @@ jobs:
       - name: build
         run: pnpm blog:build
 
-      - uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e # v4.0.0
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
-          personal_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./packages/blog/.vitepress/dist
-          publish_branch: master
-          force_orphan: true
+          path: ./packages/blog/.vitepress/dist
+          # .well-known/brave-rewards-verification.txt を artifact に含めるため必須
+          # (default では tar の --exclude=.[^/]* で top-level の dotfile が除外される)
+          include-hidden-files: true
+
+  deploy:
+    needs: build
+    # build が skipped だと needs 経由で deploy も skipped になるのがデフォルト挙動だが、
+    # 明示的に success を要求することで将来 `if: always()` 等の誤変更時のリグレッションを防ぐ
+    if: ${{ needs.build.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
