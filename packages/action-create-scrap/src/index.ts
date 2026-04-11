@@ -1,7 +1,7 @@
 import { getInput, info, setFailed, setOutput } from '@actions/core'
 import { context, getOctokit } from '@actions/github'
-import { getIssues } from './data/github'
-import { convertToScrap } from './data/scrap'
+import { getIssues } from './data/github.js'
+import { convertToScrap } from './data/scrap.js'
 
 async function run(): Promise<void> {
   const repo = context.repo

@@ -34,7 +34,7 @@
     "satori": "0.26.0",
     "sitemap": "9.0.1",
     "tailwindcss": "4.2.2",
-    "typescript": "5.9.3",
+    "typescript": "6.0.2",
     "vitepress": "2.0.0-alpha.17",
     "vue": "3.5.32"
   },

@@ -10,7 +10,7 @@
     "resolveJsonModule": true,
     "verbatimModuleSyntax": true,
     "jsx": "preserve",
-    "lib": ["esnext", "dom", "dom.iterable"],
+    "lib": ["esnext", "dom"],
     "typeRoots": [".vitepress/theme/types/"]
   },
   "include": ["./.vitepress/**/*"]

@@ -8,6 +8,7 @@ declare global {
 }
 
 declare const data: Scrap[]
+
 export { data }
 
 function formatDate(date?: string): string | undefined {
