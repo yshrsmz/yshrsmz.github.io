@@ -1,11 +1,61 @@
 {
-  "updated_at": 1776041304249,
+  "updated_at": 1776300591443,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/omnitweety",
+      "title": "chore(tsconfig): enable vue-tsc v3 strict options",
+      "url": "https://github.com/yshrsmz/omnitweety/pull/350",
+      "created_at": "2026-04-15T11:39:21Z",
+      "state": "merged",
+      "number": 350,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/omnitweety",
+      "title": "feat: migrate to Tailwind CSS v4",
+      "url": "https://github.com/yshrsmz/omnitweety/pull/336",
+      "created_at": "2026-04-15T08:32:50Z",
+      "state": "merged",
+      "number": 336,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/omnitweety",
+      "title": "Migrate build from @crxjs/vite-plugin to WXT",
+      "url": "https://github.com/yshrsmz/omnitweety/pull/335",
+      "created_at": "2026-04-15T07:34:42Z",
+      "state": "merged",
+      "number": 335,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/changelog-compose",
+      "title": "Update Renovate configuration for best practices",
+      "url": "https://github.com/yshrsmz/changelog-compose/pull/44",
+      "created_at": "2026-04-14T15:19:37Z",
+      "state": "merged",
+      "number": 44,
+      "type": "User",
+      "stars": 1
+    },
+    {
+      "repo": "yshrsmz/historian",
+      "title": "chore: change Renovate configuration to best practices",
+      "url": "https://github.com/yshrsmz/historian/pull/62",
+      "created_at": "2026-04-14T01:07:38Z",
+      "state": "merged",
+      "number": 62,
+      "type": "User",
+      "stars": 26
+    },
     {
       "repo": "yshrsmz/BuildKonfig",
       "title": "docs: introduce AGENTS.md and shared Claude Code settings",
@@ -14,7 +64,7 @@
       "state": "merged",
       "number": 282,
       "type": "User",
-      "stars": 1137
+      "stars": 1138
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -24,7 +74,7 @@
       "state": "merged",
       "number": 280,
       "type": "User",
-      "stars": 1137
+      "stars": 1138
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -34,7 +84,7 @@
       "state": "merged",
       "number": 278,
       "type": "User",
-      "stars": 1137
+      "stars": 1138
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -44,7 +94,7 @@
       "state": "merged",
       "number": 276,
       "type": "User",
-      "stars": 1137
+      "stars": 1138
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -54,7 +104,7 @@
       "state": "merged",
       "number": 275,
       "type": "User",
-      "stars": 1137
+      "stars": 1138
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -64,7 +114,7 @@
       "state": "merged",
       "number": 274,
       "type": "User",
-      "stars": 1137
+      "stars": 1138
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -74,7 +124,7 @@
       "state": "merged",
       "number": 273,
       "type": "User",
-      "stars": 1137
+      "stars": 1138
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -84,7 +134,7 @@
       "state": "merged",
       "number": 272,
       "type": "User",
-      "stars": 1137
+      "stars": 1138
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -94,7 +144,7 @@
       "state": "merged",
       "number": 271,
       "type": "User",
-      "stars": 1137
+      "stars": 1138
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -104,7 +154,7 @@
       "state": "merged",
       "number": 270,
       "type": "User",
-      "stars": 1137
+      "stars": 1138
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -214,7 +264,7 @@
       "state": "open",
       "number": 238,
       "type": "User",
-      "stars": 1365
+      "stars": 1364
     },
     {
       "repo": "yshrsmz/changelog-compose",
@@ -453,56 +503,6 @@
       "created_at": "2025-10-19T07:35:54Z",
       "state": "merged",
       "number": 30,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/kover-report-action",
-      "title": "Add automated release workflow",
-      "url": "https://github.com/yshrsmz/kover-report-action/pull/29",
-      "created_at": "2025-10-18T11:46:07Z",
-      "state": "merged",
-      "number": 29,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/kover-report-action",
-      "title": "Fix Claude Code permission issues in devcontainer",
-      "url": "https://github.com/yshrsmz/kover-report-action/pull/28",
-      "created_at": "2025-10-18T11:40:22Z",
-      "state": "merged",
-      "number": 28,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/kover-report-action",
-      "title": "refactor: reorganize codebase into feature-based directory structure",
-      "url": "https://github.com/yshrsmz/kover-report-action/pull/26",
-      "created_at": "2025-10-17T06:55:49Z",
-      "state": "merged",
-      "number": 26,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/kover-report-action",
-      "title": "feat: add baseline branch artifact search with pagination",
-      "url": "https://github.com/yshrsmz/kover-report-action/pull/25",
-      "created_at": "2025-10-16T14:39:27Z",
-      "state": "merged",
-      "number": 25,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/kover-report-action",
-      "title": "Phase 5: Slim Entrypoint - Complete 5-Phase Architecture Refactoring",
-      "url": "https://github.com/yshrsmz/kover-report-action/pull/22",
-      "created_at": "2025-10-15T05:46:37Z",
-      "state": "merged",
-      "number": 22,
       "type": "User",
       "stars": 2
     }
