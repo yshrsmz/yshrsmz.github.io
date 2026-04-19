@@ -49,7 +49,7 @@ jobs:
     # build が skipped だと needs 経由で deploy も skipped になるのがデフォルト挙動だが、
     # 明示的に success を要求することで将来 `if: always()` 等の誤変更時のリグレッションを防ぐ
     if: ${{ needs.build.result == 'success' }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     permissions:
       pages: write
       id-token: write
