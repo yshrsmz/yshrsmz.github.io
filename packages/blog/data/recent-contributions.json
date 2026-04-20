@@ -1,11 +1,91 @@
 {
-  "updated_at": 1776300591443,
+  "updated_at": 1776646126905,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/kover-report-action",
+      "title": "chore: migrate eligible workflows to ubuntu-slim runner",
+      "url": "https://github.com/yshrsmz/kover-report-action/pull/123",
+      "created_at": "2026-04-19T15:15:18Z",
+      "state": "merged",
+      "number": 123,
+      "type": "User",
+      "stars": 2
+    },
+    {
+      "repo": "yshrsmz/yshrsmz.github.io",
+      "title": "chore: migrate eligible workflows to ubuntu-slim runner",
+      "url": "https://github.com/yshrsmz/yshrsmz.github.io/pull/406",
+      "created_at": "2026-04-19T15:15:07Z",
+      "state": "merged",
+      "number": 406,
+      "type": "User",
+      "stars": 1
+    },
+    {
+      "repo": "yshrsmz/BuildKonfig",
+      "title": "chore: migrate eligible workflows to ubuntu-slim runner",
+      "url": "https://github.com/yshrsmz/BuildKonfig/pull/285",
+      "created_at": "2026-04-19T15:14:56Z",
+      "state": "merged",
+      "number": 285,
+      "type": "User",
+      "stars": 1144
+    },
+    {
+      "repo": "yshrsmz/unorm-dart",
+      "title": "chore: migrate eligible workflows to ubuntu-slim runner",
+      "url": "https://github.com/yshrsmz/unorm-dart/pull/73",
+      "created_at": "2026-04-19T14:53:15Z",
+      "state": "merged",
+      "number": 73,
+      "type": "User",
+      "stars": 14
+    },
+    {
+      "repo": "yshrsmz/sqlstitch",
+      "title": "chore: migrate eligible workflows to ubuntu-slim runner",
+      "url": "https://github.com/yshrsmz/sqlstitch/pull/85",
+      "created_at": "2026-04-19T14:53:10Z",
+      "state": "merged",
+      "number": 85,
+      "type": "User",
+      "stars": 2
+    },
+    {
+      "repo": "yshrsmz/historian",
+      "title": "chore: migrate eligible workflows to ubuntu-slim runner",
+      "url": "https://github.com/yshrsmz/historian/pull/64",
+      "created_at": "2026-04-19T14:48:01Z",
+      "state": "merged",
+      "number": 64,
+      "type": "User",
+      "stars": 26
+    },
+    {
+      "repo": "yshrsmz/action-mise-values",
+      "title": "chore: migrate eligible workflows to ubuntu-slim runner",
+      "url": "https://github.com/yshrsmz/action-mise-values/pull/18",
+      "created_at": "2026-04-19T14:47:51Z",
+      "state": "merged",
+      "number": 18,
+      "type": "User",
+      "stars": 1
+    },
+    {
+      "repo": "yshrsmz/kover-report-action",
+      "title": "chore: split renovate updates by manager (npm / github-actions / mise)",
+      "url": "https://github.com/yshrsmz/kover-report-action/pull/116",
+      "created_at": "2026-04-18T04:17:52Z",
+      "state": "merged",
+      "number": 116,
+      "type": "User",
+      "stars": 2
+    },
     {
       "repo": "yshrsmz/omnitweety",
       "title": "chore(tsconfig): enable vue-tsc v3 strict options",
@@ -64,7 +144,7 @@
       "state": "merged",
       "number": 282,
       "type": "User",
-      "stars": 1138
+      "stars": 1144
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -74,7 +154,7 @@
       "state": "merged",
       "number": 280,
       "type": "User",
-      "stars": 1138
+      "stars": 1144
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -84,7 +164,7 @@
       "state": "merged",
       "number": 278,
       "type": "User",
-      "stars": 1138
+      "stars": 1144
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -94,7 +174,7 @@
       "state": "merged",
       "number": 276,
       "type": "User",
-      "stars": 1138
+      "stars": 1144
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -104,7 +184,7 @@
       "state": "merged",
       "number": 275,
       "type": "User",
-      "stars": 1138
+      "stars": 1144
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -114,7 +194,7 @@
       "state": "merged",
       "number": 274,
       "type": "User",
-      "stars": 1138
+      "stars": 1144
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -124,7 +204,7 @@
       "state": "merged",
       "number": 273,
       "type": "User",
-      "stars": 1138
+      "stars": 1144
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -134,7 +214,7 @@
       "state": "merged",
       "number": 272,
       "type": "User",
-      "stars": 1138
+      "stars": 1144
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -144,7 +224,7 @@
       "state": "merged",
       "number": 271,
       "type": "User",
-      "stars": 1138
+      "stars": 1144
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -154,7 +234,7 @@
       "state": "merged",
       "number": 270,
       "type": "User",
-      "stars": 1138
+      "stars": 1144
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -261,10 +341,10 @@
       "title": "fix exports field in package.json",
       "url": "https://github.com/jpmonette/feed/pull/238",
       "created_at": "2026-01-14T04:40:52Z",
-      "state": "open",
+      "state": "merged",
       "number": 238,
       "type": "User",
-      "stars": 1364
+      "stars": 1363
     },
     {
       "repo": "yshrsmz/changelog-compose",
@@ -425,86 +505,6 @@
       "number": 5,
       "type": "User",
       "stars": 1
-    },
-    {
-      "repo": "yshrsmz/changelog-compose",
-      "title": "feat: lower minSdk to 24",
-      "url": "https://github.com/yshrsmz/changelog-compose/pull/3",
-      "created_at": "2025-10-30T14:31:01Z",
-      "state": "merged",
-      "number": 3,
-      "type": "User",
-      "stars": 1
-    },
-    {
-      "repo": "yshrsmz/changelog-compose",
-      "title": "Add KDoc documentation to public API",
-      "url": "https://github.com/yshrsmz/changelog-compose/pull/2",
-      "created_at": "2025-10-30T08:33:39Z",
-      "state": "merged",
-      "number": 2,
-      "type": "User",
-      "stars": 1
-    },
-    {
-      "repo": "yshrsmz/kover-report-action",
-      "title": "feat: implement edge-aware label distribution for graph y-axis",
-      "url": "https://github.com/yshrsmz/kover-report-action/pull/36",
-      "created_at": "2025-10-20T17:02:04Z",
-      "state": "merged",
-      "number": 36,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/kover-report-action",
-      "title": "refactor: improve y-axis label spacing for better visual clarity",
-      "url": "https://github.com/yshrsmz/kover-report-action/pull/35",
-      "created_at": "2025-10-20T15:22:35Z",
-      "state": "merged",
-      "number": 35,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/kover-report-action",
-      "title": "fix: eliminate duplicate y-axis labels in coverage trend graphs",
-      "url": "https://github.com/yshrsmz/kover-report-action/pull/34",
-      "created_at": "2025-10-20T14:50:05Z",
-      "state": "merged",
-      "number": 34,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/kover-report-action",
-      "title": "fix: improve trending graph implementation",
-      "url": "https://github.com/yshrsmz/kover-report-action/pull/32",
-      "created_at": "2025-10-19T10:27:24Z",
-      "state": "merged",
-      "number": 32,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/kover-report-action",
-      "title": "feat: add trending graphs to coverage reports",
-      "url": "https://github.com/yshrsmz/kover-report-action/pull/31",
-      "created_at": "2025-10-19T08:43:11Z",
-      "state": "merged",
-      "number": 31,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/kover-report-action",
-      "title": "fix: remove duplicated branding",
-      "url": "https://github.com/yshrsmz/kover-report-action/pull/30",
-      "created_at": "2025-10-19T07:35:54Z",
-      "state": "merged",
-      "number": 30,
-      "type": "User",
-      "stars": 2
     }
   ]
 }
