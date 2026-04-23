@@ -1,11 +1,121 @@
 {
-  "updated_at": 1776646126905,
+  "updated_at": 1776905405596,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "AndroidDagashi/androiddagashi.github.io",
+      "title": "chore(ci): migrate GitHub Pages deploy to official actions",
+      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/619",
+      "created_at": "2026-04-22T08:48:02Z",
+      "state": "merged",
+      "number": 619,
+      "type": "Organization",
+      "stars": 10
+    },
+    {
+      "repo": "yshrsmz/kover-report-action",
+      "title": "chore: add yshrsmz as reviewer in Renovate config",
+      "url": "https://github.com/yshrsmz/kover-report-action/pull/124",
+      "created_at": "2026-04-20T10:04:24Z",
+      "state": "merged",
+      "number": 124,
+      "type": "User",
+      "stars": 2
+    },
+    {
+      "repo": "yshrsmz/action-mise-values",
+      "title": "chore: add yshrsmz as reviewer in Renovate config",
+      "url": "https://github.com/yshrsmz/action-mise-values/pull/19",
+      "created_at": "2026-04-20T10:04:00Z",
+      "state": "merged",
+      "number": 19,
+      "type": "User",
+      "stars": 1
+    },
+    {
+      "repo": "yshrsmz/historian",
+      "title": "chore: add yshrsmz as reviewer in Renovate config",
+      "url": "https://github.com/yshrsmz/historian/pull/65",
+      "created_at": "2026-04-20T10:03:37Z",
+      "state": "merged",
+      "number": 65,
+      "type": "User",
+      "stars": 26
+    },
+    {
+      "repo": "yshrsmz/omnitweety",
+      "title": "chore: add yshrsmz as reviewer in Renovate config",
+      "url": "https://github.com/yshrsmz/omnitweety/pull/355",
+      "created_at": "2026-04-20T10:03:24Z",
+      "state": "merged",
+      "number": 355,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/changelog-compose",
+      "title": "chore: add yshrsmz as reviewer in Renovate config",
+      "url": "https://github.com/yshrsmz/changelog-compose/pull/47",
+      "created_at": "2026-04-20T10:03:21Z",
+      "state": "merged",
+      "number": 47,
+      "type": "User",
+      "stars": 1
+    },
+    {
+      "repo": "yshrsmz/sqlstitch",
+      "title": "chore: add yshrsmz as reviewer in Renovate config",
+      "url": "https://github.com/yshrsmz/sqlstitch/pull/86",
+      "created_at": "2026-04-20T10:03:20Z",
+      "state": "merged",
+      "number": 86,
+      "type": "User",
+      "stars": 2
+    },
+    {
+      "repo": "yshrsmz/unorm-dart",
+      "title": "chore: add yshrsmz as reviewer in Renovate config",
+      "url": "https://github.com/yshrsmz/unorm-dart/pull/74",
+      "created_at": "2026-04-20T10:03:18Z",
+      "state": "merged",
+      "number": 74,
+      "type": "User",
+      "stars": 14
+    },
+    {
+      "repo": "yshrsmz/omniatp",
+      "title": "chore: add yshrsmz as reviewer in Renovate config",
+      "url": "https://github.com/yshrsmz/omniatp/pull/65",
+      "created_at": "2026-04-20T09:30:45Z",
+      "state": "merged",
+      "number": 65,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/BuildKonfig",
+      "title": "chore: add yshrsmz as reviewer in Renovate config",
+      "url": "https://github.com/yshrsmz/BuildKonfig/pull/286",
+      "created_at": "2026-04-20T09:30:22Z",
+      "state": "merged",
+      "number": 286,
+      "type": "User",
+      "stars": 1146
+    },
+    {
+      "repo": "yshrsmz/yshrsmz.github.io",
+      "title": "chore: add yshrsmz as reviewer in Renovate config",
+      "url": "https://github.com/yshrsmz/yshrsmz.github.io/pull/408",
+      "created_at": "2026-04-20T09:30:15Z",
+      "state": "merged",
+      "number": 408,
+      "type": "User",
+      "stars": 1
+    },
     {
       "repo": "yshrsmz/kover-report-action",
       "title": "chore: migrate eligible workflows to ubuntu-slim runner",
@@ -34,7 +144,7 @@
       "state": "merged",
       "number": 285,
       "type": "User",
-      "stars": 1144
+      "stars": 1146
     },
     {
       "repo": "yshrsmz/unorm-dart",
@@ -144,7 +254,7 @@
       "state": "merged",
       "number": 282,
       "type": "User",
-      "stars": 1144
+      "stars": 1146
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -154,7 +264,7 @@
       "state": "merged",
       "number": 280,
       "type": "User",
-      "stars": 1144
+      "stars": 1146
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -164,7 +274,7 @@
       "state": "merged",
       "number": 278,
       "type": "User",
-      "stars": 1144
+      "stars": 1146
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -174,7 +284,7 @@
       "state": "merged",
       "number": 276,
       "type": "User",
-      "stars": 1144
+      "stars": 1146
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -184,7 +294,7 @@
       "state": "merged",
       "number": 275,
       "type": "User",
-      "stars": 1144
+      "stars": 1146
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -194,7 +304,7 @@
       "state": "merged",
       "number": 274,
       "type": "User",
-      "stars": 1144
+      "stars": 1146
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -204,7 +314,7 @@
       "state": "merged",
       "number": 273,
       "type": "User",
-      "stars": 1144
+      "stars": 1146
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -214,7 +324,7 @@
       "state": "merged",
       "number": 272,
       "type": "User",
-      "stars": 1144
+      "stars": 1146
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -224,7 +334,7 @@
       "state": "merged",
       "number": 271,
       "type": "User",
-      "stars": 1144
+      "stars": 1146
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -234,7 +344,7 @@
       "state": "merged",
       "number": 270,
       "type": "User",
-      "stars": 1144
+      "stars": 1146
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -344,7 +454,7 @@
       "state": "merged",
       "number": 238,
       "type": "User",
-      "stars": 1363
+      "stars": 1367
     },
     {
       "repo": "yshrsmz/changelog-compose",
@@ -385,126 +495,6 @@
       "number": 323,
       "type": "User",
       "stars": 3
-    },
-    {
-      "repo": "yshrsmz/historian",
-      "title": "chore: update Claude Code configuration for Historian",
-      "url": "https://github.com/yshrsmz/historian/pull/33",
-      "created_at": "2025-11-30T15:14:52Z",
-      "state": "merged",
-      "number": 33,
-      "type": "User",
-      "stars": 26
-    },
-    {
-      "repo": "yshrsmz/historian",
-      "title": "feat: Migrate library from Java to Kotlin",
-      "url": "https://github.com/yshrsmz/historian/pull/31",
-      "created_at": "2025-11-30T13:58:19Z",
-      "state": "merged",
-      "number": 31,
-      "type": "User",
-      "stars": 26
-    },
-    {
-      "repo": "yshrsmz/historian",
-      "title": "build: migrate Gradle scripts from Groovy to Kotlin DSL",
-      "url": "https://github.com/yshrsmz/historian/pull/29",
-      "created_at": "2025-11-30T04:10:12Z",
-      "state": "merged",
-      "number": 29,
-      "type": "User",
-      "stars": 26
-    },
-    {
-      "repo": "yshrsmz/historian",
-      "title": "ci: update release workflow and add release-please",
-      "url": "https://github.com/yshrsmz/historian/pull/22",
-      "created_at": "2025-11-29T16:28:00Z",
-      "state": "merged",
-      "number": 22,
-      "type": "User",
-      "stars": 26
-    },
-    {
-      "repo": "yshrsmz/historian",
-      "title": "Remove AutoService dependency by using robolectric.properties",
-      "url": "https://github.com/yshrsmz/historian/pull/21",
-      "created_at": "2025-11-29T16:03:43Z",
-      "state": "merged",
-      "number": 21,
-      "type": "User",
-      "stars": 26
-    },
-    {
-      "repo": "yshrsmz/historian",
-      "title": "Migrate from dependencies.gradle to Gradle Version Catalog",
-      "url": "https://github.com/yshrsmz/historian/pull/18",
-      "created_at": "2025-11-29T15:30:37Z",
-      "state": "merged",
-      "number": 18,
-      "type": "User",
-      "stars": 26
-    },
-    {
-      "repo": "yshrsmz/historian",
-      "title": "Modernize Gradle build configuration",
-      "url": "https://github.com/yshrsmz/historian/pull/15",
-      "created_at": "2025-11-29T14:19:42Z",
-      "state": "merged",
-      "number": 15,
-      "type": "User",
-      "stars": 26
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "feat: Nuxt 4.2.1へアップグレード",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/570",
-      "created_at": "2025-11-29T06:43:32Z",
-      "state": "merged",
-      "number": 570,
-      "type": "Organization",
-      "stars": 10
-    },
-    {
-      "repo": "yshrsmz/kover-report-action",
-      "title": "feat: add build-and-commit workflow for automated dist/ updates",
-      "url": "https://github.com/yshrsmz/kover-report-action/pull/59",
-      "created_at": "2025-11-08T16:22:17Z",
-      "state": "merged",
-      "number": 59,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/changelog-compose",
-      "title": "docs: update project documentation with latest information",
-      "url": "https://github.com/yshrsmz/changelog-compose/pull/11",
-      "created_at": "2025-10-30T16:22:09Z",
-      "state": "merged",
-      "number": 11,
-      "type": "User",
-      "stars": 1
-    },
-    {
-      "repo": "yshrsmz/changelog-compose",
-      "title": "ci: fix release-please config",
-      "url": "https://github.com/yshrsmz/changelog-compose/pull/6",
-      "created_at": "2025-10-30T14:59:52Z",
-      "state": "merged",
-      "number": 6,
-      "type": "User",
-      "stars": 1
-    },
-    {
-      "repo": "yshrsmz/changelog-compose",
-      "title": "chore: update release-please config",
-      "url": "https://github.com/yshrsmz/changelog-compose/pull/5",
-      "created_at": "2025-10-30T14:53:20Z",
-      "state": "merged",
-      "number": 5,
-      "type": "User",
-      "stars": 1
     }
   ]
 }
