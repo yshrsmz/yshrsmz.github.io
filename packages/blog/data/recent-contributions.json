@@ -1,11 +1,21 @@
 {
-  "updated_at": 1776905405596,
+  "updated_at": 1777251087681,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/BuildKonfig",
+      "title": "chore(master): release 0.18.1",
+      "url": "https://github.com/yshrsmz/BuildKonfig/pull/289",
+      "created_at": "2026-04-25T14:43:27Z",
+      "state": "open",
+      "number": 289,
+      "type": "User",
+      "stars": 1147
+    },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
       "title": "chore(ci): migrate GitHub Pages deploy to official actions",
@@ -104,7 +114,7 @@
       "state": "merged",
       "number": 286,
       "type": "User",
-      "stars": 1146
+      "stars": 1147
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -144,7 +154,7 @@
       "state": "merged",
       "number": 285,
       "type": "User",
-      "stars": 1146
+      "stars": 1147
     },
     {
       "repo": "yshrsmz/unorm-dart",
@@ -254,7 +264,7 @@
       "state": "merged",
       "number": 282,
       "type": "User",
-      "stars": 1146
+      "stars": 1147
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -264,7 +274,7 @@
       "state": "merged",
       "number": 280,
       "type": "User",
-      "stars": 1146
+      "stars": 1147
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -274,7 +284,7 @@
       "state": "merged",
       "number": 278,
       "type": "User",
-      "stars": 1146
+      "stars": 1147
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -284,7 +294,7 @@
       "state": "merged",
       "number": 276,
       "type": "User",
-      "stars": 1146
+      "stars": 1147
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -294,7 +304,7 @@
       "state": "merged",
       "number": 275,
       "type": "User",
-      "stars": 1146
+      "stars": 1147
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -304,7 +314,7 @@
       "state": "merged",
       "number": 274,
       "type": "User",
-      "stars": 1146
+      "stars": 1147
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -314,7 +324,7 @@
       "state": "merged",
       "number": 273,
       "type": "User",
-      "stars": 1146
+      "stars": 1147
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -324,7 +334,7 @@
       "state": "merged",
       "number": 272,
       "type": "User",
-      "stars": 1146
+      "stars": 1147
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -334,7 +344,7 @@
       "state": "merged",
       "number": 271,
       "type": "User",
-      "stars": 1146
+      "stars": 1147
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -344,7 +354,7 @@
       "state": "merged",
       "number": 270,
       "type": "User",
-      "stars": 1146
+      "stars": 1147
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -454,7 +464,7 @@
       "state": "merged",
       "number": 238,
       "type": "User",
-      "stars": 1367
+      "stars": 1370
     },
     {
       "repo": "yshrsmz/changelog-compose",
@@ -483,16 +493,6 @@
       "created_at": "2025-12-03T08:57:05Z",
       "state": "merged",
       "number": 52,
-      "type": "User",
-      "stars": 3
-    },
-    {
-      "repo": "yshrsmz/omnitweety",
-      "title": "chore: migrate to ESLint 9 with flat config",
-      "url": "https://github.com/yshrsmz/omnitweety/pull/323",
-      "created_at": "2025-12-01T10:06:41Z",
-      "state": "merged",
-      "number": 323,
       "type": "User",
       "stars": 3
     }
