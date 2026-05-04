@@ -1,5 +1,5 @@
 {
-  "updated_at": 1777510547082,
+  "updated_at": 1777856119168,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
@@ -8,13 +8,33 @@
   "prs": [
     {
       "repo": "yshrsmz/BuildKonfig",
+      "title": "refactor!: lazy/Provider configuration to fix Gradle 9 compat and CC",
+      "url": "https://github.com/yshrsmz/BuildKonfig/pull/291",
+      "created_at": "2026-05-03T12:17:53Z",
+      "state": "open",
+      "number": 291,
+      "type": "User",
+      "stars": 1152
+    },
+    {
+      "repo": "yshrsmz/BuildKonfig",
+      "title": "fix: drop const modifier from expect side for K2 compatibility",
+      "url": "https://github.com/yshrsmz/BuildKonfig/pull/290",
+      "created_at": "2026-05-03T06:53:35Z",
+      "state": "merged",
+      "number": 290,
+      "type": "User",
+      "stars": 1152
+    },
+    {
+      "repo": "yshrsmz/BuildKonfig",
       "title": "chore(master): release 0.18.1",
       "url": "https://github.com/yshrsmz/BuildKonfig/pull/289",
       "created_at": "2026-04-25T14:43:27Z",
       "state": "open",
       "number": 289,
       "type": "User",
-      "stars": 1149
+      "stars": 1152
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -114,7 +134,7 @@
       "state": "merged",
       "number": 286,
       "type": "User",
-      "stars": 1149
+      "stars": 1152
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -154,7 +174,7 @@
       "state": "merged",
       "number": 285,
       "type": "User",
-      "stars": 1149
+      "stars": 1152
     },
     {
       "repo": "yshrsmz/unorm-dart",
@@ -264,7 +284,7 @@
       "state": "merged",
       "number": 282,
       "type": "User",
-      "stars": 1149
+      "stars": 1152
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -274,7 +294,7 @@
       "state": "merged",
       "number": 280,
       "type": "User",
-      "stars": 1149
+      "stars": 1152
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -284,7 +304,7 @@
       "state": "merged",
       "number": 278,
       "type": "User",
-      "stars": 1149
+      "stars": 1152
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -294,7 +314,7 @@
       "state": "merged",
       "number": 276,
       "type": "User",
-      "stars": 1149
+      "stars": 1152
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -304,7 +324,7 @@
       "state": "merged",
       "number": 275,
       "type": "User",
-      "stars": 1149
+      "stars": 1152
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -314,7 +334,7 @@
       "state": "merged",
       "number": 274,
       "type": "User",
-      "stars": 1149
+      "stars": 1152
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -324,7 +344,7 @@
       "state": "merged",
       "number": 273,
       "type": "User",
-      "stars": 1149
+      "stars": 1152
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -334,7 +354,7 @@
       "state": "merged",
       "number": 272,
       "type": "User",
-      "stars": 1149
+      "stars": 1152
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -344,7 +364,7 @@
       "state": "merged",
       "number": 271,
       "type": "User",
-      "stars": 1149
+      "stars": 1152
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -354,7 +374,7 @@
       "state": "merged",
       "number": 270,
       "type": "User",
-      "stars": 1149
+      "stars": 1152
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -464,7 +484,7 @@
       "state": "merged",
       "number": 238,
       "type": "User",
-      "stars": 1370
+      "stars": 1371
     },
     {
       "repo": "yshrsmz/changelog-compose",
@@ -475,26 +495,6 @@
       "number": 34,
       "type": "User",
       "stars": 1
-    },
-    {
-      "repo": "yshrsmz/omniatp",
-      "title": "Update @atproto/* dependencies to latest versions",
-      "url": "https://github.com/yshrsmz/omniatp/pull/57",
-      "created_at": "2025-12-03T10:00:55Z",
-      "state": "merged",
-      "number": 57,
-      "type": "User",
-      "stars": 3
-    },
-    {
-      "repo": "yshrsmz/omniatp",
-      "title": "Migrate ESLint to flat config format",
-      "url": "https://github.com/yshrsmz/omniatp/pull/52",
-      "created_at": "2025-12-03T08:57:05Z",
-      "state": "merged",
-      "number": 52,
-      "type": "User",
-      "stars": 3
     }
   ]
 }
