@@ -9,11 +9,6 @@ head:
       content: noindex
 ---
 
-# OmniATP Privacy Policy
-
-**Effective date:** May 8, 2026
-**Last updated:** May 8, 2026
-
 OmniATP ("the Extension") is a Chrome browser extension that lets you post to Bluesky from Chrome's Omnibox. This policy describes what data the Extension handles, where it is sent, and the rights you have over that data.
 
 In short: the Extension does not run any developer-controlled server, does not use analytics, advertising SDKs, or telemetry. The only network destination the Extension contacts is Bluesky (`https://bsky.social`) — and only when you (a) sign in, (b) the stored session is refreshed by the Bluesky client library, or (c) you submit a post. Everything else is stored locally in your browser's `chrome.storage.local`.
@@ -172,3 +167,7 @@ If this policy changes in a way that affects what data is handled or where it is
 ## 13. Language
 
 This policy is published in English. A Japanese translation is available on request via the privacy contact above; in case of conflict, the English version controls.
+
+---
+
+last updated: May 8, 2026
