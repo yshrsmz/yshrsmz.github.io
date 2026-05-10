@@ -19,11 +19,5 @@
   "devDependencies": {
     "@biomejs/biome": "2.4.14",
     "typescript": "6.0.3"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@tailwindcss/oxide",
-      "esbuild"
-    ]
   }
 }
