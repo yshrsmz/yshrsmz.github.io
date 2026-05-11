@@ -1,5 +1,5 @@
 {
-  "updated_at": 1778115251699,
+  "updated_at": 1778461081553,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
@@ -8,13 +8,183 @@
   "prs": [
     {
       "repo": "yshrsmz/BuildKonfig",
+      "title": "ci: use GitHub App token for release-please",
+      "url": "https://github.com/yshrsmz/BuildKonfig/pull/313",
+      "created_at": "2026-05-10T09:41:29Z",
+      "state": "merged",
+      "number": 313,
+      "type": "User",
+      "stars": 1160
+    },
+    {
+      "repo": "yshrsmz/kover-report-action",
+      "title": "chore(pnpm): migrate to pnpm v11",
+      "url": "https://github.com/yshrsmz/kover-report-action/pull/130",
+      "created_at": "2026-05-10T04:35:02Z",
+      "state": "merged",
+      "number": 130,
+      "type": "User",
+      "stars": 2
+    },
+    {
+      "repo": "yshrsmz/omniatp",
+      "title": "fix(options): balance vertical padding in Changelog dialog scroll area",
+      "url": "https://github.com/yshrsmz/omniatp/pull/107",
+      "created_at": "2026-05-09T04:16:40Z",
+      "state": "merged",
+      "number": 107,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/omniatp",
+      "title": "refactor(background): parallelize post and clipboard copy",
+      "url": "https://github.com/yshrsmz/omniatp/pull/104",
+      "created_at": "2026-05-09T03:58:36Z",
+      "state": "merged",
+      "number": 104,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/omniatp",
+      "title": "feat(options): merge App Version row into Changelog item",
+      "url": "https://github.com/yshrsmz/omniatp/pull/100",
+      "created_at": "2026-05-08T14:44:36Z",
+      "state": "merged",
+      "number": 100,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/omniatp",
+      "title": "chore(styles): finish Tailwind v4 utility migration",
+      "url": "https://github.com/yshrsmz/omniatp/pull/99",
+      "created_at": "2026-05-08T14:43:10Z",
+      "state": "merged",
+      "number": 99,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/omniatp",
+      "title": "refactor(components): extract BaseDialog to deduplicate dialog chrome",
+      "url": "https://github.com/yshrsmz/omniatp/pull/98",
+      "created_at": "2026-05-08T14:41:41Z",
+      "state": "merged",
+      "number": 98,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/omniatp",
+      "title": "feat(options): show changelog in options page",
+      "url": "https://github.com/yshrsmz/omniatp/pull/97",
+      "created_at": "2026-05-08T14:08:24Z",
+      "state": "merged",
+      "number": 97,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/omniatp",
+      "title": "fix(clipboard): recreate offscreen document on each clipboard write",
+      "url": "https://github.com/yshrsmz/omniatp/pull/93",
+      "created_at": "2026-05-08T04:56:54Z",
+      "state": "merged",
+      "number": 93,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/omniatp",
+      "title": "feat(share): rewrite Amazon URLs with associate tag",
+      "url": "https://github.com/yshrsmz/omniatp/pull/92",
+      "created_at": "2026-05-08T04:41:04Z",
+      "state": "merged",
+      "number": 92,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/omniatp",
+      "title": "chore: add lefthook to run CI checks locally",
+      "url": "https://github.com/yshrsmz/omniatp/pull/88",
+      "created_at": "2026-05-07T16:53:04Z",
+      "state": "merged",
+      "number": 88,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/omniatp",
+      "title": "test: add vitest setup with unit and component tests",
+      "url": "https://github.com/yshrsmz/omniatp/pull/83",
+      "created_at": "2026-05-07T15:34:58Z",
+      "state": "merged",
+      "number": 83,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/omniatp",
+      "title": "ci: automate releases with release-please",
+      "url": "https://github.com/yshrsmz/omniatp/pull/79",
+      "created_at": "2026-05-07T14:24:34Z",
+      "state": "merged",
+      "number": 79,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/omniatp",
+      "title": "ci: read node version from mise.toml via action-mise-values",
+      "url": "https://github.com/yshrsmz/omniatp/pull/76",
+      "created_at": "2026-05-07T13:55:56Z",
+      "state": "merged",
+      "number": 76,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/omniatp",
+      "title": "chore: split renovate groups by manager",
+      "url": "https://github.com/yshrsmz/omniatp/pull/71",
+      "created_at": "2026-05-07T12:28:41Z",
+      "state": "merged",
+      "number": 71,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/omniatp",
+      "title": "feat: copy posted message to clipboard",
+      "url": "https://github.com/yshrsmz/omniatp/pull/70",
+      "created_at": "2026-05-07T12:13:09Z",
+      "state": "merged",
+      "number": 70,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/omniatp",
+      "title": "Migrate build tooling from @crxjs/vite-plugin to WXT",
+      "url": "https://github.com/yshrsmz/omniatp/pull/68",
+      "created_at": "2026-05-07T08:35:35Z",
+      "state": "merged",
+      "number": 68,
+      "type": "User",
+      "stars": 3
+    },
+    {
+      "repo": "yshrsmz/BuildKonfig",
       "title": "refactor(plugin): derive per-target output directory at task action time",
       "url": "https://github.com/yshrsmz/BuildKonfig/pull/312",
       "created_at": "2026-05-05T18:45:39Z",
       "state": "merged",
       "number": 312,
       "type": "User",
-      "stars": 1156
+      "stars": 1160
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -24,7 +194,7 @@
       "state": "merged",
       "number": 310,
       "type": "User",
-      "stars": 1156
+      "stars": 1160
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -34,7 +204,7 @@
       "state": "open",
       "number": 308,
       "type": "User",
-      "stars": 1156
+      "stars": 1160
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -44,7 +214,7 @@
       "state": "merged",
       "number": 306,
       "type": "User",
-      "stars": 1156
+      "stars": 1160
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -54,7 +224,7 @@
       "state": "merged",
       "number": 305,
       "type": "User",
-      "stars": 1156
+      "stars": 1160
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -64,7 +234,7 @@
       "state": "merged",
       "number": 304,
       "type": "User",
-      "stars": 1156
+      "stars": 1160
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -74,7 +244,7 @@
       "state": "merged",
       "number": 303,
       "type": "User",
-      "stars": 1156
+      "stars": 1160
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -84,7 +254,7 @@
       "state": "merged",
       "number": 302,
       "type": "User",
-      "stars": 1156
+      "stars": 1160
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -94,7 +264,7 @@
       "state": "merged",
       "number": 298,
       "type": "User",
-      "stars": 1156
+      "stars": 1160
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -104,7 +274,7 @@
       "state": "merged",
       "number": 296,
       "type": "User",
-      "stars": 1156
+      "stars": 1160
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -114,7 +284,7 @@
       "state": "merged",
       "number": 295,
       "type": "User",
-      "stars": 1156
+      "stars": 1160
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -124,7 +294,7 @@
       "state": "merged",
       "number": 294,
       "type": "User",
-      "stars": 1156
+      "stars": 1160
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -134,7 +304,7 @@
       "state": "merged",
       "number": 291,
       "type": "User",
-      "stars": 1156
+      "stars": 1160
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -144,7 +314,7 @@
       "state": "merged",
       "number": 290,
       "type": "User",
-      "stars": 1156
+      "stars": 1160
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -154,7 +324,7 @@
       "state": "merged",
       "number": 289,
       "type": "User",
-      "stars": 1156
+      "stars": 1160
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -254,7 +424,7 @@
       "state": "merged",
       "number": 286,
       "type": "User",
-      "stars": 1156
+      "stars": 1160
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -294,7 +464,7 @@
       "state": "merged",
       "number": 285,
       "type": "User",
-      "stars": 1156
+      "stars": 1160
     },
     {
       "repo": "yshrsmz/unorm-dart",
@@ -325,176 +495,6 @@
       "number": 64,
       "type": "User",
       "stars": 26
-    },
-    {
-      "repo": "yshrsmz/action-mise-values",
-      "title": "chore: migrate eligible workflows to ubuntu-slim runner",
-      "url": "https://github.com/yshrsmz/action-mise-values/pull/18",
-      "created_at": "2026-04-19T14:47:51Z",
-      "state": "merged",
-      "number": 18,
-      "type": "User",
-      "stars": 1
-    },
-    {
-      "repo": "yshrsmz/kover-report-action",
-      "title": "chore: split renovate updates by manager (npm / github-actions / mise)",
-      "url": "https://github.com/yshrsmz/kover-report-action/pull/116",
-      "created_at": "2026-04-18T04:17:52Z",
-      "state": "merged",
-      "number": 116,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/omnitweety",
-      "title": "chore(tsconfig): enable vue-tsc v3 strict options",
-      "url": "https://github.com/yshrsmz/omnitweety/pull/350",
-      "created_at": "2026-04-15T11:39:21Z",
-      "state": "merged",
-      "number": 350,
-      "type": "User",
-      "stars": 3
-    },
-    {
-      "repo": "yshrsmz/omnitweety",
-      "title": "feat: migrate to Tailwind CSS v4",
-      "url": "https://github.com/yshrsmz/omnitweety/pull/336",
-      "created_at": "2026-04-15T08:32:50Z",
-      "state": "merged",
-      "number": 336,
-      "type": "User",
-      "stars": 3
-    },
-    {
-      "repo": "yshrsmz/omnitweety",
-      "title": "Migrate build from @crxjs/vite-plugin to WXT",
-      "url": "https://github.com/yshrsmz/omnitweety/pull/335",
-      "created_at": "2026-04-15T07:34:42Z",
-      "state": "merged",
-      "number": 335,
-      "type": "User",
-      "stars": 3
-    },
-    {
-      "repo": "yshrsmz/changelog-compose",
-      "title": "Update Renovate configuration for best practices",
-      "url": "https://github.com/yshrsmz/changelog-compose/pull/44",
-      "created_at": "2026-04-14T15:19:37Z",
-      "state": "merged",
-      "number": 44,
-      "type": "User",
-      "stars": 1
-    },
-    {
-      "repo": "yshrsmz/historian",
-      "title": "chore: change Renovate configuration to best practices",
-      "url": "https://github.com/yshrsmz/historian/pull/62",
-      "created_at": "2026-04-14T01:07:38Z",
-      "state": "merged",
-      "number": 62,
-      "type": "User",
-      "stars": 26
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "docs: introduce AGENTS.md and shared Claude Code settings",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/282",
-      "created_at": "2026-04-11T10:13:33Z",
-      "state": "merged",
-      "number": 282,
-      "type": "User",
-      "stars": 1156
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "refactor: replace nested afterEvaluate with plugins.withType()",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/280",
-      "created_at": "2026-04-10T08:05:00Z",
-      "state": "merged",
-      "number": 280,
-      "type": "User",
-      "stars": 1156
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "fix: preserve flavor in TargetConfig.copy()",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/278",
-      "created_at": "2026-04-10T07:13:30Z",
-      "state": "merged",
-      "number": 278,
-      "type": "User",
-      "stars": 1156
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "fix: expose compiler module as api dependency",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/276",
-      "created_at": "2026-04-10T06:23:50Z",
-      "state": "merged",
-      "number": 276,
-      "type": "User",
-      "stars": 1156
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "chore(master): release 0.18.0",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/275",
-      "created_at": "2026-04-10T06:22:04Z",
-      "state": "merged",
-      "number": 275,
-      "type": "User",
-      "stars": 1156
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "fix!: skip @JsExport on common object when wasmJs target exists",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/274",
-      "created_at": "2026-04-10T05:49:00Z",
-      "state": "merged",
-      "number": 274,
-      "type": "User",
-      "stars": 1156
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "docs: update README for v0.17.2",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/273",
-      "created_at": "2026-04-10T04:59:27Z",
-      "state": "merged",
-      "number": 273,
-      "type": "User",
-      "stars": 1156
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "fix: validate buildConfigField name is a valid Kotlin identifier",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/272",
-      "created_at": "2026-04-10T04:34:40Z",
-      "state": "merged",
-      "number": 272,
-      "type": "User",
-      "stars": 1156
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "fix: warn instead of throwing when defaultConfigs is empty",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/271",
-      "created_at": "2026-04-10T04:10:16Z",
-      "state": "merged",
-      "number": 271,
-      "type": "User",
-      "stars": 1156
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "fix(sample): update samples for Kotlin 2.3.20 compatibility",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/270",
-      "created_at": "2026-04-10T02:59:57Z",
-      "state": "merged",
-      "number": 270,
-      "type": "User",
-      "stars": 1156
     }
   ]
 }
