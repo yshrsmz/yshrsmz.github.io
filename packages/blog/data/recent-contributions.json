@@ -1,11 +1,31 @@
 {
-  "updated_at": 1778720363668,
+  "updated_at": 1779066013771,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "AndroidDagashi/androiddagashi.github.io",
+      "title": "Change Renovate config to extend best practices",
+      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/628",
+      "created_at": "2026-05-14T04:02:20Z",
+      "state": "merged",
+      "number": 628,
+      "type": "Organization",
+      "stars": 10
+    },
+    {
+      "repo": "AndroidDagashi/androiddagashi.github.io",
+      "title": "fix: modernize TS module config — moduleResolution=bundler + type: module (#626)",
+      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/627",
+      "created_at": "2026-05-14T03:08:05Z",
+      "state": "merged",
+      "number": 627,
+      "type": "Organization",
+      "stars": 10
+    },
     {
       "repo": "yshrsmz/BuildKonfig",
       "title": "ci: use GitHub App token for release-please",
@@ -14,7 +34,7 @@
       "state": "merged",
       "number": 313,
       "type": "User",
-      "stars": 1161
+      "stars": 1163
     },
     {
       "repo": "yshrsmz/kover-report-action",
@@ -184,7 +204,7 @@
       "state": "merged",
       "number": 312,
       "type": "User",
-      "stars": 1161
+      "stars": 1163
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -194,17 +214,17 @@
       "state": "merged",
       "number": 310,
       "type": "User",
-      "stars": 1161
+      "stars": 1163
     },
     {
       "repo": "yshrsmz/BuildKonfig",
       "title": "chore(master): release 0.21.0",
       "url": "https://github.com/yshrsmz/BuildKonfig/pull/308",
       "created_at": "2026-05-05T17:40:55Z",
-      "state": "open",
+      "state": "merged",
       "number": 308,
       "type": "User",
-      "stars": 1161
+      "stars": 1163
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -214,7 +234,7 @@
       "state": "merged",
       "number": 306,
       "type": "User",
-      "stars": 1161
+      "stars": 1163
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -224,7 +244,7 @@
       "state": "merged",
       "number": 305,
       "type": "User",
-      "stars": 1161
+      "stars": 1163
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -234,7 +254,7 @@
       "state": "merged",
       "number": 304,
       "type": "User",
-      "stars": 1161
+      "stars": 1163
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -244,7 +264,7 @@
       "state": "merged",
       "number": 303,
       "type": "User",
-      "stars": 1161
+      "stars": 1163
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -254,7 +274,7 @@
       "state": "merged",
       "number": 302,
       "type": "User",
-      "stars": 1161
+      "stars": 1163
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -264,7 +284,7 @@
       "state": "merged",
       "number": 298,
       "type": "User",
-      "stars": 1161
+      "stars": 1163
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -274,7 +294,7 @@
       "state": "merged",
       "number": 296,
       "type": "User",
-      "stars": 1161
+      "stars": 1163
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -284,7 +304,7 @@
       "state": "merged",
       "number": 295,
       "type": "User",
-      "stars": 1161
+      "stars": 1163
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -294,7 +314,7 @@
       "state": "merged",
       "number": 294,
       "type": "User",
-      "stars": 1161
+      "stars": 1163
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -304,7 +324,7 @@
       "state": "merged",
       "number": 291,
       "type": "User",
-      "stars": 1161
+      "stars": 1163
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -314,7 +334,7 @@
       "state": "merged",
       "number": 290,
       "type": "User",
-      "stars": 1161
+      "stars": 1163
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -324,7 +344,7 @@
       "state": "merged",
       "number": 289,
       "type": "User",
-      "stars": 1161
+      "stars": 1163
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -424,7 +444,7 @@
       "state": "merged",
       "number": 286,
       "type": "User",
-      "stars": 1161
+      "stars": 1163
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -464,7 +484,7 @@
       "state": "merged",
       "number": 285,
       "type": "User",
-      "stars": 1161
+      "stars": 1163
     },
     {
       "repo": "yshrsmz/unorm-dart",
@@ -475,26 +495,6 @@
       "number": 73,
       "type": "User",
       "stars": 14
-    },
-    {
-      "repo": "yshrsmz/sqlstitch",
-      "title": "chore: migrate eligible workflows to ubuntu-slim runner",
-      "url": "https://github.com/yshrsmz/sqlstitch/pull/85",
-      "created_at": "2026-04-19T14:53:10Z",
-      "state": "merged",
-      "number": 85,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/historian",
-      "title": "chore: migrate eligible workflows to ubuntu-slim runner",
-      "url": "https://github.com/yshrsmz/historian/pull/64",
-      "created_at": "2026-04-19T14:48:01Z",
-      "state": "merged",
-      "number": 64,
-      "type": "User",
-      "stars": 26
     }
   ]
 }
