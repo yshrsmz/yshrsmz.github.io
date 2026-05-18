@@ -16,7 +16,7 @@
   "license": "ISC",
   "devDependencies": {
     "@resvg/resvg-js": "2.6.2",
-    "@vitejs/plugin-vue": "6.0.6",
+    "@vitejs/plugin-vue": "6.0.7",
     "@vue/test-utils": "2.4.10",
     "happy-dom": "20.9.0",
     "vitest": "4.1.6",
