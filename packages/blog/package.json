@@ -23,7 +23,7 @@
     "@tailwindcss/typography": "0.5.19",
     "@tailwindcss/vite": "4.3.0",
     "autoprefixer": "10.5.0",
-    "date-fns": "4.1.0",
+    "date-fns": "4.2.1",
     "fast-glob": "3.3.3",
     "feed": "5.2.1",
     "globals": "17.6.0",
