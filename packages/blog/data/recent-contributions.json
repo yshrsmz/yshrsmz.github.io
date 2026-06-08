@@ -1,11 +1,31 @@
 {
-  "updated_at": 1780535680376,
+  "updated_at": 1780880940622,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/action-mise-values",
+      "title": "fix: use github.ref_name for tag name on tag push",
+      "url": "https://github.com/yshrsmz/action-mise-values/pull/23",
+      "created_at": "2026-06-06T15:36:59Z",
+      "state": "merged",
+      "number": 23,
+      "type": "User",
+      "stars": 1
+    },
+    {
+      "repo": "yshrsmz/action-mise-values",
+      "title": "ci: serialize release workflow runs with concurrency",
+      "url": "https://github.com/yshrsmz/action-mise-values/pull/22",
+      "created_at": "2026-06-06T15:06:34Z",
+      "state": "merged",
+      "number": 22,
+      "type": "User",
+      "stars": 1
+    },
     {
       "repo": "yshrsmz/omniatp",
       "title": "fix(SettingsList): drop dead `!border-t-0` on ChangelogItem",
@@ -483,26 +503,6 @@
       "created_at": "2026-05-03T12:17:53Z",
       "state": "merged",
       "number": 291,
-      "type": "User",
-      "stars": 1176
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "fix: drop const modifier from expect side for K2 compatibility",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/290",
-      "created_at": "2026-05-03T06:53:35Z",
-      "state": "merged",
-      "number": 290,
-      "type": "User",
-      "stars": 1176
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "chore(master): release 0.19.0",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/289",
-      "created_at": "2026-04-25T14:43:27Z",
-      "state": "merged",
-      "number": 289,
       "type": "User",
       "stars": 1176
     }
