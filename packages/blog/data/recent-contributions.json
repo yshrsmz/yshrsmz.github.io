@@ -1,11 +1,21 @@
 {
-  "updated_at": 1780880940622,
+  "updated_at": 1781140027990,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/historian",
+      "title": "chore: update Renovate configuration to extend custom configs",
+      "url": "https://github.com/yshrsmz/historian/pull/75",
+      "created_at": "2026-06-09T03:02:55Z",
+      "state": "merged",
+      "number": 75,
+      "type": "User",
+      "stars": 26
+    },
     {
       "repo": "yshrsmz/action-mise-values",
       "title": "fix: use github.ref_name for tag name on tag push",
@@ -114,7 +124,7 @@
       "state": "merged",
       "number": 323,
       "type": "User",
-      "stars": 1176
+      "stars": 1177
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -124,7 +134,7 @@
       "state": "merged",
       "number": 321,
       "type": "User",
-      "stars": 1176
+      "stars": 1177
     },
     {
       "repo": "yshrsmz/cc-plugins",
@@ -144,7 +154,7 @@
       "state": "merged",
       "number": 318,
       "type": "User",
-      "stars": 1176
+      "stars": 1177
     },
     {
       "repo": "yshrsmz/changelog-compose",
@@ -214,7 +224,7 @@
       "state": "merged",
       "number": 313,
       "type": "User",
-      "stars": 1176
+      "stars": 1177
     },
     {
       "repo": "yshrsmz/kover-report-action",
@@ -384,7 +394,7 @@
       "state": "merged",
       "number": 312,
       "type": "User",
-      "stars": 1176
+      "stars": 1177
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -394,7 +404,7 @@
       "state": "merged",
       "number": 310,
       "type": "User",
-      "stars": 1176
+      "stars": 1177
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -404,7 +414,7 @@
       "state": "merged",
       "number": 308,
       "type": "User",
-      "stars": 1176
+      "stars": 1177
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -414,7 +424,7 @@
       "state": "merged",
       "number": 306,
       "type": "User",
-      "stars": 1176
+      "stars": 1177
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -424,7 +434,7 @@
       "state": "merged",
       "number": 305,
       "type": "User",
-      "stars": 1176
+      "stars": 1177
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -434,7 +444,7 @@
       "state": "merged",
       "number": 304,
       "type": "User",
-      "stars": 1176
+      "stars": 1177
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -444,7 +454,7 @@
       "state": "merged",
       "number": 303,
       "type": "User",
-      "stars": 1176
+      "stars": 1177
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -454,7 +464,7 @@
       "state": "merged",
       "number": 302,
       "type": "User",
-      "stars": 1176
+      "stars": 1177
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -464,7 +474,7 @@
       "state": "merged",
       "number": 298,
       "type": "User",
-      "stars": 1176
+      "stars": 1177
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -474,7 +484,7 @@
       "state": "merged",
       "number": 296,
       "type": "User",
-      "stars": 1176
+      "stars": 1177
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -484,7 +494,7 @@
       "state": "merged",
       "number": 295,
       "type": "User",
-      "stars": 1176
+      "stars": 1177
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -494,17 +504,7 @@
       "state": "merged",
       "number": 294,
       "type": "User",
-      "stars": 1176
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "refactor!: lazy/Provider configuration to fix Gradle 9 compat and CC",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/291",
-      "created_at": "2026-05-03T12:17:53Z",
-      "state": "merged",
-      "number": 291,
-      "type": "User",
-      "stars": 1176
+      "stars": 1177
     }
   ]
 }
