@@ -1,11 +1,41 @@
 {
-  "updated_at": 1781744976220,
+  "updated_at": 1782090762891,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "AndroidDagashi/androiddagashi.github.io",
+      "title": "refactor(site-api-github): migrate from graphql-request to @octokit/graphql",
+      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/679",
+      "created_at": "2026-06-21T05:08:08Z",
+      "state": "merged",
+      "number": 679,
+      "type": "Organization",
+      "stars": 10
+    },
+    {
+      "repo": "yshrsmz/mockwebserver-dart",
+      "title": "chore(renovate): adopt shared yshrsmz/renovate-config preset",
+      "url": "https://github.com/yshrsmz/mockwebserver-dart/pull/16",
+      "created_at": "2026-06-20T12:40:55Z",
+      "state": "merged",
+      "number": 16,
+      "type": "User",
+      "stars": 2
+    },
+    {
+      "repo": "yshrsmz/BuildKonfig",
+      "title": "feat!: remove standalone Kotlin/JS plugin support to unblock Kotlin 2.4.0",
+      "url": "https://github.com/yshrsmz/BuildKonfig/pull/333",
+      "created_at": "2026-06-20T10:17:54Z",
+      "state": "merged",
+      "number": 333,
+      "type": "User",
+      "stars": 1186
+    },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
       "title": "fix(site): 記事詳細の useAsyncData 警告と CSR 遷移時の表示不具合を修正",
@@ -174,7 +204,7 @@
       "state": "merged",
       "number": 323,
       "type": "User",
-      "stars": 1181
+      "stars": 1186
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -184,7 +214,7 @@
       "state": "merged",
       "number": 321,
       "type": "User",
-      "stars": 1181
+      "stars": 1186
     },
     {
       "repo": "yshrsmz/cc-plugins",
@@ -204,7 +234,7 @@
       "state": "merged",
       "number": 318,
       "type": "User",
-      "stars": 1181
+      "stars": 1186
     },
     {
       "repo": "yshrsmz/changelog-compose",
@@ -274,7 +304,7 @@
       "state": "merged",
       "number": 313,
       "type": "User",
-      "stars": 1181
+      "stars": 1186
     },
     {
       "repo": "yshrsmz/kover-report-action",
@@ -444,7 +474,7 @@
       "state": "merged",
       "number": 312,
       "type": "User",
-      "stars": 1181
+      "stars": 1186
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -454,7 +484,7 @@
       "state": "merged",
       "number": 310,
       "type": "User",
-      "stars": 1181
+      "stars": 1186
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -464,7 +494,7 @@
       "state": "merged",
       "number": 308,
       "type": "User",
-      "stars": 1181
+      "stars": 1186
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -474,37 +504,7 @@
       "state": "merged",
       "number": 306,
       "type": "User",
-      "stars": 1181
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "test: add unit tests for the compiler module and the merge-logic helpers",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/305",
-      "created_at": "2026-05-05T08:34:28Z",
-      "state": "merged",
-      "number": 305,
-      "type": "User",
-      "stars": 1181
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "test: fill specific coverage gaps in the Gradle plugin test suite",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/304",
-      "created_at": "2026-05-05T05:37:24Z",
-      "state": "merged",
-      "number": 304,
-      "type": "User",
-      "stars": 1181
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "refactor(test): reduce boilerplate in the Gradle plugin test suite",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/303",
-      "created_at": "2026-05-05T04:02:48Z",
-      "state": "merged",
-      "number": 303,
-      "type": "User",
-      "stars": 1181
+      "stars": 1186
     }
   ]
 }
