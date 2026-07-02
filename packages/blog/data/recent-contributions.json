@@ -1,11 +1,21 @@
 {
-  "updated_at": 1782695197163,
+  "updated_at": 1782954125774,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/cc-plugins",
+      "title": "fix(meta): relax project-specific qualifier in session-review destinations table",
+      "url": "https://github.com/yshrsmz/cc-plugins/pull/21",
+      "created_at": "2026-06-30T23:26:08Z",
+      "state": "merged",
+      "number": 21,
+      "type": "User",
+      "stars": 0
+    },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
       "title": "refactor(site-api-github): migrate from graphql-request to @octokit/graphql",
@@ -493,16 +503,6 @@
       "created_at": "2026-05-05T17:40:55Z",
       "state": "merged",
       "number": 308,
-      "type": "User",
-      "stars": 1186
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "feat(deps): migrate to AGP 9.2.1 / Gradle 9.4.1",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/306",
-      "created_at": "2026-05-05T16:56:43Z",
-      "state": "merged",
-      "number": 306,
       "type": "User",
       "stars": 1186
     }
