@@ -1,11 +1,31 @@
 {
-  "updated_at": 1784162467703,
+  "updated_at": 1784508342014,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/cc-plugins",
+      "title": "feat(github): check PR state in renovate-pr-review Step 1",
+      "url": "https://github.com/yshrsmz/cc-plugins/pull/24",
+      "created_at": "2026-07-19T16:18:02Z",
+      "state": "merged",
+      "number": 24,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/changelog-compose",
+      "title": "chore(app): update targetSdk to 37",
+      "url": "https://github.com/yshrsmz/changelog-compose/pull/79",
+      "created_at": "2026-07-18T04:42:38Z",
+      "state": "merged",
+      "number": 79,
+      "type": "User",
+      "stars": 4
+    },
     {
       "repo": "yshrsmz/changelog-compose",
       "title": "feat(changelog): expose contentPadding in public ChangelogContent API",
@@ -94,7 +114,7 @@
       "state": "merged",
       "number": 333,
       "type": "User",
-      "stars": 1193
+      "stars": 1196
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -264,7 +284,7 @@
       "state": "merged",
       "number": 323,
       "type": "User",
-      "stars": 1193
+      "stars": 1196
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -274,7 +294,7 @@
       "state": "merged",
       "number": 321,
       "type": "User",
-      "stars": 1193
+      "stars": 1196
     },
     {
       "repo": "yshrsmz/cc-plugins",
@@ -294,7 +314,7 @@
       "state": "merged",
       "number": 318,
       "type": "User",
-      "stars": 1193
+      "stars": 1196
     },
     {
       "repo": "yshrsmz/changelog-compose",
@@ -364,7 +384,7 @@
       "state": "merged",
       "number": 313,
       "type": "User",
-      "stars": 1193
+      "stars": 1196
     },
     {
       "repo": "yshrsmz/kover-report-action",
@@ -483,26 +503,6 @@
       "created_at": "2026-05-07T14:24:34Z",
       "state": "merged",
       "number": 79,
-      "type": "User",
-      "stars": 3
-    },
-    {
-      "repo": "yshrsmz/omniatp",
-      "title": "ci: read node version from mise.toml via action-mise-values",
-      "url": "https://github.com/yshrsmz/omniatp/pull/76",
-      "created_at": "2026-05-07T13:55:56Z",
-      "state": "merged",
-      "number": 76,
-      "type": "User",
-      "stars": 3
-    },
-    {
-      "repo": "yshrsmz/omniatp",
-      "title": "chore: split renovate groups by manager",
-      "url": "https://github.com/yshrsmz/omniatp/pull/71",
-      "created_at": "2026-05-07T12:28:41Z",
-      "state": "merged",
-      "number": 71,
       "type": "User",
       "stars": 3
     }
