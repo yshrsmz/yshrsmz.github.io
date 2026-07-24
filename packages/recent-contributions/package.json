@@ -14,7 +14,7 @@
     "@octokit/types": "16.0.0",
     "@types/node": "24.13.3",
     "tsx": "4.23.0",
-    "typescript": "6.0.3"
+    "typescript": "7.0.2"
   },
   "dependencies": {
     "octokit": "5.0.5"
