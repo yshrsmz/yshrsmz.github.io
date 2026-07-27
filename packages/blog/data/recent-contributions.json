@@ -1,11 +1,21 @@
 {
-  "updated_at": 1784508342014,
+  "updated_at": 1785113227321,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/omniatp",
+      "title": "Add reviewers to renovate.json",
+      "url": "https://github.com/yshrsmz/omniatp/pull/158",
+      "created_at": "2026-07-25T07:28:54Z",
+      "state": "merged",
+      "number": 158,
+      "type": "User",
+      "stars": 3
+    },
     {
       "repo": "yshrsmz/cc-plugins",
       "title": "feat(github): check PR state in renovate-pr-review Step 1",
@@ -114,7 +124,7 @@
       "state": "merged",
       "number": 333,
       "type": "User",
-      "stars": 1196
+      "stars": 1200
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -284,7 +294,7 @@
       "state": "merged",
       "number": 323,
       "type": "User",
-      "stars": 1196
+      "stars": 1200
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -294,7 +304,7 @@
       "state": "merged",
       "number": 321,
       "type": "User",
-      "stars": 1196
+      "stars": 1200
     },
     {
       "repo": "yshrsmz/cc-plugins",
@@ -314,7 +324,7 @@
       "state": "merged",
       "number": 318,
       "type": "User",
-      "stars": 1196
+      "stars": 1200
     },
     {
       "repo": "yshrsmz/changelog-compose",
@@ -384,7 +394,7 @@
       "state": "merged",
       "number": 313,
       "type": "User",
-      "stars": 1196
+      "stars": 1200
     },
     {
       "repo": "yshrsmz/kover-report-action",
@@ -493,16 +503,6 @@
       "created_at": "2026-05-07T15:34:58Z",
       "state": "merged",
       "number": 83,
-      "type": "User",
-      "stars": 3
-    },
-    {
-      "repo": "yshrsmz/omniatp",
-      "title": "ci: automate releases with release-please",
-      "url": "https://github.com/yshrsmz/omniatp/pull/79",
-      "created_at": "2026-05-07T14:24:34Z",
-      "state": "merged",
-      "number": 79,
       "type": "User",
       "stars": 3
     }
