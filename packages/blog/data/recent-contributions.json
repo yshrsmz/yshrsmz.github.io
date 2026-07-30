@@ -1,11 +1,21 @@
 {
-  "updated_at": 1785113227321,
+  "updated_at": 1785372056754,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/yshrsmz",
+      "title": "feat: generate profile assets with GitHub Actions instead of hosted endpoints",
+      "url": "https://github.com/yshrsmz/yshrsmz/pull/4",
+      "created_at": "2026-07-28T08:38:32Z",
+      "state": "merged",
+      "number": 4,
+      "type": "User",
+      "stars": 0
+    },
     {
       "repo": "yshrsmz/omniatp",
       "title": "Add reviewers to renovate.json",
@@ -493,16 +503,6 @@
       "created_at": "2026-05-07T16:53:04Z",
       "state": "merged",
       "number": 88,
-      "type": "User",
-      "stars": 3
-    },
-    {
-      "repo": "yshrsmz/omniatp",
-      "title": "test: add vitest setup with unit and component tests",
-      "url": "https://github.com/yshrsmz/omniatp/pull/83",
-      "created_at": "2026-05-07T15:34:58Z",
-      "state": "merged",
-      "number": 83,
       "type": "User",
       "stars": 3
     }
