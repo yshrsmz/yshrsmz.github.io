@@ -1,5 +1,5 @@
 {
-  "updated_at": 1785717952111,
+  "updated_at": 1785976674848,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
@@ -144,7 +144,7 @@
       "state": "merged",
       "number": 333,
       "type": "User",
-      "stars": 1200
+      "stars": 1202
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -204,7 +204,7 @@
       "state": "merged",
       "number": 75,
       "type": "User",
-      "stars": 26
+      "stars": 27
     },
     {
       "repo": "yshrsmz/action-mise-values",
@@ -314,7 +314,7 @@
       "state": "merged",
       "number": 323,
       "type": "User",
-      "stars": 1200
+      "stars": 1202
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -324,7 +324,7 @@
       "state": "merged",
       "number": 321,
       "type": "User",
-      "stars": 1200
+      "stars": 1202
     },
     {
       "repo": "yshrsmz/cc-plugins",
@@ -344,7 +344,7 @@
       "state": "merged",
       "number": 318,
       "type": "User",
-      "stars": 1200
+      "stars": 1202
     },
     {
       "repo": "yshrsmz/changelog-compose",
@@ -414,7 +414,7 @@
       "state": "merged",
       "number": 313,
       "type": "User",
-      "stars": 1200
+      "stars": 1202
     },
     {
       "repo": "yshrsmz/kover-report-action",
