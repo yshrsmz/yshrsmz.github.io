@@ -12,14 +12,22 @@ export function rewritePostUrl(url: string): string {
   )
 }
 
+export function getEntryDateFromRewrittenUrl(
+  url: string,
+): EntryDate | undefined {
+  // convert `2023/05/31/jest-environment-directory/` to year/month/day parts
+  const match = url.match(/(\d{4})\/(\d{2})\/(\d{2})\/.*\//)
+  if (!match) {
+    return undefined
+  }
+  const [, year, month, day] = match
+  return formatDate(year, month, day)
+}
+
 export function getPublishedDateFromRewrittenUrl(
   url: string,
 ): string | undefined {
-  // convert `2023/05/31/jest-environment-directory/` to `2023-05-31`
-  if (url.match(/\d{4}\/\d{2}\/\d{2}\/.*\//)) {
-    return url.replace(/(\d{4})\/(\d{2})\/(\d{2})\/(.*)\//, '$1-$2-$3')
-  }
-  return undefined
+  return getEntryDateFromRewrittenUrl(url)?.time
 }
 
 export function getPublishedDateFromPath(
@@ -97,7 +105,7 @@ export function toPost({ url, frontmatter, excerpt }: ContentData): Post {
     frontmatter,
     url: rewritePostUrl(url),
     excerpt,
-    date: getPublishedDateFromPath(url),
+    date: getEntryDateFromRewrittenUrl(url),
   }
 }
 

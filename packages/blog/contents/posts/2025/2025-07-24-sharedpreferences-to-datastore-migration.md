@@ -84,7 +84,7 @@ class UserDataStore(context: Context) {
 
 ### 1. 文字列の Wrapping 問題
 
-以前の記事「[SharedPreferences に末尾が改行になる文字列を保存するとよくわからんスペースが4つ追加される件](/posts/2024/2024-11-11-android-sharedprefs-newline-spaces)」で書いたように、SharedPreferences には改行文字周りのバグがあるため、文字列を `"` で囲んで保存する workaround を使ってた。
+以前の記事「[SharedPreferences に末尾が改行になる文字列を保存するとよくわからんスペースが4つ追加される件](/2024/11/11/android-sharedprefs-newline-spaces/)」で書いたように、SharedPreferences には改行文字周りのバグがあるため、文字列を `"` で囲んで保存する workaround を使ってた。
 
 この workaround を使った既存データを DataStore に移行する場合、unwrap 処理が必要。
 
@@ -333,6 +333,6 @@ SharedPreferences から DataStore への移行、最初は面倒に感じたけ
 - 型安全性が向上
 - テストしやすい設計に
 
-ただし、[改行文字バグの workaround](/posts/2024/2024-11-11-android-sharedprefs-newline-spaces) とか型の不一致とか、レガシーコードの罠には注意。移行前にしっかりテストを書いておくのが大事。
+ただし、[改行文字バグの workaround](/2024/11/11/android-sharedprefs-newline-spaces/) とか型の不一致とか、レガシーコードの罠には注意。移行前にしっかりテストを書いておくのが大事。
 
 次は Proto DataStore への移行も検討中…でもまあ、Preferences DataStore で充分な気もしている。
