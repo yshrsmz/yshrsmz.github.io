@@ -1,7 +1,7 @@
 import type { ContentData } from 'vitepress'
 import { createContentLoader } from 'vitepress'
 import {
-  getPublishedDateFromPath,
+  getEntryDateFromRewrittenUrl,
   objectHasOwnProperty,
   POST_MARKDOWN_PATTERN,
   rewritePostUrl,
@@ -30,7 +30,7 @@ export default createContentLoader(POST_MARKDOWN_PATTERN, {
           acc[tag].push({
             title: post.frontmatter.title,
             url: rewritePostUrl(post.url),
-            date: getPublishedDateFromPath(post.url),
+            date: getEntryDateFromRewrittenUrl(post.url),
           })
         }
 
