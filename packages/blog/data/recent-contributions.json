@@ -1,11 +1,21 @@
 {
-  "updated_at": 1787818852995,
+  "updated_at": 1788150973490,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/kover-report-action",
+      "title": "fix(build-and-commit): prevent unrelated-label runs from cancelling the real run",
+      "url": "https://github.com/yshrsmz/kover-report-action/pull/183",
+      "created_at": "2026-08-31T03:03:11Z",
+      "state": "merged",
+      "number": 183,
+      "type": "User",
+      "stars": 2
+    },
     {
       "repo": "yshrsmz/omniatp",
       "title": "chore: pin pnpm version in mise.toml",
@@ -214,7 +224,7 @@
       "state": "merged",
       "number": 333,
       "type": "User",
-      "stars": 1210
+      "stars": 1211
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -384,7 +394,7 @@
       "state": "merged",
       "number": 323,
       "type": "User",
-      "stars": 1210
+      "stars": 1211
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -394,7 +404,7 @@
       "state": "merged",
       "number": 321,
       "type": "User",
-      "stars": 1210
+      "stars": 1211
     },
     {
       "repo": "yshrsmz/cc-plugins",
@@ -414,7 +424,7 @@
       "state": "merged",
       "number": 318,
       "type": "User",
-      "stars": 1210
+      "stars": 1211
     },
     {
       "repo": "yshrsmz/changelog-compose",
@@ -484,7 +494,7 @@
       "state": "merged",
       "number": 313,
       "type": "User",
-      "stars": 1210
+      "stars": 1211
     },
     {
       "repo": "yshrsmz/kover-report-action",
@@ -495,16 +505,6 @@
       "number": 130,
       "type": "User",
       "stars": 2
-    },
-    {
-      "repo": "yshrsmz/omniatp",
-      "title": "fix(options): balance vertical padding in Changelog dialog scroll area",
-      "url": "https://github.com/yshrsmz/omniatp/pull/107",
-      "created_at": "2026-05-09T04:16:40Z",
-      "state": "merged",
-      "number": 107,
-      "type": "User",
-      "stars": 3
     }
   ]
 }
