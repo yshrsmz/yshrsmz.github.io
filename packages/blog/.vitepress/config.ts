@@ -21,7 +21,6 @@ const ogpGenerator = new OGPImageGenerator()
 
 const isProduction = process.env.NODE_ENV === 'production'
 const shouldUseGTM = isProduction
-const shouldUseAdsense = isProduction
 const productionHeads = new Set<HeadConfig>([
   ['meta', { name: 'deployed-version', content: commitHash }],
 ])
@@ -43,16 +42,10 @@ if (shouldUseGTM) {
     gtag('config', 'G-XZRK8ZP8XC');`,
   ])
 }
-if (shouldUseAdsense) {
-  productionHeads.add([
-    'script',
-    {
-      async: '',
-      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1022395241918455',
-      crossorigin: 'anonymous',
-    },
-  ])
-}
+// NOTE: AdSense は head から読み込まない。
+// 自動広告が hydration より前に DOM へノードを挿入すると Vue が mismatch を検出し、
+// 初回ロード時に使われる lean chunk (本文が空) で再描画されて本文が消える。
+// 代わりに VPLayout.vue の onMounted で hydration 後に読み込む。
 
 function detectPageTypeFromPath(path: string): 'post' | 'scrap' | 'other' {
   if (path.match(/^scraps\/(\d+)\//)) {

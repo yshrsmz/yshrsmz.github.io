@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useData, useRouter } from 'vitepress'
-import { computed } from 'vue'
+import { computed, onMounted } from 'vue'
 import VPContributions from './components/VPContributions.vue'
 import VPFooter from './components/VPFooter.vue'
 import VPHeader from './components/VPHeader.vue'
@@ -33,6 +33,26 @@ if (typeof window !== 'undefined') {
     window.twttr.widgets.load()
   }
 }
+
+const ADSENSE_SCRIPT_ID = 'google-adsense'
+const ADSENSE_SRC =
+  'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1022395241918455'
+
+// AdSense は hydration が終わってから読み込む。
+// head から読み込むと、自動広告が app.mount() より前に DOM へノードを挿入することがあり、
+// Vue が hydration mismatch を検出して該当サブツリーを再描画する。
+// 初回ロードでは本文を除いた lean chunk が使われるため、その再描画で本文が消えてしまう。
+onMounted(() => {
+  if (!import.meta.env.PROD) return
+  if (document.getElementById(ADSENSE_SCRIPT_ID)) return
+
+  const script = document.createElement('script')
+  script.id = ADSENSE_SCRIPT_ID
+  script.async = true
+  script.src = ADSENSE_SRC
+  script.crossOrigin = 'anonymous'
+  document.head.appendChild(script)
+})
 </script>
 
 <template>
