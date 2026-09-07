@@ -1,11 +1,41 @@
 {
-  "updated_at": 1788396200907,
+  "updated_at": 1788742000988,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "PeterDaveHello/url-shorteners",
+      "title": "Add amzn.asia for Amazon(www.amazon.co.jp)",
+      "url": "https://github.com/PeterDaveHello/url-shorteners/pull/148",
+      "created_at": "2026-09-06T15:57:43Z",
+      "state": "merged",
+      "number": 148,
+      "type": "User",
+      "stars": 169
+    },
+    {
+      "repo": "yshrsmz/cc-plugins",
+      "title": "feat(github): add branch-cleanup skill",
+      "url": "https://github.com/yshrsmz/cc-plugins/pull/26",
+      "created_at": "2026-09-06T02:37:19Z",
+      "state": "merged",
+      "number": 26,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/cc-plugins",
+      "title": "refactor(github)!: rename PR-suffixed skills/agents to PR-prefixed",
+      "url": "https://github.com/yshrsmz/cc-plugins/pull/25",
+      "created_at": "2026-09-05T09:23:46Z",
+      "state": "merged",
+      "number": 25,
+      "type": "User",
+      "stars": 0
+    },
     {
       "repo": "yshrsmz/kover-report-action",
       "title": "fix(build-and-commit): prevent unrelated-label runs from cancelling the real run",
@@ -475,36 +505,6 @@
       "number": 627,
       "type": "Organization",
       "stars": 10
-    },
-    {
-      "repo": "yshrsmz/cc-plugins",
-      "title": "fix(github): close deprecation-silencer classification gap in renovate-pr-review",
-      "url": "https://github.com/yshrsmz/cc-plugins/pull/15",
-      "created_at": "2026-05-11T10:16:26Z",
-      "state": "merged",
-      "number": 15,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "ci: use GitHub App token for release-please",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/313",
-      "created_at": "2026-05-10T09:41:29Z",
-      "state": "merged",
-      "number": 313,
-      "type": "User",
-      "stars": 1212
-    },
-    {
-      "repo": "yshrsmz/kover-report-action",
-      "title": "chore(pnpm): migrate to pnpm v11",
-      "url": "https://github.com/yshrsmz/kover-report-action/pull/130",
-      "created_at": "2026-05-10T04:35:02Z",
-      "state": "merged",
-      "number": 130,
-      "type": "User",
-      "stars": 2
     }
   ]
 }
