@@ -31,7 +31,7 @@
     "postcss-import": "17.0.0",
     "postcss-nesting": "14.0.1",
     "prettier-plugin-tailwindcss": "0.8.1",
-    "satori": "0.33.0",
+    "satori": "0.33.3",
     "sitemap": "9.0.1",
     "tailwindcss": "4.3.3",
     "typescript": "7.0.2",
