@@ -1,11 +1,51 @@
 {
-  "updated_at": 1789951581316,
+  "updated_at": 1790210506120,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/cc-plugins",
+      "title": "feat(writing)!: merge dedupe-cleanup into deai",
+      "url": "https://github.com/yshrsmz/cc-plugins/pull/32",
+      "created_at": "2026-09-23T09:37:20Z",
+      "state": "merged",
+      "number": 32,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/cc-plugins",
+      "title": "fix(writing): fix dedupe-cleanup heading levels and add argument-hint",
+      "url": "https://github.com/yshrsmz/cc-plugins/pull/31",
+      "created_at": "2026-09-23T00:08:05Z",
+      "state": "merged",
+      "number": 31,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/cc-plugins",
+      "title": "feat(writing): add writing plugin with deai and dedupe-cleanup",
+      "url": "https://github.com/yshrsmz/cc-plugins/pull/30",
+      "created_at": "2026-09-22T15:32:28Z",
+      "state": "merged",
+      "number": 30,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/renovate-config",
+      "title": "chore: create the GitHub Actions group only once a month",
+      "url": "https://github.com/yshrsmz/renovate-config/pull/6",
+      "created_at": "2026-09-22T06:00:43Z",
+      "state": "merged",
+      "number": 6,
+      "type": "User",
+      "stars": 0
+    },
     {
       "repo": "yshrsmz/BuildKonfig",
       "title": "docs: rewrite the release process for release-please",
@@ -465,46 +505,6 @@
       "number": 141,
       "type": "User",
       "stars": 3
-    },
-    {
-      "repo": "yshrsmz/renovate-config",
-      "title": "feat(npm): split dependencies/devDependencies and group vitejs",
-      "url": "https://github.com/yshrsmz/renovate-config/pull/3",
-      "created_at": "2026-05-22T02:22:09Z",
-      "state": "merged",
-      "number": 3,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/omniatp",
-      "title": "chore: migrate Renovate config to shared preset",
-      "url": "https://github.com/yshrsmz/omniatp/pull/137",
-      "created_at": "2026-05-22T02:10:29Z",
-      "state": "merged",
-      "number": 137,
-      "type": "User",
-      "stars": 3
-    },
-    {
-      "repo": "yshrsmz/yshrsmz.github.io",
-      "title": "chore(renovate): migrate to yshrsmz/renovate-config presets",
-      "url": "https://github.com/yshrsmz/yshrsmz.github.io/pull/435",
-      "created_at": "2026-05-21T13:47:07Z",
-      "state": "merged",
-      "number": 435,
-      "type": "User",
-      "stars": 1
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "test(plugin): make the new CC test exercise the per-leaf jvmMain Provider chain",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/323",
-      "created_at": "2026-05-20T14:22:58Z",
-      "state": "merged",
-      "number": 323,
-      "type": "User",
-      "stars": 1217
     }
   ]
 }
