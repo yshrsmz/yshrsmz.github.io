@@ -96,9 +96,24 @@ Crash and error reports are processed by Google LLC, which may process them in t
 ## 7. Retention and deletion
 
 - Data stored on your device (§2) stays until you delete it in the App, clear the App's data, or uninstall the App.
-- Crash and error reports (§3.1) are kept by Crashlytics for 90 days, then removal starts. Uninstalling the App does not remove reports already sent.
+- Crash and error reports (§3.1) are kept by Crashlytics for 90 days, then removal starts. Uninstalling the App does not remove reports already sent. You can request their deletion from the App (§7.1).
 - Backup copies (§3.3) are managed in your Google account and device settings.
 - Data received by link-shortening services (§3.2) is governed by each service's own privacy policy.
+
+### 7.1 Deleting crash report data from the App {#delete-crash-report-data}
+
+You can ask Firebase to delete the crash report data sent from your installation of the App:
+
+1. Open **Settings** in the App.
+2. In the **Privacy** section, tap **Delete crash report data**.
+3. Confirm in the dialog.
+
+The App needs an internet connection for this. It shows whether the request succeeded, and if it failed, you can try again.
+
+- The App asks Firebase to delete the Firebase installation ID that identifies your installation. Firebase removes the data linked to it within 180 days.
+- A new installation ID is created the next time the App starts or a new session begins. It is not linked to the old one.
+- Reports created before the App next starts may still be sent under the old identifier. These are reports that had not been sent at the time of the deletion, and crashes that happen after the deletion while the App keeps running. They are removed within 90 days of receipt, as described in §3.1.
+- Crash reporting continues after the deletion. The App has no setting to turn it off (§3.1).
 
 ## 8. Your rights
 
@@ -106,7 +121,7 @@ Crash and error reports are processed by Google LLC, which may process them in t
 
 You have the right to request access to, rectification of, or erasure of your personal data, to request restriction of processing, to object to processing based on legitimate interest, and to data portability.
 
-Most of the App's data is on your device and is under your control directly. For crash reports, note that the developer cannot tell which report belongs to whom: reports carry installation identifiers only, and the App has no account. If you want to make a request, contact yshrsmz.ys+pp@gmail.com.
+Most of the App's data is on your device and is under your control directly. For crash reports, note that the developer cannot tell which report belongs to whom: reports carry installation identifiers only, and the App has no account. You can delete the crash report data sent from your installation yourself, from the App (§7.1). For other requests, contact yshrsmz.ys+pp@gmail.com.
 
 You also have the right to lodge a complaint with your local Data Protection Authority (Art. 77 GDPR).
 
@@ -117,7 +132,7 @@ You also have the right to lodge a complaint with your local Data Protection Aut
 - **Business purpose:** debugging and fixing errors in the App.
 - **Disclosed for a business purpose:** to Google LLC as a service provider for crash reporting.
 - **We do not sell or share your personal information**, and we do not engage in cross-context behavioral advertising.
-- You may exercise the rights to know, delete, and correct by contacting yshrsmz.ys+pp@gmail.com.
+- You may exercise the rights to know, delete, and correct by contacting yshrsmz.ys+pp@gmail.com. You can also delete the crash report data sent from your installation from the App (§7.1).
 
 ## 9. Children
 
@@ -138,6 +153,7 @@ If this policy changes in a way that affects what data is handled or where it is
 ### Changelog
 
 - **2026-09-25** — Initial publication.
+- **2026-09-25** — Added how to delete crash report data from the App (§7.1).
 
 ## 13. Language
 
