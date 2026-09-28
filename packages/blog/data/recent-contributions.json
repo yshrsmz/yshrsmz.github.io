@@ -1,11 +1,71 @@
 {
-  "updated_at": 1790210506120,
+  "updated_at": 1790556513021,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/cc-plugins",
+      "title": "fix(github): scope git -C and chaining rules to per-command approval",
+      "url": "https://github.com/yshrsmz/cc-plugins/pull/34",
+      "created_at": "2026-09-27T03:34:03Z",
+      "state": "merged",
+      "number": 34,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/cc-plugins",
+      "title": "fix(writing): run deai without fork so detector results are merged",
+      "url": "https://github.com/yshrsmz/cc-plugins/pull/33",
+      "created_at": "2026-09-26T15:12:40Z",
+      "state": "merged",
+      "number": 33,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/changelog-compose",
+      "title": "docs: update README install version to 0.4.0",
+      "url": "https://github.com/yshrsmz/changelog-compose/pull/119",
+      "created_at": "2026-09-26T08:58:58Z",
+      "state": "merged",
+      "number": 119,
+      "type": "User",
+      "stars": 5
+    },
+    {
+      "repo": "yshrsmz/changelog-compose",
+      "title": "feat(changelog): make ChangelogContent labels customizable",
+      "url": "https://github.com/yshrsmz/changelog-compose/pull/118",
+      "created_at": "2026-09-26T08:26:15Z",
+      "state": "merged",
+      "number": 118,
+      "type": "User",
+      "stars": 5
+    },
+    {
+      "repo": "yshrsmz/yshrsmz.github.io",
+      "title": "docs(linkrelay): describe in-app deletion of crash report data",
+      "url": "https://github.com/yshrsmz/yshrsmz.github.io/pull/516",
+      "created_at": "2026-09-25T06:14:39Z",
+      "state": "merged",
+      "number": 516,
+      "type": "User",
+      "stars": 1
+    },
+    {
+      "repo": "yshrsmz/yshrsmz.github.io",
+      "title": "docs(linkrelay): add privacy policy",
+      "url": "https://github.com/yshrsmz/yshrsmz.github.io/pull/515",
+      "created_at": "2026-09-25T03:22:05Z",
+      "state": "merged",
+      "number": 515,
+      "type": "User",
+      "stars": 1
+    },
     {
       "repo": "yshrsmz/cc-plugins",
       "title": "feat(writing)!: merge dedupe-cleanup into deai",
@@ -124,7 +184,7 @@
       "state": "merged",
       "number": 110,
       "type": "User",
-      "stars": 4
+      "stars": 5
     },
     {
       "repo": "PeterDaveHello/url-shorteners",
@@ -284,7 +344,7 @@
       "state": "merged",
       "number": 79,
       "type": "User",
-      "stars": 4
+      "stars": 5
     },
     {
       "repo": "yshrsmz/changelog-compose",
@@ -294,7 +354,7 @@
       "state": "merged",
       "number": 70,
       "type": "User",
-      "stars": 4
+      "stars": 5
     },
     {
       "repo": "yshrsmz/cc-plugins",
@@ -445,66 +505,6 @@
       "number": 23,
       "type": "User",
       "stars": 1
-    },
-    {
-      "repo": "yshrsmz/action-mise-values",
-      "title": "ci: serialize release workflow runs with concurrency",
-      "url": "https://github.com/yshrsmz/action-mise-values/pull/22",
-      "created_at": "2026-06-06T15:06:34Z",
-      "state": "merged",
-      "number": 22,
-      "type": "User",
-      "stars": 1
-    },
-    {
-      "repo": "yshrsmz/omniatp",
-      "title": "fix(SettingsList): drop dead `!border-t-0` on ChangelogItem",
-      "url": "https://github.com/yshrsmz/omniatp/pull/149",
-      "created_at": "2026-05-24T11:04:56Z",
-      "state": "merged",
-      "number": 149,
-      "type": "User",
-      "stars": 3
-    },
-    {
-      "repo": "yshrsmz/omniatp",
-      "title": "refactor(SettingsListItem): forward all attrs (including `class`) to the inner element",
-      "url": "https://github.com/yshrsmz/omniatp/pull/148",
-      "created_at": "2026-05-24T10:48:24Z",
-      "state": "merged",
-      "number": 148,
-      "type": "User",
-      "stars": 3
-    },
-    {
-      "repo": "yshrsmz/cc-plugins",
-      "title": "feat(meta): add meta plugin with session-review skill",
-      "url": "https://github.com/yshrsmz/cc-plugins/pull/17",
-      "created_at": "2026-05-24T09:47:55Z",
-      "state": "merged",
-      "number": 17,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/omniatp",
-      "title": "fix: add pointer cursor and hover affordance to clickable settings",
-      "url": "https://github.com/yshrsmz/omniatp/pull/145",
-      "created_at": "2026-05-24T09:23:18Z",
-      "state": "merged",
-      "number": 145,
-      "type": "User",
-      "stars": 3
-    },
-    {
-      "repo": "yshrsmz/omniatp",
-      "title": "fix: stabilize first clipboard copy after long inactivity",
-      "url": "https://github.com/yshrsmz/omniatp/pull/141",
-      "created_at": "2026-05-23T09:18:10Z",
-      "state": "merged",
-      "number": 141,
-      "type": "User",
-      "stars": 3
     }
   ]
 }
