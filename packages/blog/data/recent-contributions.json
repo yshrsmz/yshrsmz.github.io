@@ -1,11 +1,41 @@
 {
-  "updated_at": 1790815979822,
+  "updated_at": 1791161361649,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/unorm-dart",
+      "title": "ci: create release tags without component prefix",
+      "url": "https://github.com/yshrsmz/unorm-dart/pull/99",
+      "created_at": "2026-10-04T14:32:34Z",
+      "state": "merged",
+      "number": 99,
+      "type": "User",
+      "stars": 16
+    },
+    {
+      "repo": "yshrsmz/unorm-dart",
+      "title": "ci: include Unicode version in data update PR title",
+      "url": "https://github.com/yshrsmz/unorm-dart/pull/98",
+      "created_at": "2026-10-04T13:37:56Z",
+      "state": "merged",
+      "number": 98,
+      "type": "User",
+      "stars": 16
+    },
+    {
+      "repo": "yshrsmz/unorm-dart",
+      "title": "ci: enforce Conventional Commits for automated PRs and PR titles",
+      "url": "https://github.com/yshrsmz/unorm-dart/pull/97",
+      "created_at": "2026-10-04T13:34:25Z",
+      "state": "merged",
+      "number": 97,
+      "type": "User",
+      "stars": 16
+    },
     {
       "repo": "yshrsmz/cc-plugins",
       "title": "fix(github): scope git -C and chaining rules to per-command approval",
@@ -475,36 +505,6 @@
       "number": 19,
       "type": "User",
       "stars": 0
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "fix: remove wildcard from packageRules matchPackageNames",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/655",
-      "created_at": "2026-06-11T11:27:43Z",
-      "state": "merged",
-      "number": 655,
-      "type": "Organization",
-      "stars": 10
-    },
-    {
-      "repo": "yshrsmz/historian",
-      "title": "chore: update Renovate configuration to extend custom configs",
-      "url": "https://github.com/yshrsmz/historian/pull/75",
-      "created_at": "2026-06-09T03:02:55Z",
-      "state": "merged",
-      "number": 75,
-      "type": "User",
-      "stars": 27
-    },
-    {
-      "repo": "yshrsmz/action-mise-values",
-      "title": "fix: use github.ref_name for tag name on tag push",
-      "url": "https://github.com/yshrsmz/action-mise-values/pull/23",
-      "created_at": "2026-06-06T15:36:59Z",
-      "state": "merged",
-      "number": 23,
-      "type": "User",
-      "stars": 1
     }
   ]
 }
