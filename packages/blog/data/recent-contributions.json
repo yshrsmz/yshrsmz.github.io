@@ -1,11 +1,261 @@
 {
-  "updated_at": 1791420373222,
+  "updated_at": 1791766323894,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "feat: show what happened on each thread (add-thread-latest-event)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/24",
+      "created_at": "2026-10-11T15:26:50Z",
+      "state": "draft",
+      "number": 24,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/renovate-config",
+      "title": "docs: align prCreation in README with default.json",
+      "url": "https://github.com/yshrsmz/renovate-config/pull/8",
+      "created_at": "2026-10-11T12:26:01Z",
+      "state": "merged",
+      "number": 8,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/renovate-config",
+      "title": "chore: shorten minimumReleaseAge to 7 days",
+      "url": "https://github.com/yshrsmz/renovate-config/pull/7",
+      "created_at": "2026-10-11T12:23:35Z",
+      "state": "merged",
+      "number": 7,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "feat: make the popover text larger and easier to read (update-list-readability)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/23",
+      "created_at": "2026-10-11T06:53:49Z",
+      "state": "merged",
+      "number": 23,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "feat: open the web notifications page from the account header (add-web-notifications-link)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/22",
+      "created_at": "2026-10-11T06:15:08Z",
+      "state": "merged",
+      "number": 22,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "fix: fade the row title under the hover buttons",
+      "url": "https://github.com/yshrsmz/mewbell/pull/21",
+      "created_at": "2026-10-11T05:05:11Z",
+      "state": "merged",
+      "number": 21,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "feat: collapse accounts and repositories in the list and show issue numbers (update-notification-list)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/20",
+      "created_at": "2026-10-10T14:53:14Z",
+      "state": "merged",
+      "number": 20,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "docs: drop the issue-number section from the handover rule",
+      "url": "https://github.com/yshrsmz/mewbell/pull/19",
+      "created_at": "2026-10-10T14:48:10Z",
+      "state": "merged",
+      "number": 19,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "docs: write related issue and PR numbers as #1234 in the handover note",
+      "url": "https://github.com/yshrsmz/mewbell/pull/18",
+      "created_at": "2026-10-10T14:42:50Z",
+      "state": "merged",
+      "number": 18,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "docs: add a rule for what the local handover note may hold",
+      "url": "https://github.com/yshrsmz/mewbell/pull/17",
+      "created_at": "2026-10-10T14:39:51Z",
+      "state": "merged",
+      "number": 17,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "fix: keep the row's hover buttons at the first title line",
+      "url": "https://github.com/yshrsmz/mewbell/pull/15",
+      "created_at": "2026-10-10T14:31:39Z",
+      "state": "merged",
+      "number": 15,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "docs: record the first release checks and how to dismiss the Gatekeeper dialog",
+      "url": "https://github.com/yshrsmz/mewbell/pull/14",
+      "created_at": "2026-10-10T14:18:03Z",
+      "state": "merged",
+      "number": 14,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/homebrew-tap",
+      "title": "feat: update the Mewbell cask from mewbell releases",
+      "url": "https://github.com/yshrsmz/homebrew-tap/pull/1",
+      "created_at": "2026-10-10T11:13:51Z",
+      "state": "merged",
+      "number": 1,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "feat: automate releases with release-please, attested artifacts, and a Homebrew Cask (add-distribution)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/12",
+      "created_at": "2026-10-10T10:07:59Z",
+      "state": "merged",
+      "number": 12,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "feat: add the Diagnostics tab and show failed actions and the 500-item cap (add-diagnostics)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/11",
+      "created_at": "2026-10-10T08:50:35Z",
+      "state": "merged",
+      "number": 11,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "feat: add the Settings window with per-account options and gh overrides (add-settings)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/10",
+      "created_at": "2026-10-09T15:43:54Z",
+      "state": "merged",
+      "number": 10,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "feat: keep the cat icon next to the unread count and tint it green (update-menu-bar-badge)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/9",
+      "created_at": "2026-10-09T14:28:40Z",
+      "state": "merged",
+      "number": 9,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "feat: fetch immediately when reload is pressed (update-reload-fetch-now)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/8",
+      "created_at": "2026-10-09T13:27:53Z",
+      "state": "merged",
+      "number": 8,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "M4: mark threads read/done and mark all as read (add-thread-actions)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/7",
+      "created_at": "2026-10-09T09:38:27Z",
+      "state": "merged",
+      "number": 7,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "docs: note that test fakes must not block actors synchronously",
+      "url": "https://github.com/yshrsmz/mewbell/pull/6",
+      "created_at": "2026-10-09T08:39:37Z",
+      "state": "merged",
+      "number": 6,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "M3: macOS notifications and mark as read (add-system-notifications)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/5",
+      "created_at": "2026-10-09T01:58:21Z",
+      "state": "merged",
+      "number": 5,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "fix: refetch notifications without If-Modified-Since periodically",
+      "url": "https://github.com/yshrsmz/mewbell/pull/4",
+      "created_at": "2026-10-09T00:48:33Z",
+      "state": "merged",
+      "number": 4,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "M2: fetch notifications (add-notification-fetch)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/3",
+      "created_at": "2026-10-08T13:37:25Z",
+      "state": "merged",
+      "number": 3,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "M1: add gh account discovery (add-gh-account-discovery)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/2",
+      "created_at": "2026-10-08T08:43:59Z",
+      "state": "merged",
+      "number": 2,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "M0: add menu bar app skeleton (add-project-skeleton)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/1",
+      "created_at": "2026-10-07T15:43:56Z",
+      "state": "merged",
+      "number": 1,
+      "type": "User",
+      "stars": 0
+    },
     {
       "repo": "yshrsmz/unorm-dart",
       "title": "ci: create release tags without component prefix",
@@ -144,7 +394,7 @@
       "state": "merged",
       "number": 368,
       "type": "User",
-      "stars": 1219
+      "stars": 1221
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -154,7 +404,7 @@
       "state": "merged",
       "number": 367,
       "type": "User",
-      "stars": 1219
+      "stars": 1221
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -164,7 +414,7 @@
       "state": "merged",
       "number": 366,
       "type": "User",
-      "stars": 1219
+      "stars": 1221
     },
     {
       "repo": "yshrsmz/cc-plugins",
@@ -194,7 +444,7 @@
       "state": "merged",
       "number": 363,
       "type": "User",
-      "stars": 1219
+      "stars": 1221
     },
     {
       "repo": "yshrsmz/cc-plugins",
@@ -255,256 +505,6 @@
       "number": 183,
       "type": "User",
       "stars": 2
-    },
-    {
-      "repo": "yshrsmz/omniatp",
-      "title": "chore: pin pnpm version in mise.toml",
-      "url": "https://github.com/yshrsmz/omniatp/pull/166",
-      "created_at": "2026-08-27T03:55:27Z",
-      "state": "merged",
-      "number": 166,
-      "type": "User",
-      "stars": 3
-    },
-    {
-      "repo": "yshrsmz/renovate-config",
-      "title": "chore: let digest updates through when no release timestamp exists",
-      "url": "https://github.com/yshrsmz/renovate-config/pull/5",
-      "created_at": "2026-08-23T14:40:30Z",
-      "state": "merged",
-      "number": 5,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/historian",
-      "title": "ci: strip build metadata before passing java version to setup-java",
-      "url": "https://github.com/yshrsmz/historian/pull/90",
-      "created_at": "2026-08-20T15:12:32Z",
-      "state": "merged",
-      "number": 90,
-      "type": "User",
-      "stars": 27
-    },
-    {
-      "repo": "yshrsmz/renovate-config",
-      "title": "chore: let java-version updates through when no release timestamp exists",
-      "url": "https://github.com/yshrsmz/renovate-config/pull/4",
-      "created_at": "2026-08-17T05:37:23Z",
-      "state": "merged",
-      "number": 4,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "AndroidDagashi/AndroidDagashi",
-      "title": "chore(ts): align target with Node 26 and deduplicate tsconfig",
-      "url": "https://github.com/AndroidDagashi/AndroidDagashi/pull/3839",
-      "created_at": "2026-08-15T15:42:31Z",
-      "state": "merged",
-      "number": 3839,
-      "type": "Organization",
-      "stars": 97
-    },
-    {
-      "repo": "AndroidDagashi/AndroidDagashi",
-      "title": "chore: update Node.js to v26.7.0 and migrate to mise",
-      "url": "https://github.com/AndroidDagashi/AndroidDagashi/pull/3838",
-      "created_at": "2026-08-15T10:14:31Z",
-      "state": "merged",
-      "number": 3838,
-      "type": "Organization",
-      "stars": 97
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "chore: update Node.js to v26.7.0",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/740",
-      "created_at": "2026-08-15T05:26:06Z",
-      "state": "merged",
-      "number": 740,
-      "type": "Organization",
-      "stars": 10
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "fix(site-api-github): revert graphql to v16.14.2",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/723",
-      "created_at": "2026-07-30T09:44:31Z",
-      "state": "merged",
-      "number": 723,
-      "type": "Organization",
-      "stars": 10
-    },
-    {
-      "repo": "yshrsmz/yshrsmz",
-      "title": "feat: generate profile assets with GitHub Actions instead of hosted endpoints",
-      "url": "https://github.com/yshrsmz/yshrsmz/pull/4",
-      "created_at": "2026-07-28T08:38:32Z",
-      "state": "merged",
-      "number": 4,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/omniatp",
-      "title": "Add reviewers to renovate.json",
-      "url": "https://github.com/yshrsmz/omniatp/pull/158",
-      "created_at": "2026-07-25T07:28:54Z",
-      "state": "merged",
-      "number": 158,
-      "type": "User",
-      "stars": 3
-    },
-    {
-      "repo": "yshrsmz/cc-plugins",
-      "title": "feat(github): check PR state in renovate-pr-review Step 1",
-      "url": "https://github.com/yshrsmz/cc-plugins/pull/24",
-      "created_at": "2026-07-19T16:18:02Z",
-      "state": "merged",
-      "number": 24,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/changelog-compose",
-      "title": "chore(app): update targetSdk to 37",
-      "url": "https://github.com/yshrsmz/changelog-compose/pull/79",
-      "created_at": "2026-07-18T04:42:38Z",
-      "state": "merged",
-      "number": 79,
-      "type": "User",
-      "stars": 5
-    },
-    {
-      "repo": "yshrsmz/changelog-compose",
-      "title": "feat(changelog): expose contentPadding in public ChangelogContent API",
-      "url": "https://github.com/yshrsmz/changelog-compose/pull/70",
-      "created_at": "2026-07-13T16:07:57Z",
-      "state": "merged",
-      "number": 70,
-      "type": "User",
-      "stars": 5
-    },
-    {
-      "repo": "yshrsmz/cc-plugins",
-      "title": "feat(android): add crashlytics-triage skill",
-      "url": "https://github.com/yshrsmz/cc-plugins/pull/22",
-      "created_at": "2026-07-12T07:22:52Z",
-      "state": "merged",
-      "number": 22,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "refactor(site): migrate to Tailwind CSS v4",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/698",
-      "created_at": "2026-07-04T06:08:32Z",
-      "state": "merged",
-      "number": 698,
-      "type": "Organization",
-      "stars": 10
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "refactor(site): replace @apply with template utility classes",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/697",
-      "created_at": "2026-07-04T05:31:48Z",
-      "state": "merged",
-      "number": 697,
-      "type": "Organization",
-      "stars": 10
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "fix(site): hide empty comment section when all comments are minimized",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/695",
-      "created_at": "2026-07-03T17:02:44Z",
-      "state": "merged",
-      "number": 695,
-      "type": "Organization",
-      "stars": 10
-    },
-    {
-      "repo": "yshrsmz/cc-plugins",
-      "title": "fix(meta): relax project-specific qualifier in session-review destinations table",
-      "url": "https://github.com/yshrsmz/cc-plugins/pull/21",
-      "created_at": "2026-06-30T23:26:08Z",
-      "state": "merged",
-      "number": 21,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "refactor(site-api-github): migrate from graphql-request to @octokit/graphql",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/679",
-      "created_at": "2026-06-21T05:08:08Z",
-      "state": "merged",
-      "number": 679,
-      "type": "Organization",
-      "stars": 10
-    },
-    {
-      "repo": "yshrsmz/mockwebserver-dart",
-      "title": "chore(renovate): adopt shared yshrsmz/renovate-config preset",
-      "url": "https://github.com/yshrsmz/mockwebserver-dart/pull/16",
-      "created_at": "2026-06-20T12:40:55Z",
-      "state": "merged",
-      "number": 16,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "feat!: remove standalone Kotlin/JS plugin support to unblock Kotlin 2.4.0",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/333",
-      "created_at": "2026-06-20T10:17:54Z",
-      "state": "merged",
-      "number": 333,
-      "type": "User",
-      "stars": 1219
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "fix(site): 記事詳細の useAsyncData 警告と CSR 遷移時の表示不具合を修正",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/664",
-      "created_at": "2026-06-14T10:19:08Z",
-      "state": "merged",
-      "number": 664,
-      "type": "Organization",
-      "stars": 10
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "fix(site): Markdown の code/pre 要素にスタイルを適用 (#326)",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/663",
-      "created_at": "2026-06-14T09:53:01Z",
-      "state": "merged",
-      "number": 663,
-      "type": "Organization",
-      "stars": 10
-    },
-    {
-      "repo": "AndroidDagashi/androiddagashi.github.io",
-      "title": "fix(site): vue-tsc の null 安全性エラー修正と typecheck CI ゲート追加",
-      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/662",
-      "created_at": "2026-06-14T09:26:42Z",
-      "state": "merged",
-      "number": 662,
-      "type": "Organization",
-      "stars": 10
-    },
-    {
-      "repo": "yshrsmz/cc-plugins",
-      "title": "feat(meta): session-review で checked-in 先を auto-memory より優先",
-      "url": "https://github.com/yshrsmz/cc-plugins/pull/19",
-      "created_at": "2026-06-14T03:50:34Z",
-      "state": "merged",
-      "number": 19,
-      "type": "User",
-      "stars": 0
     }
   ]
 }
