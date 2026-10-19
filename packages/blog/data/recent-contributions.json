@@ -1,5 +1,5 @@
 {
-  "updated_at": 1792024682864,
+  "updated_at": 1792370572600,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
@@ -7,11 +7,421 @@
   },
   "prs": [
     {
+      "repo": "yshrsmz/mewgit",
+      "title": "chore(claude): target/ が 20GB を超えたらセッション終了時に cargo clean する",
+      "url": "https://github.com/yshrsmz/mewgit/pull/209",
+      "created_at": "2026-10-18T15:53:04Z",
+      "state": "merged",
+      "number": 209,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "test: fix fixed-time waits and lingering subprocesses in tests (fix-flaky-test-waits)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/77",
+      "created_at": "2026-10-18T15:38:49Z",
+      "state": "open",
+      "number": 77,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewgit",
+      "title": "feat(keys): config.keymap の上書きを表に当て、案内と dispatch の両方に効かせる",
+      "url": "https://github.com/yshrsmz/mewgit/pull/205",
+      "created_at": "2026-10-18T15:27:33Z",
+      "state": "merged",
+      "number": 205,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "test: remove redundant polling, store, and UI tests (remove-redundant-polling-and-ui-tests)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/74",
+      "created_at": "2026-10-18T13:37:35Z",
+      "state": "merged",
+      "number": 74,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewgit",
+      "title": "refactor(keys): キーの表に動作を持たせ、dispatch を表から引く形にする",
+      "url": "https://github.com/yshrsmz/mewgit/pull/204",
+      "created_at": "2026-10-18T13:33:37Z",
+      "state": "merged",
+      "number": 204,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/changelog-compose",
+      "title": "feat(changelog)!: require all arguments in the ChangelogLabels constructor",
+      "url": "https://github.com/yshrsmz/changelog-compose/pull/135",
+      "created_at": "2026-10-18T13:28:13Z",
+      "state": "merged",
+      "number": 135,
+      "type": "User",
+      "stars": 5
+    },
+    {
+      "repo": "yshrsmz/changelog-compose",
+      "title": "fix(changelog): parse changelog XML off the main thread",
+      "url": "https://github.com/yshrsmz/changelog-compose/pull/134",
+      "created_at": "2026-10-18T13:23:26Z",
+      "state": "merged",
+      "number": 134,
+      "type": "User",
+      "stars": 5
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "test: remove redundant API and account tests",
+      "url": "https://github.com/yshrsmz/mewbell/pull/73",
+      "created_at": "2026-10-18T11:49:11Z",
+      "state": "merged",
+      "number": 73,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "docs: add a testing guide in docs/testing.md (add-testing-guide)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/72",
+      "created_at": "2026-10-18T05:00:04Z",
+      "state": "merged",
+      "number": 72,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "feat: mark the app name and version of debug builds",
+      "url": "https://github.com/yshrsmz/mewbell/pull/71",
+      "created_at": "2026-10-17T15:05:01Z",
+      "state": "merged",
+      "number": 71,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "feat: add the menu bar icon context menu",
+      "url": "https://github.com/yshrsmz/mewbell/pull/70",
+      "created_at": "2026-10-17T10:23:59Z",
+      "state": "merged",
+      "number": 70,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/cc-plugins",
+      "title": "fix(github,meta): correct pr-check jq and drop stale defaults from review skills",
+      "url": "https://github.com/yshrsmz/cc-plugins/pull/35",
+      "created_at": "2026-10-17T05:42:31Z",
+      "state": "merged",
+      "number": 35,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "feat: space out batched thread actions by one second",
+      "url": "https://github.com/yshrsmz/mewbell/pull/69",
+      "created_at": "2026-10-17T05:21:05Z",
+      "state": "merged",
+      "number": 69,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewgit",
+      "title": "fix(exec): 分かれたブランチの push が断られたときの案内から p を外す",
+      "url": "https://github.com/yshrsmz/mewgit/pull/203",
+      "created_at": "2026-10-17T04:59:39Z",
+      "state": "merged",
+      "number": 203,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewgit",
+      "title": "fix(git_read): reflog の読み取りが無いファイルを作らないようにする",
+      "url": "https://github.com/yshrsmz/mewgit/pull/202",
+      "created_at": "2026-10-17T03:35:42Z",
+      "state": "merged",
+      "number": 202,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "fix: align the account heading text on one baseline",
+      "url": "https://github.com/yshrsmz/mewbell/pull/68",
+      "created_at": "2026-10-17T03:25:46Z",
+      "state": "merged",
+      "number": 68,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "fix: withdraw the notifications of threads removed together in one call",
+      "url": "https://github.com/yshrsmz/mewbell/pull/67",
+      "created_at": "2026-10-16T16:30:44Z",
+      "state": "merged",
+      "number": 67,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "AndroidDagashi/androiddagashi.github.io",
+      "title": "ci: typecheck all workspaces (fix sns-updater tsconfig) and parallelize build steps",
+      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/801",
+      "created_at": "2026-10-16T13:59:30Z",
+      "state": "merged",
+      "number": 801,
+      "type": "Organization",
+      "stars": 10
+    },
+    {
+      "repo": "yshrsmz/mewgit",
+      "title": "feat(remote): 巻き戻したブランチの force push を通し、force を追跡 ref の先端を取り込んだ形に絞る",
+      "url": "https://github.com/yshrsmz/mewgit/pull/201",
+      "created_at": "2026-10-16T12:48:02Z",
+      "state": "merged",
+      "number": 201,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "feat: align the account heading buttons and add mark all as done",
+      "url": "https://github.com/yshrsmz/mewbell/pull/66",
+      "created_at": "2026-10-16T12:12:07Z",
+      "state": "merged",
+      "number": 66,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "fix: match the later-waiting run scenario to the approval run search",
+      "url": "https://github.com/yshrsmz/mewbell/pull/65",
+      "created_at": "2026-10-16T10:14:45Z",
+      "state": "merged",
+      "number": 65,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewgit",
+      "title": "feat(ui): graph.ascii で枠線・省略の印・スピナーも ASCII に倒す",
+      "url": "https://github.com/yshrsmz/mewgit/pull/199",
+      "created_at": "2026-10-16T08:56:49Z",
+      "state": "merged",
+      "number": 199,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "docs: split requirements longer than 500 characters",
+      "url": "https://github.com/yshrsmz/mewbell/pull/64",
+      "created_at": "2026-10-16T07:10:37Z",
+      "state": "merged",
+      "number": 64,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewgit",
+      "title": "docs(plan): Homebrew の tap への同期が 0.1.1 で通ったのでチェックを付ける",
+      "url": "https://github.com/yshrsmz/mewgit/pull/198",
+      "created_at": "2026-10-16T06:00:08Z",
+      "state": "merged",
+      "number": 198,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewgit",
+      "title": "feat(release): Release を draft で作り、公開のあとに homebrew-tap へ Formula の更新を知らせる",
+      "url": "https://github.com/yshrsmz/mewgit/pull/197",
+      "created_at": "2026-10-16T05:36:36Z",
+      "state": "merged",
+      "number": 197,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/homebrew-tap",
+      "title": "feat: add the mewgit formula workflow",
+      "url": "https://github.com/yshrsmz/homebrew-tap/pull/10",
+      "created_at": "2026-10-16T05:36:20Z",
+      "state": "merged",
+      "number": 10,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "fix: keep the list width when the scroll bar appears",
+      "url": "https://github.com/yshrsmz/mewbell/pull/62",
+      "created_at": "2026-10-16T04:57:16Z",
+      "state": "merged",
+      "number": 62,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "feat: use GitHub's state colors for thread icons",
+      "url": "https://github.com/yshrsmz/mewbell/pull/61",
+      "created_at": "2026-10-16T02:54:10Z",
+      "state": "merged",
+      "number": 61,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/BuildKonfig",
+      "title": "chore(renovate): use shared renovate-config presets",
+      "url": "https://github.com/yshrsmz/BuildKonfig/pull/377",
+      "created_at": "2026-10-15T16:04:02Z",
+      "state": "merged",
+      "number": 377,
+      "type": "User",
+      "stars": 1221
+    },
+    {
+      "repo": "yshrsmz/mewgit",
+      "title": "fix(scripts): screen.py が全角の 2 桁目の印を消し残して 1 桁詰めるのを直す",
+      "url": "https://github.com/yshrsmz/mewgit/pull/196",
+      "created_at": "2026-10-15T14:59:06Z",
+      "state": "merged",
+      "number": 196,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "refactor: extract the API gateway from GitHubAPIClient (fix-api-client-gateway)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/60",
+      "created_at": "2026-10-15T14:55:17Z",
+      "state": "merged",
+      "number": 60,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewgit",
+      "title": "docs(rules): 責務を移したリファクタの見張りは戻す変異で裁くことと、BSD sed の \\b を書く",
+      "url": "https://github.com/yshrsmz/mewgit/pull/195",
+      "created_at": "2026-10-15T14:22:10Z",
+      "state": "merged",
+      "number": 195,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "feat: mark a repository group as read or done (add-repository-group-actions)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/59",
+      "created_at": "2026-10-15T13:51:42Z",
+      "state": "merged",
+      "number": 59,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewgit",
+      "title": "refactor(app): GraphState::viewport を private にし、窓の変更を set_viewport に寄せる",
+      "url": "https://github.com/yshrsmz/mewgit/pull/194",
+      "created_at": "2026-10-15T13:49:52Z",
+      "state": "merged",
+      "number": 194,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "test: wait for the PUT before checking marking all threads read",
+      "url": "https://github.com/yshrsmz/mewbell/pull/55",
+      "created_at": "2026-10-15T11:50:20Z",
+      "state": "merged",
+      "number": 55,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "fix: open the run of an already approved deployment request (fix-workflow-run-after-approval)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/53",
+      "created_at": "2026-10-15T09:19:09Z",
+      "state": "merged",
+      "number": 53,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "chore: run swift-format of Swift 6.4.1 in CI",
+      "url": "https://github.com/yshrsmz/mewbell/pull/52",
+      "created_at": "2026-10-15T08:54:52Z",
+      "state": "merged",
+      "number": 52,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "feat: open the workflow run of Actions notifications (update-actions-open-url)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/50",
+      "created_at": "2026-10-15T07:25:24Z",
+      "state": "merged",
+      "number": 50,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "fix: merge a conditional 200 into the notification list (fix-conditional-fetch-partial-list)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/49",
+      "created_at": "2026-10-15T06:42:35Z",
+      "state": "merged",
+      "number": 49,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "refactor: align architecture principles with intent (update-architecture-principles)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/48",
+      "created_at": "2026-10-15T05:43:15Z",
+      "state": "merged",
+      "number": 48,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "feat: open individual Discussion and Release pages (update-thread-open-url)",
+      "url": "https://github.com/yshrsmz/mewbell/pull/47",
+      "created_at": "2026-10-15T02:18:40Z",
+      "state": "merged",
+      "number": 47,
+      "type": "User",
+      "stars": 0
+    },
+    {
       "repo": "yshrsmz/mewbell",
       "title": "fix: treat secondary rate limit 403 as a rate limit for the list and actions (fix-secondary-rate-limit-403)",
       "url": "https://github.com/yshrsmz/mewbell/pull/45",
       "created_at": "2026-10-14T16:40:20Z",
-      "state": "draft",
+      "state": "merged",
       "number": 45,
       "type": "User",
       "stars": 0
@@ -95,416 +505,6 @@
       "number": 37,
       "type": "User",
       "stars": 0
-    },
-    {
-      "repo": "yshrsmz/homebrew-tap",
-      "title": "docs: list the casks in the README",
-      "url": "https://github.com/yshrsmz/homebrew-tap/pull/4",
-      "created_at": "2026-10-14T02:52:23Z",
-      "state": "merged",
-      "number": 4,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "refactor: hold the unconditional fetch flag as actor state (remove-poller-flag-atomic)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/36",
-      "created_at": "2026-10-13T14:34:10Z",
-      "state": "merged",
-      "number": 36,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "fix: name the token state icon for VoiceOver (fix-account-token-status-labels)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/35",
-      "created_at": "2026-10-13T13:45:15Z",
-      "state": "merged",
-      "number": 35,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "fix: keep tests from timing out on a slow release runner (fix-slow-runner-test-waits)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/34",
-      "created_at": "2026-10-13T10:11:44Z",
-      "state": "merged",
-      "number": 34,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "fix: make GitHubAPIClient.send private again (fix-api-client-send-privacy)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/32",
-      "created_at": "2026-10-13T06:07:23Z",
-      "state": "merged",
-      "number": 32,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/kover-report-action",
-      "title": "chore(deps): dedupe fast-xml-parser to a single version",
-      "url": "https://github.com/yshrsmz/kover-report-action/pull/219",
-      "created_at": "2026-10-13T01:19:59Z",
-      "state": "open",
-      "number": 219,
-      "type": "User",
-      "stars": 2
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "docs: add architecture principles document (add-architecture-principles)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/31",
-      "created_at": "2026-10-13T00:49:50Z",
-      "state": "merged",
-      "number": 31,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "docs: clarify the icon for threads with an unknown state (update-unknown-state-icon)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/30",
-      "created_at": "2026-10-12T15:47:35Z",
-      "state": "merged",
-      "number": 30,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "fix: drop the stale pnpm self-record from pnpm-lock.yaml",
-      "url": "https://github.com/yshrsmz/mewbell/pull/29",
-      "created_at": "2026-10-12T14:02:25Z",
-      "state": "merged",
-      "number": 29,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "docs: decide review fixes from a verified target design",
-      "url": "https://github.com/yshrsmz/mewbell/pull/28",
-      "created_at": "2026-10-12T13:43:50Z",
-      "state": "merged",
-      "number": 28,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "chore: use pnpm instead of npm for the OpenSpec CLI",
-      "url": "https://github.com/yshrsmz/mewbell/pull/27",
-      "created_at": "2026-10-12T13:43:32Z",
-      "state": "merged",
-      "number": 27,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "fix: widen the icon column to 24pt so thread icons are not clipped (fix-thread-icon-column)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/26",
-      "created_at": "2026-10-12T11:16:33Z",
-      "state": "merged",
-      "number": 26,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "refactor: remove redundant tests (remove-redundant-tests)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/25",
-      "created_at": "2026-10-12T03:24:44Z",
-      "state": "merged",
-      "number": 25,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "feat: show what happened on each thread (add-thread-latest-event)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/24",
-      "created_at": "2026-10-11T15:26:50Z",
-      "state": "merged",
-      "number": 24,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/renovate-config",
-      "title": "docs: align prCreation in README with default.json",
-      "url": "https://github.com/yshrsmz/renovate-config/pull/8",
-      "created_at": "2026-10-11T12:26:01Z",
-      "state": "merged",
-      "number": 8,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/renovate-config",
-      "title": "chore: shorten minimumReleaseAge to 7 days",
-      "url": "https://github.com/yshrsmz/renovate-config/pull/7",
-      "created_at": "2026-10-11T12:23:35Z",
-      "state": "merged",
-      "number": 7,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "feat: make the popover text larger and easier to read (update-list-readability)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/23",
-      "created_at": "2026-10-11T06:53:49Z",
-      "state": "merged",
-      "number": 23,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "feat: open the web notifications page from the account header (add-web-notifications-link)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/22",
-      "created_at": "2026-10-11T06:15:08Z",
-      "state": "merged",
-      "number": 22,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "fix: fade the row title under the hover buttons",
-      "url": "https://github.com/yshrsmz/mewbell/pull/21",
-      "created_at": "2026-10-11T05:05:11Z",
-      "state": "merged",
-      "number": 21,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "feat: collapse accounts and repositories in the list and show issue numbers (update-notification-list)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/20",
-      "created_at": "2026-10-10T14:53:14Z",
-      "state": "merged",
-      "number": 20,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "docs: drop the issue-number section from the handover rule",
-      "url": "https://github.com/yshrsmz/mewbell/pull/19",
-      "created_at": "2026-10-10T14:48:10Z",
-      "state": "merged",
-      "number": 19,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "docs: write related issue and PR numbers as #1234 in the handover note",
-      "url": "https://github.com/yshrsmz/mewbell/pull/18",
-      "created_at": "2026-10-10T14:42:50Z",
-      "state": "merged",
-      "number": 18,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "docs: add a rule for what the local handover note may hold",
-      "url": "https://github.com/yshrsmz/mewbell/pull/17",
-      "created_at": "2026-10-10T14:39:51Z",
-      "state": "merged",
-      "number": 17,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "fix: keep the row's hover buttons at the first title line",
-      "url": "https://github.com/yshrsmz/mewbell/pull/15",
-      "created_at": "2026-10-10T14:31:39Z",
-      "state": "merged",
-      "number": 15,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "docs: record the first release checks and how to dismiss the Gatekeeper dialog",
-      "url": "https://github.com/yshrsmz/mewbell/pull/14",
-      "created_at": "2026-10-10T14:18:03Z",
-      "state": "merged",
-      "number": 14,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/homebrew-tap",
-      "title": "feat: update the Mewbell cask from mewbell releases",
-      "url": "https://github.com/yshrsmz/homebrew-tap/pull/1",
-      "created_at": "2026-10-10T11:13:51Z",
-      "state": "merged",
-      "number": 1,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "feat: automate releases with release-please, attested artifacts, and a Homebrew Cask (add-distribution)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/12",
-      "created_at": "2026-10-10T10:07:59Z",
-      "state": "merged",
-      "number": 12,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "feat: add the Diagnostics tab and show failed actions and the 500-item cap (add-diagnostics)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/11",
-      "created_at": "2026-10-10T08:50:35Z",
-      "state": "merged",
-      "number": 11,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "feat: add the Settings window with per-account options and gh overrides (add-settings)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/10",
-      "created_at": "2026-10-09T15:43:54Z",
-      "state": "merged",
-      "number": 10,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "feat: keep the cat icon next to the unread count and tint it green (update-menu-bar-badge)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/9",
-      "created_at": "2026-10-09T14:28:40Z",
-      "state": "merged",
-      "number": 9,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "feat: fetch immediately when reload is pressed (update-reload-fetch-now)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/8",
-      "created_at": "2026-10-09T13:27:53Z",
-      "state": "merged",
-      "number": 8,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "M4: mark threads read/done and mark all as read (add-thread-actions)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/7",
-      "created_at": "2026-10-09T09:38:27Z",
-      "state": "merged",
-      "number": 7,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "docs: note that test fakes must not block actors synchronously",
-      "url": "https://github.com/yshrsmz/mewbell/pull/6",
-      "created_at": "2026-10-09T08:39:37Z",
-      "state": "merged",
-      "number": 6,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "M3: macOS notifications and mark as read (add-system-notifications)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/5",
-      "created_at": "2026-10-09T01:58:21Z",
-      "state": "merged",
-      "number": 5,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "fix: refetch notifications without If-Modified-Since periodically",
-      "url": "https://github.com/yshrsmz/mewbell/pull/4",
-      "created_at": "2026-10-09T00:48:33Z",
-      "state": "merged",
-      "number": 4,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "M2: fetch notifications (add-notification-fetch)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/3",
-      "created_at": "2026-10-08T13:37:25Z",
-      "state": "merged",
-      "number": 3,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "M1: add gh account discovery (add-gh-account-discovery)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/2",
-      "created_at": "2026-10-08T08:43:59Z",
-      "state": "merged",
-      "number": 2,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "M0: add menu bar app skeleton (add-project-skeleton)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/1",
-      "created_at": "2026-10-07T15:43:56Z",
-      "state": "merged",
-      "number": 1,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/unorm-dart",
-      "title": "ci: create release tags without component prefix",
-      "url": "https://github.com/yshrsmz/unorm-dart/pull/99",
-      "created_at": "2026-10-04T14:32:34Z",
-      "state": "merged",
-      "number": 99,
-      "type": "User",
-      "stars": 16
-    },
-    {
-      "repo": "yshrsmz/unorm-dart",
-      "title": "ci: include Unicode version in data update PR title",
-      "url": "https://github.com/yshrsmz/unorm-dart/pull/98",
-      "created_at": "2026-10-04T13:37:56Z",
-      "state": "merged",
-      "number": 98,
-      "type": "User",
-      "stars": 16
-    },
-    {
-      "repo": "yshrsmz/unorm-dart",
-      "title": "ci: enforce Conventional Commits for automated PRs and PR titles",
-      "url": "https://github.com/yshrsmz/unorm-dart/pull/97",
-      "created_at": "2026-10-04T13:34:25Z",
-      "state": "merged",
-      "number": 97,
-      "type": "User",
-      "stars": 16
     }
   ]
 }
