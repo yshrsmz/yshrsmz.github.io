@@ -19,7 +19,7 @@
     "@vitejs/plugin-vue": "6.0.10",
     "@vue/test-utils": "2.5.1",
     "happy-dom": "21.0.1",
-    "vitest": "5.0.3",
+    "vitest": "5.0.4",
     "@tailwindcss/typography": "0.5.20",
     "@tailwindcss/vite": "4.3.3",
     "autoprefixer": "10.6.1",
@@ -27,16 +27,16 @@
     "fast-glob": "3.3.3",
     "feed": "6.0.0",
     "globals": "17.13.0",
-    "postcss": "8.5.29",
-    "postcss-import": "17.0.0",
+    "postcss": "8.5.30",
+    "postcss-import": "17.0.1",
     "postcss-nesting": "14.0.3",
     "prettier-plugin-tailwindcss": "0.8.1",
-    "satori": "0.44.3",
+    "satori": "0.56.2",
     "sitemap": "9.0.1",
     "tailwindcss": "4.3.3",
     "typescript": "7.0.2",
     "vitepress": "2.0.0-alpha.20",
-    "vue": "3.5.43"
+    "vue": "3.5.44"
   },
   "dependencies": {
     "@vueuse/core": "15.0.0"
