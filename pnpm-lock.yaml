@@ -262,8 +262,8 @@ importers:
         specifier: 0.8.1
         version: 0.8.1(prettier@3.9.10)
       satori:
-        specifier: 0.56.2
-        version: 0.56.2
+        specifier: 0.57.2
+        version: 0.57.2
       sitemap:
         specifier: 9.0.1
         version: 9.0.1
@@ -2247,8 +2247,8 @@ packages:
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
 
-  satori@0.56.2:
-    resolution: {integrity: sha512-XeufDrze8opEuCN16V8ovGDr6jVPbyNI+4l/C47YoPBV7ZrGMDzCFNH9D8/uIKcKBDPHtBXUg3E9OEA2c7nXXg==}
+  satori@0.57.2:
+    resolution: {integrity: sha512-o0jtXN4OR/P316fCykOkxcMJKfBdpwV/w84VMpBgHNFO6zzsM+4XGycuvKyMix+yA0Ax713ELFd/eDC8P6uCfQ==}
     engines: {node: '>=16'}
 
   sax@1.6.1:
@@ -4107,7 +4107,7 @@ snapshots:
     dependencies:
       queue-microtask: 1.2.3
 
-  satori@0.56.2:
+  satori@0.57.2:
     dependencies:
       '@shuding/opentype.js': 1.4.0-beta.0
       css-background-parser: 0.1.0
