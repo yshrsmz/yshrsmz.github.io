@@ -70,7 +70,7 @@ pnpm --filter @codingfeline/action-create-scrap package
   - URL rewrites for clean URLs
   - GTM and AdSense integration (production only)
 - **Biome Config**: `/biome.jsonc` - Code formatting rules
-- **Node Version**: v22.17.1 (managed by mise in `/mise.toml`)
+- **Node Version**: managed by mise in `/mise.toml`
 
 ### Deployment
 - GitHub Actions deploys to GitHub Pages via the official `actions/upload-pages-artifact` +
