@@ -47,7 +47,6 @@ pnpm --filter @codingfeline/action-create-scrap package
 - `/packages/blog/` - Main VitePress blog application
 - `/packages/action-create-scrap/` - GitHub Action for creating scrap posts
 - `/packages/recent-contributions/` - Tool to fetch GitHub contributions
-- `/packages/eslint-config/` - Shared ESLint config (deprecated, uses Biome now)
 
 ### Content Organization
 - Blog posts: `/packages/blog/contents/posts/YYYY/MM/DD/post-title.md`
