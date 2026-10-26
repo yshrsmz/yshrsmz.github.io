@@ -3,12 +3,6 @@
   "editor.codeActionsOnSave": {
     "source.quickfix.biome": "explicit"
   },
-  "eslint.format.enable": true,
-  "eslint.options": {
-    "extensions": [".js", ".vue", ".ts"]
-  },
-  "eslint.validate": ["javascript", "typescript", "vue", "html"],
-  "eslint.onIgnoredFiles": "warn",
   "liveServer.settings.root": ".vitepress/dist/",
   "liveServer.settings.port": 5501,
   "files.associations": {
