@@ -37,9 +37,14 @@ pnpm --filter @codingfeline/recent-contributions start
 # Run tests (recent-contributions package)
 pnpm --filter @codingfeline/recent-contributions test
 
+# Type-check action-create-scrap (rolldown does not type-check)
+pnpm --filter @codingfeline/action-create-scrap typecheck
+
 # Package action-create-scrap for GitHub Actions
 pnpm --filter @codingfeline/action-create-scrap package
 ```
+
+`packages/action-create-scrap/dist/` is committed, because `yshrsmz/scraps` runs the action from `@development`. The `action-create-scrap` CI job (a required check) rebuilds it and fails when the committed `dist/` differs. On bot PRs such as Renovate updates, add the `build-and-commit` label: `build-and-commit.yml` rebuilds `dist/` and pushes it with `COMMIT_TOKEN`, which starts CI again. On your own PRs, run `package` and commit the result.
 
 ## Architecture & Structure
 
