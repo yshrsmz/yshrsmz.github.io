@@ -1,11 +1,151 @@
 {
-  "updated_at": 1792370572600,
+  "updated_at": 1792975296514,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/mewgit",
+      "title": "fix(app): test-util なしのビルドで seated_index が未使用になるのを直す",
+      "url": "https://github.com/yshrsmz/mewgit/pull/217",
+      "created_at": "2026-10-23T16:24:37Z",
+      "state": "merged",
+      "number": 217,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/changelog-compose",
+      "title": "chore(openspec): migrate to the skills-based layout",
+      "url": "https://github.com/yshrsmz/changelog-compose/pull/138",
+      "created_at": "2026-10-23T14:52:34Z",
+      "state": "merged",
+      "number": 138,
+      "type": "User",
+      "stars": 5
+    },
+    {
+      "repo": "yshrsmz/mewgit",
+      "title": "refactor(app): BranchState / StashState / PrState の cursor と一覧を private にする",
+      "url": "https://github.com/yshrsmz/mewgit/pull/216",
+      "created_at": "2026-10-23T12:13:14Z",
+      "state": "merged",
+      "number": 216,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewgit",
+      "title": "refactor(app): private なフィールドを持つ部品を state の子モジュールへ出す",
+      "url": "https://github.com/yshrsmz/mewgit/pull/215",
+      "created_at": "2026-10-22T16:20:54Z",
+      "state": "merged",
+      "number": 215,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewgit",
+      "title": "refactor(graph): GraphState の cursor / scroll を private にし、跳ばす経路を set_cursor に寄せる",
+      "url": "https://github.com/yshrsmz/mewgit/pull/214",
+      "created_at": "2026-10-22T15:52:55Z",
+      "state": "merged",
+      "number": 214,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewgit",
+      "title": "test(git_read): 追跡設定の組み立てを TestRepo のヘルパーに寄せる",
+      "url": "https://github.com/yshrsmz/mewgit/pull/213",
+      "created_at": "2026-10-22T15:45:40Z",
+      "state": "merged",
+      "number": 213,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/cc-plugins",
+      "title": "feat(code-quality): add cross-host simplify skill",
+      "url": "https://github.com/yshrsmz/cc-plugins/pull/37",
+      "created_at": "2026-10-22T05:03:59Z",
+      "state": "merged",
+      "number": 37,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/cc-plugins",
+      "title": "feat: add Codex plugin marketplace support",
+      "url": "https://github.com/yshrsmz/cc-plugins/pull/36",
+      "created_at": "2026-10-22T02:15:56Z",
+      "state": "merged",
+      "number": 36,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/yshrsmz.github.io",
+      "title": "docs: drop stale node version from CLAUDE.md",
+      "url": "https://github.com/yshrsmz/yshrsmz.github.io/pull/536",
+      "created_at": "2026-10-22T01:07:00Z",
+      "state": "merged",
+      "number": 536,
+      "type": "User",
+      "stars": 1
+    },
+    {
+      "repo": "AndroidDagashi/androiddagashi.github.io",
+      "title": "fix(sns-updater): record each SNS post independently",
+      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/806",
+      "created_at": "2026-10-21T14:07:31Z",
+      "state": "merged",
+      "number": 806,
+      "type": "Organization",
+      "stars": 10
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "feat: add the app icon",
+      "url": "https://github.com/yshrsmz/mewbell/pull/80",
+      "created_at": "2026-10-19T14:34:49Z",
+      "state": "merged",
+      "number": 80,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "refactor: drop the unreachable baseline fallback and split ThreadPresentationTests",
+      "url": "https://github.com/yshrsmz/mewbell/pull/79",
+      "created_at": "2026-10-19T12:45:04Z",
+      "state": "merged",
+      "number": 79,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "chore: regenerate OpenSpec skills for 1.14.1 and check them in CI",
+      "url": "https://github.com/yshrsmz/mewbell/pull/78",
+      "created_at": "2026-10-19T07:13:07Z",
+      "state": "merged",
+      "number": 78,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/mewgit",
+      "title": "feat(keys): 通知や画面の文言に書いたキーの字を config.keymap の上書きに追従させる",
+      "url": "https://github.com/yshrsmz/mewgit/pull/210",
+      "created_at": "2026-10-19T06:13:37Z",
+      "state": "merged",
+      "number": 210,
+      "type": "User",
+      "stars": 0
+    },
     {
       "repo": "yshrsmz/mewgit",
       "title": "chore(claude): target/ が 20GB を超えたらセッション終了時に cargo clean する",
@@ -21,7 +161,7 @@
       "title": "test: fix fixed-time waits and lingering subprocesses in tests (fix-flaky-test-waits)",
       "url": "https://github.com/yshrsmz/mewbell/pull/77",
       "created_at": "2026-10-18T15:38:49Z",
-      "state": "open",
+      "state": "merged",
       "number": 77,
       "type": "User",
       "stars": 0
@@ -294,7 +434,7 @@
       "state": "merged",
       "number": 377,
       "type": "User",
-      "stars": 1221
+      "stars": 1223
     },
     {
       "repo": "yshrsmz/mewgit",
@@ -363,146 +503,6 @@
       "created_at": "2026-10-15T09:19:09Z",
       "state": "merged",
       "number": 53,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "chore: run swift-format of Swift 6.4.1 in CI",
-      "url": "https://github.com/yshrsmz/mewbell/pull/52",
-      "created_at": "2026-10-15T08:54:52Z",
-      "state": "merged",
-      "number": 52,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "feat: open the workflow run of Actions notifications (update-actions-open-url)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/50",
-      "created_at": "2026-10-15T07:25:24Z",
-      "state": "merged",
-      "number": 50,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "fix: merge a conditional 200 into the notification list (fix-conditional-fetch-partial-list)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/49",
-      "created_at": "2026-10-15T06:42:35Z",
-      "state": "merged",
-      "number": 49,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "refactor: align architecture principles with intent (update-architecture-principles)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/48",
-      "created_at": "2026-10-15T05:43:15Z",
-      "state": "merged",
-      "number": 48,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "feat: open individual Discussion and Release pages (update-thread-open-url)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/47",
-      "created_at": "2026-10-15T02:18:40Z",
-      "state": "merged",
-      "number": 47,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "fix: treat secondary rate limit 403 as a rate limit for the list and actions (fix-secondary-rate-limit-403)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/45",
-      "created_at": "2026-10-14T16:40:20Z",
-      "state": "merged",
-      "number": 45,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "docs: record the release test run for fix-slow-runner-test-waits",
-      "url": "https://github.com/yshrsmz/mewbell/pull/44",
-      "created_at": "2026-10-14T16:22:05Z",
-      "state": "merged",
-      "number": 44,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "feat: raise the popover heading hit target to 24pt (update-heading-hit-target)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/43",
-      "created_at": "2026-10-14T15:30:46Z",
-      "state": "merged",
-      "number": 43,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "feat: add hover feedback to popover controls (update-popover-hover-feedback)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/42",
-      "created_at": "2026-10-14T14:42:45Z",
-      "state": "merged",
-      "number": 42,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "refactor: pass values and actions to settings sub-views (fix-settings-view-inputs)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/41",
-      "created_at": "2026-10-14T13:49:54Z",
-      "state": "merged",
-      "number": 41,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "fix: clear the A10 and A11 known deviations (fix-minor-principle-deviations)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/40",
-      "created_at": "2026-10-14T12:58:42Z",
-      "state": "merged",
-      "number": 40,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "refactor: move thread text types to Notifications (fix-shared-thread-text-placement)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/39",
-      "created_at": "2026-10-14T10:17:03Z",
-      "state": "merged",
-      "number": 39,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "refactor: point lower-layer dependencies downward (fix-lower-layer-dependencies)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/38",
-      "created_at": "2026-10-14T07:55:49Z",
-      "state": "merged",
-      "number": 38,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "docs: note the -only-testing suite names and removed names in architecture.md",
-      "url": "https://github.com/yshrsmz/mewbell/pull/37",
-      "created_at": "2026-10-14T03:08:43Z",
-      "state": "merged",
-      "number": 37,
       "type": "User",
       "stars": 0
     }
