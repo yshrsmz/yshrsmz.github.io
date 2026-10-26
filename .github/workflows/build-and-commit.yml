@@ -1,0 +1,75 @@
+name: Build and Commit
+
+# Rebuilds packages/action-create-scrap/dist and commits it to the PR branch
+# when the `build-and-commit` label is added. Used for PRs (e.g. Renovate) that
+# change bundled dependencies without updating the committed dist.
+
+on:
+  pull_request:
+    types: [labeled]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  # The `labeled` trigger fires for ANY label, not just `build-and-commit`.
+  # Such runs are skipped by the job-level `if`, but if they land in the same
+  # concurrency group, `cancel-in-progress` kills the real in-flight run.
+  # Route unrelated-label runs to a group made unique by run_id to isolate them.
+  group: >-
+    ${{ github.event.label.name == 'build-and-commit'
+    && format('build-and-commit-{0}', github.event.pull_request.number)
+    || format('build-and-commit-noop-{0}', github.run_id) }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-commit:
+    if: |
+      github.event.label.name == 'build-and-commit' &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-slim
+    timeout-minutes: 15
+
+    steps:
+      # Push with COMMIT_TOKEN (PAT): a push made with GITHUB_TOKEN does not
+      # trigger the CI workflow again, so the PR would keep the stale result.
+      - name: Checkout PR branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          token: ${{ secrets.COMMIT_TOKEN }}
+
+      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+
+      - name: Setup mise
+        uses: jdx/mise-action@2d8d4cafcbd33be2ea37d2b6f5ad595363d1f1ca # v5.1.1
+
+      - name: Install dependencies 👨🏻‍💻
+        run: pnpm install --frozen-lockfile
+
+      - name: package
+        run: pnpm --filter @codingfeline/action-create-scrap package
+
+      - name: Commit and push changes
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          if [[ -z "$(git status --porcelain -- packages/action-create-scrap/dist)" ]]; then
+            echo "dist is up to date. Nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add packages/action-create-scrap/dist
+          git commit -m "chore(action-create-scrap): rebuild dist for PR #${PR_NUMBER}" \
+            -m "Triggered by the build-and-commit label."
+          git push
+
+      - name: Remove label
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          gh pr edit "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --remove-label build-and-commit
