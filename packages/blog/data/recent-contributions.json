@@ -1,11 +1,51 @@
 {
-  "updated_at": 1792975296514,
+  "updated_at": 1793233851485,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/yshrsmz.github.io",
+      "title": "chore(action-create-scrap): run on node24 and drop unused deps",
+      "url": "https://github.com/yshrsmz/yshrsmz.github.io/pull/544",
+      "created_at": "2026-10-26T12:02:42Z",
+      "state": "merged",
+      "number": 544,
+      "type": "User",
+      "stars": 1
+    },
+    {
+      "repo": "yshrsmz/yshrsmz.github.io",
+      "title": "docs: describe the committed dist of action-create-scrap",
+      "url": "https://github.com/yshrsmz/yshrsmz.github.io/pull/543",
+      "created_at": "2026-10-26T05:09:53Z",
+      "state": "merged",
+      "number": 543,
+      "type": "User",
+      "stars": 1
+    },
+    {
+      "repo": "yshrsmz/yshrsmz.github.io",
+      "title": "build(action-create-scrap): migrate bundler from rollup to rolldown",
+      "url": "https://github.com/yshrsmz/yshrsmz.github.io/pull/542",
+      "created_at": "2026-10-26T04:52:56Z",
+      "state": "merged",
+      "number": 542,
+      "type": "User",
+      "stars": 1
+    },
+    {
+      "repo": "yshrsmz/cc-plugins",
+      "title": "feat(code-quality): add cross-host prune-tests skill",
+      "url": "https://github.com/yshrsmz/cc-plugins/pull/39",
+      "created_at": "2026-10-26T04:25:01Z",
+      "state": "merged",
+      "number": 39,
+      "type": "User",
+      "stars": 0
+    },
     {
       "repo": "yshrsmz/mewgit",
       "title": "fix(app): test-util なしのビルドで seated_index が未使用になるのを直す",
@@ -114,7 +154,7 @@
       "state": "merged",
       "number": 80,
       "type": "User",
-      "stars": 0
+      "stars": 1
     },
     {
       "repo": "yshrsmz/mewbell",
@@ -124,7 +164,7 @@
       "state": "merged",
       "number": 79,
       "type": "User",
-      "stars": 0
+      "stars": 1
     },
     {
       "repo": "yshrsmz/mewbell",
@@ -134,7 +174,7 @@
       "state": "merged",
       "number": 78,
       "type": "User",
-      "stars": 0
+      "stars": 1
     },
     {
       "repo": "yshrsmz/mewgit",
@@ -164,7 +204,7 @@
       "state": "merged",
       "number": 77,
       "type": "User",
-      "stars": 0
+      "stars": 1
     },
     {
       "repo": "yshrsmz/mewgit",
@@ -184,7 +224,7 @@
       "state": "merged",
       "number": 74,
       "type": "User",
-      "stars": 0
+      "stars": 1
     },
     {
       "repo": "yshrsmz/mewgit",
@@ -224,7 +264,7 @@
       "state": "merged",
       "number": 73,
       "type": "User",
-      "stars": 0
+      "stars": 1
     },
     {
       "repo": "yshrsmz/mewbell",
@@ -234,7 +274,7 @@
       "state": "merged",
       "number": 72,
       "type": "User",
-      "stars": 0
+      "stars": 1
     },
     {
       "repo": "yshrsmz/mewbell",
@@ -244,7 +284,7 @@
       "state": "merged",
       "number": 71,
       "type": "User",
-      "stars": 0
+      "stars": 1
     },
     {
       "repo": "yshrsmz/mewbell",
@@ -254,7 +294,7 @@
       "state": "merged",
       "number": 70,
       "type": "User",
-      "stars": 0
+      "stars": 1
     },
     {
       "repo": "yshrsmz/cc-plugins",
@@ -274,7 +314,7 @@
       "state": "merged",
       "number": 69,
       "type": "User",
-      "stars": 0
+      "stars": 1
     },
     {
       "repo": "yshrsmz/mewgit",
@@ -304,7 +344,7 @@
       "state": "merged",
       "number": 68,
       "type": "User",
-      "stars": 0
+      "stars": 1
     },
     {
       "repo": "yshrsmz/mewbell",
@@ -314,7 +354,7 @@
       "state": "merged",
       "number": 67,
       "type": "User",
-      "stars": 0
+      "stars": 1
     },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
@@ -344,7 +384,7 @@
       "state": "merged",
       "number": 66,
       "type": "User",
-      "stars": 0
+      "stars": 1
     },
     {
       "repo": "yshrsmz/mewbell",
@@ -354,7 +394,7 @@
       "state": "merged",
       "number": 65,
       "type": "User",
-      "stars": 0
+      "stars": 1
     },
     {
       "repo": "yshrsmz/mewgit",
@@ -374,7 +414,7 @@
       "state": "merged",
       "number": 64,
       "type": "User",
-      "stars": 0
+      "stars": 1
     },
     {
       "repo": "yshrsmz/mewgit",
@@ -414,7 +454,7 @@
       "state": "merged",
       "number": 62,
       "type": "User",
-      "stars": 0
+      "stars": 1
     },
     {
       "repo": "yshrsmz/mewbell",
@@ -424,7 +464,7 @@
       "state": "merged",
       "number": 61,
       "type": "User",
-      "stars": 0
+      "stars": 1
     },
     {
       "repo": "yshrsmz/BuildKonfig",
@@ -454,7 +494,7 @@
       "state": "merged",
       "number": 60,
       "type": "User",
-      "stars": 0
+      "stars": 1
     },
     {
       "repo": "yshrsmz/mewgit",
@@ -463,46 +503,6 @@
       "created_at": "2026-10-15T14:22:10Z",
       "state": "merged",
       "number": 195,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "feat: mark a repository group as read or done (add-repository-group-actions)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/59",
-      "created_at": "2026-10-15T13:51:42Z",
-      "state": "merged",
-      "number": 59,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewgit",
-      "title": "refactor(app): GraphState::viewport を private にし、窓の変更を set_viewport に寄せる",
-      "url": "https://github.com/yshrsmz/mewgit/pull/194",
-      "created_at": "2026-10-15T13:49:52Z",
-      "state": "merged",
-      "number": 194,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "test: wait for the PUT before checking marking all threads read",
-      "url": "https://github.com/yshrsmz/mewbell/pull/55",
-      "created_at": "2026-10-15T11:50:20Z",
-      "state": "merged",
-      "number": 55,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "fix: open the run of an already approved deployment request (fix-workflow-run-after-approval)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/53",
-      "created_at": "2026-10-15T09:19:09Z",
-      "state": "merged",
-      "number": 53,
       "type": "User",
       "stars": 0
     }
