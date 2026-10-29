@@ -11,6 +11,12 @@
       "matchManagers": ["github-actions"],
       "matchDepNames": ["yshrsmz/yshrsmz.github.io"],
       "enabled": false
+    },
+    {
+      "description": "action-create-scrap は runs.using: node24 で動くので、@types/node を実行環境に揃えて 24 系に留める。GitHub Actions が node26 をサポートしたら外す",
+      "matchFileNames": ["packages/action-create-scrap/package.json"],
+      "matchPackageNames": ["@types/node"],
+      "allowedVersions": "<25"
     }
   ]
 }
