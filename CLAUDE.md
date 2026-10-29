@@ -34,8 +34,11 @@ pnpm lint:fix
 # Update recent contributions
 pnpm --filter @codingfeline/recent-contributions start
 
-# Run tests (recent-contributions package)
-pnpm --filter @codingfeline/recent-contributions test
+# Run tests in every package that has a test script (same as CI; only blog has one)
+pnpm -r --if-present test
+
+# Run tests (blog package)
+pnpm --filter @codingfeline/blog test
 
 # Type-check action-create-scrap (rolldown does not type-check)
 pnpm --filter @codingfeline/action-create-scrap typecheck
