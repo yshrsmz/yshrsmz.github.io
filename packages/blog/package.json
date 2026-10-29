@@ -32,7 +32,7 @@
     "postcss-nesting": "14.0.3",
     "prettier-plugin-tailwindcss": "0.8.1",
     "satori": "0.63.2",
-    "sitemap": "9.0.1",
+    "sitemap": "10.0.0",
     "tailwindcss": "4.3.3",
     "typescript": "7.0.2",
     "vitepress": "2.0.0-alpha.20",
