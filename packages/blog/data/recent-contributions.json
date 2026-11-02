@@ -1,11 +1,91 @@
 {
-  "updated_at": 1793233851485,
+  "updated_at": 1793579278721,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/mewbell",
+      "title": "ci: write the mise version with the v prefix so Renovate can update its sha256",
+      "url": "https://github.com/yshrsmz/mewbell/pull/89",
+      "created_at": "2026-10-30T15:18:00Z",
+      "state": "merged",
+      "number": 89,
+      "type": "User",
+      "stars": 1
+    },
+    {
+      "repo": "yshrsmz/cc-plugins",
+      "title": "fix(meta): surface reusable workflows as skill candidates",
+      "url": "https://github.com/yshrsmz/cc-plugins/pull/40",
+      "created_at": "2026-10-30T01:05:32Z",
+      "state": "merged",
+      "number": 40,
+      "type": "User",
+      "stars": 0
+    },
+    {
+      "repo": "yshrsmz/changelog-compose",
+      "title": "fix(changelog): parse in place in previews and screenshot tests",
+      "url": "https://github.com/yshrsmz/changelog-compose/pull/144",
+      "created_at": "2026-10-29T11:26:58Z",
+      "state": "merged",
+      "number": 144,
+      "type": "User",
+      "stars": 5
+    },
+    {
+      "repo": "yshrsmz/changelog-compose",
+      "title": "feat(changelog): add ioDispatcher parameter to ChangelogContent",
+      "url": "https://github.com/yshrsmz/changelog-compose/pull/143",
+      "created_at": "2026-10-29T05:25:31Z",
+      "state": "merged",
+      "number": 143,
+      "type": "User",
+      "stars": 5
+    },
+    {
+      "repo": "yshrsmz/yshrsmz.github.io",
+      "title": "chore(biome): migrate linter.rules.recommended to preset",
+      "url": "https://github.com/yshrsmz/yshrsmz.github.io/pull/553",
+      "created_at": "2026-10-29T05:08:35Z",
+      "state": "open",
+      "number": 553,
+      "type": "User",
+      "stars": 1
+    },
+    {
+      "repo": "yshrsmz/kover-report-action",
+      "title": "chore: keep @types/node at 24 to match runs.using node24",
+      "url": "https://github.com/yshrsmz/kover-report-action/pull/237",
+      "created_at": "2026-10-29T05:08:32Z",
+      "state": "open",
+      "number": 237,
+      "type": "User",
+      "stars": 2
+    },
+    {
+      "repo": "yshrsmz/yshrsmz.github.io",
+      "title": "chore: upgrade Node.js to 26 and keep action-create-scrap types at 24",
+      "url": "https://github.com/yshrsmz/yshrsmz.github.io/pull/552",
+      "created_at": "2026-10-29T04:45:22Z",
+      "state": "open",
+      "number": 552,
+      "type": "User",
+      "stars": 1
+    },
+    {
+      "repo": "yshrsmz/yshrsmz.github.io",
+      "title": "fix: keep Biome 2.6 scope to JS/TS/JSON",
+      "url": "https://github.com/yshrsmz/yshrsmz.github.io/pull/551",
+      "created_at": "2026-10-29T04:45:19Z",
+      "state": "open",
+      "number": 551,
+      "type": "User",
+      "stars": 1
+    },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
       "title": "chore(action-create-scrap): run on node24 and drop unused deps",
@@ -423,86 +503,6 @@
       "created_at": "2026-10-16T06:00:08Z",
       "state": "merged",
       "number": 198,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewgit",
-      "title": "feat(release): Release を draft で作り、公開のあとに homebrew-tap へ Formula の更新を知らせる",
-      "url": "https://github.com/yshrsmz/mewgit/pull/197",
-      "created_at": "2026-10-16T05:36:36Z",
-      "state": "merged",
-      "number": 197,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/homebrew-tap",
-      "title": "feat: add the mewgit formula workflow",
-      "url": "https://github.com/yshrsmz/homebrew-tap/pull/10",
-      "created_at": "2026-10-16T05:36:20Z",
-      "state": "merged",
-      "number": 10,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "fix: keep the list width when the scroll bar appears",
-      "url": "https://github.com/yshrsmz/mewbell/pull/62",
-      "created_at": "2026-10-16T04:57:16Z",
-      "state": "merged",
-      "number": 62,
-      "type": "User",
-      "stars": 1
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "feat: use GitHub's state colors for thread icons",
-      "url": "https://github.com/yshrsmz/mewbell/pull/61",
-      "created_at": "2026-10-16T02:54:10Z",
-      "state": "merged",
-      "number": 61,
-      "type": "User",
-      "stars": 1
-    },
-    {
-      "repo": "yshrsmz/BuildKonfig",
-      "title": "chore(renovate): use shared renovate-config presets",
-      "url": "https://github.com/yshrsmz/BuildKonfig/pull/377",
-      "created_at": "2026-10-15T16:04:02Z",
-      "state": "merged",
-      "number": 377,
-      "type": "User",
-      "stars": 1223
-    },
-    {
-      "repo": "yshrsmz/mewgit",
-      "title": "fix(scripts): screen.py が全角の 2 桁目の印を消し残して 1 桁詰めるのを直す",
-      "url": "https://github.com/yshrsmz/mewgit/pull/196",
-      "created_at": "2026-10-15T14:59:06Z",
-      "state": "merged",
-      "number": 196,
-      "type": "User",
-      "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "refactor: extract the API gateway from GitHubAPIClient (fix-api-client-gateway)",
-      "url": "https://github.com/yshrsmz/mewbell/pull/60",
-      "created_at": "2026-10-15T14:55:17Z",
-      "state": "merged",
-      "number": 60,
-      "type": "User",
-      "stars": 1
-    },
-    {
-      "repo": "yshrsmz/mewgit",
-      "title": "docs(rules): 責務を移したリファクタの見張りは戻す変異で裁くことと、BSD sed の \\b を書く",
-      "url": "https://github.com/yshrsmz/mewgit/pull/195",
-      "created_at": "2026-10-15T14:22:10Z",
-      "state": "merged",
-      "number": 195,
       "type": "User",
       "stars": 0
     }
