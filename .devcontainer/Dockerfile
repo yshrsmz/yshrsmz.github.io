@@ -20,8 +20,10 @@ RUN apt-get update && \
     chsh -s /bin/zsh vscode
 
 # Install mise (pinned version, installed system-wide)
-# Using official installer to ensure latest bundled GPG keys for Node.js release verification
-ARG MISE_VERSION=v2026.4.7
+# Official installer instead of the devcontainers-extra feature, which ships an older mise.
+# The bundled aqua registry must know pnpm 12's .tar.gz assets; older mise (e.g. v2026.4.7)
+# fails `mise i` with "no asset found: pnpm-linux-<arch>". Verified to work from v2026.10.17.
+ARG MISE_VERSION=v2026.10.17
 RUN curl -fsSL https://mise.run | MISE_VERSION=${MISE_VERSION} MISE_INSTALL_PATH=/usr/local/bin/mise sh && \
     chmod +x /usr/local/bin/mise
 
