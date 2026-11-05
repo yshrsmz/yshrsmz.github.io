@@ -1,5 +1,5 @@
 {
-  "updated_at": 1793579278721,
+  "updated_at": 1793838391741,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
@@ -71,7 +71,7 @@
       "title": "chore: upgrade Node.js to 26 and keep action-create-scrap types at 24",
       "url": "https://github.com/yshrsmz/yshrsmz.github.io/pull/552",
       "created_at": "2026-10-29T04:45:22Z",
-      "state": "open",
+      "state": "merged",
       "number": 552,
       "type": "User",
       "stars": 1
