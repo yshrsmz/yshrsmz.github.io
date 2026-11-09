@@ -1,11 +1,21 @@
 {
-  "updated_at": 1793838391741,
+  "updated_at": 1794184117111,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "AndroidDagashi/androiddagashi.github.io",
+      "title": "ci(update_api): schedule in JST and avoid minute 0",
+      "url": "https://github.com/AndroidDagashi/androiddagashi.github.io/pull/822",
+      "created_at": "2026-11-08T12:14:52Z",
+      "state": "merged",
+      "number": 822,
+      "type": "Organization",
+      "stars": 10
+    },
     {
       "repo": "yshrsmz/mewbell",
       "title": "ci: write the mise version with the v prefix so Renovate can update its sha256",
@@ -495,16 +505,6 @@
       "number": 64,
       "type": "User",
       "stars": 1
-    },
-    {
-      "repo": "yshrsmz/mewgit",
-      "title": "docs(plan): Homebrew の tap への同期が 0.1.1 で通ったのでチェックを付ける",
-      "url": "https://github.com/yshrsmz/mewgit/pull/198",
-      "created_at": "2026-10-16T06:00:08Z",
-      "state": "merged",
-      "number": 198,
-      "type": "User",
-      "stars": 0
     }
   ]
 }
