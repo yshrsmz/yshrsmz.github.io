@@ -21,7 +21,7 @@
     "happy-dom": "21.0.4",
     "vitest": "5.1.0",
     "@tailwindcss/typography": "0.5.20",
-    "@tailwindcss/vite": "4.3.4",
+    "@tailwindcss/vite": "4.3.5",
     "autoprefixer": "10.6.2",
     "date-fns": "4.4.0",
     "fast-glob": "3.3.3",
@@ -33,10 +33,10 @@
     "prettier-plugin-tailwindcss": "0.8.1",
     "satori": "0.63.2",
     "sitemap": "10.0.0",
-    "tailwindcss": "4.3.4",
+    "tailwindcss": "4.3.5",
     "typescript": "7.0.2",
     "vitepress": "2.0.0-alpha.21",
-    "vue": "3.5.44"
+    "vue": "3.5.45"
   },
   "dependencies": {
     "@vueuse/core": "15.0.0"
