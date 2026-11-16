@@ -1,11 +1,21 @@
 {
-  "updated_at": 1794443222845,
+  "updated_at": 1794789080163,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/cc-plugins",
+      "title": "feat(github)!: branch-cleanup で失うものが無いブランチも消す",
+      "url": "https://github.com/yshrsmz/cc-plugins/pull/41",
+      "created_at": "2026-11-12T08:29:36Z",
+      "state": "merged",
+      "number": 41,
+      "type": "User",
+      "stars": 0
+    },
     {
       "repo": "AndroidDagashi/androiddagashi.github.io",
       "title": "ci(update_api): schedule in JST and avoid minute 0",
@@ -44,7 +54,7 @@
       "state": "merged",
       "number": 144,
       "type": "User",
-      "stars": 5
+      "stars": 6
     },
     {
       "repo": "yshrsmz/changelog-compose",
@@ -54,7 +64,7 @@
       "state": "merged",
       "number": 143,
       "type": "User",
-      "stars": 5
+      "stars": 6
     },
     {
       "repo": "yshrsmz/yshrsmz.github.io",
@@ -154,7 +164,7 @@
       "state": "merged",
       "number": 138,
       "type": "User",
-      "stars": 5
+      "stars": 6
     },
     {
       "repo": "yshrsmz/mewgit",
@@ -334,7 +344,7 @@
       "state": "merged",
       "number": 135,
       "type": "User",
-      "stars": 5
+      "stars": 6
     },
     {
       "repo": "yshrsmz/changelog-compose",
@@ -344,7 +354,7 @@
       "state": "merged",
       "number": 134,
       "type": "User",
-      "stars": 5
+      "stars": 6
     },
     {
       "repo": "yshrsmz/mewbell",
@@ -495,16 +505,6 @@
       "number": 199,
       "type": "User",
       "stars": 0
-    },
-    {
-      "repo": "yshrsmz/mewbell",
-      "title": "docs: split requirements longer than 500 characters",
-      "url": "https://github.com/yshrsmz/mewbell/pull/64",
-      "created_at": "2026-10-16T07:10:37Z",
-      "state": "merged",
-      "number": 64,
-      "type": "User",
-      "stars": 1
     }
   ]
 }
