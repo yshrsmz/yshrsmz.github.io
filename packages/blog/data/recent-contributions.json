@@ -1,11 +1,21 @@
 {
-  "updated_at": 1795393684513,
+  "updated_at": 1795652716820,
   "user": {
     "name": "Yasuhiro SHIMIZU",
     "username": "yshrsmz",
     "avatar": "https://avatars.githubusercontent.com/u/654889?v=4"
   },
   "prs": [
+    {
+      "repo": "yshrsmz/cc-plugins",
+      "title": "fix(github): branch-cleanup で PR head の祖先の先端をマージ済みとして消す",
+      "url": "https://github.com/yshrsmz/cc-plugins/pull/45",
+      "created_at": "2026-11-24T10:17:53Z",
+      "state": "open",
+      "number": 45,
+      "type": "User",
+      "stars": 0
+    },
     {
       "repo": "yshrsmz/cc-plugins",
       "title": "fix(github): branch-cleanup の先端 SHA 照会を remote のホストに向ける",
@@ -495,16 +505,6 @@
       "number": 801,
       "type": "Organization",
       "stars": 10
-    },
-    {
-      "repo": "yshrsmz/mewgit",
-      "title": "feat(remote): 巻き戻したブランチの force push を通し、force を追跡 ref の先端を取り込んだ形に絞る",
-      "url": "https://github.com/yshrsmz/mewgit/pull/201",
-      "created_at": "2026-10-16T12:48:02Z",
-      "state": "merged",
-      "number": 201,
-      "type": "User",
-      "stars": 0
     }
   ]
 }
