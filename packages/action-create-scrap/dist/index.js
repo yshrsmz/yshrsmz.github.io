@@ -1897,7 +1897,7 @@ var require_dispatcher_base = /* @__PURE__ */ __commonJSMin(((exports, module) =
 		get webSocketOptions() {
 			return {
 				maxFragments: this[kWebSocketOptions].maxFragments ?? 131072,
-				maxPayloadSize: this[kWebSocketOptions].maxPayloadSize ?? 134217728
+				maxPayloadSize: this[kWebSocketOptions].maxPayloadSize ?? 0x8000000
 			};
 		}
 		get eventSourceOptions() {
@@ -16610,8 +16610,7 @@ var require_proxy = /* @__PURE__ */ __commonJSMin(((exports) => {
 	}
 	function checkBypass(reqUrl) {
 		if (!reqUrl.hostname) return false;
-		const reqHost = reqUrl.hostname;
-		if (isLoopbackAddress(reqHost)) return true;
+		if (isLoopbackAddress(reqUrl.hostname)) return true;
 		const noProxy = process.env["no_proxy"] || process.env["NO_PROXY"] || "";
 		if (!noProxy) return false;
 		let reqPort;
